@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumen Rides — Le trajet calme | Taxi bien-être &amp; transferts aéroport</title>
+  <meta name="description" content="Lumen Rides, c'est le trajet calme : habitacles mode silence, lumière douce, eau plate et chargeurs toujours à bord. Transferts aéroport et trajets urbains sans l'anxiété.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%231E5F5B'/%3E%3Cpath d='M15.5 5a7.5 7.5 0 1 0 3.5 9.5A6 6 0 0 1 15.5 5z' fill='%23EAD9BF'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 5a7.5 7.5 0 1 0 3.5 9.5A6 6 0 0 1 15.5 5z" fill="currentColor"/></svg></span>
+        <span class="brand-text">Lumen<small>Rides · le trajet calme</small></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#rides">Trajets</a>
+        <a href="#calm">Pourquoi le calme</a>
+        <a href="#ritual">Le rituel</a>
+        <a href="#stories">Histoires</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-cta">Réserver un trajet calme</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="top">
+    <div class="hero-ripples" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="hero-orbs" aria-hidden="true">
+      <span style="--x:14%;--y:26%;--d:16s"></span>
+      <span style="--x:84%;--y:20%;--d:19s"></span>
+      <span style="--x:68%;--y:58%;--d:14s"></span>
+      <span style="--x:30%;--y:66%;--d:21s"></span>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="hero-chip reveal"><span class="chip-dot"></span> Habitacles mode silence — désormais de série sur chaque trajet</p>
+        <h1 class="reveal" style="--d:.1s">Arriver aussi reposé qu'en <em>partant.</em></h1>
+        <p class="hero-sub reveal" style="--d:.2s">Lumen, c'est le trajet calme. Lumière douce, son feutré, eau plate et chargeurs
+          toujours à bord — avec des chauffeurs formés pour faire des jours d'aéroport la partie la plus simple de votre voyage.</p>
+        <div class="hero-cta reveal" style="--d:.3s">
+          <a href="#booking" class="btn btn-sand">Réserver un trajet calme</a>
+          <a href="#calm" class="btn btn-ghost">Comment nous apaisons le trajet</a>
+        </div>
+        <div class="hero-stats reveal" style="--d:.4s">
+          <div><strong data-count="4.9" data-decimal="1" data-suffix="">0</strong><span>score de calme</span></div>
+          <i></i>
+          <div><strong data-count="8" data-suffix=" min">0</strong><span>prise en charge moy.</span></div>
+          <i></i>
+          <div><strong>24/7</strong><span>accueil en douceur</span></div>
+        </div>
+      </div>
+
+      <aside class="calm-card reveal" style="--d:.28s">
+        <p class="calm-title">Toujours à bord</p>
+        <ul class="calm-list">
+          <li><span class="calm-ic">●</span><div><strong>Eau plate</strong><span>Fraîche, scellée, à portée de main</span></div></li>
+          <li><span class="calm-ic">●</span><div><strong>Chargeurs de téléphone</strong><span>Chaque câble, les deux sièges</span></div></li>
+          <li><span class="calm-ic">●</span><div><strong>Mode silence</strong><span>Conversation seulement si vous la commencez</span></div></li>
+          <li><span class="calm-ic">●</span><div><strong>Lumière chaude</strong><span>Aucun éblouissement, aucun bruit de tableau de bord</span></div></li>
+        </ul>
+        <p class="calm-foot">Inspirez sur quatre temps. La voiture est déjà tout près.</p>
+      </aside>
+    </div>
+
+    <svg class="hero-hills" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,70 C220,20 420,96 700,64 C960,36 1180,88 1440,48 L1440,110 L0,110 Z" fill="#EAD9BF"/>
+    </svg>
+  </section>
+
+  <!-- ══════════ BANDE FLOTTANTE ══════════ -->
+  <div class="drift" aria-hidden="true">
+    <div class="drift-track">
+      <span>Eau plate à bord · Chargeurs de téléphone · Mode silence · Suivi de vol · Sièges enfant sur demande · Habitacles sans parfum ·&nbsp;</span>
+      <span>Eau plate à bord · Chargeurs de téléphone · Mode silence · Suivi de vol · Sièges enfant sur demande · Habitacles sans parfum ·&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ══════════ TRAJETS ══════════ -->
+  <section class="section" id="rides">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Nos trajets</p>
+        <h2>Six façons de <em>voyager en douceur</em></h2>
+        <p class="sec-sub">Chaque tarif est annoncé avant que vous ne vous asseyiez, et chaque habitacle est préparé avec le
+          même soin — pour une dérive de cinq minutes comme pour un sauvetage de vol de nuit.</p>
+      </div>
+      <div class="ride-grid">
+        <article class="ride reveal" style="--d:.05s">
+          <span class="ride-dot"></span>
+          <h3>Transfert aéroport apaisé</h3>
+          <p>Nous suivons votre vol, vous accueillons à la sortie la plus calme et gardons l'habitacle doux pendant que le bruit du terminal s'éloigne derrière vous.</p>
+          <a href="#booking" class="ride-link">dès 54 € <span>→</span></a>
+        </article>
+        <article class="ride reveal" style="--d:.1s">
+          <span class="ride-dot"></span>
+          <h3>Dérive urbaine</h3>
+          <p>Point à point à travers la ville, dans une voiture qui ne klaxonne jamais la première. La route la plus douce, pas le chauffeur le plus bruyant.</p>
+          <a href="#booking" class="ride-link">dès 16 € <span>→</span></a>
+        </article>
+        <article class="ride reveal" style="--d:.15s">
+          <span class="ride-dot"></span>
+          <h3>Retraite à l'heure</h3>
+          <p>Gardez la voiture pour la matinée. Courses, rendez-vous, une boucle lente le long de l'eau — l'habitacle reste le vôtre.</p>
+          <a href="#booking" class="ride-link">dès 62 €/h <span>→</span></a>
+        </article>
+        <article class="ride reveal" style="--d:.2s">
+          <span class="ride-dot"></span>
+          <h3>Compte journée de travail</h3>
+          <p>Des trajets doux pour les équipes : une formule mensuelle, voitures calmes en priorité, et des justificatifs que personne n'a à courir après.</p>
+          <a href="#booking" class="ride-link">sur mesure <span>→</span></a>
+        </article>
+        <article class="ride reveal" style="--d:.25s">
+          <span class="ride-dot"></span>
+          <h3>Trajets ensemble</h3>
+          <p>Des vans spacieux et feutrés pour les familles et les petits groupes — avec sièges enfant installés avant même notre arrivée.</p>
+          <a href="#booking" class="ride-link">dès 36 € <span>→</span></a>
+        </article>
+        <article class="ride reveal" style="--d:.3s">
+          <span class="ride-dot"></span>
+          <h3>Coursier délicat</h3>
+          <p>Documents et colis d'affection portés par un chauffeur qui envoie un texto à l'arrivée. La gentillesse, livrée.</p>
+          <a href="#booking" class="ride-link">dès 15 € <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ POURQUOI LE CALME / HISTOIRE ══════════ -->
+  <section class="section calm-dark" id="calm">
+    <div class="container calm-grid">
+      <div class="calm-visual reveal">
+        <div class="breathe-frame">
+          <div class="breathe-core">
+            <span></span><span></span><span></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M15.5 5a7.5 7.5 0 1 0 3.5 9.5A6 6 0 0 1 15.5 5z" fill="currentColor"/></svg>
+          </div>
+          <p class="breathe-word">respirer · rouler · arriver</p>
+        </div>
+        <div class="calm-badge">
+          <strong>4.9</strong>
+          <span>score de calme<br>moyen, 2026</span>
+        </div>
+      </div>
+      <div class="calm-copy">
+        <p class="overline reveal">Pourquoi le calme</p>
+        <h2 class="reveal" style="--d:.08s">La science d'un<br><em>trajet silencieux.</em></h2>
+        <p class="reveal" style="--d:.16s">L'anxiété a un son : ronronnement du moteur, bips du tableau de bord, conversations que
+          vous n'avez pas demandées. Nous avons tout retiré. Chaque habitacle Lumen est insonorisé et sans parfum, chaque chauffeur
+          suit six semaines de formation à la conduite apaisée, et chaque trajet commence par la question qu'aucune société de taxi
+          ne pense à poser — alors, votre journée, vraiment ?</p>
+        <ul class="comfort-list">
+          <li class="reveal" style="--d:.22s"><span>●</span> Habitacles insonorisés, conversation en option</li>
+          <li class="reveal" style="--d:.28s"><span>●</span> Suivi de vol pour chaque prise en charge à l'aéroport</li>
+          <li class="reveal" style="--d:.34s"><span>●</span> Chauffeurs formés à la désescalade &amp; aux premiers secours</li>
+          <li class="reveal" style="--d:.4s"><span>●</span> Tarifs fixes, envoyés par texto avant le départ</li>
+        </ul>
+        <a href="#booking" class="btn btn-sand reveal" style="--d:.46s">Sentir la différence</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ RITUEL ══════════ -->
+  <section class="section" id="ritual">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Le rituel</p>
+        <h2>Quatre pas doux jusqu'à <em>votre porte</em></h2>
+      </div>
+      <ol class="ritual-row">
+        <li class="reveal" style="--d:.05s"><span class="r-step">01</span><h3>Régler l'ambiance</h3><p>Dites-nous vos préférences une fois — silence, playlist, température — et chaque voiture s'en souviendra.</p></li>
+        <li class="reveal" style="--d:.15s"><span class="r-step">02</span><h3>Nous surveillons le ciel</h3><p>Les jours d'aéroport, nous suivons votre vol et avançons la prise en charge avant que la turbulence ne le fasse.</p></li>
+        <li class="reveal" style="--d:.25s"><span class="r-step">03</span><h3>La voiture calme arrive</h3><p>Lumière chaude, eau fraîche, chargeurs à portée. Votre chauffeur vous salue par votre prénom, doucement.</p></li>
+        <li class="reveal" style="--d:.35s"><span class="r-step">04</span><h3>Dérive &amp; arrivée</h3><p>Le paiement est réglé en douceur dans l'application. Vous quittez la voiture comme vous y êtes entré : sans presser.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════ CHIFFRES ══════════ -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="reveal"><strong data-count="88000" data-suffix="+">0</strong><span>trajets calmes effectués</span></div>
+      <div class="reveal" style="--d:.1s"><strong data-count="99.4" data-decimal="1" data-suffix="%">0</strong><span>arrivées à l'heure</span></div>
+      <div class="reveal" style="--d:.2s"><strong data-count="8" data-suffix=" min">0</strong><span>prise en charge moy.</span></div>
+      <div class="reveal" style="--d:.3s"><strong data-count="34" data-suffix="">0</strong><span>voitures silencieuses en flotte</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════ HISTOIRES / TÉMOIGNAGES ══════════ -->
+  <section class="section" id="stories">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Histoires de passagers</p>
+        <h2>Murmurées entre deux <em>arrêts</em></h2>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Je répétais mes petites conversations dans les taxis d'aéroport pendant tout le trajet. Aujourd'hui, je m'assois dans le silence, je bois mon eau, et j'arrive chez moi déjà détendue. Lumen a tout compris. »</blockquote>
+          <figcaption><strong>Imogen T.</strong><span>Voyageuse hebdomadaire</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Ma fille a des hypersensibilités sensorielles et les trajets en voiture étaient notre pire heure. Le chauffeur Lumen a tamisé les lumières avant même qu'elle n'ouvre la porte. Elle l'appelle désormais son taxi tout doux. »</blockquote>
+          <figcaption><strong>Daniel &amp; Ruth M.</strong><span>Famille trajets ensemble</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Un vol retardé à 1h du matin, un chauffeur déjà là avec mon nom correctement orthographié, et les trente minutes les plus apaisées de toute cette semaine. Je ne réserve plus personne d'autre. »</blockquote>
+          <figcaption><strong>Dr Aiko S.</strong><span>Membre Transfert aéroport apaisé</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="section calm-dark contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="overline reveal">Dites bonjour</p>
+        <h2 class="reveal" style="--d:.08s">Écrire à l'<em>accueil en douceur</em></h2>
+        <p class="reveal" style="--d:.14s">Préférences de trajet, besoins d'accessibilité ou question sur un tarif — l'accueil en
+          douceur répond avec la patience pour laquelle nos chauffeurs sont connus.</p>
+        <ul class="info-list">
+          <li class="reveal" style="--d:.2s"><span class="info-ic">●</span><div><strong>Le studio</strong><span>12 Duskwater Lane, Studio 2<br>Quartier des quais</span></div></li>
+          <li class="reveal" style="--d:.26s"><span class="info-ic">●</span><div><strong>Accueil en douceur</strong><span>+1 (555) 088-0505</span></div></li>
+          <li class="reveal" style="--d:.32s"><span class="info-ic">●</span><div><strong>Horaires</strong><span>Trajets : en permanence<br>Accueil : lundi–dimanche, 7h00 – 21h00</span></div></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <fieldset>
+          <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Votre nom</label></div>
+          <div class="field-row">
+            <div class="field"><input type="email" id="cf-email" required placeholder=" "><label for="cf-email">Adresse e-mail</label></div>
+            <div class="field"><input type="tel" id="cf-phone" placeholder=" "><label for="cf-phone">Téléphone (facultatif)</label></div>
+          </div>
+          <div class="field select-field">
+            <select id="cf-subject" required>
+              <option value="" selected disabled></option>
+              <option>Réserver un trajet calme</option>
+              <option>Questions d'accessibilité</option>
+              <option>Comptes journée de travail pour équipes</option>
+              <option>Sièges enfant &amp; trajets en famille</option>
+              <option>Coursier délicat</option>
+              <option>Autre chose</option>
+            </select>
+            <label for="cf-subject">Comment pouvons-nous aider ?</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required placeholder=" "></textarea><label for="cf-msg">Votre message</label></div>
+          <button type="submit" class="btn btn-sand btn-wide">Envoyer en douceur</button>
+          <p class="form-note">Pas de spam, pas d'appel relance que vous n'avez pas demandé. Jamais.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>Reçu, en douceur.</h3>
+          <p>Votre message est entre les mains de l'accueil en douceur. Une réponse attentionnée arrive dans l'heure ouvrée.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════ RÉSERVATION ══════════ -->
+  <section class="section booking" id="booking">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Réserver</p>
+        <h2>Réserver le <em>trajet calme</em></h2>
+        <p class="sec-sub">Quatre étapes sans hâte. Vos préférences voyagent avec vous.</p>
+      </div>
+
+      <div class="book-frame reveal" style="--d:.1s">
+        <div class="book-inner">
+          <ol class="wiz-steps" id="wizSteps">
+            <li class="is-current"><span>Trajet</span></li>
+            <li><span>Moment</span></li>
+            <li><span>Vous</span></li>
+            <li><span>En douceur</span></li>
+          </ol>
+
+          <form id="bookForm" novalidate>
+            <!-- ÉTAPE 1 · TRAJET -->
+            <fieldset class="pane is-active">
+              <legend>Quel trajet vous semble juste ?</legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="svc" value="Transfert aéroport apaisé" required><span>Transfert aéroport</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Course en ville"><span>Course en ville</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Mise à disposition horaire"><span>Mise à disposition horaire</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Compte entreprise"><span>Compte entreprise</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Van & groupe"><span>Van &amp; groupe</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Course express"><span>Course express</span></label>
+              </div>
+              <p class="choice-error">Prenez votre temps — mais choisissez quand même un trajet.</p>
+              <div class="wiz-nav"><span></span><button type="button" class="btn btn-sand js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- ÉTAPE 2 · MOMENT -->
+            <fieldset class="pane">
+              <legend>Quand devons-nous passer ?</legend>
+              <div class="field date-field">
+                <input type="date" id="bk-date" required>
+                <label>Date de prise en charge</label>
+              </div>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" class="chip" data-v="6:15">6h15</button>
+                <button type="button" class="chip" data-v="8:00">8h00</button>
+                <button type="button" class="chip" data-v="10:15">10h15</button>
+                <button type="button" class="chip" data-v="13:45">13h45</button>
+                <button type="button" class="chip" data-v="17:15">17h15</button>
+                <button type="button" class="chip" data-v="20:45">20h45</button>
+              </div>
+              <input type="hidden" id="bk-time">
+              <p class="choice-error">Choisissez un moment pour la prise en charge.</p>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="button" class="btn btn-sand js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- ÉTAPE 3 · VOUS -->
+            <fieldset class="pane">
+              <legend>Quelques détails pour le chauffeur.</legend>
+              <div class="field-row">
+                <div class="field"><input type="text" id="bk-name" required placeholder=" "><label>Nom du passager</label></div>
+                <div class="field"><input type="tel" id="bk-phone" required placeholder=" "><label>Numéro de téléphone</label></div>
+              </div>
+              <div class="field"><input type="text" id="bk-address" required placeholder=" "><label>Adresse de prise en charge</label></div>
+              <div class="field"><textarea id="bk-notes" rows="3" placeholder=" "></textarea><label>Préférences — silence, température, quoi que ce soit (facultatif)</label></div>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="submit" class="btn btn-sand">Réserver le trajet calme</button></div>
+            </fieldset>
+
+            <!-- ÉTAPE 4 · EN DOUCEUR -->
+            <fieldset class="pane pane-success">
+              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+              <h3>Tout est prêt. Expirez.</h3>
+              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est réservé pour le<br><strong id="recap-when">—</strong>.</p>
+              <p class="recap-sub">Un texto de confirmation tout doux arrive avec le nom de votre chauffeur. L'eau est déjà au frais.</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PIED DE PAGE ══════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 5a7.5 7.5 0 1 0 3.5 9.5A6 6 0 0 1 15.5 5z" fill="currentColor"/></svg></span>
+          <span class="brand-text">Lumen<small>Rides · le trajet calme</small></span>
+        </a>
+        <p>Lumière douce, son feutré, eau plate — la société de taxi qui traite votre système nerveux comme un passager lui aussi.</p>
+      </div>
+      <div><h4>Lumen</h4><a href="#rides">Trajets</a><a href="#calm">Pourquoi le calme</a><a href="#ritual">Le rituel</a><a href="#stories">Histoires</a></div>
+      <div><h4>Trajets</h4><a href="#booking">Aéroport apaisé</a><a href="#booking">Course en ville</a><a href="#booking">Retraite à l'heure</a><a href="#booking">Coursier délicat</a></div>
+      <div><h4>Accueil en douceur</h4><a href="tel:+15550880505">+1 (555) 088-0505</a><a href="#contact">desk@lumenrides.co</a><span>12 Duskwater Lane, Studio 2</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Lumen Rides. Tous droits réservés.</span><span>Transport sous licence · Chauffeurs formés aux premiers secours</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

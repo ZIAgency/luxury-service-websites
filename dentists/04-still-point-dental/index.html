@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Still Point Dental — Une dentisterie sans angoisse, pour les patients anxieux</title>
+  <meta name="description" content="Still Point Dental a été pensé pour les patients anxieux. Casque anti-bruit, couvertures lestées, options de sédation et rendez-vous sans interruption — une dentisterie qui commence par l'apaisement.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%237E987F' d='M12 4c2.5 0 3.2-1.2 5.2-1.2 2.8 0 4.3 2.6 4.3 5.6 0 2.8-1.3 4.6-2.1 6.8-.8 2.2-1 6-3 6-1.8 0-1.4-4.4-4.4-4.4s-2.6 4.4-4.4 4.4c-2 0-2.2-3.8-3-6C3.8 13 2.5 11.2 2.5 8.4c0-3 1.5-5.6 4.3-5.6C8.8 2.8 9.5 4 12 4Z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════════ NAVIGATION ══════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4c2.5 0 3.2-1.2 5.2-1.2 2.8 0 4.3 2.6 4.3 5.6 0 2.8-1.3 4.6-2.1 6.8-.8 2.2-1 6-3 6-1.8 0-1.4-4.4-4.4-4.4s-2.6 4.4-4.4 4.4c-2 0-2.2-3.8-3-6C3.8 13 2.5 11.2 2.5 8.4c0-3 1.5-5.6 4.3-5.6C8.8 2.8 9.5 4 12 4Z"/></svg>
+        </span>
+        <span class="brand-text">Still Point<small>La dentisterie des anxieux</small></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#care">Soins</a>
+        <a href="#calm">Notre apaisement</a>
+        <a href="#comfort">Carte du confort</a>
+        <a href="#voices">Paroles</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-cta">Faire le premier pas</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="top">
+    <div class="hero-rings" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero-blob blob-a" aria-hidden="true"></div>
+    <div class="hero-blob blob-b" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <div class="tooth-still reveal" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <circle class="still-ring" cx="60" cy="60" r="46"/>
+          <path class="still-tooth" d="M60 40c4.6 0 5.9-2.2 9.5-2.2 5.1 0 7.9 4.7 7.9 10.2 0 5.1-2.4 8.4-3.9 12.4-1.5 4-1.8 11-5.5 11-3.3 0-2.5-8-8.1-8s-4.7 8-8.1 8c-3.6 0-4-6.9-5.5-11-1.5-4-3.9-7.2-3.9-12.4 0-5.4 2.8-10.2 7.9-10.2 3.6 0 4.9 2.2 9.5 2.2Z"/>
+        </svg>
+        <p class="breathe-cue">inspirez · expirez</p>
+      </div>
+      <p class="overline reveal">Un cabinet dentaire construit autour de votre pouls</p>
+      <h1 class="reveal" style="--d:.12s">Une dentisterie qui<br><em class="sage-text">commence par le calme.</em></h1>
+      <p class="hero-sub reveal" style="--d:.28s">
+        Si vous repoussez le dentiste depuis un an — ou une décennie — vous êtes exactement la personne
+        pour qui Still Point a été conçu. Des rendez-vous plus longs, des salles plus douces, un casque
+        sur demande, une sédation si vous la souhaitez, et pas un seul mot de reproche.
+      </p>
+      <div class="hero-cta reveal" style="--d:.4s">
+        <a href="#booking" class="btn btn-sage">Faire le premier pas</a>
+        <a href="#comfort" class="btn btn-ghost">Voir la carte du confort</a>
+      </div>
+      <div class="hero-note reveal" style="--d:.5s">
+        <span class="note-dot"></span>
+        <p>Votre première visite peut se limiter à une tasse de thé et une conversation. Rien de plus. Beaucoup de personnes commencent exactement là.</p>
+      </div>
+    </div>
+
+    <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,44 C300,90 600,6 860,40 C1120,74 1300,30 1440,50 L1440,90 L0,90 Z" fill="#FAF6F0"/>
+    </svg>
+  </section>
+
+  <!-- ══════════════ AFFIRMATION STRIP ══════════════ -->
+  <div class="drift" aria-hidden="true">
+    <div class="drift-track">
+      <span>c'est vous qui décidez ✿ nous suivons votre rythme ✿ lever la main suspend tout ✿ aucun sermon, jamais ✿ il n'est jamais trop tard ✿&nbsp;</span>
+      <span>c'est vous qui décidez ✿ nous suivons votre rythme ✿ lever la main suspend tout ✿ aucun sermon, jamais ✿ il n'est jamais trop tard ✿&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ══════════════ CARE / SERVICES ══════════════ -->
+  <section class="section light" id="care">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Nos soins</p>
+        <h2>Des soins en douceur,<br><em class="sage-text">sans hâte, par défaut.</em></h2>
+        <div class="orn"><span></span><span class="petal">✿</span><span></span></div>
+        <p class="sec-sub">Tout ce qu'offre un cabinet moderne — livré avec plus de temps, un vocabulaire
+          plus doux et un bouton pause qui n'appartient qu'à vous.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service reveal" style="--d:.05s">
+          <span class="num">01</span>
+          <h3>La première visite</h3>
+          <p>Une demi-heure offerte : découvrir la salle, faire connaissance, poser toutes les questions. Installez-vous dans le fauteuil si vous en avez envie — ou pas. Aucun examen, sauf si vous le demandez.</p>
+          <a href="#booking" class="service-link">offerte <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.1s">
+          <span class="num">02</span>
+          <h3>Hygiène apaisée</h3>
+          <p>Des détartrages au volume d'un murmure, avec rinçages à l'eau tiède, gel anesthésiant sur demande, et une praticienne qui explique avant de toucher — chaque fois, sans exception.</p>
+          <a href="#booking" class="service-link">à partir de 135 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.15s">
+          <span class="num">03</span>
+          <h3>Visites sous sédation</h3>
+          <p>D'un protoxyde d'azote relaxant à une sédation orale plus profonde, avec un déroulé expliqué avant la visite et un protocole de récupération adapté à un accompagnant. Vous pouvez dormir pendant les soins. Beaucoup le font.</p>
+          <a href="#booking" class="service-link">à partir de 290 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.2s">
+          <span class="num">04</span>
+          <h3>Soins restaurateurs silencieux</h3>
+          <p>Obturations, couronnes et réparations réalisées sous une anesthésie profonde, avec des instruments insonorisés et autant de pauses que nécessaire — planifiées dans le rendez-vous, pas arrachées au fil de l'eau.</p>
+          <a href="#booking" class="service-link">à partir de 260 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.25s">
+          <span class="num">05</span>
+          <h3>Blanchiment tout en douceur</h3>
+          <p>Un éclaircissement à faible sensibilité pour un émail qui en a déjà vu. Nous commençons plus doucement que la plupart, et nous intensifions seulement quand vos dents nous disent qu'elles sont à l'aise.</p>
+          <a href="#booking" class="service-link">à partir de 390 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.3s">
+          <span class="num">06</span>
+          <h3>Alignement en conscience</h3>
+          <p>Des gouttières transparentes avec un suivi mensuel sans le moindre métal, et une progression suivie par des photos que vous validez avant tout envoi au laboratoire.</p>
+          <a href="#booking" class="service-link">à partir de 3 600 € <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ HOW WE CALM / STORY ══════════════ -->
+  <section class="section calm" id="calm">
+    <div class="container calm-grid">
+      <div class="calm-visual reveal">
+        <div class="calm-pool">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="pool-ring r1" cx="60" cy="60" r="54"/>
+            <circle class="pool-ring r2" cx="60" cy="60" r="40"/>
+            <circle class="pool-ring r3" cx="60" cy="60" r="26"/>
+            <path class="pool-tooth" d="M60 46c3.4 0 4.4-1.6 7-1.6 3.8 0 5.8 3.5 5.8 7.5 0 3.8-1.8 6.2-2.9 9.2-1.1 3-1.4 8.2-4.1 8.2-2.4 0-1.9-5.9-6-5.9s-3.5 5.9-6 5.9c-2.7 0-3-5.1-4.1-8.2-1.1-3-2.9-5.4-2.9-9.2 0-4 2.1-7.5 5.8-7.5 2.6 0 3.6 1.6 7 1.6Z"/>
+          </svg>
+        </div>
+        <div class="calm-quote reveal" style="--d:.2s">
+          <p>« Nous pourrions soigner deux fois plus de patients si nous nous pressions. Nous avons choisi de ne pas le faire. Les patients anxieux n'ont pas besoin d'une dentisterie plus rapide — ils ont besoin de dentistes plus lents. »</p>
+          <span>— Dr Maren Okafor, fondatrice</span>
+        </div>
+      </div>
+      <div class="calm-copy">
+        <p class="overline reveal">Pourquoi nous existons</p>
+        <h2 class="reveal" style="--d:.08s">Un adulte sur trois<br><em class="sage-text">a peur du dentiste.</em></h2>
+        <p class="reveal" style="--d:.16s">Still Point a été fondé par une dentiste qui s'est un jour retrouvée
+          assise dans la salle d'attente de son propre cabinet, incapable d'entrer. Elle a construit le cabinet
+          dont elle avait besoin alors : des rendez-vous qui commencent par la conversation, des soins qui
+          s'arrêtent dès que vous levez la main, et une équipe formée aux soins de l'anxiété.</p>
+        <ul class="calm-list">
+          <li class="reveal" style="--d:.22s"><span>✿</span> Chaque praticien suit une formation annuelle aux soins de l'anxiété</li>
+          <li class="reveal" style="--d:.28s"><span>✿</span> Des signes convenus avant de commencer — une main levée suspend tout</li>
+          <li class="reveal" style="--d:.34s"><span>✿</span> Des créneaux plus longs, pour que rien ne semble jamais bousculé</li>
+          <li class="reveal" style="--d:.4s"><span>✿</span> Des options de sédation évoquées sans pression, en mots simples</li>
+        </ul>
+        <a href="#contact" class="btn btn-sage reveal" style="--d:.46s">Parlons-en, en douceur</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ COMFORT MENU ══════════════ -->
+  <section class="section light" id="comfort">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">La carte du confort</p>
+        <h2>Composez votre <em class="sage-text">rendez-vous</em> comme vous l'aimez</h2>
+        <div class="orn"><span></span><span class="petal">✿</span><span></span></div>
+        <p class="sec-sub">Chaque visite inclut tout ce que vous voulez de la carte ci-dessous. Un simple mot suffit — avant ou pendant le rendez-vous.</p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item reveal" style="--d:.05s"><h3>Casque anti-bruit</h3><p>Votre playlist ou la nôtre. La fraise se réduit à un souffle lointain.</p></div>
+        <div class="menu-item reveal" style="--d:.1s"><h3>Couverture lestée</h3><p>Une pression douce et régulière qui apaise le système nerveux.</p></div>
+        <div class="menu-item reveal" style="--d:.15s"><h3>Pause du bout des doigts</h3><p>Convenue avant de commencer. Vous interrompez la visite d'un seul geste — instantanément.</p></div>
+        <div class="menu-item reveal" style="--d:.2s"><h3>Serviette chaude &amp; thé</h3><p>Arrivez en avance, installez-vous dans le salon, laissez le monde ralentir d'abord.</p></div>
+        <div class="menu-item reveal" style="--d:.25s"><h3>Anesthésie sur demande</h3><p>Gel topique avant toute injection — ou aiguilles évitées entièrement quand c'est possible.</p></div>
+        <div class="menu-item reveal" style="--d:.3s"><h3>Pauses, programmées</h3><p>Les visites longues sont planifiées avec de vraies pauses intégrées, pas arrachées au fil de l'eau.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ STATS ══════════════ -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="reveal"><strong data-count="8400" data-suffix="+">0</strong><span>Visites apaisées réalisées</span></div>
+      <div class="reveal" style="--d:.1s"><strong data-count="92" data-suffix="%">0</strong><span>des patients anxieux reviennent</span></div>
+      <div class="reveal" style="--d:.2s"><strong data-count="4.9" data-decimal="1" data-suffix="">0</strong><span>Note moyenne des patients</span></div>
+      <div class="reveal" style="--d:.3s"><strong data-count="11" data-suffix=" ans">0</strong><span>de soins centrés sur l'anxiété</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ TESTIMONIALS ══════════════ -->
+  <section class="section light" id="voices">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Mots doux</p>
+        <h2>Des voix venues de <em class="sage-text">l'autre côté de la peur</em></h2>
+        <div class="orn"><span></span><span class="petal">✿</span><span></span></div>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Je n'avais pas vu un dentiste depuis quatorze ans. Chez Still Point, mon premier rendez-vous a littéralement été une discussion dans le salon. Six mois plus tard, j'avais eu deux obturations — et je dormais très bien la veille de chacune. »</blockquote>
+          <figcaption><strong>Danielle M.</strong><span>Revenue après 14 ans</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Le casque plus le signe de la main ont tout changé. J'ai levé la main une fois, nous nous sommes arrêtés deux minutes entières, et personne n'a soupiré ni n'en a fait une histoire. J'ai terminé ce rendez-vous en larmes — et avec un bilan impeccable. »</blockquote>
+          <figcaption><strong>Sam K.</strong><span>Premier détartrage depuis une décennie</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« J'ai choisi la sédation orale et honnêtement je ne garde presque aucun souvenir de la visite — au meilleur sens du terme. On m'a appelée le soir même pour prendre de mes nouvelles, puis encore le lendemain matin. Qui fait ça ? »</blockquote>
+          <figcaption><strong>Renata P.</strong><span>Patient sous sédation</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section moss contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="overline reveal">Écrivez-nous</p>
+        <h2 class="reveal" style="--d:.08s">Commencez par <em class="sage-text">une conversation</em></h2>
+        <p class="reveal" style="--d:.14s">Écrivez-nous pour tout — une question, une inquiétude, un peut-être. Nous
+          répondons en douceur, sans pression, dans la journée ouvrée.</p>
+        <ul class="info-list">
+          <li class="reveal" style="--d:.2s"><span class="info-ic">✿</span><div><strong>Le cabinet</strong><span>4, cour des Saules, niveau jardin<br>Maplewood</span></div></li>
+          <li class="reveal" style="--d:.26s"><span class="info-ic">✿</span><div><strong>Ligne discrète</strong><span>+1 (555) 013-0440<br>Écrivez-nous si appeler semble trop</span></div></li>
+          <li class="reveal" style="--d:.32s"><span class="info-ic">✿</span><div><strong>Horaires</strong><span>Lun–Ven · 9h00 – 17h30<br>Créneaux tôt et tard pour les actifs</span></div></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <fieldset>
+          <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Votre prénom et nom</label></div>
+          <div class="field-row">
+            <div class="field"><input type="email" id="cf-email" required placeholder=" "><label for="cf-email">Adresse e-mail</label></div>
+            <div class="field"><input type="tel" id="cf-phone" placeholder=" "><label for="cf-phone">Téléphone ou SMS (facultatif)</label></div>
+          </div>
+          <div class="field select-field">
+            <select id="cf-subject" required>
+              <option value="" selected disabled></option>
+              <option>Je suis anxieux et je veux juste poser des questions</option>
+              <option>Réserver une première visite offerte</option>
+              <option>Question sur les options de sédation</option>
+              <option>Transfert depuis un autre cabinet</option>
+              <option>Autre chose</option>
+            </select>
+            <label for="cf-subject">De quoi avez-vous envie de parler ?</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required placeholder=" "></textarea><label for="cf-msg">Votre message</label></div>
+          <button type="submit" class="btn btn-sage btn-wide">Envoyer — sans pression</button>
+          <p class="form-note">Vos mots restent entre nous. Se désabonner prend un clic.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>Reçu — en douceur.</h3>
+          <p>Une vraie personne vous répondra dans la journée ouvrée. Prenez tout votre temps d'ici là.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════ BOOKING ══════════════ -->
+  <section class="section light booking" id="booking">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Rendez-vous</p>
+        <h2>Faire le <em class="sage-text">premier pas</em> — à votre rythme</h2>
+        <div class="orn"><span></span><span class="petal">✿</span><span></span></div>
+        <p class="sec-sub">Trois petites étapes. Vous pouvez tout modifier ou annuler avec un simple message, sans avoir à vous justifier.</p>
+      </div>
+
+      <div class="book-frame reveal" style="--d:.1s">
+        <div class="book-inner">
+          <ol class="wiz-steps" id="wizSteps">
+            <li class="is-current"><span>Soins</span></li>
+            <li><span>Moment</span></li>
+            <li><span>Vous</span></li>
+            <li><span>Conservé pour vous</span></li>
+          </ol>
+
+          <form id="bookForm" novalidate>
+            <!-- STEP 1 · SOINS -->
+            <fieldset class="pane is-active">
+              <legend>Qu'est-ce qui ressemblerait à un bon début ?</legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="svc" value="Détartrage & examen" required><span>Détartrage &amp; examen</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Blanchiment esthétique"><span>Blanchiment esthétique</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Facettes & smile design"><span>Facettes &amp; smile design</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Implants"><span>Implants</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Invisalign & orthodontie"><span>Invisalign &amp; orthodontie</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Urgence dentaire"><span>Urgence dentaire</span></label>
+              </div>
+              <p class="choice-error">Choisissez un point de départ — vous pourrez toujours le changer.</p>
+              <div class="wiz-nav"><span></span><button type="button" class="btn btn-sage js-next">Continuer, en douceur</button></div>
+            </fieldset>
+
+            <!-- STEP 2 · MOMENT -->
+            <fieldset class="pane">
+              <legend>Quand conviendrait-il à votre rythme ?</legend>
+              <div class="field date-field">
+                <input type="date" id="bk-date" required>
+                <label>Date du rendez-vous</label>
+              </div>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" class="chip" data-v="9:00">9h00</button>
+                <button type="button" class="chip" data-v="10:30">10h30</button>
+                <button type="button" class="chip" data-v="12:30">12h30</button>
+                <button type="button" class="chip" data-v="14:00">14h00</button>
+                <button type="button" class="chip" data-v="16:00">16h00</button>
+                <button type="button" class="chip" data-v="17:30">17h30</button>
+              </div>
+              <input type="hidden" id="bk-time">
+              <p class="choice-error">Choisissez un moment qui vous convient.</p>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Reculer d'un pas</button><button type="button" class="btn btn-sage js-next">Continuer, en douceur</button></div>
+            </fieldset>
+
+            <!-- STEP 3 · VOUS -->
+            <fieldset class="pane">
+              <legend>Et un peu sur vous.</legend>
+              <div class="field-row">
+                <div class="field"><input type="text" id="bk-name" required placeholder=" "><label>Votre prénom et nom</label></div>
+                <div class="field"><input type="tel" id="bk-phone" required placeholder=" "><label>Téléphone ou numéro SMS</label></div>
+              </div>
+              <div class="field select-field">
+                <select id="bk-status" required>
+                  <option value="" selected disabled></option>
+                  <option>Je me sens calme et prêt·e</option>
+                  <option>Je suis un peu anxieux</option>
+                  <option>Je suis très anxieux — un soin tout particulier, s'il vous plaît</option>
+                </select>
+                <label for="bk-status">Comment arrivez-vous aujourd'hui ?</label>
+              </div>
+              <div class="field"><textarea id="bk-notes" rows="3" placeholder=" "></textarea><label>Ce qui nous aiderait à bien vous entourer (facultatif)</label></div>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Reculer d'un pas</button><button type="submit" class="btn btn-sage">Garder ce moment</button></div>
+            </fieldset>
+
+            <!-- STEP 4 · CONSERVÉ -->
+            <fieldset class="pane pane-success">
+              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+              <h3>C'est conservé pour vous.</h3>
+              <p class="recap"><strong id="recap-name">—</strong>, votre visite <em id="recap-svc">—</em> est doucement réservée le<br><strong id="recap-when">—</strong>.</p>
+              <p class="recap-sub">Nous vous enverrons un seul message de confirmation discret. Changé d'avis ? Un mot suffit, sans aucune question.</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M12 4c2.5 0 3.2-1.2 5.2-1.2 2.8 0 4.3 2.6 4.3 5.6 0 2.8-1.3 4.6-2.1 6.8-.8 2.2-1 6-3 6-1.8 0-1.4-4.4-4.4-4.4s-2.6 4.4-4.4 4.4c-2 0-2.2-3.8-3-6C3.8 13 2.5 11.2 2.5 8.4c0-3 1.5-5.6 4.3-5.6C8.8 2.8 9.5 4 12 4Z"/></svg></span>
+          <span class="brand-text">Still Point<small>La dentisterie des anxieux</small></span>
+        </a>
+        <p>Une dentisterie qui commence par le calme — pensée pour celles et ceux qui repoussaient.</p>
+      </div>
+      <div><h4>Cabinet</h4><a href="#care">Nos soins</a><a href="#calm">Pourquoi nous existons</a><a href="#comfort">Carte du confort</a><a href="#voices">Paroles</a></div>
+      <div><h4>Soins</h4><a href="#booking">Premières visites</a><a href="#booking">Sédation</a><a href="#booking">Hygiène</a><a href="#booking">Alignement</a></div>
+      <div><h4>Écrivez-nous</h4><a href="tel:+15550130440">+1 (555) 013-0440</a><a href="#contact">hello@stillpointdental.care</a><span>4, cour des Saules, niveau jardin</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Still Point Dental. Tous droits réservés.</span><span>Cabinet agréé · Équipe certifiée anxiété-d'abord</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

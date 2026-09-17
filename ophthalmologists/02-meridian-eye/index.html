@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meridian Eye Institute — L'ophtalmologie mesurée au micron</title>
+  <meta name="description" content="Meridian Eye Institute : soins oculaires fondés sur la donnée, résultats audités. Bilans complets, LASIK et SMILE, chirurgie de la cataracte, glaucome et rétine dans des couloirs chirurgicaux calibrés.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2 12s4-6.5 10-6.5S22 12 22 12s-4 6.5-10 6.5S2 12 2 12Z' fill='none' stroke='%230B5FFF' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='3' fill='%230B5FFF'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-6.5 10-6.5S22 12 22 12s-4 6.5-10 6.5S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+        <span class="brand-text">MERIDIAN<em>Eye&nbsp;Institute</em></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#protocol">Protocole</a>
+        <a href="#outcomes">Résultats</a>
+        <a href="#contact">Contact</a>
+        <a href="#book" class="nav-cta">Réserver un examen</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="top">
+    <div class="hero-blueprint" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="tag reveal">[ FONDÉ EN 2005 · LICENCE #MEI-2041 · CHIRURGIENS FELLOWSHIP-TRAINED ]</p>
+        <h1 class="reveal" style="--d:.1s">La vue, mesurée.<br><span class="accent">Les décisions, guidées par la donnée.</span></h1>
+        <p class="hero-sub reveal" style="--d:.2s">Chaque examen au Meridian Eye Institute produit des chiffres que vous pouvez lire : OCT
+          en microns, réfractions au quart de dioptrie, données de résultats auditées chaque année. Nous expliquons
+          les constats, vous montrons les images, et ne recommandons jamais une chirurgie dont vous n'avez pas besoin.</p>
+        <ul class="spec-list reveal" style="--d:.3s">
+          <li>Imagerie et diagnostic le jour même</li>
+          <li>Données de résultats publiées chaque année</li>
+          <li>Couloirs chirurgicaux calibrés sur place</li>
+        </ul>
+        <div class="hero-cta reveal" style="--d:.4s">
+          <a href="#book" class="btn btn-solid">Réserver un examen complet</a>
+          <a href="tel:+15550702005" class="btn btn-line">Appeler le 555·070·2005</a>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal" style="--d:.25s">
+        <div class="panel-head"><span>FIG. 01 — ÉCHELLE D'ACUITÉ · COULOIR 03</span><span class="live-dot"></span></div>
+        <div class="snellen" aria-hidden="true">
+          <div class="sn-row" style="--s:64px"><b>E</b><i>20/200</i></div>
+          <div class="sn-row" style="--s:44px"><b>F P</b><i>20/100</i></div>
+          <div class="sn-row" style="--s:32px"><b>T O Z</b><i>20/70</i></div>
+          <div class="sn-row" style="--s:24px"><b>L P E D</b><i>20/40</i></div>
+          <div class="sn-row" style="--s:18px"><b>P E C F D</b><i>20/25</i></div>
+          <div class="sn-row" style="--s:13px"><b>E D F C Z P</b><i>20/16</i></div>
+        </div>
+        <div class="acuity-strip">
+          <span class="acuity-label">LECTURE EN DIRECT</span>
+          <span class="acuity-letter" id="acuityLetter">E</span>
+          <span class="acuity-note" id="acuityNote">calibrage…</span>
+        </div>
+        <div class="panel-stats">
+          <div><strong data-count="99.2" data-decimal="1" data-suffix="%">0</strong><span>données de résultats conservées</span></div>
+          <div><strong data-count="20" data-suffix=" min">0</strong><span>temps moyen en couloir</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-rule" aria-hidden="true"><span>DÉFILER POUR LES DONNÉES ↓</span></div>
+  </section>
+
+  <!-- ══════════ AFFILIATIONS ══════════ -->
+  <div class="affil">
+    <div class="container">
+      <p class="reveal">RECOMMANDÉ PAR LES MÉDECINS ORIENTEURS DE</p>
+      <div class="affil-row reveal" style="--d:.1s">
+        <span>NORTHGATE&nbsp;SURGICAL</span><span>LAKESIDE&nbsp;HOSPITAL</span><span>KEPLER&nbsp;OPTICS</span><span>ATLAS&nbsp;IMAGING</span><span>CIVICA&nbsp;HEALTH</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ SERVICES ══════════ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="sec-tag reveal"><i></i>01 / COMPÉTENCES</div>
+      <div class="sec-head">
+        <h2 class="reveal">Six services.<br>Une seule norme : <span class="accent">la preuve.</span></h2>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal" style="--d:.04s">
+          <div class="svc-top"><span class="idx">01</span><svg viewBox="0 0 24 24"><path d="M2 12s4-6.5 10-6.5S22 12 22 12s-4 6.5-10 6.5S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Examen de la vue complet</h3>
+          <p>Réfraction au quart de dioptrie, OCT du nerf et de la rétine, tension et champ visuel — une base complète en une visite de 45 minutes.</p>
+          <div class="svc-foot"><span>à partir de 195 €</span><a href="#book">Réserver →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.08s">
+          <div class="svc-top"><span class="idx">02</span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 1v4M12 19v4"/></svg></div>
+          <h3>Correction LASIK &amp; SMILE</h3>
+          <p>Une éligibilité décidée par l'épaisseur cornéenne mesurée, la topographie et les données pupillaires — pas par le marketing. SMILE sans capot disponible pour les yeux adaptés.</p>
+          <div class="svc-foot"><span>à partir de 2 450 € / œil</span><a href="#book">Réserver →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.12s">
+          <div class="svc-top"><span class="idx">03</span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></svg></div>
+          <h3>Chirurgie de la cataracte</h3>
+          <p>Phacoémulsification par une incision de 2,2 mm, avec implants monofocaux, toriques ou à ajustement de lumière adaptés à vos besoins de vie mesurés.</p>
+          <div class="svc-foot"><span>à partir de 3 600 € / œil</span><a href="#book">Réserver →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.16s">
+          <div class="svc-top"><span class="idx">04</span><svg viewBox="0 0 24 24"><path d="M3 12c3-6 15-6 18 0M3 12c3 6 15 6 18 0"/><circle cx="12" cy="12" r="2.4"/></svg></div>
+          <h3>Glaucome &amp; Rétine</h3>
+          <p>Champs visuels tous les six mois, analyse des fibres nerveuses suivie de visite en visite, et thérapie intravitréenne dans une salle d'injection dédiée.</p>
+          <div class="svc-foot"><span>à partir de 260 €</span><a href="#book">Réserver →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.2s">
+          <div class="svc-top"><span class="idx">05</span><svg viewBox="0 0 24 24"><path d="M4 15c2-4 5-6 8-6s6 2 8 6"/><path d="M6 9c1.5-3 4-5 6-5"/><rect x="4" y="15" width="16" height="5" rx="2"/></svg></div>
+          <h3>Thérapie Spa de l'Œil Sec</h3>
+          <p>Test d'osmolarité des larmes, imagerie des glandes de Meibomius, expression thermique et IPL — un protocole mesuré, répété jusqu'à ce que les chiffres se stabilisent.</p>
+          <div class="svc-foot"><span>à partir de 145 €</span><a href="#book">Réserver →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.24s">
+          <div class="svc-top"><span class="idx">06</span><svg viewBox="0 0 24 24"><circle cx="9" cy="10" r="5"/><path d="M14 14l7 7"/><path d="M4 20c1.5-2 3.5-3 5-3"/></svg></div>
+          <h3>Pédiatrie &amp; Gestion de la myopie</h3>
+          <p>Examens cycloplégiques pour enfants, suivi de la longueur axiale, et programmes d'atropine faible dose ou d'ortho-k dont l'efficacité contre la progression de la myopie est démontrée.</p>
+          <div class="svc-foot"><span>à partir de 390 €</span><a href="#book">Réserver →</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROTOCOL ══════════ -->
+  <section class="section protocol" id="protocol">
+    <div class="container">
+      <div class="sec-tag light reveal"><i></i>02 / PROTOCOLE</div>
+      <div class="sec-head"><h2 class="reveal">Le protocole Meridian<span class="accent">.</span></h2></div>
+      <ol class="loop">
+        <li class="reveal" style="--d:.05s"><span class="chip">OCT · 3 µm</span><h3>Mesurer</h3><p>Chaque visite commence par une mesure instrumentale — imagerie, réfraction, tension et champs. Aucun dossier n'est rédigé de mémoire.</p></li>
+        <li class="reveal" style="--d:.15s"><span class="chip">±0.25 D</span><h3>Expliquer</h3><p>Vos images s'affichent à l'écran avec vous. Constats, options et probabilités sont énoncés en chiffres clairs avant toute prise de rendez-vous.</p></li>
+        <li class="reveal" style="--d:.25s"><span class="chip">COULOIR 03</span><h3>Traiter</h3><p>Les interventions ont lieu dans nos couloirs calibrés, avec le chirurgien qui vous a examiné. Les journaux des équipements sont vérifiés avec votre dossier.</p></li>
+        <li class="reveal" style="--d:.35s"><span class="chip">12 MOIS</span><h3>Vérifier</h3><p>Les résultats sont re-mesurés à une semaine, un mois et un an, puis audités — et l'audit est publié sur ce site.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════ OUTCOMES / STATS ══════════ -->
+  <section class="outcomes" id="outcomes">
+    <div class="container">
+      <div class="sec-tag light reveal"><i></i>03 / RÉSULTATS</div>
+      <div class="out-stats">
+        <div class="reveal"><strong data-count="31500" data-suffix="+">0</strong><span>interventions et examens consignés</span></div>
+        <div class="reveal" style="--d:.08s"><strong data-count="97.4" data-decimal="1" data-suffix="%">0</strong><span>20/20 ou mieux après correction</span></div>
+        <div class="reveal" style="--d:.16s"><strong data-count="21" data-suffix="">0</strong><span>années de soins continus</span></div>
+        <div class="reveal" style="--d:.24s"><strong data-count="4.8" data-decimal="1" data-suffix="/5">0</strong><span>note patients vérifiée</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ TESTIMONIALS ══════════ -->
+  <section class="section" id="voices">
+    <div class="container">
+      <div class="sec-tag reveal"><i></i>04 / VOIX DES PATIENTS</div>
+      <div class="sec-head"><h2 class="reveal">Relevés depuis <span class="accent">le fauteuil.</span></h2></div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Ils ont affiché mon OCT sur un écran de 40 pouces et m'ont expliqué la zone amincie de mon nerf en cinq minutes. Trois ans de tests de champ depuis — et la courbe de tendance montre qu'ils l'ont détecté tôt. »</blockquote>
+          <figcaption><strong>Gerald W.</strong><span>Surveillance du glaucome</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Une autre clinique m'avait dit que j'étais « un candidat parfait au LASIK ». Meridian m'a mesuré, a constaté des cornées trop fines, et m'a orienté vers l'ICL. Cette honnêteté explique pourquoi toute ma famille vient ici. »</blockquote>
+          <figcaption><strong>Priya S.</strong><span>Consultation correction de la vision</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Chirurgie de la cataracte à 7h40, pansement retiré le lendemain matin, permis de conduire renouvelé à 20/20 dès le vendredi. Chaque étape a été planifiée à la minute et facturée exactement au devis. »</blockquote>
+          <figcaption><strong>Eleanor &amp; Tom H.</strong><span>Patients implants premium</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-side">
+        <div class="sec-tag reveal"><i></i>05 / CONTACT</div>
+        <h2 class="reveal" style="--d:.08s">Demander une<br>revue de dossier<span class="accent">.</span></h2>
+        <p class="reveal" style="--d:.14s">Envoyez votre question ou votre dernière ordonnance — un clinicien répond avec un plan diagnostique et une fourchette d'honoraires exacte sous une heure ouvrée.</p>
+        <dl class="meta reveal" style="--d:.2s">
+          <div><dt>CAMPUS</dt><dd>200 Meridian Parkway, Suite 210</dd></div>
+          <div><dt>TÉLÉPHONE</dt><dd><a href="tel:+15550702005">+1 (555) 070-2005</a></dd></div>
+          <div><dt>E-MAIL</dt><dd><a href="mailto:clinic@meridianeye.institute">clinic@meridianeye.institute</a></dd></div>
+          <div><dt>HORAIRES</dt><dd>Lun.–Ven. 7h30–18h00 · Samedi matin</dd></div>
+        </dl>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-head">FORMULAIRE 05-A — DEMANDE CLINIQUE</div>
+        <fieldset>
+          <div class="field-row">
+            <div class="field"><input type="text" id="cf-name" required><label for="cf-name">Nom *</label></div>
+            <div class="field"><input type="tel" id="cf-phone" required><label for="cf-phone">Téléphone *</label></div>
+          </div>
+          <div class="field"><input type="email" id="cf-email" required><label for="cf-email">E-mail *</label></div>
+          <div class="field">
+            <select id="cf-topic" required>
+              <option value="" selected disabled hidden></option>
+              <option>Examen de la vue complet</option>
+              <option>Consultation LASIK / SMILE</option>
+              <option>Bilan de la cataracte</option>
+              <option>Orientation glaucome ou rétine</option>
+              <option>Demande de dossier</option>
+              <option>Autre</option>
+            </select>
+            <label for="cf-topic">Objet *</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required></textarea><label for="cf-msg">Décrivez votre besoin *</label></div>
+          <button type="submit" class="btn btn-solid">Transmettre la demande</button>
+          <p class="form-note">Chiffré au repos. Lu par un clinicien, jamais par un centre d'appels.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>Demande reçue.</h3>
+          <p>Référence <code>MEI-8841</code>. Un clinicien répond sous une heure ouvrée.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════ BOOKING ══════════ -->
+  <section class="section book" id="book">
+    <div class="container">
+      <div class="sec-tag reveal"><i></i>06 / PLANIFICATION</div>
+      <div class="sec-head"><h2 class="reveal">Réservez votre examen<span class="accent">.</span></h2></div>
+
+      <div class="book-wrap reveal" style="--d:.1s">
+        <ol class="wiz-steps" id="wizSteps">
+          <li class="is-current"><span>Examen</span></li>
+          <li><span>Date</span></li>
+          <li><span>Patient</span></li>
+          <li><span>Confirmé</span></li>
+        </ol>
+
+        <form id="bookForm" novalidate>
+          <!-- STEP 1 -->
+          <fieldset class="pane is-active">
+            <legend><span>01</span> Choisissez votre visite</legend>
+            <div class="opt-grid">
+              <label class="opt"><input type="radio" name="svc" value="Examen de la vue complet" required><span><b>Examen de la vue complet</b><i>à partir de 195 €</i></span></label>
+              <label class="opt"><input type="radio" name="svc" value="Consultation LASIK / SMILE" required><span><b>Consultation LASIK / SMILE</b><i>à partir de 2 450 € / œil</i></span></label>
+              <label class="opt"><input type="radio" name="svc" value="Bilan de la cataracte" required><span><b>Bilan de la cataracte</b><i>à partir de 3 600 € / œil</i></span></label>
+              <label class="opt"><input type="radio" name="svc" value="Glaucome &amp; Rétine" required><span><b>Glaucome &amp; Rétine</b><i>à partir de 260 €</i></span></label>
+              <label class="opt"><input type="radio" name="svc" value="Thérapie Spa de l'Œil Sec" required><span><b>Thérapie Spa de l'Œil Sec</b><i>à partir de 145 €</i></span></label>
+              <label class="opt"><input type="radio" name="svc" value="Pédiatrie &amp; Myopie" required><span><b>Pédiatrie &amp; gestion de la myopie</b><i>à partir de 390 €</i></span></label>
+            </div>
+            <p class="opt-error">Choisissez un type de visite pour continuer.</p>
+            <div class="wiz-nav"><span></span><button type="button" class="btn btn-solid js-next">Continuer →</button></div>
+          </fieldset>
+
+          <!-- STEP 2 -->
+          <fieldset class="pane">
+            <legend><span>02</span> Date &amp; heure de rendez-vous</legend>
+            <div class="field date-field"><input type="date" id="bk-date" required><label>Date du rendez-vous</label></div>
+            <div class="time-grid" id="timeGrid">
+              <button type="button" class="chip" data-v="7:30">7h30</button>
+              <button type="button" class="chip" data-v="9:00">9h00</button>
+              <button type="button" class="chip" data-v="10:30">10h30</button>
+              <button type="button" class="chip" data-v="13:00">13h00</button>
+              <button type="button" class="chip" data-v="14:45">14h45</button>
+              <button type="button" class="chip" data-v="16:15">16h15</button>
+            </div>
+            <input type="hidden" id="bk-time">
+            <p class="opt-error">Choisissez un horaire de rendez-vous.</p>
+            <div class="wiz-nav"><button type="button" class="btn btn-line js-prev">← Retour</button><button type="button" class="btn btn-solid js-next">Continuer →</button></div>
+          </fieldset>
+
+          <!-- STEP 3 -->
+          <fieldset class="pane">
+            <legend><span>03</span> Coordonnées du patient</legend>
+            <div class="field-row">
+              <div class="field"><input type="text" id="bk-name" required><label>Nom complet</label></div>
+              <div class="field"><input type="tel" id="bk-phone" required><label>Téléphone</label></div>
+            </div>
+            <div class="field"><input type="text" id="bk-extra" required><label>Assurance / mutuelle ou lieu préféré</label></div>
+            <div class="field"><textarea id="bk-notes" rows="3"></textarea><label>Symptômes, médicaments, accès (facultatif)</label></div>
+            <div class="wiz-nav"><button type="button" class="btn btn-line js-prev">← Retour</button><button type="submit" class="btn btn-solid">Confirmer la réservation</button></div>
+          </fieldset>
+
+          <!-- STEP 4 -->
+          <fieldset class="pane pane-success">
+            <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+            <h3>Visite planifiée.</h3>
+            <p class="recap"><strong id="recap-name">—</strong> · <span id="recap-svc">—</span><br><span id="recap-when">—</span></p>
+            <p class="recap-sub">Vos formulaires d'admission et instructions pré-visite sont en route. Référence <code>MEI-2417</code>.</p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <svg class="brand-mark" viewBox="0 0 24 24"><path d="M2 12s4-6.5 10-6.5S22 12 22 12s-4 6.5-10 6.5S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span class="brand-text">MERIDIAN<em>Eye&nbsp;Institute</em></span>
+        </a>
+        <p>L'ophtalmologie pour les patients qui lisent les données — et la facture.</p>
+      </div>
+      <div><h4>INDEX</h4><a href="#services">Compétences</a><a href="#protocol">Protocole</a><a href="#outcomes">Résultats</a><a href="#voices">Voix des patients</a></div>
+      <div><h4>SERVICES</h4><a href="#book">Examens de la vue</a><a href="#book">LASIK / SMILE</a><a href="#book">Cataracte</a><a href="#book">Rétine</a></div>
+      <div><h4>CLINIQUE</h4><a href="tel:+15550702005">+1 (555) 070-2005</a><a href="#contact">clinic@meridianeye.institute</a><span>200 Meridian Parkway, Suite 210</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Meridian Eye Institute.</span><span>LIC. MÉD. #MEI-2041 · RÉSULTATS AUDITÉS CHAQUE ANNÉE</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

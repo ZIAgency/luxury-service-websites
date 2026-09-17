@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iris Privé — L'Atelier de Vision | Soins oculaires sur mesure, sur rendez-vous</title>
+  <meta name="description" content="Iris Privé est un atelier de vision privé : bilans oculaires sur mesure, conception laser de la vision et soins de la cataracte menés comme des essayages couture. Sur rendez-vous uniquement.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='%23C9CCD6' stroke-width='1.5'/%3E%3Ccircle cx='12' cy='12' r='6' fill='%2323205A'/%3E%3Ccircle cx='12' cy='12' r='2.4' fill='%23F7F5EF'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════════ NAVIGATION ══════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2.2"/></svg>
+        </span>
+        <span class="brand-text">Iris&nbsp;Privé<small>L'Atelier de Vision · Fondé en 1999</small></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#atelier">L'Atelier</a>
+        <a href="#fitting">L'Essayage</a>
+        <a href="#testimonials">Patients</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-cta">Réserver un essayage</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="top">
+    <div class="hero-rays" aria-hidden="true"></div>
+    <div class="iris-stage" aria-hidden="true">
+      <svg class="iris-rotor" viewBox="0 0 600 600">
+        <g fill="none">
+          <circle cx="300" cy="300" r="292" stroke="rgba(201,204,214,.14)"/>
+          <circle class="dash-a" cx="300" cy="300" r="244" stroke="rgba(154,164,232,.32)" stroke-dasharray="2 11"/>
+          <circle cx="300" cy="300" r="196" stroke="rgba(201,204,214,.26)"/>
+          <circle class="dash-b" cx="300" cy="300" r="148" stroke="rgba(154,164,232,.4)" stroke-dasharray="1 8"/>
+          <circle cx="300" cy="300" r="104" stroke="rgba(201,204,214,.38)" stroke-dasharray="3 40"/>
+          <circle cx="300" cy="300" r="62" stroke="rgba(247,245,239,.5)"/>
+          <circle cx="300" cy="300" r="22" fill="rgba(154,164,232,.25)"/>
+        </g>
+      </svg>
+    </div>
+    <div class="hero-pearls" aria-hidden="true">
+      <span style="--x:14%;--y:26%;--d:12s"></span>
+      <span style="--x:82%;--y:20%;--d:15s"></span>
+      <span style="--x:66%;--y:64%;--d:10s"></span>
+      <span style="--x:24%;--y:70%;--d:14s"></span>
+      <span style="--x:90%;--y:52%;--d:11s"></span>
+    </div>
+
+    <div class="container hero-content">
+      <p class="overline reveal">Atelier de Vision Privé — Sur Rendez-vous</p>
+      <h1 class="reveal" style="--d:.12s">L'art de voir,<br><em class="plat-text">sur mesure.</em></h1>
+      <div class="orn reveal" style="--d:.2s"><span></span><span class="mark"></span><span></span></div>
+      <p class="hero-sub reveal" style="--d:.28s">
+        Depuis 1999, Iris Privé fait essayer au monde les yeux les plus exigeants. Des diagnostics mesurés
+        comme une toile, des corrections coupées comme une haute couture — chaque bilan sans hâte, chaque
+        résultat documenté.
+      </p>
+      <div class="hero-cta reveal" style="--d:.38s">
+        <a href="#booking" class="btn btn-plat">Réserver votre essayage</a>
+        <a href="#services" class="btn btn-ghost">Découvrir les services</a>
+      </div>
+      <div class="hero-stats reveal" style="--d:.48s">
+        <div><strong data-count="26" data-suffix="">0</strong><span>Années de pratique</span></div>
+        <i></i>
+        <div><strong data-count="4.9" data-decimal="1" data-suffix="">0</strong><span>Note des patients</span></div>
+        <i></i>
+        <div><strong>1:1</strong><span>Un consultant par visite</span></div>
+      </div>
+    </div>
+
+    <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,52 C260,4 520,78 760,40 C1000,8 1220,66 1440,34 L1440,90 L0,90 Z" fill="#F7F5EF"/>
+    </svg>
+  </section>
+
+  <!-- ══════════════ MARQUEE ══════════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Bilans sur mesure ❖ Conception laser de la vision ❖ Cataracte Couture ❖ Atelier Glaucome &amp; Rétine ❖ Le Spa de l'Œil Sec ❖ Petite Iris Pédiatrie ❖&nbsp;</span>
+      <span>Bilans sur mesure ❖ Conception laser de la vision ❖ Cataracte Couture ❖ Atelier Glaucome &amp; Rétine ❖ Le Spa de l'Œil Sec ❖ Petite Iris Pédiatrie ❖&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ══════════════ SERVICES ══════════════ -->
+  <section class="section light" id="services">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Notre savoir-faire</p>
+        <h2>Services <em>signature</em></h2>
+        <div class="orn"><span></span><span class="mark"></span><span></span></div>
+        <p class="sec-sub">Six disciplines, une seule exigence de maison : mesurer deux fois, corriger une fois, et tout
+          consigner dans votre dossier de vision privé.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service reveal" style="--d:.05s">
+          <span class="num">№01</span>
+          <h3>Le Bilan Signature</h3>
+          <p>Un examen de quatre-vingt-dix minutes de tout le système visuel — wavefront, OCT et topographie — conclu par une conversation sans hâte autour d'un thé.</p>
+          <a href="#booking" class="service-link">à partir de 350 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.1s">
+          <span class="num">№02</span>
+          <h3>Conception Laser de la Vision</h3>
+          <p>LASIK et SMILE planifiés comme un vêtement sur mesure : vos cartes cornéennes guident chaque passage du laser, et l'éligibilité est évaluée avec franchise.</p>
+          <a href="#booking" class="service-link">à partir de 2 600 € / œil <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.15s">
+          <span class="num">№03</span>
+          <h3>Cataracte Couture</h3>
+          <p>Les cristallins opacifiés remplacés par des implants intraoculaires premium, accordés à la vie que vous menez vraiment — lire, conduire au crépuscule, l'opéra.</p>
+          <a href="#booking" class="service-link">à partir de 3 900 € / œil <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.2s">
+          <span class="num">№04</span>
+          <h3>Atelier Glaucome &amp; Rétine</h3>
+          <p>Pression, champ et santé rétinienne surveillés avec une vigilance discrète — imagerie archivée pour des décennies, pour que le moindre changement ne passe jamais inaperçu.</p>
+          <a href="#booking" class="service-link">à partir de 320 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.25s">
+          <span class="num">№05</span>
+          <h3>Le Spa de l'Œil Sec</h3>
+          <p>Compresses chaudes, soins palpébraux et glandes de Meibomius dans une suite tamisée et parfumée — un soulagement composé comme un rituel réparateur.</p>
+          <a href="#booking" class="service-link">à partir de 180 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.3s">
+          <span class="num">№06</span>
+          <h3>Petite Iris — Pédiatrie</h3>
+          <p>La vision des enfants et la prise en charge de la myopie, au rythme de la patience d'un enfant, avec des traitements qui freinent la myopie pendant la croissance.</p>
+          <a href="#booking" class="service-link">à partir de 440 € <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ ATELIER / ABOUT ══════════════ -->
+  <section class="section dark atelier" id="atelier">
+    <div class="container atelier-grid">
+      <div class="atelier-visual reveal">
+        <div class="atelier-frame">
+          <div class="atelier-panel">
+            <svg viewBox="0 0 24 24" class="atelier-iris" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2.2"/></svg>
+            <p class="atelier-year">1999</p>
+            <p class="atelier-motto">« La vision, sur mesure. »</p>
+          </div>
+          <div class="atelier-badge">
+            <strong>26</strong>
+            <span>années de<br>savoir-faire discret</span>
+          </div>
+        </div>
+      </div>
+      <div class="atelier-copy">
+        <p class="overline reveal">L'Atelier</p>
+        <h2 class="reveal" style="--d:.08s">Une maison privée<br><em class="plat-text">d'ophtalmologie.</em></h2>
+        <p class="reveal" style="--d:.16s">Iris Privé a été fondé par le Dr Elise Marchand sur une conviction unique : un œil
+          mérite la même patience qu'un tailleur accorde à une première essayage. Aujourd'hui, huit ophtalmologistes
+          formés en fellowship reçoivent un patient à la fois — jamais un couloir de salles d'attente, jamais un dossier expédié.</p>
+        <ul class="atelier-list">
+          <li class="reveal" style="--d:.22s"><span class="mark"></span> Un patient par heure, toujours</li>
+          <li class="reveal" style="--d:.28s"><span class="mark"></span> Chirurgiens formés en fellowship — cornée, rétine &amp; glaucome</li>
+          <li class="reveal" style="--d:.34s"><span class="mark"></span> Un dossier de vision à vie, imagé et archivé</li>
+          <li class="reveal" style="--d:.4s"><span class="mark"></span> Un avis le jour même — jamais un script de vente</li>
+        </ul>
+        <a href="#contact" class="btn btn-plat reveal" style="--d:.46s">Écrire à l'Atelier</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ THE FITTING / PROCESS ══════════════ -->
+  <section class="section light" id="fitting">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">La Méthode</p>
+        <h2>Quatre essayages vers <em>la clarté</em></h2>
+        <div class="orn"><span></span><span class="mark"></span><span></span></div>
+      </div>
+      <ol class="steps-row">
+        <li class="reveal" style="--d:.05s"><span class="step-k">01</span><h3>La Mesure</h3><p>Scanner wavefront, imagerie OCT et topographie cornéenne — des centaines de mesures, prises en douceur, avant toute proposition.</p></li>
+        <li class="reveal" style="--d:.15s"><span class="step-k">02</span><h3>Le Patron</h3><p>Vos résultats deviennent un plan de vision écrit, avec des options dites franchement, une éligibilité honnête et un chiffre qui ne bougera plus ensuite.</p></li>
+        <li class="reveal" style="--d:.25s"><span class="step-k">03</span><h3>La Séance d'Atelier</h3><p>Toute intervention a lieu dans nos propres blocs opératoires, réalisée par le médecin qui vous a mesuré — jamais déléguée.</p></li>
+        <li class="reveal" style="--d:.35s"><span class="step-k">04</span><h3>Le Suivi</h3><p>Contrôles au lendemain, à un mois et chaque année, votre dossier actualisé à chaque visite. Les ajustements font partie de l'essayage.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════════ STATS ══════════════ -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="reveal"><strong data-count="12400" data-suffix="+">0</strong><span>Bilans sur mesure</span></div>
+      <div class="reveal" style="--d:.1s"><strong data-count="96" data-suffix="%">0</strong><span>20/20 ou mieux après correction</span></div>
+      <div class="reveal" style="--d:.2s"><strong data-count="31" data-suffix="">0</strong><span>Prix et conférences chirurgicales</span></div>
+      <div class="reveal" style="--d:.3s"><strong data-count="8" data-suffix="">0</strong><span>Ophtalmologistes consultants</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ TESTIMONIALS ══════════════ -->
+  <section class="section light" id="testimonials">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Mots délicats</p>
+        <h2>Chuchotés par <em>nos patients</em></h2>
+        <div class="orn"><span></span><span class="mark"></span><span></span></div>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Mon bilan a duré plus longtemps que mes trois derniers examens de la vue réunis. Le Dr Marchand m'a expliqué mes cartes cornéennes ligne par ligne, puis m'a dit honnêtement que le SMILE me convenait — et que le discours d'une clinique concurrente, non. »</blockquote>
+          <figcaption><strong>Céleste V.</strong><span>Patient depuis 2016</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Opération de la cataracte le matin, thé dans le jardin à midi, et dès le soir je lisais la carte sans chercher mes lunettes. La dignité de tout le dispositif était remarquable. »</blockquote>
+          <figcaption><strong>Alasdair &amp; Ruth M.</strong><span>Implants premium</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« La myopie de ma fille a bougé à peine en trois ans sous leur suivi. La salle pédiatrique a des jouets, une lumière tamisée et une patience infinie — elle me demande quand elle pourra y retourner. »</blockquote>
+          <figcaption><strong>Dr Imogen K.</strong><span>Programme Petite Iris</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section dark contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="overline reveal">Correspondance</p>
+        <h2 class="reveal" style="--d:.08s">Écrire à <em class="plat-text">l'Atelier</em></h2>
+        <p class="reveal" style="--d:.14s">Deuxièmes avis, questions discrètes ou premier rendez-vous — un membre de la maison répond en un jour ouvré.</p>
+        <ul class="info-list">
+          <li class="reveal" style="--d:.2s"><span class="info-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2.2"/></svg></span><div><strong>L'Atelier</strong><span>22 rue de l'Iris, deuxième étage<br>Quartier des Lumières</span></div></li>
+          <li class="reveal" style="--d:.26s"><span class="info-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2.2"/></svg></span><div><strong>Standard</strong><span>+1 (555) 090-1999</span></div></li>
+          <li class="reveal" style="--d:.32s"><span class="info-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2.2"/></svg></span><div><strong>Horaires</strong><span>Mar.–Sam. · 9h00 – 18h00<br>Urgences oculaires : le jour même</span></div></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <fieldset>
+          <div class="field"><input type="text" id="cf-name" required><label for="cf-name">Nom complet</label></div>
+          <div class="field-row">
+            <div class="field"><input type="email" id="cf-email" required><label for="cf-email">Adresse e-mail</label></div>
+            <div class="field"><input type="tel" id="cf-phone"><label for="cf-phone">Téléphone (facultatif)</label></div>
+          </div>
+          <div class="field select-field">
+            <select id="cf-subject" required>
+              <option value="" selected disabled></option>
+              <option>Demander un bilan</option>
+              <option>Deuxième avis</option>
+              <option>Éligibilité laser de la vision</option>
+              <option>Le Spa de l'Œil Sec</option>
+              <option>Autre correspondance</option>
+            </select>
+            <label for="cf-subject">Objet de votre lettre</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required></textarea><label for="cf-msg">Votre message</label></div>
+          <button type="submit" class="btn btn-plat btn-wide">Envoyer avec discrétion</button>
+          <p class="form-note">Vos coordonnées restent strictement au sein de la maison.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>Reçue, avec nos remerciements.</h3>
+          <p>Votre lettre repose sur le bureau du concierge. Attendez-vous à une réponse personnelle sous un jour ouvré.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════ BOOKING ══════════════ -->
+  <section class="section light booking" id="booking">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Réservations</p>
+        <h2>Réserver un <em>essayage privé</em></h2>
+        <div class="orn"><span></span><span class="mark"></span><span></span></div>
+        <p class="sec-sub">Quatre étapes discrètes. Quatre-vingt-dix secondes. Une heure réservée pour vous seul, à l'heure de votre choix.</p>
+      </div>
+
+      <div class="book-frame reveal" style="--d:.1s">
+        <div class="book-inner">
+          <ol class="wiz-steps" id="wizSteps">
+            <li class="is-current"><span>Bilan</span></li>
+            <li><span>Moment</span></li>
+            <li><span>Détails</span></li>
+            <li><span>Confirmé</span></li>
+          </ol>
+
+          <form id="bookForm" novalidate>
+            <!-- STEP 1 · SERVICE -->
+            <fieldset class="pane is-active">
+              <legend>Quel essayage puis-nous préparer ?</legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="svc" value="Bilan Signature" required><span>Bilan Signature</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Conception Laser de la Vision"><span>Conception Laser de la Vision</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Cataracte Couture"><span>Cataracte Couture</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Glaucome &amp; Rétine"><span>Glaucome &amp; Rétine</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Spa de l'Œil Sec"><span>Spa de l'Œil Sec</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Petite Iris Pédiatrie"><span>Petite Iris Pédiatrie</span></label>
+              </div>
+              <p class="choice-error">Veuillez choisir un essayage pour continuer.</p>
+              <div class="wiz-nav"><span></span><button type="button" class="btn btn-plat js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 2 · DATE & TIME -->
+            <fieldset class="pane">
+              <legend>Quand pourrons-nous vous recevoir ?</legend>
+              <div class="field date-field">
+                <input type="date" id="bk-date" required>
+                <label>Date du rendez-vous</label>
+              </div>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" class="chip" data-v="9:00">9h00</button>
+                <button type="button" class="chip" data-v="10:30">10h30</button>
+                <button type="button" class="chip" data-v="12:00">12h00</button>
+                <button type="button" class="chip" data-v="14:00">14h00</button>
+                <button type="button" class="chip" data-v="15:30">15h30</button>
+                <button type="button" class="chip" data-v="17:00">17h00</button>
+              </div>
+              <input type="hidden" id="bk-time">
+              <p class="choice-error">Merci de choisir une heure d'arrivée.</p>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="button" class="btn btn-plat js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 3 · DETAILS -->
+            <fieldset class="pane">
+              <legend>Vos coordonnées, s'il vous plaît.</legend>
+              <div class="field-row">
+                <div class="field"><input type="text" id="bk-name" required><label>Nom complet</label></div>
+                <div class="field"><input type="tel" id="bk-phone" required><label>Téléphone</label></div>
+              </div>
+              <div class="field"><input type="text" id="bk-extra" required><label>Assurance / mutuelle ou lieu préféré</label></div>
+              <div class="field"><textarea id="bk-notes" rows="3"></textarea><label>Remarques pour votre consultant (facultatif)</label></div>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="submit" class="btn btn-plat">Confirmer la réservation</button></div>
+            </fieldset>
+
+            <!-- STEP 4 · SUCCESS -->
+            <fieldset class="pane pane-success">
+              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+              <h3>Réservé.</h3>
+              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est réservé pour<br><strong id="recap-when">—</strong>.</p>
+              <p class="recap-sub">Une lettre de confirmation est en route. Votre consultant vous téléphonera le matin de votre essayage.</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2.2"/></svg></span>
+          <span class="brand-text">Iris&nbsp;Privé<small>L'Atelier de Vision · Fondé en 1999</small></span>
+        </a>
+        <p>L'atelier de vision privé de ceux qui remarquent tout.</p>
+      </div>
+      <div><h4>La Maison</h4><a href="#services">Services</a><a href="#atelier">Notre histoire</a><a href="#fitting">L'Essayage</a><a href="#testimonials">Patients</a></div>
+      <div><h4>Services</h4><a href="#booking">Bilans</a><a href="#booking">Conception Laser de la Vision</a><a href="#booking">Cataracte Couture</a><a href="#booking">Le Spa de l'Œil Sec</a></div>
+      <div><h4>Correspondance</h4><a href="tel:+15550901999">+1 (555) 090-1999</a><a href="#contact">reception@irisprive.clinic</a><span>22 rue de l'Iris, deuxième étage</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Iris Privé. Tous droits réservés.</span><span>Cabinet d'ophtalmologie agréé · Fondé en 1999</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

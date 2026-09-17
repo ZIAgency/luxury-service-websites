@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIZN Lab — Imagerie rétinienne assistée par IA &amp; soins oculaires</title>
+  <meta name="description" content="VIZN Lab associe des ophtalmologistes à une analyse d'OCT assistée par IA : scans rétiniens gradés en minutes, changements suivis couche par couche, et signes précoces orientés vers des spécialistes humains.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='3' width='18' height='18' fill='%2305070A'/%3E%3Ccircle cx='12' cy='12' r='5' fill='none' stroke='%2300E5FF' stroke-width='2'/%3E%3Cpath d='M3 12h18' stroke='%2300E5FF' stroke-width='1'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><circle cx="12" cy="12" r="5"/><path d="M3 12h18"/></svg></span>
+        <span class="brand-text">VIZN<small>LABORATOIRE&nbsp;RÉTINIEN</small></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#systems">Systèmes</a>
+        <a href="#pipeline">Chaîne d'analyse</a>
+        <a href="#evidence">Preuves</a>
+        <a href="#contact">Contact</a>
+        <a href="#book" class="nav-cta">Réserver un scan<span class="cta-dot"></span></a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="top">
+    <div class="hero-aurora" aria-hidden="true"></div>
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="hero-chip reveal"><span class="pulse-dot"></span> v3.1 · Moteur rétinien en ligne</p>
+        <h1 class="reveal" style="--d:.1s">Votre rétine,<br><span class="grad-text">rendue couche par couche.</span></h1>
+        <p class="hero-sub reveal" style="--d:.2s">VIZN Lab associe des ophtalmologistes à un moteur d'IA qui lit les scans OCT
+          en minutes. Les changements subtils — ceux que l'œil et la fatigue manquent — sont signalés à un spécialiste
+          humain bien avant de devenir des symptômes. Le précoce est tout ; nous avons construit ce laboratoire pour
+          rendre le précoce banal.</p>
+        <div class="hero-cta reveal" style="--d:.3s">
+          <a href="#book" class="btn btn-neo">Réserver un scan rétinien</a>
+          <a href="#pipeline" class="btn btn-glass">Voir la chaîne d'analyse</a>
+        </div>
+        <div class="hero-logos reveal" style="--d:.4s">
+          <span>INTÉGRÉ AVEC</span>
+          <b>CLEARPOINT</b><b>ORBIT&nbsp;EYE</b><b>NORTHRIDGE</b><b>HALO&nbsp;OPTICS</b>
+        </div>
+      </div>
+
+      <!-- OCT dashboard mock -->
+      <div class="dash reveal" style="--d:.28s">
+        <div class="dash-top">
+          <span class="dash-title"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18"/><circle cx="12" cy="12" r="5"/><path d="M3 12h18"/></svg> VIZN OCT — SCAN 4821</span>
+          <span class="dash-status"><span class="pulse-dot"></span> MODÈLE ACTIF</span>
+        </div>
+        <div class="dash-body">
+          <div class="retina-view" aria-hidden="true">
+            <span class="scanline"></span>
+            <span class="ret-ring rr1"></span>
+            <span class="ret-ring rr2"></span>
+            <span class="ret-ring rr3"></span>
+            <span class="ret-core"></span>
+            <span class="ret-cross h"></span>
+            <span class="ret-cross v"></span>
+          </div>
+          <dl class="layer-table">
+            <div><dt>ILM</dt><dd id="lyr-0">272 µm</dd></div>
+            <div><dt>RNFL</dt><dd id="lyr-1">92 µm</dd></div>
+            <div><dt>GCL</dt><dd id="lyr-2">41 µm</dd></div>
+            <div><dt>RPE</dt><dd id="lyr-3">74 µm</dd></div>
+          </dl>
+        </div>
+        <div class="dash-metrics">
+          <div class="metric">
+            <span class="m-label">QUALITÉ DU SCAN</span>
+            <span class="m-value">98.4 <i>%</i></span>
+            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,18 12,14 24,16 36,10 48,13 60,8 72,11 84,6 100,9"/></svg>
+          </div>
+          <div class="metric">
+            <span class="m-label">EXCAVATION / PAPILLE</span>
+            <span class="m-value">0.31</span>
+            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,14 12,15 24,11 36,13 48,9 60,12 72,10 84,13 100,11"/></svg>
+          </div>
+          <div class="metric">
+            <span class="m-label">Δ DEPUIS LE DERNIER</span>
+            <span class="m-value ok">−2 <i>µm</i></span>
+            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,20 12,17 24,18 36,13 48,15 60,11 72,12 84,8 100,10"/></svg>
+          </div>
+        </div>
+        <div class="dash-alert">
+          <span class="alert-ic">✓</span>
+          <div><b>Aucun signe à signaler — gradé NORMAL</b><span id="scanStatus">pré-grade IA · en attente de contresignature clinicien · 14:02:31</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+  </section>
+
+  <!-- ══════════ STATS ══════════ -->
+  <section class="stats" id="evidence">
+    <div class="container stats-row">
+      <div class="stat reveal"><strong data-count="1.2" data-decimal="1" data-suffix="M">0</strong><span>scans rétiniens analysés</span></div>
+      <div class="stat reveal" style="--d:.08s"><strong data-count="3800" data-suffix="+">0</strong><span>détections précoces orientées</span></div>
+      <div class="stat reveal" style="--d:.16s"><strong data-count="99.1" data-decimal="1" data-suffix="%">0</strong><span>concordance IA–clinicien</span></div>
+      <div class="stat reveal" style="--d:.24s"><strong data-count="8" data-suffix=" min">0</strong><span>temps médian scan → rapport</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════ SYSTEMS / SERVICES ══════════ -->
+  <section class="section" id="systems">
+    <div class="container">
+      <div class="sec-head">
+        <p class="kicker reveal">// SYSTÈMES</p>
+        <h2 class="reveal" style="--d:.08s">Des spécialistes humains,<br><span class="grad-text">armés d'une vue artificielle.</span></h2>
+        <p class="sec-sub reveal" style="--d:.14s">Chaque rapport VIZN est lu deux fois — une fois par le moteur, une fois par un ophtalmologiste. La machine n'a jamais le dernier mot.</p>
+      </div>
+      <div class="sys-grid">
+        <article class="sys reveal" style="--d:.05s">
+          <div class="sys-head"><span class="sys-ic">◎</span><span class="sys-tag">CŒUR</span></div>
+          <h3>Scan rétinien IA + Examen</h3>
+          <p>Un examen complet associé à l'imagerie OCT et à une pré-grade IA le jour même. Vous repartez avec le rapport, les images et la signature d'un clinicien.</p>
+          <div class="sys-foot"><span class="ok">● LE JOUR MÊME</span><span class="price">à partir de 220 €</span></div>
+        </article>
+        <article class="sys reveal" style="--d:.1s">
+          <div class="sys-head"><span class="sys-ic">⌁</span><span class="sys-tag">PLAN</span></div>
+          <h3>Correction laser de la vision</h3>
+          <p>LASIK et SMILE planifiés à partir des données cornéennes mesurées — épaisseur, topographie, pupilles — avec une éligibilité confirmée par simulation avant réservation.</p>
+          <div class="sys-foot"><span class="ok">● SIMULÉ</span><span class="price">à partir de 2 500 € / œil</span></div>
+        </article>
+        <article class="sys reveal" style="--d:.15s">
+          <div class="sys-head"><span class="sys-ic">◍</span><span class="sys-tag">IMPLANT</span></div>
+          <h3>Chirurgie de la cataracte — Implant de précision</h3>
+          <p>Puissance de l'implant calculée par lancer de rayons à travers votre cornée mesurée. Implants premium sélectionnés selon votre optique réelle, pas une moyenne.</p>
+          <div class="sys-foot"><span class="ok">● LANCER DE RAYONS</span><span class="price">à partir de 3 700 € / œil</span></div>
+        </article>
+        <article class="sys reveal" style="--d:.2s">
+          <div class="sys-head"><span class="sys-ic">≡</span><span class="sys-tag">SURVEILLANCE</span></div>
+          <h3>Intelligence Glaucome &amp; Rétine</h3>
+          <p>Suivi des changements couche par couche entre les visites. Le moteur compare chaque nouveau scan à votre historique complet et ne signale que les vrais écarts.</p>
+          <div class="sys-foot"><span class="ok">● SUIVI</span><span class="price">à partir de 280 €</span></div>
+        </article>
+        <article class="sys reveal" style="--d:.25s">
+          <div class="sys-head"><span class="sys-ic">⬡</span><span class="sys-tag">SURFACE</span></div>
+          <h3>Diagnostics &amp; Spa de l'Œil Sec</h3>
+          <p>L'imagerie du film lacrymal et la cartographie des glandes quantifient l'irritation — puis les séances de thérapie thermique et d'IPL sont planifiées selon une récupération mesurée.</p>
+          <div class="sys-foot"><span class="ok">● QUANTIFIÉ</span><span class="price">à partir de 150 €</span></div>
+        </article>
+        <article class="sys reveal" style="--d:.3s">
+          <div class="sys-head"><span class="sys-ic">▲</span><span class="sys-tag">CROISSANCE</span></div>
+          <h3>Contrôle de la myopie pédiatrique</h3>
+          <p>Longueur axiale mesurée au dixième de millimètre et tracée à chaque visite : le contrôle de la myopie s'ajuste sur les courbes de tendance — pas à l'estimation.</p>
+          <div class="sys-foot"><span class="ok">● TRACÉ</span><span class="price">à partir de 400 €</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PIPELINE ══════════ -->
+  <section class="section pipeline" id="pipeline">
+    <div class="container">
+      <div class="sec-head">
+        <p class="kicker reveal">// CHAÎNE D'ANALYSE</p>
+        <h2 class="reveal" style="--d:.08s">De la lumière entrante, <span class="grad-text">au rapport sortant.</span></h2>
+      </div>
+      <ol class="pipe-row">
+        <li class="reveal" style="--d:.05s"><span class="p-chip">01 / CAPTURE</span><h3>Scanner</h3><p>L'imagerie ultra-grand champ et l'OCT spectral-domain capturent plus de 60 coupes de chaque rétine en moins de deux minutes.</p></li>
+        <li class="reveal" style="--d:.15s"><span class="p-chip">02 / AMÉLIORER</span><h3>Reconstruire</h3><p>Le bruit est retiré, les couches segmentées, et le scan aligné à chaque visite précédente pour une détection fiable des changements.</p></li>
+        <li class="reveal" style="--d:.25s"><span class="p-chip">03 / GRADER</span><h3>Pré-grader</h3><p>Le moteur note chaque couche selon votre historique et un atlas de référence, et signale toute anomalie — en minutes, pas en semaines.</p></li>
+        <li class="reveal" style="--d:.35s"><span class="p-chip">04 / AVISER</span><h3>Contresigner</h3><p>Un ophtalmologiste examine chaque alerte, approuve ou corrige, et signe le rapport. Le dernier mot est toujours humain.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════ TESTIMONIALS ══════════ -->
+  <section class="section" id="voices">
+    <div class="container">
+      <div class="sec-head">
+        <p class="kicker reveal">// PREUVES</p>
+        <h2 class="reveal" style="--d:.08s">Lu à <span class="grad-text">4 821 microns.</span></h2>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Le moteur a signalé un RNFL aminci sur mon scan de référence. Le Dr Reyes l'a confirmé, a commencé des collyres anti-hypertoniques, et mes champs sont stables depuis trois ans. Un examen normal aurait attendu. »</blockquote>
+          <figcaption><strong>Victor A.</strong><span>Patient surveillance glaucome</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Ils m'ont montré mon propre scan à côté de l'atlas de référence et m'ont expliqué exactement quelle couche posait problème. J'ai mieux compris mon diagnostic en dix minutes qu'en dix ans de “tout va bien”. »</blockquote>
+          <figcaption><strong>Mira S.</strong><span>Surveillance rétinopathie diabétique</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Les courbes de longueur axiale de mon fils sont sur une appli, mises à jour à chaque visite. Le programme myopie fonctionne — la courbe le dit, et le Dr Reyes est d'accord avec la machine. Supervision mutuelle. »</blockquote>
+          <figcaption><strong>Kenji &amp; Amy T.</strong><span>Contrôle de la myopie, 13 ans</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-side">
+        <p class="kicker reveal">// CONTACT</p>
+        <h2 class="reveal" style="--d:.08s">Demandez un scan, <span class="grad-text">ou vos données.</span></h2>
+        <p class="reveal" style="--d:.14s">Une question sur un scan de référence, l'orientation d'un patient, ou une demande de votre historique d'imagerie — il vous appartient, et il ne quitte notre archive que pour vous.</p>
+        <dl class="meta reveal" style="--d:.2s">
+          <div><dt>LABO</dt><dd>Unité 7, 40 Foundry Row, Innovation Belt</dd></div>
+          <div><dt>LIGNE</dt><dd><a href="tel:+15550550125">+1 (555) 055-0125</a></dd></div>
+          <div><dt>COURRIEL</dt><dd><a href="mailto:lab@vizn.io">lab@vizn.io</a></dd></div>
+          <div><dt>HORAIRES</dt><dd>Lun.–Sam. 8h00–20h00 · Scans sur demande</dd></div>
+        </dl>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-head">DEMANDE // CHIFFRÉ DE BOUT EN BOUT</div>
+        <fieldset>
+          <div class="field-row">
+            <div class="field"><input type="text" id="cf-name" required><label for="cf-name">Nom *</label></div>
+            <div class="field"><input type="tel" id="cf-phone" required><label for="cf-phone">Téléphone *</label></div>
+          </div>
+          <div class="field"><input type="email" id="cf-email" required><label for="cf-email">E-mail *</label></div>
+          <div class="field">
+            <select id="cf-topic" required>
+              <option value="" selected disabled hidden></option>
+              <option>Scan rétinien de référence</option>
+              <option>Planification LASIK / SMILE</option>
+              <option>Bilan de la cataracte</option>
+              <option>Deuxième avis sur un scan</option>
+              <option>Demande d'imagerie</option>
+              <option>Autre</option>
+            </select>
+            <label for="cf-topic">Objet *</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required></textarea><label for="cf-msg">Votre message *</label></div>
+          <button type="submit" class="btn btn-neo">Transmettre</button>
+          <p class="form-note">Vos données ne sont jamais vendues, partagées, ni utilisées pour entraîner des modèles sans consentement explicite.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>Transmission reçue.</h3>
+          <p>Référence <code>VZ-4821</code>. Un clinicien ou un ingénieur répond sous une heure ouvrée.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════ BOOKING ══════════ -->
+  <section class="section book" id="book">
+    <div class="container">
+      <div class="sec-head">
+        <p class="kicker reveal">// PLANIFICATION</p>
+        <h2 class="reveal" style="--d:.08s">Réservez votre <span class="grad-text">scan.</span></h2>
+      </div>
+
+      <div class="book-wrap reveal" style="--d:.1s">
+        <ol class="wiz-steps" id="wizSteps">
+          <li class="is-current"><span>Scan</span></li>
+          <li><span>Créneau</span></li>
+          <li><span>Patient</span></li>
+          <li><span>Confirmé</span></li>
+        </ol>
+
+        <form id="bookForm" novalidate>
+          <!-- STEP 1 -->
+          <fieldset class="pane is-active">
+            <legend><span>01</span> Choisissez votre séance</legend>
+            <div class="scan-grid">
+              <label class="opt"><input type="radio" name="svc" value="Scan rétinien IA + Examen" required><span><b>Scan rétinien IA + Examen</b><i>à partir de 220 €</i></span></label>
+              <label class="opt"><input type="radio" name="svc" value="Planification Laser de la Vision" required><span><b>Planification Laser de la Vision</b><i>à partir de 2 500 € / œil</i></span></label>
+              <label class="opt"><input type="radio" name="svc" value="Cataracte — Implant de précision" required><span><b>Cataracte — Implant de précision</b><i>à partir de 3 700 € / œil</i></span></label>
+              <label class="opt"><input type="radio" name="svc" value="Glaucome &amp; Rétine — Surveillance" required><span><b>Glaucome &amp; Rétine — Surveillance</b><i>à partir de 280 €</i></span></label>
+              <label class="opt"><input type="radio" name="svc" value="Diagnostics de l'Œil Sec" required><span><b>Diagnostics &amp; Spa de l'Œil Sec</b><i>à partir de 150 €</i></span></label>
+              <label class="opt"><input type="radio" name="svc" value="Contrôle de la Myopie Pédiatrique" required><span><b>Contrôle de la Myopie Pédiatrique</b><i>à partir de 400 €</i></span></label>
+            </div>
+            <p class="opt-error">Choisissez une séance pour continuer.</p>
+            <div class="wiz-nav"><span></span><button type="button" class="btn btn-neo js-next">Continuer →</button></div>
+          </fieldset>
+
+          <!-- STEP 2 -->
+          <fieldset class="pane">
+            <legend><span>02</span> Date &amp; créneau</legend>
+            <div class="field"><input type="date" id="bk-date" required><label>Date du rendez-vous</label></div>
+            <div class="time-grid" id="timeGrid">
+              <button type="button" class="chip" data-v="8:00">8h00</button>
+              <button type="button" class="chip" data-v="9:45">9h45</button>
+              <button type="button" class="chip" data-v="11:30">11h30</button>
+              <button type="button" class="chip" data-v="14:00">14h00</button>
+              <button type="button" class="chip" data-v="16:00">16h00</button>
+              <button type="button" class="chip" data-v="18:30">18h30</button>
+            </div>
+            <input type="hidden" id="bk-time">
+            <p class="opt-error">Choisissez un créneau.</p>
+            <div class="wiz-nav"><button type="button" class="btn btn-glass js-prev">← Retour</button><button type="button" class="btn btn-neo js-next">Continuer →</button></div>
+          </fieldset>
+
+          <!-- STEP 3 -->
+          <fieldset class="pane">
+            <legend><span>03</span> Dossier patient</legend>
+            <div class="field-row">
+              <div class="field"><input type="text" id="bk-name" required><label>Nom complet</label></div>
+              <div class="field"><input type="tel" id="bk-phone" required><label>Téléphone</label></div>
+            </div>
+            <div class="field"><input type="text" id="bk-extra" required><label>Assurance / mutuelle ou lieu du scan (Labo 7 / Unité mobile)</label></div>
+            <div class="field"><textarea id="bk-notes" rows="3"></textarea><label>Pathologies, médicaments, imagerie antérieure (facultatif)</label></div>
+            <div class="wiz-nav"><button type="button" class="btn btn-glass js-prev">← Retour</button><button type="submit" class="btn btn-neo">Confirmer la séance</button></div>
+          </fieldset>
+
+          <!-- STEP 4 -->
+          <fieldset class="pane pane-success">
+            <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+            <h3>Séance verrouillée.</h3>
+            <p class="recap"><strong id="recap-name">—</strong> · <span id="recap-svc">—</span><br><span id="recap-when">—</span></p>
+            <p class="recap-sub">Votre formulaire d'admission et les instructions pré-scan sont en file. Référence rapport <code id="recap-ref">VZ-7309</code>.</p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18"/><circle cx="12" cy="12" r="5"/><path d="M3 12h18"/></svg></span>
+          <span class="brand-text">VIZN<small>LABORATOIRE&nbsp;RÉTINIEN</small></span>
+        </a>
+        <p>Vue artificielle, jugement humain. Votre rétine, en couches.</p>
+      </div>
+      <div><h4>INDEX</h4><a href="#systems">Systèmes</a><a href="#pipeline">Chaîne d'analyse</a><a href="#evidence">Preuves</a><a href="#voices">Témoignages</a></div>
+      <div><h4>SYSTÈMES</h4><a href="#book">Scans rétiniens</a><a href="#book">Planification LASIK</a><a href="#book">Cataracte</a><a href="#book">Contrôle de la myopie</a></div>
+      <div><h4>LABO</h4><a href="tel:+15550550125">+1 (555) 055-0125</a><a href="#contact">lab@vizn.io</a><span>Unité 7, 40 Foundry Row</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> VIZN Lab.</span><span>PRÉ-GRADE IA · CONTRESEING CLINICIEN · DONNÉES JAMAIS VENDUES</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

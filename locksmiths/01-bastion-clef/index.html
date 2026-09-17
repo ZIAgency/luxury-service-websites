@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bastion &amp; Clef — Serrurerie sur mesure | Le clic discret d'un mécanisme parfait</title>
+  <meta name="description" content="Bastion & Clef, atelier de serrurerie sur mesure au service des plus belles demeures depuis 2009. Laiton ajusté à la main, jeux de clés maîtresses et discrétion sans marque.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='9' r='5' fill='%23B08D4A'/%3E%3Cpath d='M9.6 12.6h4.8L16.5 22h-9l2.1-9.4Z' fill='%23B08D4A'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════════ NAVIGATION ══════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9.6 12.6h4.8L16.5 22h-9l2.1-9.4Z"/></svg>
+        </span>
+        <span class="brand-text">Bastion&nbsp;&amp;&nbsp;Clef<small>Serrurerie sur mesure · Fondé en 2009</small></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#atelier">L'Atelier</a>
+        <a href="#method">La Méthode</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-cta">Demander une visite</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="top">
+    <svg class="hero-watermark" viewBox="0 0 320 80" aria-hidden="true">
+      <g class="key-art">
+        <circle cx="38" cy="40" r="24"/><circle cx="38" cy="40" r="15"/><circle cx="38" cy="40" r="5" class="dot"/>
+        <path d="M62 40 H236"/>
+        <path d="M236 40 V64 H250 V52 H262 V70 H276 V52 H290"/>
+      </g>
+    </svg>
+    <div class="hero-halo" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <p class="overline reveal">Serrurerie sur mesure — Sur recommandation &amp; sur rendez-vous</p>
+      <h1 class="reveal" style="--d:.12s">Le clic discret d'un<br><em class="brass-text">mécanisme parfait.</em></h1>
+      <div class="orn reveal" style="--d:.2s"><span></span><span class="star">✦</span><span></span></div>
+      <p class="hero-sub reveal" style="--d:.28s">
+        Bastion &amp; Clef pose, restaure et gouverne les serrures des plus belles demeures —
+        laiton ajusté à la main, pênes silencieux, et des clés taillées pour une seule porte au monde : la vôtre.
+      </p>
+      <div class="hero-cta reveal" style="--d:.38s">
+        <a href="#booking" class="btn btn-brass">Demander une visite</a>
+        <a href="#services" class="btn btn-ghost">Découvrir les disciplines</a>
+      </div>
+      <div class="hero-mech reveal" style="--d:.5s" id="heroMech">
+        <div class="mech-key">
+          <svg viewBox="0 0 320 80" aria-hidden="true">
+            <g class="key-art small">
+              <circle cx="38" cy="40" r="24"/><circle cx="38" cy="40" r="15"/><circle cx="38" cy="40" r="5" class="dot"/>
+              <path d="M62 40 H236"/>
+              <path d="M236 40 V64 H250 V52 H262 V70 H276 V52 H290"/>
+            </g>
+          </svg>
+        </div>
+        <div class="mech-tumblers" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p class="mech-label">Mécanisme № 7 — Réglé &amp; fidèle</p>
+      </div>
+      <div class="hero-stats reveal" style="--d:.6s">
+        <div><strong data-count="17" data-suffix="">0</strong><span>Années d'atelier</span></div>
+        <i></i>
+        <div><strong data-count="4.9" data-decimal="1" data-suffix="">0</strong><span>Note de la clientèle privée</span></div>
+        <i></i>
+        <div><strong>24/7</strong><span>La ligne de nuit</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PLAQUE STRIP ══════════════ -->
+  <div class="plaque" aria-hidden="true">
+    <p>Hôtels particuliers ✦ Collections privées ✦ Galeries ✦ Façades classées ✦ Résidences d'ambassade</p>
+  </div>
+
+  <!-- ══════════════ SERVICES ══════════════ -->
+  <section class="section light" id="services">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Le savoir-faire</p>
+        <h2>Six <em>disciplines</em> de la serrure</h2>
+        <div class="orn"><span></span><span class="star">✦</span><span></span></div>
+        <p class="sec-sub">Chaque intervention est conduite par un maître serrurier, exécutée à l'établi et achevée
+          de sorte que la porte ne révèle à personne notre passage.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service reveal" style="--d:.05s">
+          <span class="num">№ 01</span>
+          <h3>La retrieval de minuit</h3>
+          <p>Une serrure en faille n'épargne aucun emploi du temps. Notre ligne de nuit vous rejoint en moins d'une
+            demi-heure, ouvre sans laisser une marque et rend la porte comme si jamais nous étions venus.</p>
+          <a href="#booking" class="service-link">à partir de 140 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.1s">
+          <span class="num">№ 02</span>
+          <h3>Serrures connectées sur mesure</h3>
+          <p>L'électronique invisible sous le laiton visible. Nous posons des serrures connectées accordées à votre
+            quincaillerie — empreinte, code ou téléphone — sans un seul fil apparent.</p>
+          <a href="#booking" class="service-link">sur consultation <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.15s">
+          <span class="num">№ 03</span>
+          <h3>Changement de cylindres &amp; jeux maîtresses</h3>
+          <p>Une clé pour le gardien, aucune pour les partants. Nous re-keyons des demeures entières et composons des
+            jeux maîtresses avec le calme d'une officine de majordome.</p>
+          <a href="#booking" class="service-link">à partir de 180 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.2s">
+          <span class="num">№ 04</span>
+          <h3>Le cabinet des coffres</h3>
+          <p>Coffres-forts ouverts, déplacés, entretenus et remis en service — des combinaisons de famille traitées
+            avec des gants d'archiviste et une patience infinie.</p>
+          <a href="#booking" class="service-link">à partir de 650 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.25s">
+          <span class="num">№ 05</span>
+          <h3>Clés automobiles</h3>
+          <p>Clés de contact de collection taillées à la main à l'établi, télécommandes modernes appairées devant
+            votre portail. Votre voiture, traitée comme le garage où elle dort.</p>
+          <a href="#booking" class="service-link">à partir de 220 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.3s">
+          <span class="num">№ 06</span>
+          <h3>Fortification</h3>
+          <p>Gâches renforcées, plaques d'about et cylindres haute sécurité — posés si discrètement que les
+            visiteurs indésirables ne trouvent qu'une porte qui ne négocie pas.</p>
+          <a href="#booking" class="service-link">à partir de 380 € <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ ATELIER / STORY ══════════════ -->
+  <section class="section dark atelier" id="atelier">
+    <div class="container atelier-grid">
+      <div class="atelier-visual reveal">
+        <div class="atelier-frame">
+          <div class="atelier-panel">
+            <svg class="escutcheon" viewBox="0 0 120 132" aria-hidden="true">
+              <path class="shield" d="M18 4h84c7.7 0 14 6.3 14 14v44c0 26-20 42-56 62C24 104 4 88 4 62V18C4 10.3 10.3 4 18 4Z"/>
+              <circle class="hole" cx="60" cy="46" r="12"/>
+              <path class="hole" d="M53 54 47 94h26l-6-40Z"/>
+            </svg>
+            <p class="atelier-year">MMIX</p>
+            <p class="atelier-motto">« La serrure juste<br>garde la nuit sereine. »</p>
+          </div>
+          <div class="atelier-badge">
+            <strong>17</strong>
+            <span>ans de<br>travail silencieux</span>
+          </div>
+        </div>
+      </div>
+      <div class="atelier-copy">
+        <p class="overline reveal">L'Atelier</p>
+        <h2 class="reveal" style="--d:.08s">Des serrures dignes des<br><em class="brass-text">plus belles demeures.</em></h2>
+        <p class="reveal" style="--d:.16s">Fondé en 2009 au-dessus d'un passage d'antiquaires, Bastion &amp; Clef sert des
+          maisons qui ne font jamais de publicité. Six maîtres serrures, un établi de laiton patiné, et une règle
+          inchangée depuis le premier jour : le mécanisme doit murmurer.</p>
+        <ul class="atelier-list">
+          <li class="reveal" style="--d:.22s"><span>✦</span> Agréés, cautionnés &amp; discrets par contrat</li>
+          <li class="reveal" style="--d:.28s"><span>✦</span> Quincaillerie d'origine préservée, reproduite &amp; re-finie</li>
+          <li class="reveal" style="--d:.34s"><span>✦</span> Véhicules sans enseigne, pose en gants, chantier laissé intact</li>
+          <li class="reveal" style="--d:.4s"><span>✦</span> Un serrurier dédié à votre demeure</li>
+        </ul>
+        <a href="#contact" class="btn btn-brass reveal" style="--d:.46s">Parler à l'Atelier</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ METHOD ══════════════ -->
+  <section class="section light" id="method">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">La Méthode</p>
+        <h2>Quatre temps vers le <em>silence</em></h2>
+        <div class="orn"><span></span><span class="star">✦</span><span></span></div>
+      </div>
+      <ol class="steps-row">
+        <li class="reveal" style="--d:.05s"><span class="step-k">01</span><h3>L'audience</h3><p>Nous écoutons avant de mesurer : qui entre, à quelles heures, et ce que la porte doit tenir à distance.</p></li>
+        <li class="reveal" style="--d:.15s"><span class="step-k">02</span><h3>Le relevé</h3><p>Chaque gâche, paumelle et cylindre est lu, mesuré et photographié avant que ne tourne la moindre vis.</p></li>
+        <li class="reveal" style="--d:.25s"><span class="step-k">03</span><h3>La pose</h3><p>Clés taillées à la main, cylindres goupillés, outils doublés de feutre — un travail que vous n'entendrez qu'en un clic.</p></li>
+        <li class="reveal" style="--d:.35s"><span class="step-k">04</span><h3>La remise</h3><p>Clés présentées sur velours, garantie écrite, et un serrurier qui connaît désormais vos portes par leur nom.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════════ STATS ══════════════ -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="reveal"><strong data-count="1850" data-suffix="+">0</strong><span>Demeures confiées</span></div>
+      <div class="reveal" style="--d:.1s"><strong data-count="99.8" data-decimal="1" data-suffix="%">0</strong><span>Ouvertures sans dommage</span></div>
+      <div class="reveal" style="--d:.2s"><strong data-count="28" data-suffix=" min">0</strong><span>Arrivée de nuit médiane</span></div>
+      <div class="reveal" style="--d:.3s"><strong data-count="6" data-suffix="">0</strong><span>Maîtres serrures</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ TESTIMONIALS ══════════════ -->
+  <section class="section light" id="clients">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Sous le sceau</p>
+        <h2>On en parle, <em>à voix basse</em></h2>
+        <div class="orn"><span></span><span class="star">✦</span><span></span></div>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« La serrure de notre hôtel particulier de 1880 mourait et était irremplaçable. Bastion &amp; Clef
+            l'a restaurée, taillé des clés qui tournent comme de la soie, et n'a laissé d'autre trace que le clic. »</blockquote>
+          <figcaption><strong>Margaux E.</strong><span>Hôtel particulier, quartier ancien</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Ils ont re-keyé tout le domaine en une journée — jardinier, gouvernante, famille, chacun avec
+            sa hiérarchie de clés. Pas une égratignure sur les portes. »</blockquote>
+          <figcaption><strong>Jonathan &amp; Ada R.</strong><span>Domaine des bords du lac</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Fermée dehors à minuit sous la pluie. Un serrurier est arrivé en vingt minutes, en gants, et s'est
+            excusé pour le temps. Voilà ce que j'appelle un service. »</blockquote>
+          <figcaption><strong>Dr Priya N.</strong><span>Cliente privée depuis 2015</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section dark contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="overline reveal">Correspondance</p>
+        <h2 class="reveal" style="--d:.08s">Écrire <em class="brass-text">à l'Atelier</em></h2>
+        <p class="reveal" style="--d:.14s">Une question, un devis discret, ou une serrure qui vous inquiète la nuit —
+          un maître vous répond en moins d'une heure ouvrée.</p>
+        <ul class="info-list">
+          <li class="reveal" style="--d:.2s"><span class="info-ic">✦</span><div><strong>Atelier</strong><span>9 Passage du Bastion, deuxième étage<br>Galerie du Vieux Port</span></div></li>
+          <li class="reveal" style="--d:.26s"><span class="info-ic">✦</span><div><strong>Ligne de nuit</strong><span>+1 (555) 210-2009</span></div></li>
+          <li class="reveal" style="--d:.32s"><span class="info-ic">✦</span><div><strong>Horaires</strong><span>Lun–Sam · 9h00 – 19h00<br>Urgences, en tout temps</span></div></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <fieldset>
+          <div class="field"><input type="text" id="cf-name" required><label for="cf-name">Nom complet</label></div>
+          <div class="field-row">
+            <div class="field"><input type="email" id="cf-email" required><label for="cf-email">Adresse e-mail</label></div>
+            <div class="field"><input type="tel" id="cf-phone"><label for="cf-phone">Téléphone (facultatif)</label></div>
+          </div>
+          <div class="field select-field">
+            <select id="cf-subject" required>
+              <option value="" selected disabled></option>
+              <option>Demander un devis</option>
+              <option>Une serrure à restaurer</option>
+              <option>Plan de clés maîtresses</option>
+              <option>Conseil coffres-forts</option>
+              <option>Autre correspondance</option>
+            </select>
+            <label for="cf-subject">Objet de votre lettre</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required></textarea><label for="cf-msg">Votre message</label></div>
+          <button type="submit" class="btn btn-brass btn-wide">Envoyer en toute confiance</button>
+          <p class="form-note">Vos coordonnées restent strictement au sein de l'atelier.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>Reçue, avec nos remerciements.</h3>
+          <p>Votre lettre repose sur l'établi du maître. Attendez-vous à une réponse personnelle d'ici une heure.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════ BOOKING ══════════════ -->
+  <section class="section light booking" id="booking">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Commissions</p>
+        <h2>Réserver une <em>visite privée</em></h2>
+        <div class="orn"><span></span><span class="star">✦</span><span></span></div>
+        <p class="sec-sub">Quatre gestes discrets, et la porte écoute déjà.</p>
+      </div>
+
+      <div class="book-frame reveal" style="--d:.1s">
+        <div class="book-inner">
+          <ol class="wiz-steps" id="wizSteps">
+            <li class="is-current"><span>Service</span></li>
+            <li><span>L'heure</span></li>
+            <li><span>Coordonnées</span></li>
+            <li><span>Confirmé</span></li>
+          </ol>
+
+          <form id="bookForm" novalidate>
+            <!-- STEP 1 · SERVICE -->
+            <fieldset class="pane is-active">
+              <legend>Quel service pouvons-nous vous rendre ?</legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="svc" value="La Retrieval de Minuit" required><span>Dépannage d'urgence 24h/24</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Serrures Connectées sur Mesure"><span>Serrures connectées sur mesure</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Changement de Cylindres &amp; Jeux Maîtresses"><span>Changement de cylindres &amp; jeux maîtresses</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Le Cabinet des Coffres"><span>Coffres-forts</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Clés Automobiles"><span>Clés de voiture</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Fortification"><span>Serrures haute sécurité</span></label>
+              </div>
+              <p class="choice-error">Veuillez choisir une discipline pour continuer.</p>
+              <div class="wiz-nav"><span></span><button type="button" class="btn btn-brass js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 2 · DATE & TIME -->
+            <fieldset class="pane">
+              <legend>Quand nous permettra-t-on de venir ?</legend>
+              <div class="field date-field">
+                <input type="date" id="bk-date" required>
+                <label>Date souhaitée</label>
+              </div>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" class="chip" data-v="09:00 – 11:00">9h–11h</button>
+                <button type="button" class="chip" data-v="11:00 – 13:00">11h–13h</button>
+                <button type="button" class="chip" data-v="13:00 – 15:00">13h–15h</button>
+                <button type="button" class="chip" data-v="15:00 – 17:00">15h–17h</button>
+                <button type="button" class="chip" data-v="17:00 – 19:00">17h–19h</button>
+                <button type="button" class="chip" data-v="20:00 – 22:00">20h–22h</button>
+              </div>
+              <input type="hidden" id="bk-time">
+              <p class="choice-error">Veuillez choisir un créneau d'arrivée.</p>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="button" class="btn btn-brass js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 3 · DETAILS -->
+            <fieldset class="pane">
+              <legend>Vos coordonnées, s'il vous plaît.</legend>
+              <div class="field-row">
+                <div class="field"><input type="text" id="bk-name" required><label>Nom complet</label></div>
+                <div class="field"><input type="tel" id="bk-phone" required><label>Téléphone</label></div>
+              </div>
+              <div class="field"><input type="text" id="bk-address" required><label>Adresse de la propriété</label></div>
+              <div class="field"><textarea id="bk-notes" rows="3"></textarea><label>Motifs pour le maître (facultatif)</label></div>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="submit" class="btn btn-brass">Confirmer la commission</button></div>
+            </fieldset>
+
+            <!-- STEP 4 · SUCCESS -->
+            <fieldset class="pane pane-success">
+              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+              <h3>Commission confiée.</h3>
+              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est réservée pour<br><strong id="recap-when">—</strong>.</p>
+              <p class="recap-sub">Une confirmation est en route. Votre serrurier appellera le matin même de la visite — et il sait qu'il faut frapper doucement.</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M9.6 12.6h4.8L16.5 22h-9l2.1-9.4Z"/></svg></span>
+          <span class="brand-text">Bastion&nbsp;&amp;&nbsp;Clef<small>Serrurerie sur mesure · Fondé en 2009</small></span>
+        </a>
+        <p>L'atelier de serrurerie des maisons qui ne font jamais de publicité — et des portes qui ne cèdent jamais.</p>
+      </div>
+      <div><h4>L'Atelier</h4><a href="#services">Disciplines</a><a href="#atelier">Notre histoire</a><a href="#method">La Méthode</a><a href="#clients">Clients</a></div>
+      <div><h4>Services</h4><a href="#booking">Dépannage de nuit</a><a href="#booking">Serrures connectées</a><a href="#booking">Jeux maîtresses</a><a href="#booking">Coffres-forts</a></div>
+      <div><h4>Correspondance</h4><a href="tel:+15552102009">+1 (555) 210-2009</a><a href="#contact">concierge@bastionclef.co</a><span>9 Passage du Bastion, deuxième étage</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Bastion &amp; Clef. Tous droits réservés.</span><span>Agréés · Cautionnés · Discrets</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

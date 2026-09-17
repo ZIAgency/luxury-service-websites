@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONYX Chauffeurs — Service privé de voiture noire | Le côté calme de la vitre</title>
+  <meta name="description" content="ONYX Chauffeurs est une maison de voiture de course noire : berlines aux vitres teintées, chauffeurs triés sur le volet, tarifs fixes tout compris. La ville, du côté calme de la vitre.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230C0C10'/%3E%3Ccircle cx='12' cy='12' r='6' fill='none' stroke='%23C7C9CE' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='1.6' fill='%238C1D3F'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════════ NAVIGATION ══════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 10-7 10L5 12z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="2"/></svg>
+        </span>
+        <span class="brand-text">ONYX<small>Chauffeurs · Voiture de course privée</small></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#house">La Maison</a>
+        <a href="#protocol">Protocole</a>
+        <a href="#passengers">Passagers</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-cta">Réserver une voiture</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="top">
+    <div class="hero-sheen" aria-hidden="true"></div>
+    <div class="hero-bokeh" aria-hidden="true">
+      <span style="--x:9%;--y:28%;--d:13s"></span>
+      <span style="--x:82%;--y:18%;--d:16s"></span>
+      <span style="--x:64%;--y:52%;--d:11s"></span>
+      <span style="--x:31%;--y:64%;--d:15s"></span>
+      <span style="--x:91%;--y:60%;--d:12s"></span>
+      <span style="--x:47%;--y:22%;--d:18s"></span>
+    </div>
+
+    <svg class="hero-skyline" id="skyline" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <g class="sky-back">
+        <path d="M0,300 V190 h70 v-52 h55 v84 h64 v-116 h48 v60 h72 v-96 h52 v132 h80 v-70 h66 v110 h90 v-140 h54 v78 h84 v-46 h70 v96 h92 v-118 h60 v70 h86 v-92 h56 v128 h74 v-58 h64 v84 h77 V300 Z"/>
+      </g>
+      <g class="sky-front">
+        <path d="M0,300 V232 h92 v-46 h70 v74 h86 v-104 h62 v52 h96 v-70 h58 v94 h104 v-120 h66 v64 h90 v-44 h74 v86 h98 v-98 h64 v60 h92 v-40 h70 v92 h88 v-72 h62 v100 h68 V300 Z"/>
+      </g>
+      <g class="sky-windows" fill="#8C1D3F">
+        <rect x="120" y="212" width="4" height="6"/><rect x="132" y="224" width="4" height="6"/>
+        <rect x="316" y="196" width="4" height="6"/><rect x="328" y="208" width="4" height="6"/>
+        <rect x="486" y="188" width="4" height="6"/><rect x="498" y="176" width="4" height="6"/>
+        <rect x="700" y="206" width="4" height="6"/><rect x="712" y="194" width="4" height="6"/>
+        <rect x="902" y="182" width="4" height="6"/><rect x="914" y="194" width="4" height="6"/>
+        <rect x="1096" y="198" width="4" height="6"/><rect x="1108" y="210" width="4" height="6"/>
+        <rect x="1272" y="222" width="4" height="6"/><rect x="1284" y="210" width="4" height="6"/>
+      </g>
+    </svg>
+
+    <div class="container hero-content">
+      <p class="overline reveal">Transport privé avec chauffeur — Sur rendez-vous &amp; par adhésion</p>
+      <h1 class="reveal" style="--d:.12s">La ville, du côté<br><em class="claret-text">calme de la vitre.</em></h1>
+      <p class="hero-sub reveal" style="--d:.24s">
+        ONYX entretient une flotte de berlines aux vitres teintées et un vivier de chauffeurs formés au silence.
+        Tarifs fixes, voitures non signalées, portière tenue un battement de cœur avant que vous ne l'atteigniez —
+        voilà le voyage de celles et ceux qui n'ont plus rien à se justifier.
+      </p>
+      <div class="hero-cta reveal" style="--d:.36s">
+        <a href="#booking" class="btn btn-claret">Réserver une voiture</a>
+        <a href="#house" class="btn btn-ghost">Entrer chez la Maison</a>
+      </div>
+      <div class="hero-stats reveal" style="--d:.48s">
+        <div><strong data-count="18" data-suffix="">0</strong><span>années de silence</span></div>
+        <i></i>
+        <div><strong data-count="4.9" data-decimal="1" data-suffix="">0</strong><span>note des passagers</span></div>
+        <i></i>
+        <div><strong>24/7</strong><span>ligne de la Maison</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ MARQUEE ══════════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Prises en charge aéroport ✦ Mise à disposition horaire ✦ Comptes entreprises ✦ Soirées &amp; galas ✦ Trajets interurbains ✦ Coursier &amp; colis ✦&nbsp;</span>
+      <span>Prises en charge aéroport ✦ Mise à disposition horaire ✦ Comptes entreprises ✦ Soirées &amp; galas ✦ Trajets interurbains ✦ Coursier &amp; colis ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ══════════════ SERVICES ══════════════ -->
+  <section class="section light" id="services">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">La flotte à votre service</p>
+        <h2>Six manières de <em>voyager en silence</em></h2>
+        <p class="sec-sub">Chaque course est fixée avant que la portière ne se referme. Chaque chauffeur est formé
+          par la Maison à la discrétion, au sens de l'itinéraire et à l'art de ne pas se faire remarquer.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service reveal" style="--d:.05s">
+          <span class="num">I</span>
+          <h3>Prises en charge aéroport</h3>
+          <p>Votre vol est suivi avant même l'atterrissage. Votre chauffeur vous attend dans le terminal avec une pancarte que vous approuvez — jamais votre nom complet — et l'habitacle est déjà à la température que vous préférez.</p>
+          <a href="#booking" class="service-link">à partir de 95 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.1s">
+          <span class="num">II</span>
+          <h3>Course en ville</h3>
+          <p>Du dîner à la galerie, du conseil à la résidence. D'une adresse à l'autre dans une voiture qui glisse au-delà du trafic comme une rumeur glisse au-delà d'une question.</p>
+          <a href="#booking" class="service-link">à partir de 28 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.15s">
+          <span class="num">III</span>
+          <h3>Mise à disposition horaire</h3>
+          <p>La voiture reste. Le chauffeur reste. Passez de rendez-vous en rendez-vous, ou installez-vous simplement derrière les vitres assombries et laissez la ville s'organiser autour de vous.</p>
+          <a href="#booking" class="service-link">à partir de 110 €/h <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.2s">
+          <span class="num">IV</span>
+          <h3>Comptes entreprises</h3>
+          <p>Factures mensuelles consolidées, politiques de trajet par dirigeant, et un coordinateur dédié de la Maison qui ne répond qu'à un seul nom : le vôtre.</p>
+          <a href="#booking" class="service-link">sur devis <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.25s">
+          <span class="num">V</span>
+          <h3>Soirées &amp; galas</h3>
+          <p>Premières, avant-premières, anniversaires. La berline arrive dix minutes en avance, relustrée deux fois, avec un intérieur éclairé comme une salle à manger privée.</p>
+          <a href="#booking" class="service-link">à partir de 140 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.3s">
+          <span class="num">VI</span>
+          <h3>Trajets interurbains</h3>
+          <p>Des horizons plus larges, sans passer par l'aéroport. Deux chauffeurs, un itinéraire, et une banquette arrière qui transforme le silence en heures utiles.</p>
+          <a href="#booking" class="service-link">à partir de 320 € <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ LA MAISON / HISTOIRE ══════════════ -->
+  <section class="section dark house" id="house">
+    <div class="container house-grid">
+      <div class="house-visual reveal">
+        <div class="house-frame">
+          <div class="house-panel">
+            <svg class="house-sedan" viewBox="0 0 240 90" aria-hidden="true">
+              <path class="sedan-body" d="M14 62c8-14 26-22 46-24 12-10 28-16 48-16 22 0 40 7 52 18 24 3 44 10 54 20 4 5 4 12-4 14H22c-8 0-12-6-8-12z"/>
+              <path class="sedan-glass" d="M64 38c10-8 24-13 42-13 16 0 30 5 40 13H64z"/>
+              <line class="sedan-line" x1="14" y1="66" x2="222" y2="66"/>
+              <circle class="sedan-wheel" cx="62" cy="70" r="11"/>
+              <circle class="sedan-wheel" cx="176" cy="70" r="11"/>
+              <rect class="sedan-light" x="216" y="52" width="10" height="6" rx="3"/>
+            </svg>
+            <p class="house-year">Fondée en 2008</p>
+            <p class="house-motto">« Le meilleur service<br>est celui qu'on n'entend pas. »</p>
+          </div>
+          <div class="house-badge">
+            <strong>18</strong>
+            <span>ans de<br>discrétion</span>
+          </div>
+        </div>
+      </div>
+      <div class="house-copy">
+        <p class="overline reveal">La Maison ONYX</p>
+        <h2 class="reveal" style="--d:.08s">Une flotte,<br><em class="claret-text">pas une application.</em></h2>
+        <p class="reveal" style="--d:.16s">ONYX est née avec trois berlines et une règle : le passager n'est jamais géré, pressé,
+          ni écouté. Dix-huit ans plus tard, nous faisons rouler soixante-dix-huit voitures non signalées, et la règle n'a pas bougé.
+          Nos chauffeurs se forment un an avant leur première course — posture, itinéraires, silence, et la géographie de chaque portière d'hôtel de la ville.</p>
+        <ul class="house-list">
+          <li class="reveal" style="--d:.22s"><span>◆</span> Chauffeurs triés sur le volet, cautionnés et liés par la confidentialité</li>
+          <li class="reveal" style="--d:.28s"><span>◆</span> Tarifs fixes et tout compris — annoncés avant l'embarquement</li>
+          <li class="reveal" style="--d:.34s"><span>◆</span> Eau plate, chargeurs &amp; parapluie, toujours à bord</li>
+          <li class="reveal" style="--d:.4s"><span>◆</span> Berlines non signalées : obsidienne, argent &amp; bordeaux minuit</li>
+        </ul>
+        <a href="#contact" class="btn btn-claret reveal" style="--d:.46s">Demander son adhésion</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROTOCOLE ══════════════ -->
+  <section class="section light" id="protocol">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Le protocole</p>
+        <h2>Quatre gestes, <em>zéro friction</em></h2>
+      </div>
+      <ol class="steps-row">
+        <li class="reveal" style="--d:.05s"><span class="step-k">01</span><h3>Le mot</h3><p>Un message à la ligne de la Maison, ou trente secondes dans l'espace de réservation. Nous ne demandons que ce que le trajet exige.</p></li>
+        <li class="reveal" style="--d:.15s"><span class="step-k">02</span><h3>La voiture</h3><p>Votre chauffeur est désigné par son nom, pas par un algorithme. Vous recevez son portable et la plaque avant même de vous habiller.</p></li>
+        <li class="reveal" style="--d:.25s"><span class="step-k">03</span><h3>La portière</h3><p>La voiture arrive en avance et attend moteur coupé. La portière arrière est tenue ; l'habitacle est exactement là où vous avez laissé vos préférences.</p></li>
+        <li class="reveal" style="--d:.35s"><span class="step-k">04</span><h3>Le silence</h3><p>Parlez, travaillez ou dormez. Le règlement est déjà réglé, le reçu déjà archivé, et l'adieu est un signe de tête à travers la vitre teintée.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════════ CHIFFRES ══════════════ -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="reveal"><strong data-count="640000" data-suffix="+">0</strong><span>courses accomplies</span></div>
+      <div class="reveal" style="--d:.1s"><strong data-count="99.1" data-decimal="1" data-suffix="%">0</strong><span>arrivées à l'heure</span></div>
+      <div class="reveal" style="--d:.2s"><strong data-count="9" data-suffix=" min">0</strong><span>prise en charge moy.</span></div>
+      <div class="reveal" style="--d:.3s"><strong data-count="78" data-suffix="">0</strong><span>berlines en flotte</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PASSAGERS ══════════════ -->
+  <section class="section light" id="passengers">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Passagers</p>
+        <h2>Dont on parle, <em>rarement à voix haute</em></h2>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Quatorze mois de déplacements hebdomadaires, et jamais une voiture en retard, jamais une conversation proposée. ONYX a compris que le luxe le plus rare, c'est qu'on vous laisse tranquille. »</blockquote>
+          <figcaption><strong>Alexandra V.</strong><span>Membre entreprise depuis 2021</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Notre vol a atterri avec deux heures de retard, à minuit. Le chauffeur était dans le terminal, pancarte en main, impassible — comme si nous en avions convenu. Il avait simplement suivi le numéro de queue. »</blockquote>
+          <figcaption><strong>Marco &amp; Elise D.</strong><span>Habitués transatlantiques</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Ma mère refuse désormais toute autre voiture. Elle dit que les chauffeurs ONYX connaissent sa rue, son rythme, et exactement l'aide qu'elle souhaite — un peu, et seulement sur le trottoir. »</blockquote>
+          <figcaption><strong>Dr Tomas R.</strong><span>Compte privé</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section dark contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="overline reveal">Correspondance</p>
+        <h2 class="reveal" style="--d:.08s">Écrire à <em class="claret-text">la Maison</em></h2>
+        <p class="reveal" style="--d:.14s">Adhésions, itinéraires ou un unique trajet — la ligne de la Maison est décrochée par une personne, dans l'heure ouvrée.</p>
+        <ul class="info-list">
+          <li class="reveal" style="--d:.2s"><span class="info-ic">◆</span><div><strong>Le garage</strong><span>9 Candlewick Mews, Bay 4<br>Quartier de la Vieille Bourse</span></div></li>
+          <li class="reveal" style="--d:.26s"><span class="info-ic">◆</span><div><strong>Ligne de la Maison</strong><span>+1 (555) 070-2008</span></div></li>
+          <li class="reveal" style="--d:.32s"><span class="info-ic">◆</span><div><strong>Horaires</strong><span>La flotte ne dort jamais<br>Bureau : lundi–samedi, 8h00 – 20h00</span></div></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <fieldset>
+          <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Nom complet</label></div>
+          <div class="field-row">
+            <div class="field"><input type="email" id="cf-email" required placeholder=" "><label for="cf-email">Adresse e-mail</label></div>
+            <div class="field"><input type="tel" id="cf-phone" placeholder=" "><label for="cf-phone">Téléphone (facultatif)</label></div>
+          </div>
+          <div class="field select-field">
+            <select id="cf-subject" required>
+              <option value="" selected disabled></option>
+              <option>Demande d'adhésion</option>
+              <option>Devis pour un trajet unique</option>
+              <option>Demande de compte entreprise</option>
+              <option>Transport soirée &amp; gala</option>
+              <option>Coursier &amp; colis</option>
+              <option>Autre correspondance</option>
+            </select>
+            <label for="cf-subject">Objet de votre lettre</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required placeholder=" "></textarea><label for="cf-msg">Votre message</label></div>
+          <button type="submit" class="btn btn-claret btn-wide">Envoyer en toute confiance</button>
+          <p class="form-note">La correspondance est lue par la Maison uniquement, jamais transmise.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>Reçue.</h3>
+          <p>Votre lettre repose sur le bureau du directeur. Attendez-vous à une réponse personnelle dans l'heure.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════ RÉSERVATION ══════════════ -->
+  <section class="section light booking" id="booking">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Réservations</p>
+        <h2>Réserver une <em>voiture silencieuse</em></h2>
+        <p class="sec-sub">Quatre étapes, soixante secondes. Un chauffeur nommé, à votre porte, à l'heure que vous choisissez.</p>
+      </div>
+
+      <div class="book-frame reveal" style="--d:.1s">
+        <div class="book-inner">
+          <ol class="wiz-steps" id="wizSteps">
+            <li class="is-current"><span>Service</span></li>
+            <li><span>Moment</span></li>
+            <li><span>Détails</span></li>
+            <li><span>Confirmé</span></li>
+          </ol>
+
+          <form id="bookForm" novalidate>
+            <!-- ÉTAPE 1 · SERVICE -->
+            <fieldset class="pane is-active">
+              <legend>Quel trajet souhaitons-nous organiser ?</legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="svc" value="Transfert aéroport" required><span>Transfert aéroport</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Course en ville"><span>Course en ville</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Mise à disposition horaire"><span>Mise à disposition horaire</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Compte entreprise"><span>Compte entreprise</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Van & groupe"><span>Van &amp; groupe</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Coursier & colis"><span>Coursier &amp; colis</span></label>
+              </div>
+              <p class="choice-error">Veuillez choisir un service pour continuer.</p>
+              <div class="wiz-nav"><span></span><button type="button" class="btn btn-claret js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- ÉTAPE 2 · DATE & HEURE -->
+            <fieldset class="pane">
+              <legend>Quand la voiture doit-elle arriver ?</legend>
+              <div class="field date-field">
+                <input type="date" id="bk-date" required>
+                <label>Date de prise en charge</label>
+              </div>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" class="chip" data-v="6:30">6h30</button>
+                <button type="button" class="chip" data-v="8:00">8h00</button>
+                <button type="button" class="chip" data-v="10:30">10h30</button>
+                <button type="button" class="chip" data-v="13:00">13h00</button>
+                <button type="button" class="chip" data-v="17:30">17h30</button>
+                <button type="button" class="chip" data-v="21:00">21h00</button>
+              </div>
+              <input type="hidden" id="bk-time">
+              <p class="choice-error">Veuillez choisir un horaire d'arrivée.</p>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="button" class="btn btn-claret js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- ÉTAPE 3 · DÉTAILS -->
+            <fieldset class="pane">
+              <legend>Vos coordonnées, discrètement.</legend>
+              <div class="field-row">
+                <div class="field"><input type="text" id="bk-name" required placeholder=" "><label>Nom du passager</label></div>
+                <div class="field"><input type="tel" id="bk-phone" required placeholder=" "><label>Téléphone</label></div>
+              </div>
+              <div class="field"><input type="text" id="bk-address" required placeholder=" "><label>Adresse de prise en charge</label></div>
+              <div class="field"><textarea id="bk-notes" rows="3" placeholder=" "></textarea><label>Motifs pour votre chauffeur (facultatif)</label></div>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="submit" class="btn btn-claret">Confirmer la réservation</button></div>
+            </fieldset>
+
+            <!-- ÉTAPE 4 · CONFIRMATION -->
+            <fieldset class="pane pane-success">
+              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+              <h3>Réservé.</h3>
+              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est confirmé(e) pour le<br><strong id="recap-when">—</strong>.</p>
+              <p class="recap-sub">Le nom, le portable et la plaque de votre chauffeur vous parviendront avant même que vous ne vous habilliez.</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PIED DE PAGE ══════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 10-7 10L5 12z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="2"/></svg></span>
+          <span class="brand-text">ONYX<small>Chauffeurs · Voiture de course privée</small></span>
+        </a>
+        <p>La maison de voiture noire pour les passagers qui remarquent tout, et n'entendent rien.</p>
+      </div>
+      <div><h4>La Maison</h4><a href="#services">Services</a><a href="#house">Notre histoire</a><a href="#protocol">Le protocole</a><a href="#passengers">Passagers</a></div>
+      <div><h4>Trajets</h4><a href="#booking">Transferts aéroport</a><a href="#booking">Mise à disposition horaire</a><a href="#booking">Comptes entreprises</a><a href="#booking">Interurbain</a></div>
+      <div><h4>Correspondance</h4><a href="tel:+15550702008">+1 (555) 070-2008</a><a href="#contact">house@onyxchauffeurs.co</a><span>9 Candlewick Mews, Bay 4</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> ONYX Chauffeurs. Tous droits réservés.</span><span>Transport remisé sous licence · Entièrement assuré · Non signalé</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vector Taxi Co. — Forfait. Zéro compteur. | Le taxi de précision</title>
+  <meta name="description" content="Vector Taxi Co. assure des courses aéroport au forfait, des tarifs point à point transparents et des ETA disciplinés. Le prix est le prix — fixé avant l'embarquement.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%23FFD400'/%3E%3Cpath d='M4 12h12M12 6l6 6-6 6' stroke='%230A0A0A' stroke-width='2.6' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" fill="#FFD400"/><path d="M4 12h12M12 6l6 6-6 6" stroke="#0A0A0A" stroke-width="2.6" fill="none"/></svg></span>
+        <span class="brand-text">VECTOR<em>Taxi&nbsp;Co.</em></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#manifesto">Manifeste</a>
+        <a href="#proof">Preuves</a>
+        <a href="#contact">Contact</a>
+        <a href="#book" class="nav-cta">Réserver une course</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="top">
+    <div class="hero-speedlines" aria-hidden="true">
+      <span style="--t:6%"></span><span style="--t:16%"></span><span style="--t:78%"></span>
+      <span style="--t:88%"></span><span style="--t:94%"></span>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="tag reveal">[ FORFAITS · AUCUN COMPTEUR · AU SERVICE DE LA GRILLE DEPUIS 2016 ]</p>
+        <h1 class="reveal" style="--d:.1s">LE PRIX<br>EST <span class="hl">LE PRIX.</span></h1>
+        <p class="hero-sub reveal" style="--d:.2s">Vector annonce votre tarif avant que la portière ne s'ouvre. Pas d'angoisse du
+          compteur, pas de calcul de surge, pas d'astérisque. Une société de taxi tenue comme un horaire suisse — et conduite comme tel.</p>
+        <ul class="spec-list reveal" style="--d:.3s">
+          <li>Tarif fixé avant la prise en charge</li>
+          <li>Heure d'arrivée envoyée par SMS deux minutes avant</li>
+          <li>Pas de tarification dynamique. Jamais.</li>
+        </ul>
+        <div class="hero-cta reveal" style="--d:.4s">
+          <a href="#book" class="btn btn-solid">Réserver une course</a>
+          <a href="tel:+15550102016" class="btn btn-line">☎ 555·010·2016</a>
+        </div>
+      </div>
+
+      <aside class="rateboard reveal" style="--d:.28s">
+        <div class="rate-head"><span>TABLEAU DES FORFAITS — ZONE 1</span><span class="live-dot" aria-hidden="true"></span></div>
+        <svg class="route" viewBox="0 0 360 190" aria-hidden="true">
+          <g class="route-grid">
+            <line x1="0" y1="40" x2="360" y2="40"/><line x1="0" y1="95" x2="360" y2="95"/>
+            <line x1="0" y1="150" x2="360" y2="150"/>
+            <line x1="60" y1="0" x2="60" y2="190"/><line x1="150" y1="0" x2="150" y2="190"/>
+            <line x1="240" y1="0" x2="240" y2="190"/><line x1="320" y1="0" x2="320" y2="190"/>
+          </g>
+          <path class="route-line" d="M22 162 C90 158 96 96 168 92 S280 48 330 34"/>
+          <polygon class="route-arrow" points="330,34 316,30 321,44"/>
+          <circle class="route-a" cx="22" cy="162" r="6"/>
+          <circle class="route-b" cx="330" cy="34" r="5"/>
+          <text class="route-label" x="34" y="180">DÉPART</text>
+          <text class="route-label" x="266" y="20">ARRIVÉE</text>
+          <text class="route-eta" x="130" y="128">ETA 06:42</text>
+        </svg>
+        <div class="rate-rows">
+          <p><span>AÉROPORT ⇄ CENTRE-VILLE</span><b>52 €</b></p>
+          <p><span>GARE ⇄ QUARTIER CENTRAL</span><b>18 €</b></p>
+          <p><span>QUARTIER DU PORT</span><b>24 €</b></p>
+        </div>
+        <div class="rate-foot">
+          <span>AUCUN COMPTEUR · AUCUN SURGE · AUCUN ASTÉRISQUE</span>
+          <time class="clock" id="dispatchClock">00:00:00</time>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ══════════ BANDE DAMIER ══════════ -->
+  <div class="checker-band" aria-hidden="true"></div>
+
+  <!-- ══════════ TICKER ══════════ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>FORFAITS ■ AUCUN SURGE ■ FIXÉ AVANT L'EMBARQUEMENT ■ ETA DISCIPLINÉS ■ 140 TAXIS SUR LA GRILLE ■ REÇUS TOUJOURS ■&nbsp;</span>
+      <span>FORFAITS ■ AUCUN SURGE ■ FIXÉ AVANT L'EMBARQUEMENT ■ ETA DISCIPLINÉS ■ 140 TAXIS SUR LA GRILLE ■ REÇUS TOUJOURS ■&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ══════════ SERVICES ══════════ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="sec-tag reveal"><i></i>SEC. 01 — CAPACITÉS</div>
+      <div class="sec-head">
+        <h2 class="reveal">Six services.<br>Zéro <span class="hl-inline">surprise.</span></h2>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal" style="--d:.04s">
+          <span class="idx">01</span>
+          <h3>Forfait aéroport</h3>
+          <p>Un seul prix, n'importe quel terminal, à toute heure. Vol suivi, chauffeur dépêché, 52 € vers ou depuis le centre-ville — bagages inclus, mauvaise humeur non.</p>
+          <div class="svc-foot"><span>52 € FORFAIT</span><a href="#book">RÉSERVER →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.08s">
+          <span class="idx">02</span>
+          <h3>Course en ville</h3>
+          <p>De A à B par la ligne légale la plus directe. Tarifs par zone publiés sur ce site et sur chaque portière — le chauffeur ne peut pas en inventer un.</p>
+          <div class="svc-foot"><span>DÈS 9,50 €</span><a href="#book">RÉSERVER →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.12s">
+          <span class="idx">03</span>
+          <h3>Mise à disposition horaire</h3>
+          <p>Le taxi attend entre deux arrêts pendant que vous travaillez votre journée. Facturé à l'heure à la minute près, arrondi en votre faveur.</p>
+          <div class="svc-foot"><span>DÈS 45 €/H</span><a href="#book">RÉSERVER →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.16s">
+          <span class="idx">04</span>
+          <h3>Compte entreprise</h3>
+          <p>Une facture, détaillée par course, code de coûts et passager. Priorité de dispatch pour les trains de 8h et les avions de 6h.</p>
+          <div class="svc-foot"><span>CONDITIONS MENSUELLES</span><a href="#book">RÉSERVER →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.2s">
+          <span class="idx">05</span>
+          <h3>Van &amp; groupe</h3>
+          <p>Six sièges, un vrai coffre, un seul tarif que personne ne discute. Conçu pour les équipes, les familles et les bagages qui promettent trop.</p>
+          <div class="svc-foot"><span>DÈS 34 €</span><a href="#book">RÉSERVER →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.24s">
+          <span class="idx">06</span>
+          <h3>Course colis</h3>
+          <p>Documents, clés, ordinateurs oubliés — d'un bout à l'autre de la ville en moins de 60 minutes, signés et photographiés aux deux extrémités.</p>
+          <div class="svc-foot"><span>DÈS 14 €</span><a href="#book">RÉSERVER →</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ MANIFESTE ══════════ -->
+  <section class="section dark" id="manifesto">
+    <div class="container manifesto-grid">
+      <div class="manifesto-copy">
+        <div class="sec-tag reveal"><i></i>SEC. 02 — LE MANIFESTE</div>
+        <h2 class="reveal" style="--d:.08s">Les compteurs sont des <span class="hl-inline">machines honnêtes</span> pilotées malhonnêtement.</h2>
+        <p class="reveal" style="--d:.14s">Un taximètre ne compte que ce qu'on lui dit de compter. Vector a supprimé l'ambiguïté :
+          des zones au lieu d'approximations, des forfaits au lieu d'opinions, et un reçu pour chaque centime. Nos chauffeurs sont
+          bien payés pour prendre la route la plus rapide — pas la plus longue.</p>
+        <ul class="guarantee-list">
+          <li class="reveal" style="--d:.2s"><b>01</b> Le tarif annoncé est le tarif final</li>
+          <li class="reveal" style="--d:.26s"><b>02</b> Le dispatch répond en moins de 30 secondes</li>
+          <li class="reveal" style="--d:.32s"><b>03</b> Carte, espèces et facture — à votre choix</li>
+          <li class="reveal" style="--d:.38s"><b>04</b> Chaque taxi lavé et inspecté chaque nuit</li>
+        </ul>
+      </div>
+      <div class="equation reveal" style="--d:.2s">
+        <p class="eq-label">FIG. 02 — MODÈLE TARIFAIRE VECTOR</p>
+        <div class="eq-line"><span>TARIF DE ZONE PUBLIÉ</span><b>+</b><span>DISTANCE DU TRAJET</span></div>
+        <div class="eq-total"><span>=</span><strong>UN PRIX FIXE</strong></div>
+        <p class="eq-note">Fixé à la réservation. Imprimé sur le reçu. Négociable par personne — nous compris.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CHIFFRES ══════════ -->
+  <section class="stats" id="proof">
+    <div class="container stats-row">
+      <div class="stat reveal"><strong data-count="210000" data-suffix="+">0</strong><span>courses accomplies</span></div>
+      <div class="stat reveal" style="--d:.08s"><strong data-count="98.7" data-decimal="1" data-suffix="%">0</strong><span>arrivées à l'heure</span></div>
+      <div class="stat reveal" style="--d:.16s"><strong data-count="5" data-suffix=" min">0</strong><span>prise en charge moy.</span></div>
+      <div class="stat reveal" style="--d:.24s"><strong data-count="140" data-suffix="">0</strong><span>taxis sur la grille</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════ TÉMOIGNAGES ══════════ -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="sec-tag reveal"><i></i>SEC. 03 — REGISTRE DES PASSAGERS</div>
+      <div class="sec-head">
+        <h2 class="reveal">Classé par des <span class="hl-inline">grands voyageurs.</span></h2>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Je passe quatre courses aéroport par mois en note de frais et le reçu indique toujours exactement 52 €. Mon service financier croit que je mens sur la facilité de Vector. »</blockquote>
+          <figcaption><strong>Dana K.</strong><span>47 courses enregistrées</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Un SMS annonçant 4 minutes à 5h58. Le taxi se gara à 6h02. Dans cette ville, ce n'est pas de la chance — c'est de l'ingénierie. »</blockquote>
+          <figcaption><strong>Priyesh M.</strong><span>Navetteur, quartier central</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Un contrat signé envoyé de l'autre côté de la ville par un chauffeur prénommé Viktor, suivi du début à la fin, avec la photo de la remise. Mieux que n'importe quelle appli de coursier. »</blockquote>
+          <figcaption><strong>Rosa L.</strong><span>Course colis chaque mois</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="section dark contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <div class="sec-tag reveal"><i></i>SEC. 04 — CONTACT</div>
+        <h2 class="reveal" style="--d:.08s">Parlez au <span class="hl-inline">dispatch.</span></h2>
+        <p class="reveal" style="--d:.14s">Comptes entreprises, objets trouvés, demande de grille tarifaire ou réponse nette sur un prix — le dispatch répond dans l'heure ouvrée.</p>
+        <ul class="info-list">
+          <li class="reveal" style="--d:.2s"><b>DÉPÔT</b><span>220 Gridline Ave, Bay 1<br>Quartier des transports</span></li>
+          <li class="reveal" style="--d:.26s"><b>LIGNE</b><span>+1 (555) 010-2016</span></li>
+          <li class="reveal" style="--d:.32s"><b>HORAIRES</b><span>Taxis : 24/7<br>Bureau : lundi–vendredi, 8h00 – 18h00</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <fieldset>
+          <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Nom complet</label></div>
+          <div class="field-row">
+            <div class="field"><input type="email" id="cf-email" required placeholder=" "><label for="cf-email">Adresse e-mail</label></div>
+            <div class="field"><input type="tel" id="cf-phone" placeholder=" "><label for="cf-phone">Téléphone (facultatif)</label></div>
+          </div>
+          <div class="field select-field">
+            <select id="cf-subject" required>
+              <option value="" selected disabled></option>
+              <option>Demande de compte entreprise</option>
+              <option>Demande de grille tarifaire</option>
+              <option>Objet trouvé</option>
+              <option>Question sur un tarif</option>
+              <option>Course colis</option>
+              <option>Autre</option>
+            </select>
+            <label for="cf-subject">Objet</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required placeholder=" "></textarea><label for="cf-msg">Votre message</label></div>
+          <button type="submit" class="btn btn-solid btn-wide">TRANSMETTRE AU DISPATCH</button>
+          <p class="form-note">Traité par des humains. Consigné, chiffré et répondu par écrit.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>REÇU.</h3>
+          <p>Votre message est dans la file du dispatch. Une réponse écrite arrive dans l'heure ouvrée.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════ RÉSERVATION ══════════ -->
+  <section class="section booking" id="book">
+    <div class="container">
+      <div class="sec-tag reveal"><i></i>SEC. 05 — RÉSERVATION</div>
+      <div class="sec-head">
+        <h2 class="reveal">Quatre champs.<br><span class="hl-inline">Un tarif fixe.</span></h2>
+      </div>
+
+      <div class="book-frame reveal" style="--d:.1s">
+        <div class="book-inner">
+          <ol class="wiz-steps" id="wizSteps">
+            <li class="is-current"><span>Service</span></li>
+            <li><span>Horaire</span></li>
+            <li><span>Détails</span></li>
+            <li><span>Confirmé</span></li>
+          </ol>
+
+          <form id="bookForm" novalidate>
+            <!-- ÉTAPE 1 · SERVICE -->
+            <fieldset class="pane is-active">
+              <legend>Sélectionnez le type de course.</legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="svc" value="Forfait aéroport" required><span>Transfert aéroport</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Course en ville"><span>Course en ville</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Mise à disposition horaire"><span>Mise à disposition horaire</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Compte entreprise"><span>Compte entreprise</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Van & groupe"><span>Van &amp; groupe</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Course express"><span>Course express</span></label>
+              </div>
+              <p class="choice-error">SÉLECTIONNEZ UN TYPE DE COURSE POUR CONTINUER.</p>
+              <div class="wiz-nav"><span></span><button type="button" class="btn btn-solid js-next">CONTINUER</button></div>
+            </fieldset>
+
+            <!-- ÉTAPE 2 · HORAIRE -->
+            <fieldset class="pane">
+              <legend>Fixez l'horaire.</legend>
+              <div class="field date-field">
+                <input type="date" id="bk-date" required>
+                <label>Date de prise en charge</label>
+              </div>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" class="chip" data-v="5:45">5h45</button>
+                <button type="button" class="chip" data-v="7:30">7h30</button>
+                <button type="button" class="chip" data-v="9:00">9h00</button>
+                <button type="button" class="chip" data-v="12:15">12h15</button>
+                <button type="button" class="chip" data-v="16:45">16h45</button>
+                <button type="button" class="chip" data-v="20:30">20h30</button>
+              </div>
+              <input type="hidden" id="bk-time">
+              <p class="choice-error">SÉLECTIONNEZ UN CRÉNEAU DE PRISE EN CHARGE.</p>
+              <div class="wiz-nav"><button type="button" class="btn btn-line js-prev">RETOUR</button><button type="button" class="btn btn-solid js-next">CONTINUER</button></div>
+            </fieldset>
+
+            <!-- ÉTAPE 3 · DÉTAILS -->
+            <fieldset class="pane">
+              <legend>Manifeste du passager.</legend>
+              <div class="field-row">
+                <div class="field"><input type="text" id="bk-name" required placeholder=" "><label>Nom du passager</label></div>
+                <div class="field"><input type="tel" id="bk-phone" required placeholder=" "><label>Numéro de téléphone</label></div>
+              </div>
+              <div class="field"><input type="text" id="bk-address" required placeholder=" "><label>Adresse de prise en charge</label></div>
+              <div class="field"><textarea id="bk-notes" rows="3" placeholder=" "></textarea><label>Notes d'itinéraire (facultatif)</label></div>
+              <div class="wiz-nav"><button type="button" class="btn btn-line js-prev">RETOUR</button><button type="submit" class="btn btn-solid">FIXER LE TARIF</button></div>
+            </fieldset>
+
+            <!-- ÉTAPE 4 · CONFIRMATION -->
+            <fieldset class="pane pane-success">
+              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+              <h3>RÉSERVÉ.</h3>
+              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est verrouillé pour le<br><strong id="recap-when">—</strong>.</p>
+              <p class="recap-sub">Confirmation par SMS avec le tarif, la plaque et le nom du chauffeur. Le prix est le prix.</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PIED DE PAGE ══════════ -->
+  <footer class="footer">
+    <div class="checker-band slim" aria-hidden="true"></div>
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" fill="#FFD400"/><path d="M4 12h12M12 6l6 6-6 6" stroke="#0A0A0A" stroke-width="2.6" fill="none"/></svg></span>
+          <span class="brand-text">VECTOR<em>Taxi&nbsp;Co.</em></span>
+        </a>
+        <p>La société de taxi sans compteur. Tarifs publiés, ETA disciplinés, reçus pour tout.</p>
+      </div>
+      <div><h4>SOCIÉTÉ</h4><a href="#services">Services</a><a href="#manifesto">Manifeste</a><a href="#proof">Preuves</a><a href="#testimonials">Registre des passagers</a></div>
+      <div><h4>COURSES</h4><a href="#book">Forfait aéroport</a><a href="#book">Course en ville</a><a href="#book">Mise à disposition horaire</a><a href="#book">Course express</a></div>
+      <div><h4>DISPATCH</h4><a href="tel:+15550102016">+1 (555) 010-2016</a><a href="#contact">grid@vectortaxi.co</a><span>220 Gridline Ave, Bay 1</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Vector Taxi Co. Tous droits réservés.</span><span>Flotte sous licence TLC-2016 · Tarifs publiés chaque semaine</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
