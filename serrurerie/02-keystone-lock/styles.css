@@ -86,7 +86,7 @@ body.menu-open .burger span:nth-child(2){opacity:0}
 body.menu-open .burger span:nth-child(3){top:12px;transform:rotate(-45deg)}
 
 /* ── Hero ──────────────────────────────────── */
-.hero{background:var(--paper);padding:9.5rem 0 4.5rem;overflow:hidden}
+.hero{background:var(--paper);padding:9.5rem 0 9.5rem;overflow:hidden}
 .hero-baseline{position:absolute;left:0;right:0;bottom:96px;height:1px;background:var(--line)}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:center}
 
