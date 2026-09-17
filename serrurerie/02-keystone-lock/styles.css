@@ -86,9 +86,8 @@ body.menu-open .burger span:nth-child(2){opacity:0}
 body.menu-open .burger span:nth-child(3){top:12px;transform:rotate(-45deg)}
 
 /* ── Hero ──────────────────────────────────── */
-.hero{background:var(--paper);padding:9.5rem 0 9.5rem;overflow:hidden}
-.hero-baseline{position:absolute;left:0;right:0;bottom:96px;height:1px;background:var(--line)}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:center}
+.hero{background:var(--paper);padding:9.5rem 0 0;display:flex;flex-direction:column;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:center;padding-bottom:4.5rem}
 
 .hero-copy .tag{display:inline-block;border:1px solid var(--line-2);padding:.5rem .9rem;margin-bottom:1.8rem;background:var(--card)}
 .hero-sub{color:var(--ink-2);max-width:520px;margin:1.5rem 0 1.8rem;font-size:1.04rem}
@@ -137,7 +136,7 @@ body.menu-open .burger span:nth-child(3){top:12px;transform:rotate(-45deg)}
 .panel-stats strong{font-family:var(--head);font-weight:800;font-size:1.5rem;letter-spacing:-.01em}
 .panel-stats span{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 
-.hero-rule{position:absolute;bottom:0;left:0;right:0;height:96px;display:flex;align-items:center;justify-content:center;border-top:1px solid var(--line)}
+.hero-rule{position:static;flex:none;margin-top:0;height:96px;display:flex;align-items:center;justify-content:center;border-top:1px solid var(--line)}
 .hero-rule span{font-family:var(--mono);font-size:.62rem;letter-spacing:.3em;color:var(--muted)}
 
 /* ── Trust strip ───────────────────────────── */
