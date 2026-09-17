@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Haven &amp; Hour — Le serrurier 24h/24 | Quelqu'un répond à 3 h du matin</title>
+  <meta name="description" content="Haven & Hour répond en trois sonneries, de jour comme de nuit. Un serrurier 24h/24 calme et bienveillant : fermetures réglées en quelques minutes, serrures connectées posées avec soin, et la sérénité retrouvée avant de dormir.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2v2' stroke='%23E3A34F' stroke-width='2' stroke-linecap='round'/%3E%3Crect x='7' y='6' width='10' height='13' rx='4' fill='%23E3A34F'/%3E%3Ccircle cx='12' cy='12' r='2.6' fill='%23FFF3DC'/%3E%3Cpath d='M9 22h6' stroke='%23E3A34F' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════════ NAVIGATION ══════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v2"/><rect x="7" y="6" width="10" height="13" rx="4"/><circle cx="12" cy="12" r="2.6" class="flame"/><path d="M9 22h6"/></svg>
+        </span>
+        <span class="brand-text">Haven&nbsp;&amp;&nbsp;Hour<small>Le serrurier 24h/24 · Trois sonneries, toujours</small></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#promise">La Promesse</a>
+        <a href="#night">Protocole de nuit</a>
+        <a href="#goodwords">Mots de soutien</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+15559003300" class="nav-cta">Nous sommes réveillés — appelez</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="top">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-stars" aria-hidden="true">
+      <span style="--x:14%;--y:18%"></span><span style="--x:24%;--y:42%"></span><span style="--x:68%;--y:16%"></span>
+      <span style="--x:82%;--y:34%"></span><span style="--x:74%;--y:62%"></span><span style="--x:36%;--y:70%"></span>
+      <span style="--x:8%;--y:58%"></span><span style="--x:90%;--y:74%"></span>
+    </div>
+    <svg class="hero-lantern" viewBox="0 0 120 210" aria-hidden="true">
+      <line class="cord" x1="60" y1="0" x2="60" y2="38"/>
+      <path class="cage" d="M60 38 l-16 12 h32 Z"/>
+      <rect class="cage" x="34" y="52" width="52" height="78" rx="22"/>
+      <circle class="glass" cx="60" cy="91" r="24"/>
+      <path class="flame" d="M60 80 c7 8 10 12 10 17 a10 10 0 0 1 -20 0 c0 -5 3 -9 10 -17 Z"/>
+      <path class="cage" d="M44 130 h32 l6 12 h-44 Z"/>
+    </svg>
+
+    <div class="container hero-content">
+      <p class="hero-chip reveal"><span class="pulse"></span> Il est <strong id="liveClock">--:--</strong> — et oui, quelqu'un est réveillé.</p>
+      <h1 class="reveal" style="--d:.12s">Quelqu'un répond<br><em>à 3&nbsp;h du matin.</em></h1>
+      <p class="hero-sub reveal" style="--d:.24s">
+        Une fermeture, ce n'est pas vraiment une histoire de serrures. C'est le moment où l'on a le plus besoin de se
+        sentir en sécurité. Haven &amp; Hour arrive vite, parle doucement, et reste jusqu'à ce que la porte vous
+        redevienne familière.
+      </p>
+      <div class="hero-cta reveal" style="--d:.36s">
+        <a href="tel:+15559003300" class="btn btn-amber">Parler à un humain maintenant</a>
+        <a href="#booking" class="btn btn-quiet">Prévoir une visite de jour</a>
+      </div>
+      <div class="hero-notes reveal" style="--d:.48s">
+        <div><strong>3 sonneries</strong><span>avant une vraie voix</span></div>
+        <i></i>
+        <div><strong data-count="26" data-suffix=" min">0</strong><span>d'arrivée médiane</span></div>
+        <i></i>
+        <div><strong>365</strong><span>nuits par an</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SERVICES ══════════════ -->
+  <section class="section light" id="services">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Comment nous aidons</p>
+        <h2>De petites grâces,<br><em>bien usinées</em></h2>
+        <p class="sec-sub">Tout ce qu'il faut pour qu'une maison se sente en sécurité — sans mise en scène de
+          l'urgence, sans ventes forcées, sans un seul mot condescendant.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service reveal" style="--d:.05s">
+          <span class="svc-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2v2"/><rect x="7" y="6" width="10" height="13" rx="4"/><path d="M9 22h6"/></svg>
+          </span>
+          <h3>La réponse de 3 h du matin</h3>
+          <p>Clés à l'intérieur, porte close, cœur qui bat. Appelez une fois ; un serrurier nommé est en route en
+            quelques minutes et reste jusqu'à ce que vous soyez rassuré. Aucun dégât, aucun drame, aucun sermon.</p>
+          <a href="#booking" class="service-link">à partir de 145 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.1s">
+          <span class="svc-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg>
+          </span>
+          <h3>Pose de serrures connectées, en douceur</h3>
+          <p>Serrures à empreinte et à clé de téléphone posées avec la patience d'un bon professeur — alignées,
+            testées et démontrées deux fois, pour que tout semble simple au moment où nous partons.</p>
+          <a href="#booking" class="service-link">à partir de 315 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.15s">
+          <span class="svc-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M8 11v9M16 11v5M8 16h8"/></svg>
+          </span>
+          <h3>Changement de cylindres &amp; nouveaux départs</h3>
+          <p>Après un déménagement, une séparation, un trousseau perdu — une clé neuve est un petit confort bien
+            réel. Changement de cylindres le jour même, chaque ancienne clé retirée sans cérémonie ni jugement.</p>
+          <a href="#booking" class="service-link">à partir de 185 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.2s">
+          <span class="svc-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="11" r="3.4"/><path d="M12 14.4V18M16 3v3"/></svg>
+          </span>
+          <h3>Récupération de coffres &amp; de souvenirs</h3>
+          <p>L'acte de la maison, la bague de grand-mère, les photos jamais numérisées. Nous ouvrons les coffres
+            bloqués et oubliés lentement, et vous rendons tout intact.</p>
+          <a href="#booking" class="service-link">à partir de 255 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.25s">
+          <span class="svc-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 16v-3l2-5h9l3 5h4v3"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/></svg>
+          </span>
+          <h3>Des clés pour la route</h3>
+          <p>Clés de voiture taillées, télécommandes appairées, et ce double que vous vouliez faire « un jour »
+            enfin fait. Nous venons devant chez vous, pour que personne n'ait à organiser une dépanneuse.</p>
+          <a href="#booking" class="service-link">à partir de 195 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.3s">
+          <span class="svc-glyph" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 20V9l8-6 8 6v11"/><path d="M9 20v-6h6v6M12 3v3"/></svg>
+          </span>
+          <h3>Mises à niveau en silence</h3>
+          <p>Des gâches qui tiennent vraiment, des cylindres qui résistent au crochetage, et une visite guidée de
+            tout ce que nous avons changé — la sécurité comme une couverture douce, pas comme un argument de vente.</p>
+          <a href="#booking" class="service-link">à partir de 270 € <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ THE PROMISE / STORY ══════════════ -->
+  <section class="section dark promise" id="promise">
+    <div class="container promise-grid">
+      <div class="promise-visual reveal">
+        <div class="night-window">
+          <div class="nw-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <svg class="nw-moon" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M44 6 a26 26 0 1 0 14 42 A22 22 0 0 1 44 6 Z"/>
+          </svg>
+          <p class="nw-time">3:00<small>DU MATIN</small></p>
+          <p class="nw-line">L'heure où les autres<br>vous renvoient à la messagerie.</p>
+          <p class="nw-motto">« Vous ne devriez pas avoir à être<br>courageux pour demander de l'aide. »</p>
+        </div>
+      </div>
+      <div class="promise-copy">
+        <p class="overline reveal">La Promesse</p>
+        <h2 class="reveal" style="--d:.08s">Née d'une<br><em>mauvaise nuit</em></h2>
+        <p class="reveal" style="--d:.16s">Haven &amp; Hour est née le soir où notre fondatrice — alors étudiante en
+          soins infirmiers avec un tout-petit endormi — s'est retrouvée bloquée dehors à 3 h du matin et a appelé six
+          serruriers. Cinq n'ont jamais décroché. Le sixième lui a tenu compagnie pendant l'attente, est arrivé avec
+          une couverture pour le bébé, et a facturé le tarif de jour.</p>
+        <p class="reveal" style="--d:.22s">Elle a appris le métier. Puis elle a bâti l'entreprise dont elle avait
+          besoin cette nuit-là : trois sonneries jusqu'à un humain, un prix fixe annoncé avant que le fourgon démarre,
+          et des serruriers recrutés autant pour leur patience que pour leurs mains.</p>
+        <ul class="promise-list">
+          <li class="reveal" style="--d:.28s"><span>◦</span> Une vraie personne répond — jour, nuit, jours fériés, tempêtes</li>
+          <li class="reveal" style="--d:.34s"><span>◦</span> Le prix entendu au téléphone est le prix payé</li>
+          <li class="reveal" style="--d:.4s"><span>◦</span> Chaque technicien est badgé, vérifié et bienveillant</li>
+          <li class="reveal" style="--d:.46s"><span>◦</span> Les appels de nuit coûtent le prix des appels de l'après-midi. Toujours.</li>
+        </ul>
+        <a href="#contact" class="btn btn-amber reveal" style="--d:.52s">Nous écrire, en douceur</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ NIGHT PROTOCOL ══════════════ -->
+  <section class="section light" id="night">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Le Protocole de nuit</p>
+        <h2>Ce qui se passe<br><em>quand vous appelez</em></h2>
+      </div>
+      <ol class="protocol-row">
+        <li class="reveal" style="--d:.05s"><span class="p-k">Sonneries 1–3</span><h3>Un humain répond</h3><p>Pas de menu, pas de promesse de rappel. Vous entendez une voix calme qui note votre adresse et reste en ligne aussi longtemps qu'il le faut.</p></li>
+        <li class="reveal" style="--d:.15s"><span class="p-k">Minutes 1–10</span><h3>Les secours partent</h3><p>Un serrurier nommé — photo et numéro de licence envoyés par SMS — prend la route avec tout le matériel pour une ouverture sans dégât.</p></li>
+        <li class="reveal" style="--d:.25s"><span class="p-k">Minute 26</span><h3>Vous êtes à l'intérieur</h3><p>Arrivée médiane, à l'échelle de l'agglomération. Nous ouvrons discrètement, vérifions le cadre, et vous rendons vos clés comme si rien ne s'était passé.</p></li>
+        <li class="reveal" style="--d:.35s"><span class="p-k">Après</span><h3>Nous restons un instant</h3><p>Un verre d'eau, la porte testée deux fois, et une question : y a-t-il autre chose qui vous aiderait à vous sentir en sécurité cette nuit ?</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════════ STATS ══════════════ -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="reveal"><strong data-count="9800" data-suffix="+">0</strong><span>Nuits répondues</span></div>
+      <div class="reveal" style="--d:.1s"><strong data-count="26" data-suffix=" min">0</strong><span>Arrivée de nuit médiane</span></div>
+      <div class="reveal" style="--d:.2s"><strong data-count="100" data-suffix="%">0</strong><span>Entrées avec identité vérifiée</span></div>
+      <div class="reveal" style="--d:.3s"><strong data-count="4.9" data-decimal="1" data-suffix="">0</strong><span>Note de confiance</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ TESTIMONIALS ══════════════ -->
+  <section class="section light" id="goodwords">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Mots de soutien</p>
+        <h2>Laisés par des personnes,<br><em>des nuits plus paisibles</em></h2>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Deux tout-petits dans la voiture, pas de clés, une pluie battante. La voix au téléphone est
+            restée avec moi les vingt minutes entières. Je n'ai jamais été aussi bien entourée par un inconnu. »</blockquote>
+          <figcaption><strong>Amara O.</strong><span>Fermée dehors, en février dernier</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Ils ont re-keyé la maison le lendemain de mon départ du domicile conjugal. Doux, minutieux, et
+            ils n'ont rien changé d'autre à la porte. On s'est senti repartir, en sécurité. »</blockquote>
+          <figcaption><strong>R. Calloway</strong><span>Nouveau départ, nouvelles clés</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Le coffre de ma mère n'avait pas ouvert depuis neuf ans. Ils y ont travaillé comme s'il
+            s'agissait de leur propre histoire, et chaque papier en est ressorti intact. »</blockquote>
+          <figcaption><strong>Dev &amp; Sana P.</strong><span>Récupération de souvenirs</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section dark contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="overline reveal">Dites bonjour</p>
+        <h2 class="reveal" style="--d:.08s">Quoi que vous<br><em>ayez trouvé</em></h2>
+        <p class="reveal" style="--d:.14s">Une question, une inquiétude, une porte qui accroche depuis des mois —
+          écrivez, et une vraie personne répondra dans l'heure, quelle que soit l'heure.</p>
+        <ul class="info-list">
+          <li class="reveal" style="--d:.2s"><span class="info-ic">◦</span><div><strong>Le Bureau</strong><span>7 rue de la Lanterne, rez-de-chaussée<br>Quartier des Jardins</span></div></li>
+          <li class="reveal" style="--d:.26s"><span class="info-ic">◦</span><div><strong>Ligne toute-heure</strong><span>+1 (555) 900-3300</span></div></li>
+          <li class="reveal" style="--d:.32s"><span class="info-ic">◦</span><div><strong>Réponse</strong><span>Dans l'heure, à toute heure<br>Nuits comprises — surtout les nuits</span></div></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
+        <fieldset>
+          <div class="field"><input type="text" id="cf-name" required><label for="cf-name">Votre nom</label></div>
+          <div class="field-row">
+            <div class="field"><input type="email" id="cf-email" required><label for="cf-email">E-mail</label></div>
+            <div class="field"><input type="tel" id="cf-phone"><label for="cf-phone">Téléphone (facultatif)</label></div>
+          </div>
+          <div class="field select-field">
+            <select id="cf-subject" required>
+              <option value="" selected disabled></option>
+              <option>Une question avant de réserver</option>
+              <option>Prévoir une visite de jour</option>
+              <option>Une serrure qui m'inquiète</option>
+              <option>Changement de cylindres après une rupture</option>
+              <option>Autre chose, avec plaisir</option>
+            </select>
+            <label for="cf-subject">Qu'est-ce qui vous préoccupe ?</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required></textarea><label for="cf-msg">Dites-le-nous avec vos mots</label></div>
+          <button type="submit" class="btn btn-amber btn-wide">Envoyer, quand vous serez prêt·e</button>
+          <p class="form-note">Réponse par une personne, dans l'heure — petites heures comprises.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>C'est arrivé chez nous.</h3>
+          <p>Quelqu'un vient de le lire et vous répond. Vous n'avez rien d'autre à faire ce soir.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════ BOOKING ══════════════ -->
+  <section class="section light booking" id="booking">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Prévoir une visite</p>
+        <h2>Choisissez un moment<br><em>qui vous convient</em></h2>
+        <p class="sec-sub">Quatre étapes tranquilles. Rien n'est débité avant que le travail soit fait et le prix vu.</p>
+      </div>
+
+      <div class="book-frame reveal" style="--d:.1s">
+        <div class="book-inner">
+          <ol class="wiz-steps" id="wizSteps">
+            <li class="is-current"><span>Quoi</span></li>
+            <li><span>Quand</span></li>
+            <li><span>Qui &amp; où</span></li>
+            <li><span>C'est prêt</span></li>
+          </ol>
+
+          <form id="bookForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
+            <!-- STEP 1 · SERVICE -->
+            <fieldset class="pane is-active">
+              <legend>Comment pouvons-nous vous aider ?</legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="svc" value="La Réponse de 3 h du Matin" required><span>Dépannage d'urgence 24h/24</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Pose de Serrures Connectées"><span>Installation de serrures connectées</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Changement de Cylindres &amp; Nouveaux Départs"><span>Changement de cylindres</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Récupération de Coffres &amp; Souvenirs"><span>Coffres-forts</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Des Clés pour la Route"><span>Clés de voiture</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Mises à Niveau en Silence"><span>Serrures haute sécurité</span></label>
+              </div>
+              <p class="choice-error">Choisissez le type d'aide, et nous prenons le relais.</p>
+              <div class="wiz-nav"><span></span><button type="button" class="btn btn-amber js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 2 · DATE & TIME -->
+            <fieldset class="pane">
+              <legend>Quand vous serait-il plus facile ?</legend>
+              <div class="field date-field">
+                <input type="date" id="bk-date" required>
+                <label>Date souhaitée</label>
+              </div>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" class="chip" data-v="8:00 – 10:00">8h–10h</button>
+                <button type="button" class="chip" data-v="10:00 – 12:00">10h–12h</button>
+                <button type="button" class="chip" data-v="12:00 – 14:00">12h–14h</button>
+                <button type="button" class="chip" data-v="14:00 – 16:00">14h–16h</button>
+                <button type="button" class="chip" data-v="16:00 – 18:00">16h–18h</button>
+                <button type="button" class="chip" data-v="Nuit · dès que vous êtes à la maison">Nuit</button>
+              </div>
+              <input type="hidden" id="bk-time">
+              <p class="choice-error">Choisissez un créneau — le créneau nuit compte aussi.</p>
+              <div class="wiz-nav"><button type="button" class="btn btn-quiet js-prev">Revenir</button><button type="button" class="btn btn-amber js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 3 · DETAILS -->
+            <fieldset class="pane">
+              <legend>Et qui devrons-nous chercher ?</legend>
+              <div class="field-row">
+                <div class="field"><input type="text" id="bk-name" required><label>Nom</label></div>
+                <div class="field"><input type="tel" id="bk-phone" required><label>Téléphone</label></div>
+              </div>
+              <div class="field"><input type="text" id="bk-address" required><label>Adresse</label></div>
+              <div class="field"><textarea id="bk-notes" rows="3"></textarea><label>Tout ce qui nous aiderait à mieux vous aider (facultatif)</label></div>
+              <div class="wiz-nav"><button type="button" class="btn btn-quiet js-prev">Revenir</button><button type="submit" class="btn btn-amber">Me le garder</button></div>
+            </fieldset>
+
+            <!-- STEP 4 · SUCCESS -->
+            <fieldset class="pane pane-success">
+              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+              <h3>Tout est prêt.</h3>
+              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est réservée pour<br><strong id="recap-when">—</strong>.</p>
+              <p class="recap-sub">Nous enverrons un nom, une photo et le prix fixe la veille. D'ici là, verrouillez la porte et dormez tranquille.</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M12 2v2"/><rect x="7" y="6" width="10" height="13" rx="4"/><circle cx="12" cy="12" r="2.6" class="flame"/><path d="M9 22h6"/></svg></span>
+          <span class="brand-text">Haven&nbsp;&amp;&nbsp;Hour<small>Le serrurier 24h/24 · Trois sonneries, toujours</small></span>
+        </a>
+        <p>Parce que se sentir en sécurité, c'est ça l'essentiel. Trois sonneries jusqu'à un humain, à toute heure de toute nuit.</p>
+      </div>
+      <div><h4>Société</h4><a href="#services">Services</a><a href="#promise">La Promesse</a><a href="#night">Protocole de nuit</a><a href="#goodwords">Mots de soutien</a></div>
+      <div><h4>On peut vous aider avec</h4><a href="#booking">Fermetures</a><a href="#booking">Serrures connectées</a><a href="#booking">Changement de cylindres</a><a href="#booking">Coffres-forts</a></div>
+      <div><h4>Nous joindre</h4><a href="tel:+15559003300">+1 (555) 900-3300</a><a href="#contact">hello@havenandhour.com</a><span>7 rue de la Lanterne, Quartier des Jardins</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Haven &amp; Hour. Tous droits réservés.</span><span>Agréés · Badgés · Réellement réveillés</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

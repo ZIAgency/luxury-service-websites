@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>ONYX Chauffeurs — Service privé de voiture noire | Le côté calme de la vitre</title>
   <meta name="description" content="ONYX Chauffeurs est une maison de voiture de course noire : berlines aux vitres teintées, chauffeurs triés sur le volet, tarifs fixes tout compris. La ville, du côté calme de la vitre.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230C0C10'/%3E%3Ccircle cx='12' cy='12' r='6' fill='none' stroke='%23C7C9CE' stroke-width='2'/%3E%3Ccircle cx='12' cy='12' r='1.6' fill='%238C1D3F'/%3E%3C/svg%3E">
@@ -255,6 +257,7 @@
       </div>
 
       <form class="contact-form reveal" id="contactForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
         <fieldset>
           <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Nom complet</label></div>
           <div class="field-row">
@@ -305,6 +308,7 @@
           </ol>
 
           <form id="bookForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
             <!-- ÉTAPE 1 · SERVICE -->
             <fieldset class="pane is-active">
               <legend>Quel trajet souhaitons-nous organiser ?</legend>

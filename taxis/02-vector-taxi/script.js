@@ -165,3 +165,53 @@
   /* ── Year ── */
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
+
+
+/* ── Durcissement anti-abus ─────────────────────────────────
+   1. Honeypot : un champ caché rempli = robot → soumission ignorée
+   2. Piège temporel : soumission < 3 s après le chargement = robot
+   3. Limites de saisie + autocomplete posées proprement
+   NB : la protection réelle contre le flood/injection se joue côté
+   serveur lorsqu'un backend recevra ces formulaires. */
+(function () {
+  'use strict';
+  var PAGE_LOADED = performance.now();
+
+  function looksLikeBot(form) {
+    var hp = form.querySelector('.hp-field input');
+    if (hp && hp.value !== '') return true;
+    if (performance.now() - PAGE_LOADED < 3000) return true;
+    return false;
+  }
+
+  // Phase de capture sur document : s'exécute AVANT les handlers des formulaires.
+  document.addEventListener('submit', function (e) {
+    var form = e.target;
+    if (!(form instanceof HTMLFormElement) || form.dataset.hardened) return;
+    form.dataset.hardened = '1';
+    if (looksLikeBot(form)) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+  }, true);
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('form input, form textarea').forEach(function (f) {
+      if (f.closest('.hp-field')) return;
+      if (!f.maxLength || f.maxLength === -1) {
+        if (f.tagName === 'TEXTAREA') f.maxLength = 1500;
+        else if (f.type === 'email') f.maxLength = 120;
+        else if (f.type === 'tel') f.maxLength = 30;
+        else f.maxLength = 100;
+      }
+      if (!f.autocomplete || f.autocomplete === 'off') {
+        var id = (f.id || '') + ' ' + (f.name || '');
+        if (/adresse|address/i.test(id)) f.autocomplete = 'street-address';
+        else if (f.type === 'email') f.autocomplete = 'email';
+        else if (f.type === 'tel') f.autocomplete = 'tel';
+        else if (f.type === 'date') f.autocomplete = 'off';
+        else if (f.tagName !== 'TEXTAREA' && /nom|name/i.test(id)) f.autocomplete = 'name';
+      }
+    });
+  });
+})();

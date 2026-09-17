@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Aqua Lumière — Maîtres Plombiers | L'Art de la Plomberie, Sublimé</title>
+  <meta name="description" content="Aqua Lumière est un atelier de plomberie privé au service des demeures les plus exigeantes depuis 1987. Maîtres artisans, service de conciergerie et garantie à vie sur la main-d'œuvre.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23C9A96A' d='M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0C19 10 12 2 12 2Z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════════ NAVIGATION ══════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0C19 10 12 2 12 2Z"/></svg>
+        </span>
+        <span class="brand-text">Aqua&nbsp;Lumière<small>Maîtres Plombiers · Fondée en 1987</small></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#maison">La Maison</a>
+        <a href="#process">Méthode</a>
+        <a href="#testimonials">Clients</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-cta">Réserver une visite</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="top">
+    <div class="hero-fan" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-particles" aria-hidden="true">
+      <span style="--x:12%;--y:30%;--d:11s"></span>
+      <span style="--x:78%;--y:22%;--d:14s"></span>
+      <span style="--x:60%;--y:60%;--d:9s"></span>
+      <span style="--x:28%;--y:68%;--d:13s"></span>
+      <span style="--x:88%;--y:55%;--d:12s"></span>
+    </div>
+
+    <div class="container hero-content">
+      <p class="overline reveal">Atelier de plomberie privé — Sur rendez-vous</p>
+      <h1 class="reveal" style="--d:.12s">L'art de la plomberie,<br><em class="gold-text">sublimé.</em></h1>
+      <div class="orn reveal" style="--d:.2s"><span></span><span class="diamond">◆</span><span></span></div>
+      <p class="hero-sub reveal" style="--d:.28s">
+        Depuis plus de trois décennies, Aqua Lumière prend soin des plus belles demeures de la ville —
+        maîtres plombiers d'une discrétion absolue, ouvrage irréprochable et service aux petits soins, du premier appel à la dernière finition.
+      </p>
+      <div class="hero-cta reveal" style="--d:.38s">
+        <a href="#booking" class="btn btn-gold">Réserver votre visite</a>
+        <a href="#services" class="btn btn-ghost">Découvrir les services</a>
+      </div>
+      <div class="hero-stats reveal" style="--d:.48s">
+        <div><strong data-count="38" data-suffix="">0</strong><span>Années de maîtrise</span></div>
+        <i></i>
+        <div><strong data-count="4.9" data-decimal="1" data-suffix="">0</strong><span>Note de nos clients</span></div>
+        <i></i>
+        <div><strong>24h/24 · 7j/7</strong><span>Ligne conciergerie</span></div>
+      </div>
+    </div>
+
+    <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,48 C240,90 480,6 720,32 C960,58 1200,16 1440,44 L1440,90 L0,90 Z" fill="#F6F1E7"/>
+    </svg>
+  </section>
+
+  <!-- ══════════════ MARQUEE ══════════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Intervention d'urgence ✦ Ateliers de bains d'exception ✦ Imagerie thermique des fuites ✦ Filtration toute-maison ✦ Chauffage rayonnant ✦ Rénovation de canalisations patrimoniales ✦&nbsp;</span>
+      <span>Intervention d'urgence ✦ Ateliers de bains d'exception ✦ Imagerie thermique des fuites ✦ Filtration toute-maison ✦ Chauffage rayonnant ✦ Rénovation de canalisations patrimoniales ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ══════════════ SERVICES ══════════════ -->
+  <section class="section light" id="services">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Notre savoir-faire</p>
+        <h2>Services <em>d'exception</em></h2>
+        <div class="orn"><span></span><span class="diamond">◆</span><span></span></div>
+        <p class="sec-sub">Six disciplines, une seule exigence : la perfection. Chaque intervention est conduite par un maître plombier
+          et achevée selon des standards muséaux.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service reveal" style="--d:.05s">
+          <span class="num">I</span>
+          <h3>Intervention d'urgence</h3>
+          <p>Une inondation n'attend pas le matin. Nos maîtres d'astreinte arrivent dans l'heure, en semaine comme les jours fériés, et rétablissent l'ordre avec une précision silencieuse.</p>
+          <a href="#booking" class="service-link">à partir de 180 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.1s">
+          <span class="num">II</span>
+          <h3>Ateliers de bains</h3>
+          <p>Salles de bains et douches dignes d'un spa, robinetterie choisie avec soin et étanchéité respectueuse de la pierre — conçus avec votre architecte, réalisés par nos mains.</p>
+          <a href="#booking" class="service-link">sur consultation <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.15s">
+          <span class="num">III</span>
+          <h3>Recherche de fuites &amp; imagerie thermique</h3>
+          <p>Les fuites invisibles, localisées par thermographie infrarouge et détection acoustique — sans ouvrir le moindre mur inutilement.</p>
+          <a href="#booking" class="service-link">à partir de 240 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.2s">
+          <span class="num">IV</span>
+          <h3>Rénovation des réseaux patrimoniaux</h3>
+          <p>Remplacement en toute élégance des anciennes canalisations en galvanisé ou polybutylène par du cuivre importé et du PEX-a, en préservant plâtres et boiseries.</p>
+          <a href="#booking" class="service-link">à partir de 3 900 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.25s">
+          <span class="num">V</span>
+          <h3>Filtration &amp; adoucissement de l'eau</h3>
+          <p>Des systèmes de purification et d'adoucissement pour toute la maison, dimensionnés à votre demeure, pour que chaque verre ait le goût d'une eau de source.</p>
+          <a href="#booking" class="service-link">à partir de 1 650 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.3s">
+          <span class="num">VI</span>
+          <h3>Chauffage &amp; planchers rayonnants</h3>
+          <p>Chaudières, planchers chauffants et boucles de recirculation conçus pour le silence, l'efficacité et un confort qui traverse tout l'hiver.</p>
+          <a href="#booking" class="service-link">sur consultation <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ MAISON / ABOUT ══════════════ -->
+  <section class="section dark maison" id="maison">
+    <div class="container maison-grid">
+      <div class="maison-visual reveal">
+        <div class="maison-frame">
+          <div class="maison-panel">
+            <svg viewBox="0 0 24 24" class="maison-drop"><path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0C19 10 12 2 12 2Z"/></svg>
+            <p class="maison-year">1987</p>
+            <p class="maison-motto">« L'eau bien menée<br>est un art. »</p>
+          </div>
+          <div class="maison-badge">
+            <strong>38</strong>
+            <span>années de<br>maîtrise</span>
+          </div>
+        </div>
+      </div>
+      <div class="maison-copy">
+        <p class="overline reveal">La Maison</p>
+        <h2 class="reveal" style="--d:.08s">Une famille de maîtres,<br><em class="gold-text">non une franchise.</em></h2>
+        <p class="reveal" style="--d:.16s">Aqua Lumière a été fondée par Henri Delacroix dans un unique atelier, en 1987. Aujourd'hui, sa fille dirige
+          douze maîtres plombiers — chacun sélectionné, diplômé et formé pendant au moins sept ans avant de franchir le seuil d'une demeure cliente.</p>
+        <ul class="maison-list">
+          <li class="reveal" style="--d:.22s"><span>◆</span> Agréés, cautionnés et assurés à hauteur de 2 M€</li>
+          <li class="reveal" style="--d:.28s"><span>◆</span> Garantie à vie sur la main-d'œuvre, par écrit</li>
+          <li class="reveal" style="--d:.34s"><span>◆</span> Sur-chaussures, bâches de protection et remise en état parfaite — systématiquement</li>
+          <li class="reveal" style="--d:.4s"><span>◆</span> Une conciergerie dédiée pour chaque résidence</li>
+        </ul>
+        <a href="#contact" class="btn btn-gold reveal" style="--d:.46s">Parler à la Maison</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROCESS ══════════════ -->
+  <section class="section light" id="process">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">La Méthode</p>
+        <h2>Quatre mouvements vers <em>la perfection</em></h2>
+        <div class="orn"><span></span><span class="diamond">◆</span><span></span></div>
+      </div>
+      <ol class="steps-row">
+        <li class="reveal" style="--d:.05s"><span class="step-k">01</span><h3>Consultation</h3><p>Une visite privée de votre demeure, une oreille attentive et des conseils en toute honnêteté — honoraires offerts si vous poursuivez avec nous.</p></li>
+        <li class="reveal" style="--d:.15s"><span class="step-k">02</span><h3>Diagnostic</h3><p>Imagerie thermique, cartographie de pression et analyse de débit révèlent toute la vérité de votre installation.</p></li>
+        <li class="reveal" style="--d:.25s"><span class="step-k">03</span><h3>Savoir-faire</h3><p>Nos maîtres exécutent les travaux sous bâches, dans un chantier impeccable, aux dates que nous vous avons promises.</p></li>
+        <li class="reveal" style="--d:.35s"><span class="step-k">04</span><h3>Garantie</h3><p>Une visite finale aux petits soins, une garantie à vie par écrit, et une conciergerie qui connaît votre maison comme personne.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════════ STATS ══════════════ -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="reveal"><strong data-count="12400" data-suffix="+">0</strong><span>Résidences servies</span></div>
+      <div class="reveal" style="--d:.1s"><strong data-count="98" data-suffix="%">0</strong><span>Clients qui reviennent</span></div>
+      <div class="reveal" style="--d:.2s"><strong data-count="47" data-suffix=" min">0</strong><span>Arrivée moyenne en urgence</span></div>
+      <div class="reveal" style="--d:.3s"><strong data-count="12" data-suffix="">0</strong><span>Maîtres plombiers</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ TESTIMONIALS ══════════════ -->
+  <section class="section light" id="testimonials">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Mots doux</p>
+        <h2>Chuchotés par <em>nos clients</em></h2>
+        <div class="orn"><span></span><span class="diamond">◆</span><span></span></div>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Ils ont refait toute la plomberie de notre maison de 1912 sans fêler le moindre mètre de plâtre d'origine. On se serait cru chez un restaurateur d'art plutôt que chez un entrepreneur. »</blockquote>
+          <figcaption><strong>Margaux E.</strong><span>Résidence du quartier historique</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Un tuyau éclaté à 2 h du matin, le soir du Nouvel An. Un maître plombier est arrivé en 40 minutes, en uniforme impeccable, et a laissé la salle de bains plus propre qu'il ne l'avait trouvée. »</blockquote>
+          <figcaption><strong>Jean-Baptiste &amp; Ada R.</strong><span> Propriété des bords du lac</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« La conciergerie se souvient de notre maison, de notre robinetterie, jusqu'au nom du chien. En douze ans, pas un seul rappel. Voilà, cela, le vrai luxe. »</blockquote>
+          <figcaption><strong>Dr Priya N.</strong><span>Cliente privée depuis 2013</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section dark contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="overline reveal">Correspondance</p>
+        <h2 class="reveal" style="--d:.08s">Écrire à <em class="gold-text">la Maison</em></h2>
+        <p class="reveal" style="--d:.14s">Questions, demandes d'un second avis ou devis en toute discrétion — un membre de la maison vous répond sous une heure ouvrée.</p>
+        <ul class="info-list">
+          <li class="reveal" style="--d:.2s"><span class="info-ic">◆</span><div><strong>Atelier</strong><span>14 Rue Bellevue, Suite 3<br>Quartier du Vieux-Bourg</span></div></li>
+          <li class="reveal" style="--d:.26s"><span class="info-ic">◆</span><div><strong>Ligne conciergerie</strong><span>+1 (555) 014-1987</span></div></li>
+          <li class="reveal" style="--d:.32s"><span class="info-ic">◆</span><div><strong>Horaires</strong><span>Lun–Sam · 8h00 – 19h00<br>Urgences, sans exception</span></div></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
+        <fieldset>
+          <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Nom complet</label></div>
+          <div class="field-row">
+            <div class="field"><input type="email" id="cf-email" required placeholder=" "><label for="cf-email">Adresse e-mail</label></div>
+            <div class="field"><input type="tel" id="cf-phone" placeholder=" "><label for="cf-phone">Téléphone (facultatif)</label></div>
+          </div>
+          <div class="field select-field">
+            <select id="cf-subject" required>
+              <option value="" selected disabled></option>
+              <option>Demande de devis</option>
+              <option>Second avis</option>
+              <option>Conseil pour une urgence</option>
+              <option>Adhésion à l'entretien</option>
+              <option>Autre correspondance</option>
+            </select>
+            <label for="cf-subject">Objet de votre lettre</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required placeholder=" "></textarea><label for="cf-msg">Votre message</label></div>
+          <button type="submit" class="btn btn-gold btn-wide">Envoyer avec soin</button>
+          <p class="form-note">Vos coordonnées restent strictement au sein de la maison.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>Bien reçue, avec nos remerciements.</h3>
+          <p>Votre lettre est sur le bureau de la conciergerie. Comptez une réponse personnelle sous l'heure.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════ BOOKING ══════════════ -->
+  <section class="section light booking" id="booking">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Réservations</p>
+        <h2>Réserver une <em>visite privée</em></h2>
+        <div class="orn"><span></span><span class="diamond">◆</span><span></span></div>
+        <p class="sec-sub">Quatre étapes sans bruit. Soixante secondes. Un maître plombier à votre porte, à l'heure de votre choix.</p>
+      </div>
+
+      <div class="book-frame reveal" style="--d:.1s">
+        <div class="book-inner">
+          <ol class="wiz-steps" id="wizSteps">
+            <li class="is-current"><span>Service</span></li>
+            <li><span>Moment</span></li>
+            <li><span>Coordonnées</span></li>
+            <li><span>Confirmé</span></li>
+          </ol>
+
+          <form id="bookForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
+            <!-- STEP 1 · SERVICE -->
+            <fieldset class="pane is-active">
+              <legend>Quel service pouvons-nous vous apporter ?</legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="svc" value="Intervention d'urgence" required><span>Intervention d'urgence</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Atelier de bains"><span>Atelier de bains</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Recherche de fuites"><span>Recherche de fuites</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Rénovation patrimoniale"><span>Rénovation patrimoniale</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Filtration & adoucissement"><span>Filtration &amp; adoucissement</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Chauffage & rayonnant"><span>Chauffage &amp; rayonnant</span></label>
+              </div>
+              <p class="choice-error">Veuillez choisir un service pour continuer.</p>
+              <div class="wiz-nav"><span></span><button type="button" class="btn btn-gold js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 2 · DATE & TIME -->
+            <fieldset class="pane">
+              <legend>Quand souhaiteriez-vous notre visite ?</legend>
+              <div class="field date-field">
+                <input type="date" id="bk-date" required>
+                <label>Date souhaitée</label>
+              </div>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" class="chip" data-v="8h00">8h00</button>
+                <button type="button" class="chip" data-v="9h30">9h30</button>
+                <button type="button" class="chip" data-v="11h00">11h00</button>
+                <button type="button" class="chip" data-v="13h00">13h00</button>
+                <button type="button" class="chip" data-v="14h30">14h30</button>
+                <button type="button" class="chip" data-v="16h00">16h00</button>
+              </div>
+              <input type="hidden" id="bk-time">
+              <p class="choice-error">Veuillez choisir un créneau d'arrivée.</p>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="button" class="btn btn-gold js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 3 · DETAILS -->
+            <fieldset class="pane">
+              <legend>Vos coordonnées, s'il vous plaît.</legend>
+              <div class="field-row">
+                <div class="field"><input type="text" id="bk-name" required placeholder=" "><label>Nom complet</label></div>
+                <div class="field"><input type="tel" id="bk-phone" required placeholder=" "><label>Téléphone</label></div>
+              </div>
+              <div class="field"><input type="text" id="bk-address" required placeholder=" "><label>Adresse de la propriété</label></div>
+              <div class="field"><textarea id="bk-notes" rows="3" placeholder=" "></textarea><label>Remarques pour le maître (facultatif)</label></div>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="submit" class="btn btn-gold">Confirmer la réservation</button></div>
+            </fieldset>
+
+            <!-- STEP 4 · SUCCESS -->
+            <fieldset class="pane pane-success">
+              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+              <h3>C'est réservé.</h3>
+              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est réservée pour<br><strong id="recap-when">—</strong>.</p>
+              <p class="recap-sub">Une lettre de confirmation vous est en route. Votre conciergerie vous appellera le matin de la visite.</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0C19 10 12 2 12 2Z"/></svg></span>
+          <span class="brand-text">Aqua&nbsp;Lumière<small>Maîtres Plombiers · Fondée en 1987</small></span>
+        </a>
+        <p>L'atelier de plomberie privé de ceux qui remarquent tout.</p>
+      </div>
+      <div><h4>Maison</h4><a href="#services">Services</a><a href="#maison">Notre histoire</a><a href="#process">La Méthode</a><a href="#testimonials">Clients</a></div>
+      <div><h4>Services</h4><a href="#booking">Urgences</a><a href="#booking">Ateliers de bains</a><a href="#booking">Rénovation de réseaux</a><a href="#booking">Filtration</a></div>
+      <div><h4>Correspondance</h4><a href="tel:+15550141987">+1 (555) 014-1987</a><a href="#contact">concierge@aqualumiere.co</a><span>14 Rue Bellevue, Suite 3</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Aqua Lumière. Tous droits réservés.</span><span>Agréés · Cautionnés · Assurés</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

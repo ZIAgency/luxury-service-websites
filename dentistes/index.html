@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Atelier — Cinq sites dentaires de luxe, tous différents</title>
+  <meta name="description" content="Une vitrine de design : cinq sites dentaires de luxe entièrement distincts — cosmétique couture, précision clinique, cabinet familial de génération en génération, bien-être sans angoisse et labo tech du sourire.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='4' y='4' width='16' height='16' rx='4' fill='%23000'/%3E%3Ccircle cx='12' cy='12' r='4' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#14110C;--paper:#F5F0E6;--copper:#B87333;--soft:#6E6252}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+    .wrap{width:min(1080px,92%);margin:0 auto;padding:5.5rem 0 4rem}
+    .eyebrow{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--copper);font-weight:500;margin-bottom:1.2rem}
+    h1{font-family:'Fraunces',serif;font-size:clamp(2.4rem,5vw,3.9rem);line-height:1.1;font-weight:600;max-width:720px}
+    h1 em{font-style:italic;font-weight:400}
+    .lede{color:var(--soft);max-width:560px;margin:1.4rem 0 3.4rem;font-size:1.05rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.4rem}
+    .card{display:block;background:#FCF9F1;border:1px solid rgba(184,115,51,.22);border-radius:14px;padding:1.9rem;text-decoration:none;color:inherit;transition:all .45s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden}
+    .card::after{content:"→";position:absolute;top:1.6rem;right:1.6rem;font-size:1.2rem;color:var(--copper);opacity:0;transform:translateX(-8px);transition:all .4s}
+    .card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -24px rgba(20,17,12,.3);border-color:rgba(184,115,51,.5)}
+    .card:hover::after{opacity:1;transform:none}
+    .swatches{display:flex;gap:.4rem;margin-bottom:1.2rem}
+    .swatches i{width:22px;height:22px;border-radius:50%;display:block;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+    .card h2{font-family:'Fraunces',serif;font-size:1.45rem;font-weight:600;margin-bottom:.15rem}
+    .card .tag{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--copper);display:block;margin-bottom:.8rem}
+    .card p{font-size:.9rem;color:var(--soft)}
+    .foot{border-top:1px solid rgba(184,115,51,.2);margin-top:3.6rem;padding-top:1.6rem;font-size:.8rem;color:var(--soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="eyebrow">Vitrine de design · Collection dentaire</p>
+    <h1>Cinq cabinets.<br><em>Pas un seul sourire pareil.</em></h1>
+    <p class="lede">Chaque site ci-dessous est une marque dentaire de luxe complète et autonome — sa propre palette, sa typographie, sa voix, ses animations, son formulaire de contact et sa réservation en plusieurs étapes. Ouvrez-en un, et essayez de deviner qu'ils sortent du même studio.</p>
+
+    <nav class="grid">
+      <a class="card" href="01-eclat-dental/">
+        <div class="swatches"><i style="background:#0F3A36"></i><i style="background:#D29B85"></i><i style="background:#FAF5EC"></i></div>
+        <span class="tag">01 · Cosmétique couture</span>
+        <h2>Éclat Dental</h2>
+        <p>Sarcelle profond, ivoire porcelaine &amp; or rose. Un atelier cosmétique privé aux facettes superposées à la main, médaillons enso et typographie couture qui scintille.</p>
+      </a>
+      <a class="card" href="02-arcline-dental/">
+        <div class="swatches"><i style="background:#FFFFFF"></i><i style="background:#1848C8"></i><i style="background:#0B1526"></i></div>
+        <span class="tag">02 · Précision clinique</span>
+        <h2>Arcline Dental Studio</h2>
+        <p>Blanc pur, bleu cobalt &amp; gris froid. Un panneau de scan intra-oral animé, des étiquettes en monospace et la discipline du forfait. Pour les patients qui lisent les chiffres.</p>
+      </a>
+      <a class="card" href="03-hollyfield-dental/">
+        <div class="swatches"><i style="background:#1E3B2C"></i><i style="background:#B08D4A"></i><i style="background:#F7F1E3"></i></div>
+        <span class="tag">03 · Cabinet familial d'héritage</span>
+        <h2>Hollyfield Family Dental</h2>
+        <p>Vert forêt, crème &amp; laiton. Trois générations d'un même cabinet familial depuis 1961 — un blason, une chronique vivante, et de la chaleur des petits aux grands-parents.</p>
+      </a>
+      <a class="card" href="04-still-point-dental/">
+        <div class="swatches"><i style="background:#7E987F"></i><i style="background:#EBD5CC"></i><i style="background:#FAF6F0"></i></div>
+        <span class="tag">04 · Bien-être sans angoisse</span>
+        <h2>Still Point Dental</h2>
+        <p>Sauge, blush &amp; crème. Anneaux de respiration, une carte du confort, des options de sédation et des pauses d'un geste. Une dentisterie entièrement pensée pour le patient anxieux.</p>
+      </a>
+      <a class="card" href="05-nova-smile/">
+        <div class="swatches"><i style="background:#07090D"></i><i style="background:#33E0FF"></i><i style="background:#8F7BFF"></i></div>
+        <span class="tag">05 · Labo tech du sourire</span>
+        <h2>NOVA Smile Lab</h2>
+        <p>Noir graphite aux dégradés aurora cyan-violet. Un aperçu 3D du sourire en direct, des pastilles de teinte et un pipeline scanner-simuler-valider. Le rendu, c'est le contrat.</p>
+      </a>
+    </nav>
+
+    <div class="foot">
+      <span>© 2026 Collection Atelier — série dentaire</span>
+      <span>Chaque site : index.html + styles.css + script.js · zéro dépendance · prêt pour GitHub Pages</span>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Arcline Dental Studio — Une dentisterie mesurée au micron</title>
+  <meta name="description" content="Arcline Dental Studio — un cabinet dentaire digital-first. Scanners intra-oraux 3D, couronnes le jour même et hygiène pilotée par les données, chaque étape mesurée, enregistrée et expliquée.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%231848C8' stroke-width='2' d='M12 4c2.5 0 3.2-1.2 5.2-1.2 2.8 0 4.3 2.6 4.3 5.6 0 2.8-1.3 4.6-2.1 6.8-.8 2.2-1 6-3 6-1.8 0-1.4-4.4-4.4-4.4s-2.6 4.4-4.4 4.4c-2 0-2.2-3.8-3-6C3.8 13 2.5 11.2 2.5 8.4c0-3 1.5-5.6 4.3-5.6C8.8 2.8 9.5 4 12 4Z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fragment+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4c2.5 0 3.2-1.2 5.2-1.2 2.8 0 4.3 2.6 4.3 5.6 0 2.8-1.3 4.6-2.1 6.8-.8 2.2-1 6-3 6-1.8 0-1.4-4.4-4.4-4.4s-2.6 4.4-4.4 4.4c-2 0-2.2-3.8-3-6C3.8 13 2.5 11.2 2.5 8.4c0-3 1.5-5.6 4.3-5.6C8.8 2.8 9.5 4 12 4Z"/></svg>
+        <span class="brand-text">ARCLINE<em>Dental&nbsp;Studio</em></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#protocol">Protocole</a>
+        <a href="#metrics">Indicateurs</a>
+        <a href="#patients">Patients</a>
+        <a href="#contact">Contact</a>
+        <a href="#book" class="nav-cta">Réserver un scan</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="top">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="tag reveal">[ DEPUIS 2011 · AGRÉMENT N°AD-2201 · CABINET DIGITAL-FIRST ]</p>
+        <h1 class="reveal" style="--d:.1s">Une dentisterie<br>mesurée<br><span class="accent">au micron.</span></h1>
+        <p class="hero-sub reveal" style="--d:.2s">Chez Arcline, la géométrie remplace l'approximation. Nous scannons chaque
+          patient en 3D, usinons des couronnes le jour même sur place et consignons chaque visite au dixième
+          de millimètre près — pour un traitement répétable, prouvé et serein.</p>
+        <ul class="spec-list reveal" style="--d:.3s">
+          <li>Scan de l'arcade complète en moins de 90 secondes</li>
+          <li>Couronnes le jour même, usinées sur place</li>
+          <li>Tarif forfaitaire, annoncé avant le traitement</li>
+        </ul>
+        <div class="hero-cta reveal" style="--d:.4s">
+          <a href="#book" class="btn btn-solid">Réserver un scan 3D</a>
+          <a href="tel:+15550102201" class="btn btn-line">555·010·2201</a>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal" style="--d:.25s">
+        <div class="panel-head"><span>FIG. 01 — SCAN INTRA-ORAL 04B</span><span class="live-dot"></span></div>
+        <svg class="schematic" viewBox="0 0 420 340" aria-hidden="true">
+          <g class="frame">
+            <rect x="18" y="18" width="384" height="304" rx="6"/>
+            <path d="M18 44h384M44 18v304"/>
+          </g>
+          <g class="tooth-outline">
+            <path d="M210 96c21 0 27-10 44-10 24 0 36 22 36 47 0 24-11 39-18 58-7 19-8 50-25 50-15 0-12-37-37-37s-22 37-37 37c-17 0-19-31-25-50-7-19-18-34-18-58 0-25 12-47 36-47 17 0 23 10 44 10Z"/>
+          </g>
+          <g class="scanline-wrap">
+            <line class="scanline" x1="60" y1="80" x2="360" y2="80"/>
+          </g>
+          <g class="nodes">
+            <circle class="nd" cx="210" cy="96" r="4"/><circle class="nd" cx="254" cy="86" r="4"/>
+            <circle class="nd" cx="290" cy="133" r="4"/><circle class="nd" cx="272" cy="201" r="4"/>
+            <circle class="nd" cx="254" cy="241" r="4"/><circle class="nd" cx="210" cy="204" r="4"/>
+            <circle class="nd" cx="166" cy="241" r="4"/><circle class="nd" cx="148" cy="201" r="4"/>
+            <circle class="nd" cx="130" cy="133" r="4"/><circle class="nd" cx="166" cy="86" r="4"/>
+          </g>
+          <g class="mesh">
+            <path d="M210 96 210 204M166 86 210 133M254 86 210 133M130 133 210 133 290 133M148 201 210 204 272 201M166 241 210 204 254 241"/>
+          </g>
+          <g class="dims">
+            <line x1="60" y1="308" x2="360" y2="308"/><text x="182" y="326">ARCADE = 52.4 MM</text>
+            <line x1="40" y1="80" x2="40" y2="241"/><text x="28" y="168" transform="rotate(-90 28 168)">H = 31.0 MM</text>
+          </g>
+          <g class="crosshairs">
+            <path d="M210 88v-8M210 212v8M202 96h-8M218 96h8"/>
+          </g>
+        </svg>
+        <div class="scan-meter"><span class="scan-bar"></span><b>MAILLAGE · 240 000 PTS · 100 %</b></div>
+        <div class="panel-stats">
+          <div><strong data-count="98.6" data-decimal="1" data-suffix="%">0</strong><span>de couronnes ajustées d'emblée</span></div>
+          <div><strong data-count="4" data-suffix=" h">0</strong><span>de délai scan–couronne</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-rule" aria-hidden="true"><span>DÉFILER ↓</span></div>
+  </section>
+
+  <!-- ══════════ TICKER ══════════ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>SCAN INTRA-ORAL 3D ▸ COURONNES LE JOUR MÊME ▸ PRÉVISUALISATION DIGITALE DU SOURIRE ▸ IMAGERIE SANS RADIATION ▸ DEVIS FORFAITAIRES ▸&nbsp;</span>
+      <span>SCAN INTRA-ORAL 3D ▸ COURONNES LE JOUR MÊME ▸ PRÉVISUALISATION DIGITALE DU SOURIRE ▸ IMAGERIE SANS RADIATION ▸ DEVIS FORFAITAIRES ▸&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ══════════ SERVICES ══════════ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="sec-tag reveal"><i></i>SEC. 01 — COMPÉTENCES</div>
+      <div class="sec-head">
+        <h2 class="reveal">Six disciplines.<br>Un seul standard <span class="accent">d'exactitude.</span></h2>
+      </div>
+      <div class="svc-grid">
+        <article class="svc reveal" style="--d:.04s">
+          <div class="svc-top"><span class="idx">01</span><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5M11 8v6M8 11h6"/></svg></div>
+          <h3>Diagnostic &amp; scan 3D</h3>
+          <p>Un scan optique de l'arcade complète, des photos intra-oraux et — uniquement si c'est cliniquement justifié — une imagerie à faible dose. Vous voyez le modèle à l'écran avant même que nous parlions d'un seul euro.</p>
+          <div class="svc-foot"><span>à partir de 95 €</span><a href="#book">Réserver →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.08s">
+          <div class="svc-top"><span class="idx">02</span><svg viewBox="0 0 24 24"><path d="M4 18h16M6 18v-4a6 6 0 0 1 12 0v4M12 8V5"/></svg></div>
+          <h3>Couronnes le jour même</h3>
+          <p>Scannée, conçue et usinée sur place pendant que vous attendez. La plupart des couronnes unitaires sont posées en un seul rendez-vous — pas de provisoire, pas de seconde visite, pas d'empreinte à la pâte.</p>
+          <div class="svc-foot"><span>à partir de 1 290 €</span><a href="#book">Réserver →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.12s">
+          <div class="svc-top"><span class="idx">03</span><svg viewBox="0 0 24 24"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 8.7l5.4-.8z"/></svg></div>
+          <h3>Hygiène préventive</h3>
+          <p>Des détartrages pilotés par les données, avec cartographie de la plaque à chaque visite : le progrès devient un chiffre que vous voyez baisser — pas une leçon de morale que vous devez subir.</p>
+          <div class="svc-foot"><span>à partir de 140 €</span><a href="#book">Réserver →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.16s">
+          <div class="svc-top"><span class="idx">04</span><svg viewBox="0 0 24 24"><rect x="4" y="7" width="7" height="10" rx="2"/><rect x="13" y="7" width="7" height="10" rx="2" stroke-dasharray="3 2"/><path d="M9 12h6"/></svg></div>
+          <h3>Gouttières transparentes</h3>
+          <p>Des plans d'alignement simulés sur votre scan, avec déplacement prédit gouttière par gouttière. Vous validez le résultat final numériquement avant même l'impression de la première gouttière.</p>
+          <div class="svc-foot"><span>à partir de 3 600 €</span><a href="#book">Réserver →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.2s">
+          <div class="svc-top"><span class="idx">05</span><svg viewBox="0 0 24 24"><path d="M12 3v7M9 5l3-2 3 2M8 10h8l-1 5H9zM10 15v6M14 15v6M10 18h4"/></svg></div>
+          <h3>Implants guidés</h3>
+          <p>Un positionnement planifié sur le scan et exécuté via un guide chirurgical imprimé — angle, profondeur et couple spécifiés à l'avance, puis reproduits en bouche.</p>
+          <div class="svc-foot"><span>à partir de 2 400 €</span><a href="#book">Réserver →</a></div>
+        </article>
+        <article class="svc reveal" style="--d:.24s">
+          <div class="svc-top"><span class="idx">06</span><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7v5l3 3M21 3l-4 4"/></svg></div>
+          <h3>Réparation d'urgence</h3>
+          <p>Dent fêlée, cassée ou expulsée ? Appelez avant midi et nous vous réservons un fauteuil le jour même. Grâce au dossier numérique, la réparation repart de votre dossier existant, instantanément.</p>
+          <div class="svc-foot"><span>à partir de 175 €</span><a href="#book">Réserver →</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROTOCOL / STORY ══════════ -->
+  <section class="section alt" id="protocol">
+    <div class="container proto-grid">
+      <div class="proto-copy">
+        <div class="sec-tag reveal"><i></i>SEC. 02 — LE PROTOCOLE</div>
+        <h2 class="reveal" style="--d:.08s">Chaque dent,<br><span class="accent">consignée noir sur blanc.</span></h2>
+        <p class="reveal" style="--d:.16s">Arcline a été fondé par deux ingénieurs devenus dentistes, lassés d'une
+          dentisterie qui fonctionnait à la mémoire et à l'à-peu-près. Ici, votre anatomie est capturée sous
+          forme de données dès le premier jour, et chaque restauration ultérieure est conçue par rapport à
+          cette référence — vérifiée, versionnée et archivée.</p>
+        <ul class="proto-list">
+          <li class="reveal" style="--d:.22s"><b>01</b> Scan à chaque visite de contrôle — l'évolution est suivie, pas devinée</li>
+          <li class="reveal" style="--d:.28s"><b>02</b> Restaurations usinées à partir de blocs de céramique médicale, sur place</li>
+          <li class="reveal" style="--d:.34s"><b>03</b> Devis forfaitaires et détaillés avant qu'aucun instrument ne soit ouvert</li>
+          <li class="reveal" style="--d:.4s"><b>04</b> Dossier de traitement complet exporté sur simple demande — ce sont vos données</li>
+        </ul>
+        <a href="#book" class="btn btn-solid reveal" style="--d:.46s">Commencer par un scan</a>
+      </div>
+      <div class="proto-panel reveal" style="--d:.2s">
+        <div class="proto-head"><span>ARCLINE / FLUX DE TRAVAIL v11</span><span class="live-dot"></span></div>
+        <ol class="proto-steps">
+          <li><span class="pk">A</span><div><b>Capture</b><i>Scan optique · 90 s · 240 000 points</i></div></li>
+          <li><span class="pk">B</span><div><b>Conception</b><i>CAO vérifiée en occlusion · validée par le praticien</i></div></li>
+          <li><span class="pk">C</span><div><b>Usinage</b><i>Unité 5 axes sur place · 22 min en moyenne</i></div></li>
+          <li><span class="pk">D</span><div><b>Vérification</b><i>Ajustement contrôlé à 40× · tolérance ≤ 30 µm</i></div></li>
+        </ol>
+        <div class="proto-foot">ARCHIVES : 26 412 SCANS · AUCUN PARTAGE DE DONNÉES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ METRICS ══════════ -->
+  <section class="metrics" id="metrics">
+    <div class="container metrics-grid">
+      <div class="reveal"><strong data-count="26412" data-suffix="">0</strong><span>Scans archivés</span></div>
+      <div class="reveal" style="--d:.1s"><strong data-count="4300" data-suffix="+">0</strong><span>Couronnes le jour même</span></div>
+      <div class="reveal" style="--d:.2s"><strong data-count="98.6" data-decimal="1" data-suffix="%">0</strong><span>Taux d'ajustement d'emblée</span></div>
+      <div class="reveal" style="--d:.3s"><strong data-count="13" data-suffix=" ans">0</strong><span>de flux de travail digital</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════ TESTIMONIALS ══════════ -->
+  <section class="section" id="patients">
+    <div class="container">
+      <div class="sec-tag reveal"><i></i>SEC. 03 — DOSSIERS PATIENTS</div>
+      <div class="sec-head">
+        <h2 class="reveal">Ce que les patients <span class="accent">disent vraiment.</span></h2>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Ils ont fait pivoter mon scan à l'écran et m'ont montré exactement quelle obturation avait lâché, et pourquoi. J'ai validé le plan par écrit avant qu'ils ne touchent quoi que ce soit. Ça ne m'était jamais arrivé chez un dentiste. »</blockquote>
+          <figcaption><strong>Marcus T.</strong><span>Couronne le jour même</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Un rendez-vous, une couronne, ni empreinte pâteuse, ni provisoire qui saute le week-end. Entré et sorti en quatre-vingt-dix minutes. Le devis du lundi correspondait à l'euro près à la facture du vendredi. »</blockquote>
+          <figcaption><strong>Helena S.</strong><span>Patient depuis 2018</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« J'ai déménagé et j'ai demandé mon dossier. Arcline a exporté le tout dans l'après-midi — scans, notes, tout. Un cabinet qui traite vos données comme si elles étaient les vôtres. Parce qu'elles le sont. »</blockquote>
+          <figcaption><strong>Dr Owen K.</strong><span>Patient relocalisé</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="section dark contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <div class="sec-tag light-tag reveal"><i></i>SEC. 04 — ACCUEIL</div>
+        <h2 class="reveal" style="--d:.08s">Ouvrez un <span class="accent">dossier patient.</span></h2>
+        <p class="reveal" style="--d:.14s">Questions, orientations ou devis forfaitaire — toute demande écrite reçoit
+          une réponse dans l'heure ouvrée, d'un praticien et non d'un centre d'appels.</p>
+        <ul class="info-list">
+          <li class="reveal" style="--d:.2s"><span class="info-ic">◈</span><div><strong>Le Studio</strong><span>48, rue de la Fonderie, Local 7<br>Quartier médical du Centre</span></div></li>
+          <li class="reveal" style="--d:.26s"><span class="info-ic">◈</span><div><strong>Ligne directe</strong><span>+1 (555) 010-2201</span></div></li>
+          <li class="reveal" style="--d:.32s"><span class="info-ic">◈</span><div><strong>Horaires</strong><span>Lun–Ven · 7h30 – 18h00<br>Créneaux d'urgence le jour même, chaque jour</span></div></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
+        <fieldset>
+          <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Nom complet</label></div>
+          <div class="field-row">
+            <div class="field"><input type="email" id="cf-email" required placeholder=" "><label for="cf-email">Adresse e-mail</label></div>
+            <div class="field"><input type="tel" id="cf-phone" placeholder=" "><label for="cf-phone">Téléphone (facultatif)</label></div>
+          </div>
+          <div class="field select-field">
+            <select id="cf-subject" required>
+              <option value="" selected disabled></option>
+              <option>Demande de rendez-vous scan</option>
+              <option>Devis forfaitaire</option>
+              <option>Deuxième avis</option>
+              <option>Demande de dossier</option>
+              <option>Autre demande</option>
+            </select>
+            <label for="cf-subject">Type de demande</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required placeholder=" "></textarea><label for="cf-msg">Votre message</label></div>
+          <button type="submit" class="btn btn-solid btn-wide">Transmettre la demande</button>
+          <p class="form-note">Votre dossier est chiffré au repos et jamais partagé.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>Demande enregistrée.</h3>
+          <p>Un praticien vous répondra dans l'heure ouvrée. Référence : ARC-2417.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════ BOOKING ══════════ -->
+  <section class="section booking" id="book">
+    <div class="container">
+      <div class="sec-tag reveal"><i></i>SEC. 05 — PLANIFICATION</div>
+      <div class="sec-head">
+        <h2 class="reveal">Réservez un fauteuil, <span class="accent">à la minute près.</span></h2>
+        <p class="sec-sub reveal" style="--d:.1s">Trois étapes. Soixante secondes. Votre créneau est confirmé sur le planning en temps réel.</p>
+      </div>
+
+      <div class="book-frame reveal" style="--d:.1s">
+        <div class="book-inner">
+          <ol class="wiz-steps" id="wizSteps">
+            <li class="is-current"><span>Périmètre</span></li>
+            <li><span>Créneau</span></li>
+            <li><span>Détails</span></li>
+            <li><span>Confirmé</span></li>
+          </ol>
+
+          <form id="bookForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
+            <!-- STEP 1 · PÉRIMÈTRE -->
+            <fieldset class="pane is-active">
+              <legend>Définissez le périmètre de votre visite.</legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="svc" value="Détartrage & examen" required><span>Détartrage &amp; examen</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Blanchiment esthétique"><span>Blanchiment esthétique</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Facettes & smile design"><span>Facettes &amp; smile design</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Implants"><span>Implants</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Invisalign & orthodontie"><span>Invisalign &amp; orthodontie</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Urgence dentaire"><span>Urgence dentaire</span></label>
+              </div>
+              <p class="choice-error">Sélectionnez un périmètre pour continuer.</p>
+              <div class="wiz-nav"><span></span><button type="button" class="btn btn-solid js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 2 · CRÉNEAU -->
+            <fieldset class="pane">
+              <legend>Choisissez une date et un créneau.</legend>
+              <div class="field date-field">
+                <input type="date" id="bk-date" required>
+                <label>Date du rendez-vous</label>
+              </div>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" class="chip" data-v="7:30">7h30</button>
+                <button type="button" class="chip" data-v="9:00">9h00</button>
+                <button type="button" class="chip" data-v="10:30">10h30</button>
+                <button type="button" class="chip" data-v="13:00">13h00</button>
+                <button type="button" class="chip" data-v="15:00">15h00</button>
+                <button type="button" class="chip" data-v="16:30">16h30</button>
+              </div>
+              <input type="hidden" id="bk-time">
+              <p class="choice-error">Sélectionnez un créneau disponible.</p>
+              <div class="wiz-nav"><button type="button" class="btn btn-line js-prev">Retour</button><button type="button" class="btn btn-solid js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 3 · DÉTAILS -->
+            <fieldset class="pane">
+              <legend>Coordonnées du patient.</legend>
+              <div class="field-row">
+                <div class="field"><input type="text" id="bk-name" required placeholder=" "><label>Nom complet</label></div>
+                <div class="field"><input type="tel" id="bk-phone" required placeholder=" "><label>Téléphone</label></div>
+              </div>
+              <div class="field select-field">
+                <select id="bk-status" required>
+                  <option value="" selected disabled></option>
+                  <option>Nouveau patient — premier scan</option>
+                  <option>Patient existant — dossier en cours</option>
+                </select>
+                <label for="bk-status">Statut du patient</label>
+              </div>
+              <div class="field"><textarea id="bk-notes" rows="3" placeholder=" "></textarea><label>Notes cliniques (facultatif)</label></div>
+              <div class="wiz-nav"><button type="button" class="btn btn-line js-prev">Retour</button><button type="submit" class="btn btn-solid">Confirmer le rendez-vous</button></div>
+            </fieldset>
+
+            <!-- STEP 4 · CONFIRMÉ -->
+            <fieldset class="pane pane-success">
+              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+              <h3>Créneau confirmé.</h3>
+              <p class="recap"><strong id="recap-name">—</strong>, votre visite <em id="recap-svc">—</em> est réservée le<br><strong id="recap-when">—</strong>.</p>
+              <p class="recap-sub">Une confirmation avec les formulaires d'accueil est en route. Présentez-vous dix minutes en avance : le scan démarre à l'heure pile.</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4c2.5 0 3.2-1.2 5.2-1.2 2.8 0 4.3 2.6 4.3 5.6 0 2.8-1.3 4.6-2.1 6.8-.8 2.2-1 6-3 6-1.8 0-1.4-4.4-4.4-4.4s-2.6 4.4-4.4 4.4c-2 0-2.2-3.8-3-6C3.8 13 2.5 11.2 2.5 8.4c0-3 1.5-5.6 4.3-5.6C8.8 2.8 9.5 4 12 4Z"/></svg>
+          <span class="brand-text">ARCLINE<em>Dental&nbsp;Studio</em></span>
+        </a>
+        <p>Un studio dentaire digital-first pour les patients qui veulent des chiffres, pas des sermons.</p>
+      </div>
+      <div><h4>Studio</h4><a href="#services">Services</a><a href="#protocol">Protocole</a><a href="#metrics">Indicateurs</a><a href="#patients">Patients</a></div>
+      <div><h4>Services</h4><a href="#book">Scans 3D</a><a href="#book">Couronnes le jour même</a><a href="#book">Gouttières</a><a href="#book">Implants</a></div>
+      <div><h4>Contact</h4><a href="tel:+15550102201">+1 (555) 010-2201</a><a href="#contact">intake@arclinedental.com</a><span>48, rue de la Fonderie, Local 7</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Arcline Dental Studio. Tous droits réservés.</span><span>Cabinet agréé · Données chiffrées · Devis forfaitaires</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

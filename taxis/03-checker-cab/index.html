@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Checker &amp; Sons — Flotte familiale de taxi depuis 1947 | Chaque raccourci, gagné</title>
   <meta name="description" content="Checker & Sons tient le même garage depuis 1947. Trois générations de chauffeurs qui connaissent chaque raccourci, forfaits aéroport, et un standard qui répond toujours à la deuxième sonnerie.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%23F2B705'/%3E%3Crect x='3' y='3' width='9' height='9' fill='%2317130B'/%3E%3Crect x='12' y='12' width='9' height='9' fill='%2317130B'/%3E%3C/svg%3E">
@@ -243,6 +245,7 @@
       </div>
 
       <form class="contact-form reveal" id="contactForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
         <fieldset>
           <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Votre nom</label></div>
           <div class="field-row">
@@ -293,6 +296,7 @@
           </ol>
 
           <form id="bookForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
             <!-- ÉTAPE 1 · COURSE -->
             <fieldset class="pane is-active">
               <legend>Quelle course sera-ce ?</legend>

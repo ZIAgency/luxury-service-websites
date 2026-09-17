@@ -6,11 +6,11 @@ Une vitrine de design : **des sites web complètement distincts, complets et hau
 
 ```
 luxury-service-websites/
-├── plumbing/              ← ✅ Série 1 — Plomberie (5 sites + hub)
-├── locksmiths/            ← ✅ Série 2 — Serrurerie (5 sites + hub)
+├── plomberie/              ← ✅ Série 1 — Plomberie (5 sites + hub)
+├── serrurerie/            ← ✅ Série 2 — Serrurerie (5 sites + hub)
 ├── taxis/                 ← ✅ Série 3 — Taxis (5 sites + hub)
-├── dentists/              ← ✅ Série 4 — Dentistes (5 sites + hub)
-└── ophthalmologists/      ← ✅ Série 5 — Ophtalmologie (5 sites + hub)
+├── dentistes/              ← ✅ Série 4 — Dentistes (5 sites + hub)
+└── ophtalmologie/      ← ✅ Série 5 — Ophtalmologie (5 sites + hub)
 ```
 
 Chaque dossier de catégorie contient `index.html` (page vitrine liant les cinq marques) et cinq dossiers de marques, chacun un site autonome : `index.html` + `styles.css` + `script.js`.
@@ -73,12 +73,23 @@ Chaque dossier de catégorie contient `index.html` (page vitrine liant les cinq 
 - **Formulaire de réservation** : assistant en 3 étapes (service → créneau horaire → coordonnées) avec confirmation animée
 - Animations au défilement, compteurs animés, nav verre dépoli, menu mobile — le tout respectant `prefers-reduced-motion`
 
+## 🔒 Sécurité
+
+Sites 100 % statiques : aucune base de données, aucun envoi de données, donc **aucune surface d'attaque côté serveur**. Mesures en place :
+
+- **Content-Security-Policy** stricte sur chaque page (balise `meta`) : scripts limités au domaine propre, `object-src 'none'`, `frame-src 'none'`, HTTPS forcé — bloque l'exécution de scripts tiers et le chargement de code distant
+- **Anti-spam des formulaires** : champ *honeypot* invisible (rempli = robot → soumission ignorée silencieusement), piège temporel (soumission < 3 s après chargement = robot), limite de longueur sur chaque champ, protection anti double-soumission
+- **Pas d'injection DOM** : toute saisie utilisateur est insérée via `textContent` (jamais `innerHTML`) — les récapitulatifs ne peuvent pas exécuter de code injecté
+- **Zéro dépendance** : pas de jQuery ni de plugin tiers, donc pas de chaîne d'approvisionnement à attaquer ; HTTPS automatique + HSTS sur `*.github.io`
+
+**Limites honnêtes** : GitHub Pages ne permet pas de définir des en-têtes HTTP personnalisés (`X-Frame-Options`, CSP en en-tête réel, `nosniff`) — pour des en-têtes complets, déployez sur Netlify ou Cloudflare Pages (simple fichier `_headers`). La limitation de débit sérieuse (anti-flood) et la validation finale exigent un backend : quand vous connecterez les formulaires à un service (Formspree, Netlify Forms, votre API), ajoutez-y validation serveur, vérification du honeypot côté serveur et rate-limiting.
+
 ## ▶ Lancer localement
 
 Aucune étape de build :
 
 ```bash
-open luxury-service-websites/plumbing/index.html        # macOS — n'importe quel hub
+open luxury-service-websites/plomberie/index.html        # macOS — n'importe quel hub
 # ou servir :
 cd luxury-service-websites/taxis && python3 -m http.server 8080
 ```

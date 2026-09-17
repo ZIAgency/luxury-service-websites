@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Aperio Systems — Plateforme d'accès intelligent | Serrures biométriques, clés numériques, journal d'accès en direct</title>
+  <meta name="description" content="Aperio Systems réunit la serrurerie de maître et une plateforme d'accès intelligent : serrures biométriques, clés numériques, architecture de clés maîtresses et journal d'accès en direct pour chaque porte.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2 22 20 H2 Z' fill='none' stroke='%232EE6A8' stroke-width='2'/%3E%3Ccircle cx='12' cy='14' r='2.4' fill='%232EE6A8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 20H2Z"/><circle cx="12" cy="14" r="2.4" class="core"/></svg></span>
+        <span class="brand-text">APERIO<small>SMART ACCESS SYSTEMS</small></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#systems">Systèmes</a>
+        <a href="#platform">Plateforme</a>
+        <a href="#protocol">Déploiement</a>
+        <a href="#proof">Preuves</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-cta">Déployer Aperio</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="top">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-scan" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="hero-chip reveal"><span class="pulse-dot"></span> APERIO OS v6.1 · Moteur d'accès prédictif en ligne</p>
+        <h1 class="reveal" style="--d:.1s">Chaque porte,<br><span class="grad-text">un seul trousseau.</span></h1>
+        <p class="hero-sub reveal" style="--d:.2s">Aperio associe une serrurerie de niveau maître à une véritable
+          plateforme d'accès : serrures biométriques, clés numériques qui expirent quand il le faut, et un journal
+          signé de chaque entrée — du portail d'entrée à la trappe du toit.</p>
+        <div class="hero-cta reveal" style="--d:.3s">
+          <a href="#booking" class="btn btn-neo">Réserver une visite technique</a>
+          <a href="#platform" class="btn btn-glass">Voir la plateforme</a>
+        </div>
+        <div class="hero-meta reveal" style="--d:.4s">
+          <span>RAPPORTS SOC 2</span><span>SERRURES HORS-LIGNE D'ABORD</span><span>ÉQUIPE TERRAIN 24/7</span>
+        </div>
+      </div>
+
+      <!-- Live access dashboard mock -->
+      <div class="dash reveal" style="--d:.28s">
+        <div class="dash-top">
+          <span class="dash-title"><svg viewBox="0 0 24 24"><path d="M12 2 22 20H2Z"/></svg> APERIO · LOFTS HARBORVIEW</span>
+          <span class="dash-status"><span class="pulse-dot"></span> 14 PORTES · TOUT SÉCURISÉ</span>
+        </div>
+        <div class="dash-metrics">
+          <div class="metric">
+            <span class="m-label">DÉVERROUILLAGE MOYEN</span>
+            <span class="m-value" id="mUnlock">0,41 <i>s</i></span>
+            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,14 12,12 24,15 36,10 48,13 60,9 72,12 84,8 100,10"/></svg>
+          </div>
+          <div class="metric">
+            <span class="m-label">IDENTIFIANTS AUJOURD'HUI</span>
+            <span class="m-value" id="mCreds">37 <i>clés</i></span>
+            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,18 12,16 24,17 36,12 48,14 60,10 72,13 84,9 100,11"/></svg>
+          </div>
+          <div class="metric">
+            <span class="m-label">SIGNALEMENTS (30 J)</span>
+            <span class="m-value" id="mFlags">2 <i>événements</i></span>
+            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,10 12,14 24,12 36,16 48,13 60,17 72,14 84,18 100,16"/></svg>
+          </div>
+        </div>
+        <div class="dash-log">
+          <div class="log-head"><span>JOURNAL D'ACCÈS · EN DIRECT</span><span id="logClock">--:--:--</span></div>
+          <ul id="logFeed">
+            <li><span class="l-t">09:41:07</span><span class="l-u">R. VANCE</span><span class="l-m bio">BIO</span><span class="l-d">HALL</span><span class="l-ok">✓</span></li>
+            <li><span class="l-t">09:38:52</span><span class="l-u">INVITÉ · 4H</span><span class="l-m app">APP</span><span class="l-d">PARKING</span><span class="l-ok">✓</span></li>
+            <li><span class="l-t">09:31:19</span><span class="l-u">S. IKE</span><span class="l-m pin">PIN</span><span class="l-d">SALLE</span><span class="l-ok">✓</span></li>
+            <li><span class="l-t">09:27:03</span><span class="l-u">INCONNU</span><span class="l-m key">CLÉ</span><span class="l-d">TOIT</span><span class="l-no">✕</span></li>
+            <li><span class="l-t">09:19:44</span><span class="l-u">M. OKAFOR</span><span class="l-m bio">BIO</span><span class="l-d">PORTAIL</span><span class="l-ok">✓</span></li>
+          </ul>
+        </div>
+        <div class="dash-nodes">
+          <span class="node active">PORTAIL</span>
+          <span class="node active">HALL</span>
+          <span class="node active">SALLE</span>
+          <span class="node active">TOIT</span>
+          <span class="node active">PARKING</span>
+          <span class="node active">COURRIER</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ STATS ══════════ -->
+  <section class="stats">
+    <div class="container stats-row">
+      <div class="stat reveal"><strong data-count="3200" data-suffix="+">0</strong><span>sites sous gestion</span></div>
+      <div class="stat reveal" style="--d:.08s"><strong data-count="1.4" data-decimal="1" data-suffix="M">0</strong><span>clés numériques émises</span></div>
+      <div class="stat reveal" style="--d:.16s"><strong data-count="0.41" data-decimal="2" data-suffix="s">0</strong><span>temps de déverrouillage moyen</span></div>
+      <div class="stat reveal" style="--d:.24s"><strong data-count="99.99" data-decimal="2" data-suffix="%">0</strong><span>disponibilité de la plateforme</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════ SYSTEMS / SERVICES ══════════ -->
+  <section class="section" id="systems">
+    <div class="container">
+      <div class="sec-head">
+        <p class="kicker reveal">// SYSTÈMES</p>
+        <h2 class="reveal" style="--d:.08s">La serrurerie de maître,<br><span class="grad-text">dotée de sens.</span></h2>
+        <p class="sec-sub reveal" style="--d:.14s">Six modules éprouvés sur le terrain. Combinez-les librement — chacun
+          est installé par un serrurier agréé, provisionné sur la plateforme et consigné dès la première vis.</p>
+      </div>
+      <div class="sys-grid">
+        <article class="sys reveal" style="--d:.05s">
+          <div class="sys-head"><span class="sys-ic">⏱</span><span class="sys-tag">TERRAIN</span></div>
+          <h3>Accès d'urgence — 24h/24</h3>
+          <p>Fermeture, pêne connecté bloqué, contrôleur en panne. L'équipe terrain est dépêchée avec les données de
+            la plateforme déjà chargées, et chaque intervention est inscrite à votre journal d'accès.</p>
+          <div class="sys-foot"><span class="ok">● DISPATCH 24H/24</span><span class="price">à partir de 129 €</span></div>
+        </article>
+        <article class="sys reveal" style="--d:.1s">
+          <div class="sys-head"><span class="sys-ic">◉</span><span class="sys-tag">BIO</span></div>
+          <h3>Déploiement de serrures connectées</h3>
+          <p>Matériel à empreinte, à clé de téléphone et à code ajusté à la porte — jamais forcé dessus.
+            Hors-ligne d'abord : un routeur mort ne signifie jamais une porte d'entrée morte.</p>
+          <div class="sys-foot"><span class="ok">● PAR PORTE</span><span class="price">à partir de 359 €</span></div>
+        </article>
+        <article class="sys reveal" style="--d:.15s">
+          <div class="sys-head"><span class="sys-ic">⌘</span><span class="sys-tag">ARBRE</span></div>
+          <h3>Changement de cylindres &amp; architecture de clés maîtresses</h3>
+          <p>Propriétaire, gestionnaire, personnel, invité ponctuel — conçu comme un arbre dans le tableau de bord,
+            goupillé dans les cylindres et répliqué numériquement pour que le papier et la plateforme disent toujours
+            la même chose.</p>
+          <div class="sys-foot"><span class="ok">● PAR SITE</span><span class="price">à partir de 179 €</span></div>
+        </article>
+        <article class="sys reveal" style="--d:.2s">
+          <div class="sys-head"><span class="sys-ic">▦</span><span class="sys-tag">COFFRE</span></div>
+          <h3>Ingénierie des coffres-forts</h3>
+          <p>Coffres ouverts, déplacés et câblés en capteurs : contact de porte, vibration, signal d'effraction —
+          tout remonte au même journal que la porte d'entrée. Aucun angle mort dans la salle des archives.</p>
+          <div class="sys-foot"><span class="ok">● PAR COFFRE</span><span class="price">à partir de 249 €</span></div>
+        </article>
+        <article class="sys reveal" style="--d:.25s">
+          <div class="sys-head"><span class="sys-ic">⇥</span><span class="sys-tag">AUTO</span></div>
+          <h3>Clés numériques automobiles</h3>
+          <p>Télécommandes de flotte, transpondeurs et provisionnement téléphone-comme-clé — appairés sur place,
+            attribués aux conducteurs et révocables dès qu'un utilitaire change de mains.</p>
+          <div class="sys-foot"><span class="ok">● PAR VÉHICULE</span><span class="price">à partir de 189 €</span></div>
+        </article>
+        <article class="sys reveal" style="--d:.3s">
+          <div class="sys-head"><span class="sys-ic">▲</span><span class="sys-tag">DURCIR</span></div>
+          <h3>Durcissement haute sécurité</h3>
+          <p>Cylindres anti-crochetage, gâches renforcées et kits de cadre — installés, serrés au couple et scannés
+            pour référence, afin de prouver la mise à niveau à n'importe quel auditeur.</p>
+          <div class="sys-foot"><span class="ok">● PAR PORTE</span><span class="price">à partir de 279 €</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PLATFORM / STORY ══════════ -->
+  <section class="section dark" id="platform">
+    <div class="container platform-grid">
+      <div class="platform-copy">
+        <p class="kicker reveal">// PLATEFORME</p>
+        <h2 class="reveal" style="--d:.08s">Une serrure est du matériel.<br><span class="grad-text">L'accès est un système.</span></h2>
+        <p class="reveal" style="--d:.16s">Aperio a été fondée par un maître serrurier et une ingénieure en systèmes
+          distribués qui n'arrêtaient pas de se croiser au pire endroit possible : devant une porte « intelligente »
+          tombée en panne exactement au moment où l'on en avait besoin. Nous construisons le contraire — l'excellence
+          mécanique d'abord, un logiciel qui dit la vérité, et des journaux que vous pouvez remettre à un auditeur
+          sans frémir.</p>
+        <ul class="platform-list">
+          <li class="reveal" style="--d:.22s"><span>◇</span> Serrures hors-ligne d'abord : les identifiants sont vérifiés à la porte, pas dans une file d'attente cloud</li>
+          <li class="reveal" style="--d:.28s"><span>◇</span> Journal d'accès signé, en ajout seul — les entrées ne peuvent pas être modifiées en silence</li>
+          <li class="reveal" style="--d:.34s"><span>◇</span> Clés numériques avec expiration, fenêtres horaires et mode invité à usage unique</li>
+          <li class="reveal" style="--d:.4s"><span>◇</span> Chaque installation par des serruriers agréés, serrée au couple et documentée</li>
+        </ul>
+        <a href="#contact" class="btn btn-neo reveal" style="--d:.48s">Demander une démo de la plateforme</a>
+      </div>
+      <div class="tiers reveal" style="--d:.2s">
+        <div class="tiers-head"><span>HIÉRARCHIE DE CLÉS · HARBORVIEW</span><span>SYNC EN DIRECT</span></div>
+        <div class="tier t-owner"><span class="t-name">PROPRIÉTAIRE</span><span class="t-keys">Maîtresse · les 14 portes · sans limite</span></div>
+        <div class="tier-branch" aria-hidden="true"></div>
+        <div class="tier t-manager"><span class="t-name">GESTIONNAIRE</span><span class="t-keys">Clés de jour · 13 portes · expire au départ</span></div>
+        <div class="tier-branch" aria-hidden="true"></div>
+        <div class="tier t-staff"><span class="t-name">PERSONNEL</span><span class="t-keys">Clés à fenêtre · salle, courrier, parking</span></div>
+        <div class="tier-branch" aria-hidden="true"></div>
+        <div class="tier t-guest"><span class="t-name">INVITÉ · 4H</span><span class="t-keys">Usage unique · parking 09h00–13h00</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROTOCOL / DEPLOYMENT ══════════ -->
+  <section class="section" id="protocol">
+    <div class="container">
+      <div class="sec-head">
+        <p class="kicker reveal">// DÉPLOIEMENT</p>
+        <h2 class="reveal" style="--d:.08s">Quatre phases.<br><span class="grad-text">Zéro interruption.</span></h2>
+      </div>
+      <ol class="proto-row">
+        <li class="reveal" style="--d:.05s"><span class="ph">PHASE 01</span><h3>Relevé &amp; cartographie</h3><p>Chaque porte mesurée, photographiée et étiquetée. Cadres vérifiés pour l'alignement avant toute commande de matériel.</p></li>
+        <li class="reveal" style="--d:.15s"><span class="ph">PHASE 02</span><h3>Provisionnement</h3><p>La hiérarchie est construite d'abord dans le tableau de bord — personnes, portes, fenêtres et règles d'expiration convenues sur le papier.</p></li>
+        <li class="reveal" style="--d:.25s"><span class="ph">PHASE 03</span><h3>Déploiement</h3><p>Serrures posées porte par porte, étage par étage. Anciennes clés retirées, clés numériques émises, cylindres goupillés selon l'arbre.</p></li>
+        <li class="reveal" style="--d:.35s"><span class="ph">PHASE 04</span><h3>Supervision</h3><p>Le journal d'accès passe en direct, les signalements sont acheminés vers un humain 24h/24, et c'est un serrurier — pas un chatbot — qui répond à la pager.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════ TESTIMONIALS ══════════ -->
+  <section class="section" id="proof">
+    <div class="container">
+      <div class="sec-head">
+        <p class="kicker reveal">// PREUVES</p>
+        <h2 class="reveal" style="--d:.08s">Des exploitants qui <span class="grad-text">dorment mieux désormais.</span></h2>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Nous gérons 212 portes dans six bâtiments. Le journal d'Aperio a définitivement clos le débat
+            « qui a ouvert le toit » — la réponse est toujours dans le dossier, et elle est signée. »</blockquote>
+          <figcaption><strong>Dana W.</strong><span>Directrice des opérations, Meridian Property Group</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.15s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Des clés d'invité qui expirent toutes seules. Des clés de ménage qui ne fonctionnent que de 9 h
+            à 17 h. Nos soirées de rotation sont passées du chaos à la liste de contrôle. »</blockquote>
+          <figcaption><strong>J. Marek</strong><span>Propriétaire, The Foglifter Boutique Hotel</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.25s">
+          <div class="stars">★★★★★</div>
+          <blockquote>« Un badge est mort pendant une tempête et la porte s'est quand même ouverte sur le lecteur de
+            secours. C'est à ce moment-là que j'ai compris ce que « hors-ligne d'abord » veut vraiment dire. »</blockquote>
+          <figcaption><strong>Priya S.</strong><span>Responsable technique, Travaux Publics Co.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="section dark contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="kicker reveal">// CONTACT</p>
+        <h2 class="reveal" style="--d:.08s">Apportez-nous votre<br><span class="grad-text">pire porte.</span></h2>
+        <p class="reveal" style="--d:.14s">Celle au contrôleur mort et au registre des clés sur papier. Un ingénieur
+          déploiement répond en moins d'une heure ouvrée avec un créneau de relevé et une réponse franche.</p>
+        <ul class="info-list">
+          <li class="reveal" style="--d:.2s"><span class="info-ic">◇</span><div><strong>Siège</strong><span>Bâtiment C, 44 Foundry Tech Park<br>Quartier Grayfield</span></div></li>
+          <li class="reveal" style="--d:.26s"><span class="info-ic">◇</span><div><strong>Ligne terrain 24/7</strong><span>+1 (555) 402-6100</span></div></li>
+          <li class="reveal" style="--d:.32s"><span class="info-ic">◇</span><div><strong>SLA de réponse</strong><span>Devis en 1 heure ouvrée<br>Accès d'urgence, toujours pourvu</span></div></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
+        <fieldset>
+          <div class="field"><input type="text" id="cf-name" required><label for="cf-name">Nom complet</label></div>
+          <div class="field-row">
+            <div class="field"><input type="email" id="cf-email" required><label for="cf-email">E-mail professionnel</label></div>
+            <div class="field"><input type="tel" id="cf-phone"><label for="cf-phone">Téléphone (facultatif)</label></div>
+          </div>
+          <div class="field select-field">
+            <select id="cf-subject" required>
+              <option value="" selected disabled></option>
+              <option>Démo de la plateforme</option>
+              <option>Visite technique</option>
+              <option>Accès d'urgence</option>
+              <option>Architecture de clés maîtresses</option>
+              <option>Autre</option>
+            </select>
+            <label for="cf-subject">Type de demande</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required></textarea><label for="cf-msg">Nombre de portes, délai, points de douleur</label></div>
+          <button type="submit" class="btn btn-neo btn-wide">Envoyer à Aperio</button>
+          <p class="form-note">Réponse par un ingénieur. Vos données restent dans votre déploiement.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>Demande enregistrée.</h3>
+          <p>Horodatée et acheminée — un ingénieur répond en moins d'une heure ouvrée avec les prochaines étapes.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════ BOOKING ══════════ -->
+  <section class="section booking" id="booking">
+    <div class="container">
+      <div class="sec-head">
+        <p class="kicker reveal">// RÉSERVATION DÉPLOIEMENT</p>
+        <h2 class="reveal" style="--d:.08s">Réservez un <span class="grad-text">créneau sur site.</span></h2>
+        <p class="sec-sub reveal" style="--d:.14s">Quatre étapes. Le fourgon arrive avec vos données de portes préchargées.</p>
+      </div>
+
+      <div class="book-frame reveal" style="--d:.1s">
+        <div class="book-inner">
+          <ol class="wiz-steps" id="wizSteps">
+            <li class="is-current"><span>MODULE</span></li>
+            <li><span>CRÉNEAU</span></li>
+            <li><span>DONNÉES SITE</span></li>
+            <li><span>CONFIRMÉ</span></li>
+          </ol>
+
+          <form id="bookForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
+            <!-- STEP 1 · SERVICE -->
+            <fieldset class="pane is-active">
+              <legend>Sélectionnez le module à déployer.</legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="svc" value="Accès d'urgence — 24h/24" required><span>Dépannage d'urgence — 24h/24</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Déploiement de Serrures Connectées"><span>Installation de serrures connectées</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Changement de Cylindres &amp; Clés Maîtresses"><span>Changement de cylindres &amp; clés maîtresses</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Ingénierie des Coffres-forts"><span>Coffres-forts</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Clés Numériques Automobiles"><span>Clés de voiture</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Durcissement Haute Sécurité"><span>Serrures haute sécurité</span></label>
+              </div>
+              <p class="choice-error">Sélectionnez un module pour continuer.</p>
+              <div class="wiz-nav"><span></span><button type="button" class="btn btn-neo js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 2 · DATE & TIME -->
+            <fieldset class="pane">
+              <legend>Réservez la fenêtre de déploiement.</legend>
+              <div class="field date-field">
+                <input type="date" id="bk-date" required>
+                <label>Date cible</label>
+              </div>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" class="chip" data-v="07:00 – 09:00">7h–9h</button>
+                <button type="button" class="chip" data-v="09:00 – 12:00">9h–12h</button>
+                <button type="button" class="chip" data-v="12:00 – 15:00">12h–15h</button>
+                <button type="button" class="chip" data-v="15:00 – 18:00">15h–18h</button>
+                <button type="button" class="chip" data-v="18:00 – 21:00">18h–21h</button>
+                <button type="button" class="chip" data-v="21:00 – 24:00">21h–24h</button>
+              </div>
+              <input type="hidden" id="bk-time">
+              <p class="choice-error">Choisissez une fenêtre — créneaux de nuit inclus.</p>
+              <div class="wiz-nav"><button type="button" class="btn btn-glass js-prev">Retour</button><button type="button" class="btn btn-neo js-next">Continuer</button></div>
+            </fieldset>
+
+            <!-- STEP 3 · DETAILS -->
+            <fieldset class="pane">
+              <legend>Fiche site &amp; contact.</legend>
+              <div class="field-row">
+                <div class="field"><input type="text" id="bk-name" required><label>Nom complet</label></div>
+                <div class="field"><input type="tel" id="bk-phone" required><label>Téléphone</label></div>
+              </div>
+              <div class="field"><input type="text" id="bk-address" required><label>Adresse du site</label></div>
+              <div class="field"><textarea id="bk-notes" rows="3"></textarea><label>Nombre de portes, heures d'accès, remarques (facultatif)</label></div>
+              <div class="wiz-nav"><button type="button" class="btn btn-glass js-prev">Retour</button><button type="submit" class="btn btn-neo">Confirmer le déploiement</button></div>
+            </fieldset>
+
+            <!-- STEP 4 · SUCCESS -->
+            <fieldset class="pane pane-success">
+              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+              <h3>Créneau confirmé.</h3>
+              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est planifié pour<br><strong id="recap-when">—</strong>.</p>
+              <p class="recap-sub">Vous recevrez une confirmation et une liste de contrôle de relevé. L'équipe terrain envoie un SMS à l'arrivée — et chaque vis qu'elle tourne finit dans le journal.</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M12 2 22 20H2Z"/><circle cx="12" cy="14" r="2.4" class="core"/></svg></span>
+          <span class="brand-text">APERIO<small>SMART ACCESS SYSTEMS</small></span>
+        </a>
+        <p>L'excellence mécanique d'abord, un logiciel qui dit la vérité. Serrurerie de maître, accès de niveau plateforme.</p>
+      </div>
+      <div><h4>Système</h4><a href="#systems">Modules</a><a href="#platform">Plateforme</a><a href="#protocol">Déploiement</a><a href="#proof">Preuves</a></div>
+      <div><h4>Modules</h4><a href="#booking">Serrures connectées</a><a href="#booking">Arbre de clés maîtresses</a><a href="#booking">Coffres-forts</a><a href="#booking">Durcissement</a></div>
+      <div><h4>Contact</h4><a href="tel:+15554026100">+1 (555) 402-6100</a><a href="#contact">ops@aperiosystems.io</a><span>Bâtiment C, 44 Foundry Tech Park</span></div>
+    </div>
+    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Aperio Systems. Tous droits réservés.</span><span>Serruriers agréés · Rapports SOC 2 · Hors-ligne d'abord</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
