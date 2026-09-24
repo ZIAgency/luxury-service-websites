@@ -1,0 +1,5 @@
+:HL["/artisanat/03-aupres/_next/static/chunks/42jowy7rs9xz3.css","style"]
+:HL["/artisanat/03-aupres/_next/static/media/017d9bea37084d9b-s.p.41rroleoq1br7.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/artisanat/03-aupres/_next/static/media/fed68dff3ca987ed-s.p.3e08ior5wrhci.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["https://images.unsplash.com/photo-1586324304780-c9a5031a3599?w=1400&q=80&auto=format&fit=crop","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"bV5u9ZbgIEKH7AOtTwF7K"}
