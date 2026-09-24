@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Sève &amp; Pierre — Paysagiste concepteur | Des jardins qui vous survivront</title>
+  <meta name="description" content="Sève &amp; Pierre dessine et réalise des jardins sur mesure : conception, terrasses et maçonnerie paysagère, plantations, bassins et éclairage. Un jardin pensé pour la vingtième année, pas pour la photo du premier jour.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231B3A2B' d='M20 3C9 3 4 9 4 16c0 2 .6 3.6 1.6 4.9L4 22.5 5.5 24l1.6-1.6C8.4 23.4 10 24 12 24c7 0 13-5 13-16 0-2-.4-3.6-1-5-1.2.6-2.6 1-4 1Z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Karla:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ══════════════ NAVIGATION ══════════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 3C9 3 4 9 4 16c0 2 .6 3.6 1.6 4.9L4 22.5 5.5 24l1.6-1.6C8.4 23.4 10 24 12 24c7 0 13-5 13-16 0-2-.4-3.6-1-5-1.2.6-2.6 1-4 1Z"/></svg>
+        </span>
+        <span class="brand-text">Sève &amp; Pierre<small>Paysagiste concepteur · Depuis 2003</small></span>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#services">Créations</a>
+        <a href="#maison">La Maison</a>
+        <a href="#method">La Méthode</a>
+        <a href="#clients">Jardins</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-cta">Visite de terrain</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="top">
+    <div class="hero-plan" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <circle class="p-line" cx="200" cy="200" r="150"/>
+        <circle class="p-line p-slow" cx="200" cy="200" r="104"/>
+        <path class="p-draw" d="M50 300 C120 250 150 200 200 190 C250 180 290 210 350 170"/>
+        <path class="p-draw p-d2" d="M70 120 C140 150 180 130 230 90 C270 58 310 70 348 55"/>
+        <path class="p-draw p-d3" d="M200 350 C200 290 175 250 200 190 C225 130 210 90 200 50"/>
+        <circle class="p-dot" cx="200" cy="190" r="5"/>
+        <circle class="p-dot p-dot2" cx="120" cy="256" r="3.4"/>
+        <circle class="p-dot p-dot3" cx="288" cy="134" r="3.4"/>
+      </svg>
+    </div>
+    <div class="hero-ridge" aria-hidden="true"></div>
+    <div class="hero-motes" aria-hidden="true">
+      <span style="--x:16%;--y:30%;--d:13s"></span>
+      <span style="--x:78%;--y:22%;--d:16s"></span>
+      <span style="--x:62%;--y:66%;--d:11s"></span>
+      <span style="--x:28%;--y:72%;--d:14s"></span>
+      <span style="--x:88%;--y:54%;--d:12s"></span>
+      <span style="--x:44%;--y:16%;--d:15s"></span>
+    </div>
+
+    <div class="container hero-content">
+      <p class="overline reveal">Paysagiste concepteur — Jardins sur mesure</p>
+      <h1 class="reveal" style="--d:.12s">Le jardin que vous verrez<br><em class="sap-text">dans vingt ans.</em></h1>
+      <div class="orn reveal" style="--d:.2s"><span></span><span class="spark">✦</span><span></span></div>
+      <p class="hero-sub reveal" style="--d:.28s">
+        Un jardin réussi ne se juge pas le jour de la livraison. Il se juge quand les arbres ont pris
+        leur place, quand la pierre s'est patinée et que tout paraît avoir toujours été là. Nous dessinons
+        pour cette année-là, et nous plantons en conséquence.
+      </p>
+      <div class="hero-cta reveal" style="--d:.38s">
+        <a href="#booking" class="btn btn-sap">Demander une visite de terrain</a>
+        <a href="#services" class="btn btn-ghost">Voir nos créations</a>
+      </div>
+      <div class="hero-stats reveal" style="--d:.48s">
+        <div><strong data-count="22" data-suffix="">0</strong><span>Années de pratique</span></div>
+        <i></i>
+        <div><strong data-count="340" data-suffix="">0</strong><span>Jardins dessinés</span></div>
+        <i></i>
+        <div><strong data-count="2" data-suffix=" ans">0</strong><span>De suivi après chantier</span></div>
+      </div>
+    </div>
+
+    <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,48 C240,88 480,12 720,40 C960,68 1200,20 1440,52 L1440,90 L0,90 Z" fill="#F4EFE4"/>
+    </svg>
+  </section>
+
+  <!-- ══════════════ MARQUEE ══════════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Conception &amp; plans ✧ Terrasses en pierre naturelle ✧ Massifs vivaces ✧ Bassins &amp; points d'eau ✧ Éclairage extérieur ✧ Taille raisonnée ✧&nbsp;</span>
+      <span>Conception &amp; plans ✧ Terrasses en pierre naturelle ✧ Massifs vivaces ✧ Bassins &amp; points d'eau ✧ Éclairage extérieur ✧ Taille raisonnée ✧&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ══════════════ SERVICES ══════════════ -->
+  <section class="section light" id="services">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Nos métiers</p>
+        <h2>Six savoir-faire, <em>un seul jardin</em></h2>
+        <div class="orn"><span></span><span class="spark">✦</span><span></span></div>
+        <p class="sec-sub">Nous concevons et réalisons nous-mêmes. Pas de sous-traitance en cascade : le
+          dessinateur qui trace votre plan est celui qui viendra vérifier l'aplomb d'un muret.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service reveal" style="--d:.05s">
+          <span class="num">No. 01</span>
+          <h3>Conception &amp; plans</h3>
+          <p>Relevé du terrain, étude des vues, du soleil et des vents, puis un plan dessiné à la main et une palette végétale commentée, essence par essence.</p>
+          <a href="#booking" class="service-link">à partir de 2 400 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.1s">
+          <span class="num">No. 02</span>
+          <h3>Terrasses &amp; maçonnerie</h3>
+          <p>Pierre naturelle, murets de soutènement, escaliers et bordures. Le minéral qui tient le jardin debout et lui donne ses lignes pour trente ans.</p>
+          <a href="#booking" class="service-link">sur devis <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.15s">
+          <span class="num">No. 03</span>
+          <h3>Plantations &amp; massifs</h3>
+          <p>Arbres de belle taille, haies libres, vivaces et graminées composées par floraisons successives, pour que quelque chose se passe à chaque saison.</p>
+          <a href="#booking" class="service-link">sur devis <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.2s">
+          <span class="num">No. 04</span>
+          <h3>Bassins &amp; points d'eau</h3>
+          <p>Bassins naturels, miroirs d'eau et fontaines. L'eau apporte le son, la lumière et une faune qui s'installe d'elle-même dès la première année.</p>
+          <a href="#booking" class="service-link">sur devis <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.25s">
+          <span class="num">No. 05</span>
+          <h3>Éclairage extérieur</h3>
+          <p>Une mise en lumière discrète, rasante, qui prolonge le jardin après le dîner sans jamais éblouir ni gêner le voisinage ou la faune nocturne.</p>
+          <a href="#booking" class="service-link">à partir de 1 800 € <span>→</span></a>
+        </article>
+        <article class="service reveal" style="--d:.3s">
+          <span class="num">No. 06</span>
+          <h3>Entretien &amp; taille raisonnée</h3>
+          <p>Un passage par saison, mené par la même équipe. On taille pour la santé de l'arbre et la forme voulue, jamais au gabarit ni au calendrier.</p>
+          <a href="#booking" class="service-link">contrat annuel <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SAISONS ══════════════ -->
+  <section class="section seasons-sec light-2">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Le jardin, toute l'année</p>
+        <h2>Quatre saisons, <em>quatre spectacles</em></h2>
+        <p class="sec-sub">Un jardin qui n'est beau qu'en juin est un jardin raté. Voici ce que nous
+          composons pour chacune des quatre.</p>
+      </div>
+      <div class="seasons">
+        <article class="season reveal" style="--d:.05s">
+          <span class="s-mark">Printemps</span>
+          <h3>La montée</h3>
+          <p>Bulbes, cerisiers et jeunes pousses. Six semaines où le jardin change de visage chaque matin.</p>
+        </article>
+        <article class="season reveal" style="--d:.12s">
+          <span class="s-mark">Été</span>
+          <h3>L'ombre</h3>
+          <p>Vivaces en pleine masse, graminées qui bougent au vent, et l'ombre portée là où l'on déjeune.</p>
+        </article>
+        <article class="season reveal" style="--d:.19s">
+          <span class="s-mark">Automne</span>
+          <h3>Le feu</h3>
+          <p>Feuillages qui virent, fruits décoratifs, lumière rasante. La saison que nous préférons dessiner.</p>
+        </article>
+        <article class="season reveal" style="--d:.26s">
+          <span class="s-mark">Hiver</span>
+          <h3>L'ossature</h3>
+          <p>Écorces, silhouettes et pierre nue. C'est en janvier qu'on voit si un jardin a été bien pensé.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ LA MAISON ══════════════ -->
+  <section class="section dark maison" id="maison">
+    <div class="container maison-grid">
+      <div class="maison-ring reveal">
+        <svg viewBox="0 0 160 160" aria-hidden="true">
+          <circle class="ring-line" cx="80" cy="80" r="70"/>
+          <circle class="ring-line" cx="80" cy="80" r="56" stroke-dasharray="4 7"/>
+          <path class="ring-leaf" d="M110 48C74 48 58 68 58 91c0 6.6 2 11.9 5.3 16.2L58 113l5 5 5.3-5.3C72.6 116 78 118 84.5 118c23 0 43-16.5 43-52.8 0-6.6-1.3-11.9-3.3-16.5-4 2-8.6 3.3-14.2 3.3Z"/>
+        </svg>
+        <p class="maison-est">Depuis 2003</p>
+        <p class="maison-motto">« On ne plante pas pour soi,<br>on plante pour celui qui regardera. »</p>
+        <div class="maison-badge"><strong>340</strong><span>Jardins<br>dessinés</span></div>
+      </div>
+      <div class="maison-copy">
+        <p class="overline reveal">La Maison</p>
+        <h2 class="reveal" style="--d:.08s">Une équipe qui <em class="sap-text">revient</em></h2>
+        <p class="reveal" style="--d:.14s">Sève &amp; Pierre réunit un concepteur, deux maçons paysagistes
+          et trois jardiniers. Nous prenons peu de chantiers à la fois, parce qu'un jardin demande
+          d'être suivi bien après la dernière plantation.</p>
+        <ul class="maison-list">
+          <li class="reveal" style="--d:.2s"><span>✦</span>Le concepteur suit le chantier du premier croquis à la reprise des végétaux.</li>
+          <li class="reveal" style="--d:.25s"><span>✦</span>Pierre naturelle et végétaux de pépinières françaises, tracés et facturés au réel.</li>
+          <li class="reveal" style="--d:.3s"><span>✦</span>Deux saisons de suivi comprises : arrosage, reprise, tailles de formation.</li>
+          <li class="reveal" style="--d:.35s"><span>✦</span>Aucun produit phytosanitaire de synthèse, sur aucun de nos chantiers.</li>
+        </ul>
+        <a href="#booking" class="btn btn-sap reveal" style="--d:.4s">Parler de votre terrain</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ MÉTHODE ══════════════ -->
+  <section class="section light" id="method">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">La Méthode</p>
+        <h2>Du terrain nu <em>au jardin tenu</em></h2>
+        <div class="orn"><span></span><span class="spark">✦</span><span></span></div>
+      </div>
+      <ol class="steps-row">
+        <li class="reveal" style="--d:.05s">
+          <span class="step-k">Étape I</span>
+          <h3>La visite</h3>
+          <p>Deux heures sur place. On regarde le sol, les vues, l'orientation — et on écoute comment vous vivez dehors.</p>
+        </li>
+        <li class="reveal" style="--d:.12s">
+          <span class="step-k">Étape II</span>
+          <h3>Le dessin</h3>
+          <p>Un plan à la main, une palette végétale et un chiffrage par poste. Deux séries de retouches comprises.</p>
+        </li>
+        <li class="reveal" style="--d:.19s">
+          <span class="step-k">Étape III</span>
+          <h3>Le chantier</h3>
+          <p>Minéral d'abord, végétal ensuite. Un compte rendu photo chaque vendredi, jusqu'à la dernière plantation.</p>
+        </li>
+        <li class="reveal" style="--d:.26s">
+          <span class="step-k">Étape IV</span>
+          <h3>La reprise</h3>
+          <p>Deux saisons de suivi comprises. On remplace ce qui n'a pas pris, sans discussion et sans supplément.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════════ CHIFFRES ══════════════ -->
+  <div class="stats-band">
+    <div class="container stats-grid">
+      <div class="reveal"><strong data-count="340">0</strong><span>Jardins dessinés</span></div>
+      <div class="reveal" style="--d:.08s"><strong data-count="22">0</strong><span>Années de pratique</span></div>
+      <div class="reveal" style="--d:.16s"><strong data-count="96" data-suffix="%">0</strong><span>De reprise à la première année</span></div>
+      <div class="reveal" style="--d:.24s"><strong data-count="4.9" data-decimal="1">0</strong><span>Note de nos clients</span></div>
+    </div>
+  </div>
+
+  <!-- ══════════════ CLIENTS ══════════════ -->
+  <section class="section light" id="clients">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Leurs jardins</p>
+        <h2>Ce qu'ils en <em>disent</em></h2>
+        <div class="orn"><span></span><span class="spark">✦</span><span></span></div>
+      </div>
+      <div class="testi-grid">
+        <figure class="testi reveal" style="--d:.05s">
+          <div class="stars">★★★★★</div>
+          <blockquote>Ils ont refusé mon idée de haie de thuyas et m'ont proposé une haie libre. Quatre ans après, il y a des oiseaux partout et je ne taille qu'une fois l'an.</blockquote>
+          <figcaption><strong>Hélène D.</strong><span>Jardin de 900 m² · Chatou</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.12s">
+          <div class="stars">★★★★★</div>
+          <blockquote>La terrasse en pierre a été posée au millimètre, et le chiffrage de départ n'a pas bougé d'un euro. C'est assez rare pour être dit.</blockquote>
+          <figcaption><strong>Marc &amp; Julie T.</strong><span>Terrasse &amp; muret · Sèvres</span></figcaption>
+        </figure>
+        <figure class="testi reveal" style="--d:.19s">
+          <div class="stars">★★★★★</div>
+          <blockquote>Deux érables n'avaient pas repris au printemps. Ils sont revenus les remplacer sans que j'aie à demander quoi que ce soit.</blockquote>
+          <figcaption><strong>Pascale R.</strong><span>Jardin de ville · Bordeaux</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="section dark contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="overline reveal">Nous écrire</p>
+        <h2 class="reveal" style="--d:.08s">Parlons de <em class="sap-text">votre terrain</em></h2>
+        <p class="reveal" style="--d:.14s">Une idée encore floue, un plan d'architecte ou un jardin à reprendre —
+          décrivez-nous la situation, nous vous répondons sous deux jours ouvrés.</p>
+        <ul class="info-list">
+          <li class="reveal" style="--d:.2s"><span class="info-ic">✦</span><div><strong>L'atelier</strong><span>14, chemin des Pépinières<br>Bâtiment de la Serre</span></div></li>
+          <li class="reveal" style="--d:.26s"><span class="info-ic">✦</span><div><strong>Téléphone</strong><span>01 84 00 00 00</span></div></li>
+          <li class="reveal" style="--d:.32s"><span class="info-ic">✦</span><div><strong>Saison des visites</strong><span>Lun–Ven · 8h – 18h<br>Samedi matin sur rendez-vous</span></div></li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
+        <fieldset>
+          <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Nom complet</label></div>
+          <div class="field-row">
+            <div class="field"><input type="email" id="cf-email" required placeholder=" "><label for="cf-email">Adresse e-mail</label></div>
+            <div class="field"><input type="tel" id="cf-phone" placeholder=" "><label for="cf-phone">Téléphone (facultatif)</label></div>
+          </div>
+          <div class="field select-field">
+            <select id="cf-subject" required>
+              <option value="" selected disabled></option>
+              <option>Conception d'un jardin complet</option>
+              <option>Terrasse ou maçonnerie paysagère</option>
+              <option>Plantations &amp; massifs</option>
+              <option>Bassin ou point d'eau</option>
+              <option>Contrat d'entretien</option>
+              <option>Autre demande</option>
+            </select>
+            <label for="cf-subject">Nature du projet</label>
+          </div>
+          <div class="field"><textarea id="cf-msg" rows="4" required placeholder=" "></textarea><label for="cf-msg">Votre terrain, votre envie</label></div>
+          <button type="submit" class="btn btn-sap btn-wide">Envoyer le message</button>
+          <p class="form-note">Vos coordonnées ne quittent pas l'atelier. Aucun démarchage.</p>
+        </fieldset>
+        <div class="form-success" hidden>
+          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+          <h3>Message bien reçu.</h3>
+          <p>Nous le lisons en fin de journée. Vous aurez une réponse écrite, et un créneau de visite si le projet s'y prête, sous deux jours ouvrés.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════ RÉSERVATION ══════════════ -->
+  <section class="section light booking" id="booking">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="overline">Visite de terrain</p>
+        <h2>Réserver une <em>visite sur place</em></h2>
+        <div class="orn"><span></span><span class="spark">✦</span><span></span></div>
+        <p class="sec-sub">Trois étapes, une minute. La première visite dure deux heures et reste sans engagement.</p>
+      </div>
+
+      <div class="book-frame reveal" style="--d:.1s">
+        <div class="book-inner">
+          <ol class="wiz-steps" id="wizSteps">
+            <li class="is-current"><span>Projet</span></li>
+            <li><span>Moment</span></li>
+            <li><span>Détails</span></li>
+            <li><span>Confirmé</span></li>
+          </ol>
+
+          <form id="bookForm" novalidate>
+            <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
+
+            <fieldset class="pane is-active">
+              <legend>Que souhaitez-vous faire de ce terrain ?</legend>
+              <div class="choice-grid">
+                <label class="choice"><input type="radio" name="svc" value="Conception d'un jardin complet" required><span>Jardin complet</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Terrasse & maçonnerie"><span>Terrasse &amp; maçonnerie</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Plantations & massifs"><span>Plantations &amp; massifs</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Bassin ou point d'eau"><span>Bassin ou point d'eau</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Éclairage extérieur"><span>Éclairage extérieur</span></label>
+                <label class="choice"><input type="radio" name="svc" value="Contrat d'entretien"><span>Contrat d'entretien</span></label>
+              </div>
+              <p class="choice-error">Choisissez une nature de projet pour continuer.</p>
+              <div class="wiz-nav"><span></span><button type="button" class="btn btn-sap js-next">Continuer</button></div>
+            </fieldset>
+
+            <fieldset class="pane">
+              <legend>Quand pouvons-nous passer ?</legend>
+              <div class="field date-field">
+                <input type="date" id="bk-date" required>
+                <label>Date souhaitée</label>
+              </div>
+              <div class="time-grid" id="timeGrid">
+                <button type="button" class="chip" data-v="8:30">8h30</button>
+                <button type="button" class="chip" data-v="10:00">10h00</button>
+                <button type="button" class="chip" data-v="11:30">11h30</button>
+                <button type="button" class="chip" data-v="14:00">14h00</button>
+                <button type="button" class="chip" data-v="15:30">15h30</button>
+                <button type="button" class="chip" data-v="17:00">17h00</button>
+              </div>
+              <input type="hidden" id="bk-time">
+              <p class="choice-error">Veuillez choisir un horaire de visite.</p>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="button" class="btn btn-sap js-next">Continuer</button></div>
+            </fieldset>
+
+            <fieldset class="pane">
+              <legend>Vos coordonnées, et l'adresse du terrain.</legend>
+              <div class="field-row">
+                <div class="field"><input type="text" id="bk-name" required placeholder=" "><label>Nom complet</label></div>
+                <div class="field"><input type="tel" id="bk-phone" required placeholder=" "><label>Téléphone</label></div>
+              </div>
+              <div class="field select-field">
+                <select id="bk-status" required>
+                  <option value="" selected disabled></option>
+                  <option>Terrain nu, tout est à faire</option>
+                  <option>Jardin existant à reprendre</option>
+                  <option>Construction neuve en cours</option>
+                </select>
+                <label for="bk-status">Dans quel état est le terrain ?</label>
+              </div>
+              <div class="field"><textarea id="bk-notes" rows="3" placeholder=" "></textarea><label>Surface approximative, accès, contraintes (facultatif)</label></div>
+              <div class="wiz-nav"><button type="button" class="btn btn-ghost js-prev">Retour</button><button type="submit" class="btn btn-sap">Confirmer la visite</button></div>
+            </fieldset>
+
+            <fieldset class="pane pane-success">
+              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
+              <h3>La visite est calée.</h3>
+              <p class="recap"><strong id="recap-name">—</strong>, votre visite <em id="recap-svc">—</em> est prévue le<br><strong id="recap-when">—</strong>.</p>
+              <p class="recap-sub">Vous recevrez une confirmation écrite. Prévoyez les plans du terrain si vous en avez : cela nous fait gagner une demi-journée de relevé.</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <span class="brand-text">Sève &amp; Pierre<small>Paysagiste concepteur · Depuis 2003</small></span>
+        <p>Conception et réalisation de jardins sur mesure. Pierre naturelle, végétaux de pépinières françaises, et deux saisons de suivi comprises.</p>
+      </div>
+      <div>
+        <h4>Nos métiers</h4>
+        <a href="#services">Conception &amp; plans</a>
+        <a href="#services">Terrasses &amp; maçonnerie</a>
+        <a href="#services">Plantations &amp; massifs</a>
+        <a href="#services">Bassins &amp; points d'eau</a>
+        <a href="#services">Entretien</a>
+      </div>
+      <div>
+        <h4>La Maison</h4>
+        <a href="#maison">L'équipe</a>
+        <a href="#method">La méthode</a>
+        <a href="#clients">Leurs jardins</a>
+        <a href="#booking">Visite de terrain</a>
+      </div>
+      <div>
+        <h4>Nous joindre</h4>
+        <span>14, chemin des Pépinières</span>
+        <span>01 84 00 00 00</span>
+        <span>bonjour@seve-et-pierre.fr</span>
+        <span>Lun–Ven · 8h – 18h</span>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <div class="container">
+        <span>© <span id="year">2026</span> Sève &amp; Pierre — Tous droits réservés.</span>
+        <span>Site de démonstration · Entreprise fictive</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

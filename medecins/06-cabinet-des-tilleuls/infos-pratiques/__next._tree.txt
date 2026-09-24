@@ -1,0 +1,3 @@
+:HL["/medecins/06-cabinet-des-tilleuls/_next/static/chunks/2855oe693fcc4.css","style"]
+:HL["/medecins/06-cabinet-des-tilleuls/_next/static/media/c47649aa31f9e140-s.p.3lxpqujs87tck.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"infos-pratiques","param":null,"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"Mbmkju_azY9oxlgVbGnE2"}

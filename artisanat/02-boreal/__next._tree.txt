@@ -1,0 +1,4 @@
+:HL["/artisanat/02-boreal/_next/static/chunks/345_v77kru_o7.css","style"]
+:HL["/artisanat/02-boreal/_next/static/media/75affa71d1e2f6a7-s.p.17-aodiw50953.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/artisanat/02-boreal/_next/static/media/d2d62b05021c6286-s.p.2d9e_tvweuz-y.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"I_gysAXOhDQdXzzI-itH0"}
