@@ -46,6 +46,12 @@ SECTIONS = [
   ("serene-vision","Serene Vision","Douceur & pédiatrie","Sécheresse oculaire et jeunes patients : un univers rassurant pour les parents.",["#7FB0C4","#EAF4F6","#183642"],"ophtalmologie/04-serene-vision/",True),
   ("vizn-lab","VIZN Lab","Dépistage avancé","L'imagerie rétinienne comme différenciateur : détecter plus tôt, expliquer mieux.",["#00C2FF","#05070D","#8B98A8"],"ophtalmologie/05-vizn-lab/",True),
  ]),
+ ("Paysagistes", "Le jardin est un achat qui se juge sur vingt ans : le site doit le faire sentir.", None, [
+  ("seve-pierre","Sève & Pierre","Concepteur de jardins","Conception, terrasses et plantations haut de gamme. Un site qui vend la vision longue plutôt que le devis le moins cher.",["#1B3A2B","#C2703D","#F4EFE4"],"paysagistes/01-seve-pierre/",True),
+ ]),
+ ("Avocats", "Une matière où l'on ne choisit pas au prix, mais à la confiance qu'inspire la page.", None, [
+  ("roussel-associes","Roussel & Associés","Conseil & contentieux","Six domaines du droit, des honoraires annoncés par écrit. Le ton sobre qui rassure avant le premier appel.",["#101A2E","#B08D4A","#F5F2EA"],"avocats/01-roussel-associes/",True),
+ ]),
  ("Médecins généralistes", "Six cabinets, six façons d'installer la confiance dès la page d'accueil.", None, [
   ("cabinet-des-cedres","Cabinet des Cèdres","Médecine de famille · Lyon","Le suivi d'un médecin de famille, sans l'attente. Prise de rendez-vous mise en avant.",["#1B3A2B","#C9A24B","#F2EFE7"],None,False),
   ("praxis","Praxis","Cabinet de groupe · Bordeaux","Plusieurs praticiens, un seul parcours limpide : choisir, réserver, être reçu.",["#0E1B2E","#3E82E0","#EEF2F7"],None,False),
@@ -95,7 +101,7 @@ def card(s):
 def section(title, lede, hub, sites, idx):
     head = (f'<div class="series-head"><div><h2>{title}</h2><p class="series-lede">{lede}</p></div>'
             + (f'<a class="idx" href="{hub}">Voir la série ↗</a>' if hub
-               else f'<span class="idx">{len(sites)} sites</span>')
+               else f'<span class="idx">{len(sites)} site{"s" if len(sites) > 1 else ""}</span>')
             + '</div>')
     cards = "\n        ".join(card(s) for s in sites)
     return f'''    <!-- {title.upper()} -->
