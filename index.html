@@ -3,103 +3,226 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Studio — 25 sites vitrines haut de gamme</title>
-  <meta name="description" content="Portfolio de design : 25 sites vitrines de luxe entièrement distincts, répartis en cinq métiers de services de proximité — plomberie, serrurerie, taxis, dentistes, ophtalmologie. HTML/CSS/JS purs, zéro dépendance.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230A0A0A'/%3E%3Ccircle cx='12' cy='12' r='5' fill='none' stroke='%23C8A24B' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>ZYAGENCY — 25 sites vitrines haut de gamme</title>
+  <meta name="description" content="Une sélection de 25 sites vitrines de luxe signés ZYAGENCY, répartis en cinq métiers de proximité. Votre partenaire digital : sites vitrines, e-commerce, SEO, SEA, réseaux sociaux et IA.">
+  <link rel="icon" href="assets/zy-logo.svg">
   <style>
-    :root{--ink:#0C0C0E;--paper:#0A0A0B;--panel:#141417;--line:rgba(200,162,75,.22);--gold:#C8A24B;--soft:#9A958C;--white:#F4F1EA}
+    @font-face{font-family:'Sentient';src:url('assets/fonts/Sentient-Extralight.woff') format('woff');font-weight:200;font-style:normal;font-display:swap}
+    @font-face{font-family:'Sentient';src:url('assets/fonts/Sentient-LightItalic.woff') format('woff');font-weight:300;font-style:italic;font-display:swap}
+
+    :root{
+      --bg:#000000; --fg:#ffffff; --primary:#FFC700; --primary-2:#E0AE00;
+      --border:#424242; --muted:rgba(255,255,255,.6); --panel:#0A0A0A;
+      --mono:ui-monospace,'SFMono-Regular','Menlo','Consolas',monospace;
+    }
     *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-    .wrap{width:min(1120px,92%);margin:0 auto}
-    header{padding:6rem 0 3.5rem;text-align:center}
-    .eyebrow{font-size:.72rem;letter-spacing:.36em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1.6rem}
-    h1{font-family:'Fraunces',serif;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.08;font-weight:600;max-width:860px;margin:0 auto}
-    h1 em{font-style:italic;font-weight:400;color:var(--gold)}
-    .lede{color:var(--soft);max-width:620px;margin:1.8rem auto 0;font-size:1.08rem}
-    .stats{display:flex;justify-content:center;gap:3rem;margin:3rem 0 0;flex-wrap:wrap}
-    .stat b{font-family:'Fraunces',serif;font-size:2rem;display:block;color:var(--white)}
-    .stat span{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--soft)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;padding:2rem 0 1rem}
-    .card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:2rem;text-decoration:none;color:inherit;transition:all .5s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden}
-    .card::after{content:"→";position:absolute;top:1.8rem;right:1.8rem;font-size:1.3rem;color:var(--gold);opacity:0;transform:translateX(-8px);transition:all .4s}
-    .card:hover{transform:translateY(-6px);box-shadow:0 34px 70px -30px rgba(0,0,0,.8);border-color:rgba(200,162,75,.55)}
-    .card:hover::after{opacity:1;transform:none}
-    .num{font-family:'Fraunces',serif;font-size:.9rem;color:var(--gold);margin-bottom:1.1rem}
-    .swatches{display:flex;gap:.4rem;margin-bottom:1.2rem}
-    .swatches i{width:24px;height:24px;border-radius:50%;display:block;border:2px solid rgba(255,255,255,.12)}
-    .card h2{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:600;margin-bottom:.5rem}
-    .card p{font-size:.92rem;color:var(--soft);margin-bottom:1.3rem}
-    .brands{font-size:.78rem;color:var(--soft);border-top:1px solid rgba(255,255,255,.08);padding-top:1rem;letter-spacing:.02em}
-    .brands b{color:var(--white);font-weight:500}
-    .foot{border-top:1px solid rgba(255,255,255,.08);margin-top:4rem;padding:2rem 0 4rem;font-size:.82rem;color:var(--soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.6rem}
-    a.txt{color:var(--gold);text-decoration:none}
-    @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--fg);font-family:Arial,Helvetica,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    .container{width:min(1200px,92%);margin-inline:auto}
+    .sentient{font-family:'Sentient',serif;font-weight:200}
+    i.em{font-family:'Sentient',serif;font-weight:300;font-style:italic}
+    .mono{font-family:var(--mono)}
+    a{color:inherit;text-decoration:none}
+
+    /* NAV */
+    header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.72);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .brand{display:flex;align-items:center;gap:.7rem}
+    .brand svg{width:26px;height:26px}
+    .brand .word{font-family:'Sentient',serif;font-weight:200;font-size:1.15rem;letter-spacing:.28em}
+    .nav-cta{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:#000;background:linear-gradient(to bottom,#fff,#d4d4d4);padding:.6rem 1.1rem;border-radius:999px;transition:transform .3s ease}
+    .nav-cta:hover{transform:scale(1.05)}
+
+    /* HERO */
+    .hero{padding:7rem 0 5rem;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+    .hero::before{content:"";position:absolute;top:-30%;right:-10%;width:640px;height:640px;background:radial-gradient(circle,rgba(255,199,0,.14),transparent 62%);filter:blur(20px);pointer-events:none}
+    .eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--primary);margin-bottom:1.6rem}
+    h1{font-family:'Sentient',serif;font-weight:200;font-size:clamp(2.8rem,7vw,5.4rem);line-height:1.04;letter-spacing:-.01em;max-width:960px}
+    .lede{font-family:var(--mono);font-size:.95rem;color:var(--muted);max-width:600px;margin:2rem 0 0;line-height:1.8}
+    .cta-row{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.6rem}
+    .btn{cursor:pointer;border:0;border-radius:999px;padding:1rem 2rem;font-size:1rem;font-weight:600;color:#000;transition:transform .3s ease;display:inline-flex;align-items:center;gap:.5rem}
+    .btn-white{background:linear-gradient(to bottom,#fff,#d4d4d4);box-shadow:0 8px 30px rgba(255,255,255,.15)}
+    .btn-yellow{background:linear-gradient(to bottom,var(--primary),var(--primary-2));box-shadow:0 8px 30px rgba(255,199,0,.25)}
+    .btn:hover{transform:scale(1.05)}
+
+    /* STATS */
+    .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:2.4rem 1rem;padding:4rem 0;border-bottom:1px solid var(--border)}
+    @media(min-width:900px){.stats{grid-template-columns:repeat(4,1fr)}}
+    .stat b{font-family:'Sentient',serif;font-weight:200;font-size:clamp(2.6rem,5vw,3.4rem);color:var(--primary);display:block;line-height:1}
+    .stat span{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);display:block;margin-top:.7rem}
+
+    /* SERIES */
+    .series{padding:5rem 0 2rem}
+    .series-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;padding-bottom:1.6rem;margin-bottom:2.2rem;border-bottom:1px solid var(--border)}
+    .series-head h2{font-family:'Sentient',serif;font-weight:200;font-size:clamp(1.8rem,4vw,2.6rem)}
+    .series-head .idx{font-family:var(--mono);font-size:.8rem;letter-spacing:.2em;color:var(--primary)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem}
+    .card{position:relative;display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:1.7rem;transition:transform .5s cubic-bezier(.16,1,.3,1),border-color .4s,box-shadow .5s}
+    .card:hover{transform:translateY(-6px);border-color:rgba(255,199,0,.55);box-shadow:0 30px 60px -30px rgba(0,0,0,.9)}
+    .card .arrow{position:absolute;top:1.5rem;right:1.5rem;color:var(--primary);opacity:0;transform:translateX(-6px);transition:.4s;font-size:1.1rem}
+    .card:hover .arrow{opacity:1;transform:none}
+    .swatches{display:flex;gap:.4rem;margin-bottom:1.1rem}
+    .swatches i{width:20px;height:20px;border-radius:50%;border:1.5px solid rgba(255,255,255,.14)}
+    .card .tag{font-family:var(--mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.14em;color:var(--primary);margin-bottom:.5rem}
+    .card h3{font-family:'Sentient',serif;font-weight:200;font-size:1.5rem;margin-bottom:.5rem}
+    .card p{font-size:.86rem;color:var(--muted);line-height:1.6}
+    .hub-link{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--primary)}
+
+    /* FINAL CTA */
+    .final{text-align:center;padding:6rem 0;margin-top:3rem;border-top:1px solid var(--border);position:relative;overflow:hidden}
+    .final::before{content:"";position:absolute;bottom:-40%;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(circle,rgba(255,199,0,.12),transparent 60%);pointer-events:none}
+    .final h2{font-family:'Sentient',serif;font-weight:200;font-size:clamp(2.2rem,5vw,3.6rem);max-width:780px;margin:0 auto 1.6rem}
+    .final p{font-family:var(--mono);font-size:.9rem;color:var(--muted);max-width:520px;margin:0 auto 2.4rem}
+
+    /* FOOTER */
+    footer{border-top:1px solid var(--border);padding:2.6rem 0}
+    .foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;font-family:var(--mono);font-size:.74rem;color:var(--muted);letter-spacing:.04em}
+    .foot .brand .word{font-size:.95rem}
+
+    @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
   </style>
 </head>
 <body>
-  <header class="wrap">
-    <p class="eyebrow">Vitrine de design · Studio</p>
-    <h1>Vingt-cinq sites.<br><em>Aucun ne se ressemble.</em></h1>
-    <p class="lede">Une collection de sites vitrines haut de gamme pour cinq métiers de services de proximité. Chaque marque est complète et autonome — palette, typographie, voix, animations et tunnels de conversion propres — développée sans aucune dépendance. Choisissez un métier.</p>
-    <div class="stats">
-      <div class="stat"><b>5</b><span>Métiers</span></div>
-      <div class="stat"><b>25</b><span>Sites uniques</span></div>
-      <div class="stat"><b>0</b><span>Dépendance</span></div>
+  <!-- reusable logo -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="zy">
+    <path fill="currentColor" d="M101.141 53H136.632C151.023 53 162.689 64.6662 162.689 79.0573V112.904H148.112V79.0573C148.112 78.7105 148.098 78.3662 148.072 78.0251L112.581 112.898C112.701 112.902 112.821 112.904 112.941 112.904H148.112V126.672H112.941C98.5504 126.672 86.5638 114.891 86.5638 100.5V66.7434H101.141V100.5C101.141 101.15 101.191 101.792 101.289 102.422L137.56 66.7816C137.255 66.7563 136.945 66.7434 136.632 66.7434H101.141V53Z"/>
+    <path fill="currentColor" d="M65.2926 124.136L14 66.7372H34.6355L64.7495 100.436V66.7372H80.1365V118.47C80.1365 126.278 70.4953 129.958 65.2926 124.136Z"/>
+  </g></defs></svg>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="ZYAGENCY — accueil">
+        <svg viewBox="0 0 180 180" style="color:var(--primary)"><use href="#zy"/></svg>
+        <span class="word">ZYAGENCY</span>
+      </a>
+      <a class="nav-cta" href="#contact">Parlons de vos objectifs</a>
     </div>
   </header>
 
-  <main class="wrap">
-    <div class="grid">
-      <a class="card" href="plomberie/">
-        <div class="num">01 · Série</div>
-        <div class="swatches"><i style="background:#0E6E8C"></i><i style="background:#C8A24B"></i><i style="background:#101418"></i></div>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Portfolio · Sites vitrines</p>
+        <h1>Vingt-cinq sites.<br><i class="em">Aucun ne se ressemble.</i></h1>
+        <p class="lede">Une sélection de réalisations signées ZYAGENCY pour cinq métiers de proximité. Chaque marque est un site complet et autonome — palette, typographie, voix et tunnels de conversion sur mesure. Votre partenaire digital, du premier pixel à la conversion.</p>
+        <div class="cta-row">
+          <a class="btn btn-white" href="#realisations">Voir les réalisations</a>
+          <a class="btn btn-yellow" href="#contact">Discuter d'un projet</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="container">
+      <div class="stats">
+        <div class="stat"><b>25</b><span>Sites livrés</span></div>
+        <div class="stat"><b>5</b><span>Métiers couverts</span></div>
+        <div class="stat"><b>0</b><span>Dépendance · 100% sur mesure</span></div>
+        <div class="stat"><b>100%</b><span>Pensés pour convertir</span></div>
+      </div>
+    </section>
+
+    <!-- REALISATIONS -->
+    <div id="realisations"></div>
+
+    <!-- PLOMBERIE -->
+    <section class="series container">
+      <div class="series-head">
         <h2>Plomberie</h2>
-        <p>De l'atelier Art déco au système d'eau connecté IoT — cinq visions du métier de l'eau.</p>
-        <div class="brands"><b>Aqua Lumière</b> · Meridian · Copperline &amp; Sons · Stillwater · NEXA</div>
-      </a>
+        <a class="idx" href="plomberie/">01 · Voir le hub →</a>
+      </div>
+      <div class="grid">
+        <a class="card" href="plomberie/01-aqua-lumiere/"><span class="arrow">→</span><div class="swatches"><i style="background:#0E6E8C"></i><i style="background:#C8A24B"></i><i style="background:#101418"></i></div><span class="tag">Atelier · Art déco</span><h3>Aqua Lumière</h3><p>Plomberie privée haut de gamme. Dégradés or, éventails déco, voix conciergerie.</p></a>
+        <a class="card" href="plomberie/02-meridian/"><span class="arrow">→</span><div class="swatches"><i style="background:#D7263D"></i><i style="background:#1A2A3A"></i><i style="background:#F2F2F2"></i></div><span class="tag">Ingénierie suisse</span><h3>Meridian</h3><p>Discipline d'ingénieur. Schéma de tuyauterie animé et fiche chantier en direct.</p></a>
+        <a class="card" href="plomberie/03-copperline/"><span class="arrow">→</span><div class="swatches"><i style="background:#B87333"></i><i style="background:#2B2118"></i><i style="background:#EFE6D8"></i></div><span class="tag">Héritage familial</span><h3>Copperline &amp; Sons</h3><p>Depuis 1962. Typo cuivre, chronologie générationnelle, « garantie sans blague ».</p></a>
+        <a class="card" href="plomberie/04-stillwater/"><span class="arrow">→</span><div class="swatches"><i style="background:#3E7C8B"></i><i style="background:#DCEBEA"></i><i style="background:#12242A"></i></div><span class="tag">Bien-être · spa</span><h3>Stillwater</h3><p>État d'esprit spa. Héros à ondulations, services-rituels et abonnements.</p></a>
+        <a class="card" href="plomberie/05-nexa/"><span class="arrow">→</span><div class="swatches"><i style="background:#00E0B8"></i><i style="background:#0B0F1A"></i><i style="background:#7A8CA3"></i></div><span class="tag">Eau connectée · IoT</span><h3>NEXA</h3><p>Systèmes d'eau intelligents. Dashboard de capteurs en direct, glassmorphism.</p></a>
+      </div>
+    </section>
 
-      <a class="card" href="serrurerie/">
-        <div class="num">02 · Série</div>
-        <div class="swatches"><i style="background:#E8631A"></i><i style="background:#B8973F"></i><i style="background:#121110"></i></div>
+    <!-- SERRURERIE -->
+    <section class="series container">
+      <div class="series-head">
         <h2>Serrurerie</h2>
-        <p>Onyx &amp; laiton, forge d'héritage ou plateforme d'accès connecté — la sécurité en cinq voix.</p>
-        <div class="brands"><b>Bastion &amp; Clef</b> · Keystone Lock · Ironhaven &amp; Sons · Haven &amp; Hour · Aperio</div>
-      </a>
+        <a class="idx" href="serrurerie/">02 · Voir le hub →</a>
+      </div>
+      <div class="grid">
+        <a class="card" href="serrurerie/01-bastion-clef/"><span class="arrow">→</span><div class="swatches"><i style="background:#0E0E10"></i><i style="background:#B8973F"></i><i style="background:#E8E4DA"></i></div><span class="tag">Atelier onyx &amp; laiton</span><h3>Bastion &amp; Clef</h3><p>Clef squelette en filigrane, panneau « Mécanisme № 7 ». Sécurité couture.</p></a>
+        <a class="card" href="serrurerie/02-keystone-lock/"><span class="arrow">→</span><div class="swatches"><i style="background:#E8631A"></i><i style="background:#121110"></i><i style="background:#F0EDE6"></i></div><span class="tag">Précision · signal</span><h3>Keystone Lock Co.</h3><p>Coupe de cylindre à goupilles animée et planning de contrôle qualité.</p></a>
+        <a class="card" href="serrurerie/03-ironhaven/"><span class="arrow">→</span><div class="swatches"><i style="background:#C1440E"></i><i style="background:#1A1512"></i><i style="background:#D9C7A3"></i></div><span class="tag">Forge d'héritage</span><h3>Ironhaven &amp; Sons</h3><p>Depuis 1954. Particules de braise, plaque du fondateur, chronologie dessinée.</p></a>
+        <a class="card" href="serrurerie/04-haven-hour/"><span class="arrow">→</span><div class="swatches"><i style="background:#1B2A4A"></i><i style="background:#E4B35A"></i><i style="background:#EDEFF5"></i></div><span class="tag">Réassurance · 3 h</span><h3>Haven &amp; Hour</h3><p>Lanterne et étoiles, horloge « quelqu'un est éveillé » en direct. Calme absolu.</p></a>
+        <a class="card" href="serrurerie/05-aperio/"><span class="arrow">→</span><div class="swatches"><i style="background:#2D7FF9"></i><i style="background:#0A0E14"></i><i style="background:#AEB9C7"></i></div><span class="tag">Accès connecté</span><h3>Aperio Systems</h3><p>Plateforme d'accès. Journal en direct, hiérarchie des clés numériques.</p></a>
+      </div>
+    </section>
 
-      <a class="card" href="taxis/">
-        <div class="num">03 · Série</div>
-        <div class="swatches"><i style="background:#0A0A0A"></i><i style="background:#E4C04A"></i><i style="background:#F4F1EA"></i></div>
+    <!-- TAXIS -->
+    <section class="series container">
+      <div class="series-head">
         <h2>Taxis</h2>
-        <p>Chauffeur de luxe, tarif forfaitaire, héritage damier ou dispatch temps réel.</p>
-        <div class="brands"><b>ONYX</b> · Vector Taxi · Checker &amp; Sons · Lumen Rides · PULSE</div>
-      </a>
+        <a class="idx" href="taxis/">03 · Voir le hub →</a>
+      </div>
+      <div class="grid">
+        <a class="card" href="taxis/01-onyx-chauffeur/"><span class="arrow">→</span><div class="swatches"><i style="background:#0A0A0A"></i><i style="background:#C9A24B"></i><i style="background:#E8E8E8"></i></div><span class="tag">Chauffeur de luxe</span><h3>ONYX Chauffeurs</h3><p>Voiture noire de luxe. Bokeh &amp; ligne d'horizon, sédan au trait qui se dessine.</p></a>
+        <a class="card" href="taxis/02-vector-taxi/"><span class="arrow">→</span><div class="swatches"><i style="background:#E4C04A"></i><i style="background:#101216"></i><i style="background:#F4F4F0"></i></div><span class="tag">Sans compteur</span><h3>Vector Taxi Co.</h3><p>Précision tarifaire. Tableau de forfaits en direct et horloge de dispatch.</p></a>
+        <a class="card" href="taxis/03-checker-cab/"><span class="arrow">→</span><div class="swatches"><i style="background:#F2C200"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></div><span class="tag">Héritage damier</span><h3>Checker &amp; Sons</h3><p>Depuis 1947. Badge rotatif et bandes damier animées. La course institution.</p></a>
+        <a class="card" href="taxis/04-lumen-ride/"><span class="arrow">→</span><div class="swatches"><i style="background:#243B55"></i><i style="background:#E9A857"></i><i style="background:#F3EEE6"></i></div><span class="tag">Le trajet calme</span><h3>Lumen Rides</h3><p>Héros crépusculaire respirant, carte « toujours à bord ». Sérénité en mouvement.</p></a>
+        <a class="card" href="taxis/05-pulse-taxi/"><span class="arrow">→</span><div class="swatches"><i style="background:#00D97E"></i><i style="background:#0A0D12"></i><i style="background:#9AA7B4"></i></div><span class="tag">Dispatch temps réel</span><h3>PULSE</h3><p>Point de course animé sur grille urbaine et terminal auto-scripteur.</p></a>
+      </div>
+    </section>
 
-      <a class="card" href="dentistes/">
-        <div class="num">04 · Série</div>
-        <div class="swatches"><i style="background:#0F3A36"></i><i style="background:#D29B85"></i><i style="background:#FAF5EC"></i></div>
+    <!-- DENTISTES -->
+    <section class="series container">
+      <div class="series-head">
         <h2>Dentistes</h2>
-        <p>Studio cosmétique couture, clinique data-first, cabinet familial ou labo tech du sourire.</p>
-        <div class="brands"><b>Éclat Dental</b> · Arcline · Hollyfield · Still Point · NOVA Smile</div>
-      </a>
+        <a class="idx" href="dentistes/">04 · Voir le hub →</a>
+      </div>
+      <div class="grid">
+        <a class="card" href="dentistes/01-eclat-dental/"><span class="arrow">→</span><div class="swatches"><i style="background:#0F3A36"></i><i style="background:#D29B85"></i><i style="background:#FAF5EC"></i></div><span class="tag">Cosmétique couture</span><h3>Éclat Dental</h3><p>Studio cosmétique privé. Médaillon enso, dorure rose, porcelaine scintillante.</p></a>
+        <a class="card" href="dentistes/02-arcline-dental/"><span class="arrow">→</span><div class="swatches"><i style="background:#1848C8"></i><i style="background:#0B1526"></i><i style="background:#FFFFFF"></i></div><span class="tag">Clinique data-first</span><h3>Arcline Dental Studio</h3><p>Schéma de scan intra-oral et ticker de spécifications. Pour ceux qui lisent les chiffres.</p></a>
+        <a class="card" href="dentistes/03-hollyfield-dental/"><span class="arrow">→</span><div class="swatches"><i style="background:#1E3B2C"></i><i style="background:#B08D4A"></i><i style="background:#F7F1E3"></i></div><span class="tag">Cabinet familial</span><h3>Hollyfield Family Dental</h3><p>Depuis 1961. Blason laiton et chronologie sur trois générations.</p></a>
+        <a class="card" href="dentistes/04-still-point-dental/"><span class="arrow">→</span><div class="swatches"><i style="background:#5B8A8A"></i><i style="background:#EAF1F0"></i><i style="background:#1B2E2E"></i></div><span class="tag">Sans anxiété</span><h3>Still Point Dental</h3><p>Bien-être et douceur. Anneaux respirants, Menu Confort, UI en pilules.</p></a>
+        <a class="card" href="dentistes/05-nova-smile/"><span class="arrow">→</span><div class="swatches"><i style="background:#7B5CFF"></i><i style="background:#0A0A12"></i><i style="background:#B9C0D0"></i></div><span class="tag">Smile design · dark tech</span><h3>NOVA Smile Lab</h3><p>Aperçu 3D filaire de dent et pastilles de teinte. Le sourire numérique.</p></a>
+      </div>
+    </section>
 
-      <a class="card" href="ophtalmologie/">
-        <div class="num">05 · Série</div>
-        <div class="swatches"><i style="background:#1C3F5A"></i><i style="background:#7FB0C4"></i><i style="background:#0B0F14"></i></div>
+    <!-- OPHTALMOLOGIE -->
+    <section class="series container">
+      <div class="series-head">
         <h2>Ophtalmologie</h2>
-        <p>Atelier de vision couture, institut chirurgical, cabinet familial ou imagerie rétinienne par IA.</p>
-        <div class="brands"><b>Iris Privé</b> · Meridian Eye · Hawthorne · Serene Vision · VIZN Lab</div>
-      </a>
-    </div>
+        <a class="idx" href="ophtalmologie/">05 · Voir le hub →</a>
+      </div>
+      <div class="grid">
+        <a class="card" href="ophtalmologie/01-iris-prive/"><span class="arrow">→</span><div class="swatches"><i style="background:#1C3F5A"></i><i style="background:#C9A24B"></i><i style="background:#EDE7DA"></i></div><span class="tag">Vision couture</span><h3>Iris Privé</h3><p>Atelier de vision. Rotor d'iris rotatif avec parallaxe au curseur.</p></a>
+        <a class="card" href="ophtalmologie/02-meridian-eye/"><span class="arrow">→</span><div class="swatches"><i style="background:#0E63C4"></i><i style="background:#0B1420"></i><i style="background:#DCE6F2"></i></div><span class="tag">Chirurgical · data</span><h3>Meridian Eye Institute</h3><p>Échelle de Snellen en direct et grille blueprint. Précision clinique.</p></a>
+        <a class="card" href="ophtalmologie/03-hawthorne-eye/"><span class="arrow">→</span><div class="swatches"><i style="background:#2E4A3A"></i><i style="background:#B99653"></i><i style="background:#F1EBDD"></i></div><span class="tag">Cabinet familial</span><h3>Hawthorne Eye Care</h3><p>Depuis 1968. Sceau fondateur à texte circulaire et registre des générations.</p></a>
+        <a class="card" href="ophtalmologie/04-serene-vision/"><span class="arrow">→</span><div class="swatches"><i style="background:#7FB0C4"></i><i style="background:#EAF4F6"></i><i style="background:#183642"></i></div><span class="tag">Spa œil · pédiatrie</span><h3>Serene Vision</h3><p>Œil sec &amp; douceur pédiatrique. Ondulations respirantes, dégradés organiques.</p></a>
+        <a class="card" href="ophtalmologie/05-vizn-lab/"><span class="arrow">→</span><div class="swatches"><i style="background:#00C2FF"></i><i style="background:#05070D"></i><i style="background:#8B98A8"></i></div><span class="tag">Imagerie IA</span><h3>VIZN Lab</h3><p>Imagerie rétinienne par IA. Dashboard OCT avec scanline et télémétrie des couches.</p></a>
+      </div>
+    </section>
 
-    <div class="foot">
-      <span>Sites 100 % statiques · HTML / CSS / JS purs · Google Fonts uniquement</span>
-      <span>Portfolio de démonstration · Tous les textes en français</span>
-    </div>
+    <!-- FINAL CTA -->
+    <section class="final" id="contact">
+      <div class="container">
+        <p class="eyebrow" style="margin-bottom:1.2rem">Votre partenaire digital</p>
+        <h2>Un projet à la hauteur de <i class="em">votre marque</i> ?</h2>
+        <p>Sites vitrines, e-commerce, SEO, SEA, réseaux sociaux, IA. Parlons de vos objectifs et construisons votre présence digitale.</p>
+        <a class="btn btn-yellow" href="https://zyagency.fr" target="_blank" rel="noopener">Contacter ZYAGENCY</a>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="container foot">
+      <a class="brand" href="#top">
+        <svg viewBox="0 0 180 180" width="22" height="22" style="color:var(--primary)"><use href="#zy"/></svg>
+        <span class="word">ZYAGENCY</span>
+      </a>
+      <span>© 2026 ZYAGENCY · Votre partenaire digital</span>
+      <a class="hub-link" href="https://zyagency.fr" target="_blank" rel="noopener">zyagency.fr →</a>
+    </div>
+  </footer>
 </body>
 </html>
