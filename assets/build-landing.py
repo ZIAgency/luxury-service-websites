@@ -137,6 +137,7 @@ CSS = """
     .eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--primary);margin-bottom:1.6rem}
     h1{font-family:'Sentient',serif;font-weight:200;font-size:clamp(2.7rem,6.6vw,5.2rem);line-height:1.04;letter-spacing:-.01em;max-width:980px}
     .lede{font-family:var(--mono);font-size:.95rem;color:var(--muted);max-width:640px;margin-top:2rem;line-height:1.85}
+    .lede b{color:var(--fg);font-weight:600}
     .cta-row{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.6rem}
     .btn{cursor:pointer;border:0;border-radius:999px;padding:1rem 2rem;font-size:1rem;font-weight:600;color:#000;transition:transform .3s ease;display:inline-flex;align-items:center;gap:.5rem}
     .btn-white{background:linear-gradient(to bottom,#fff,#d4d4d4);box-shadow:0 8px 30px rgba(255,255,255,.15)}
@@ -178,6 +179,21 @@ CSS = """
     .btn-buy:hover{transform:scale(1.04);box-shadow:0 12px 38px rgba(255,199,0,.4)}
     .btn-buy:focus-visible{outline:3px solid #fff;outline-offset:2px}
 
+    .geo{border-top:1px solid var(--border);padding:5.5rem 0 1rem;position:relative}
+    .geo h2{font-family:'Sentient',serif;font-weight:200;font-size:clamp(2rem,4.4vw,3.1rem);max-width:820px;line-height:1.1}
+    .geo-lede{font-family:var(--mono);font-size:.88rem;color:var(--muted);max-width:62ch;margin-top:1.4rem;line-height:1.85}
+    .shift{display:grid;gap:1.3rem;margin-top:3.2rem;grid-template-columns:repeat(auto-fit,minmax(275px,1fr))}
+    .shift-card{border:1px solid var(--border);border-radius:16px;padding:1.9rem;background:var(--panel);position:relative}
+    .shift-card.now{border-color:rgba(255,199,0,.5);background:linear-gradient(180deg,rgba(255,199,0,.07),transparent 60%),var(--panel)}
+    .shift-card .when{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--primary);display:block;margin-bottom:1rem}
+    .shift-card h3{font-family:'Sentient',serif;font-weight:200;font-size:1.45rem;margin-bottom:.7rem;line-height:1.2}
+    .shift-card p{font-size:.88rem;color:var(--muted);line-height:1.7}
+    .ask{margin-top:2.6rem;border:1px solid var(--border);border-radius:16px;padding:1.6rem 1.8rem;background:#060606;display:flex;align-items:flex-start;gap:1rem;flex-wrap:wrap}
+    .ask .q{font-family:var(--mono);font-size:.82rem;color:var(--fg);line-height:1.7;flex:1 1 320px}
+    .ask .q span{color:var(--primary)}
+    .ask .verdict{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#000;background:var(--primary);border-radius:999px;padding:.5rem .95rem;font-weight:700;white-space:nowrap}
+    .geo-band{margin-top:2.6rem;padding:1.5rem 1.8rem;border-radius:16px;border:1px solid rgba(255,199,0,.35);background:linear-gradient(90deg,rgba(255,199,0,.1),transparent 70%);font-family:var(--mono);font-size:.84rem;color:var(--fg);line-height:1.8}
+    .geo-band b{color:var(--primary);font-weight:700}
     .how{border-top:1px solid var(--border);margin-top:5rem;padding:5rem 0 1rem}
     .how h2{font-family:'Sentient',serif;font-weight:200;font-size:clamp(1.9rem,4vw,2.8rem);max-width:700px}
     .steps{display:grid;gap:2.2rem;margin-top:3rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
@@ -206,8 +222,8 @@ def build():
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-answer">
-  <title>ZYAGENCY — {total} sites vitrines prêts à l'emploi</title>
-  <meta name="description" content="Découvrez {total} sites vitrines conçus par ZYAGENCY pour les métiers de proximité et les professions de santé. Choisissez le vôtre, nous l'adaptons à votre marque et le mettons en ligne.">
+  <title>ZYAGENCY — Être la réponse que les IA recommandent</title>
+  <meta name="description" content="Vos clients demandent désormais à une IA qui appeler. Les moteurs d'IA ne citent que ce qu'ils ont lu : sans site, vous n'êtes pas une réponse possible. {total} sites vitrines ZYAGENCY, optimisés pour Google et pour les IA (GEO), prêts à porter votre nom.">
   <link rel="icon" href="assets/zy-logo.svg">
   <style>{CSS}  </style>
 </head>
@@ -230,11 +246,11 @@ def build():
   <main id="top">
     <section class="hero">
       <div class="container">
-        <p class="eyebrow">Nos réalisations</p>
-        <h1>Votre futur site,<br><i class="em">déjà dessiné.</i></h1>
-        <p class="lede">{total} sites vitrines pensés pour les métiers de proximité et les professions de santé. Chacun a sa propre identité, sa voix et son parcours de réservation. Choisissez celui qui vous ressemble : nous l'habillons à vos couleurs, vos textes et vos photos, puis nous le mettons en ligne.</p>
+        <p class="eyebrow">Visibilité web · Référencement · GEO</p>
+        <h1>Quand une IA recommandera<br>un professionnel,<br><i class="em">il faudra que ce soit vous.</i></h1>
+        <p class="lede">Vos clients ne tapent plus seulement sur Google : ils demandent à une IA qui appeler. Et ces moteurs ne citent que ce qu'ils ont lu et compris. Sans site, vous n'êtes pas mal classé — vous êtes absent de la réponse. {total} sites vitrines prêts à porter votre nom, construits pour être trouvés par Google <b>et</b> repris par les IA.</p>
         <div class="cta-row">
-          <a class="btn btn-white" href="#s1">Découvrir les réalisations</a>
+          <a class="btn btn-white" href="#geo">Pourquoi c'est urgent</a>
           <a class="btn btn-yellow" href="#contact">Parlons de vos objectifs</a>
         </div>
       </div>
@@ -243,10 +259,41 @@ def build():
     <section class="container">
       <div class="stats">
         <div class="stat"><b>{total}</b><span>Sites prêts à l'emploi</span></div>
-        <div class="stat"><b>12</b><span>Métiers couverts</span></div>
+        <div class="stat"><b>0</b><span>Chance d'être cité par une IA sans site</span></div>
         <div class="stat"><b>+8 ans</b><span>D'expérience</span></div>
         <div class="stat"><b>98%</b><span>Clients satisfaits</span></div>
       </div>
+    </section>
+
+    <section class="geo container" id="geo">
+      <p class="eyebrow">Ce qui vient de changer</p>
+      <h2>On ne cherche plus un professionnel.<br><i class="em">On en demande un.</i></h2>
+      <p class="geo-lede">Pendant vingt ans, un site servait à exister, à rassurer et à capter les recherches Google. Ce rôle reste. Mais une deuxième porte d'entrée vient de s'ouvrir, et elle se referme sur ceux qui n'ont rien à lire en ligne.</p>
+
+      <div class="shift">
+        <div class="shift-card">
+          <span class="when">Hier</span>
+          <h3>On vous cherchait</h3>
+          <p>L'annuaire, le bouche-à-oreille, puis Google. Le client comparait lui-même dix résultats. Être présent suffisait à être dans la liste.</p>
+        </div>
+        <div class="shift-card now">
+          <span class="when">Aujourd'hui</span>
+          <h3>On demande à une IA</h3>
+          <p>« Quel est le meilleur artisan près de chez moi ? » L'IA ne renvoie plus dix liens : elle donne deux ou trois noms. Vous en faites partie, ou le client ne saura jamais que vous existez.</p>
+        </div>
+        <div class="shift-card">
+          <span class="when">Demain</span>
+          <h3>Être la réponse</h3>
+          <p>Les IA ne recommandent que ce qu'elles ont lu, compris et recoupé. Un site clair, structuré et à jour, c'est votre dossier d'admission dans leurs réponses.</p>
+        </div>
+      </div>
+
+      <div class="ask">
+        <p class="q">Posez la question vous-même : <span>« Quel est le meilleur plombier à Bordeaux ? »</span> Comptez les noms cités. S'il n'y a pas le vôtre, ce n'est pas une question de prix ni de qualité de travail : l'IA n'avait simplement rien à lire sur vous.</p>
+        <span class="verdict">Le test qui décide</span>
+      </div>
+
+      <p class="geo-band"><b>SEO</b> pour être trouvé sur Google. <b>SEA</b> pour capter la recherche au bon moment. <b>GEO</b> pour devenir la réponse que les IA recommandent. Les trois travaillent le même objectif : des demandes entrantes, donc du chiffre d'affaires.</p>
     </section>
 
 {secs}
@@ -256,16 +303,16 @@ def build():
       <div class="steps">
         <div class="step"><b>01</b><h3>Vous choisissez</h3><p>Parcourez les réalisations et retenez celle dont l'univers correspond à votre métier et à votre clientèle.</p></div>
         <div class="step"><b>02</b><h3>Nous l'habillons</h3><p>Votre nom, vos couleurs, vos textes, vos photos et vos prestations. Le site devient le vôtre, pas une copie.</p></div>
-        <div class="step"><b>03</b><h3>Nous le mettons en ligne</h3><p>Nom de domaine, référencement local, formulaires de contact et de réservation connectés à votre boîte mail.</p></div>
-        <div class="step"><b>04</b><h3>Nous le faisons vivre</h3><p>Référencement, campagnes et contenus : votre site continue de vous amener des clients, mois après mois.</p></div>
+        <div class="step"><b>03</b><h3>Nous le rendons lisible</h3><p>Nom de domaine, référencement local et informations structurées pour que Google vous classe et que les IA puissent vous citer.</p></div>
+        <div class="step"><b>04</b><h3>Nous le faisons vivre</h3><p>Contenus, avis et campagnes : vous restez la réponse recommandée, et les demandes continuent d'arriver mois après mois.</p></div>
       </div>
     </section>
 
     <section class="final" id="contact">
       <div class="container">
         <p class="eyebrow" style="margin-bottom:1.2rem">Votre partenaire digital</p>
-        <h2>Un site à la hauteur de <i class="em">votre savoir-faire</i> ?</h2>
-        <p>Sites vitrines, e-commerce, référencement, campagnes et réseaux sociaux. Dites-nous où vous voulez aller, nous construisons le chemin.</p>
+        <h2>Faites en sorte que l'IA <i class="em">ait votre nom.</i></h2>
+        <p>Sites vitrines, e-commerce, référencement Google, campagnes et visibilité auprès des IA. Dites-nous où vous voulez aller, nous construisons le chemin.</p>
         <a class="btn btn-yellow" href="https://zyagency.fr" target="_blank" rel="noopener">Parlons de vos objectifs</a>
       </div>
     </section>
