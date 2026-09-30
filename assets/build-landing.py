@@ -46,8 +46,11 @@ SECTIONS = [
   ("serene-vision","Vision Douce","Yeux secs et enfants · Nantes","Deux spécialités qui demandent du temps : la sécheresse oculaire et l'ophtalmologie de l'enfant.",['#183642', '#8FC6D8', '#E3F0F3'],"ophtalmologie/04-serene-vision/",True),
   ("vizn-lab","VIZN","Dépistage de la rétine · Toulouse","DMLA, glaucome, diabète : dépistage par OCT et résultats expliqués au patient le jour même.",['#05070D', '#33CFFF', '#E2EAF2'],"ophtalmologie/05-vizn-lab/",True),
  ]),
- ("Paysagistes", "Le jardin est un achat qui se juge sur vingt ans : le site doit le faire sentir.", None, [
+ ("Paysagistes", "Création, entretien, élagage, jardin sec : quatre paysagistes, quatre questions de clients différentes.", None, [
   ("seve-pierre","Sève & Pierre","Paysagistes · Yvelines","Création et entretien de jardins, crédit d'impôt de 50 % mis en avant : un jardin dont on profite au lieu d'y travailler.",['#1B3A2B', '#D08A55', '#ECE6D8'],"paysagistes/01-seve-pierre/",True),
+  ("allees-vertes","Allées Vertes","Entretien de jardins · Orléans","Tonte, haies, désherbage : le crédit d'impôt de 50 % déduit directement de la facture, l'argument qui déclenche l'appel.",["#1F3A1C","#9ACD4E","#E7F0DD"],"paysagistes/02-allees-vertes/",True),
+  ("cime-racine","Cime & Racine","Élagueurs grimpeurs · Morbihan","Élagage, abattage par démontage au-dessus des toits, urgence après tempête : rassurer sur un travail risqué.",["#16241C","#E0A43A","#E6E9DE"],"paysagistes/03-cime-racine/",True),
+  ("jardins-de-garrigue","Jardins de Garrigue","Jardins secs · Vaucluse","Des jardins beaux en août malgré les restrictions d'eau : une réponse directe à la question que se posent les propriétaires du Sud.",["#2F3A26","#D9895A","#F1E7D6"],"paysagistes/04-jardins-de-garrigue/",True),
  ]),
  ("Avocats", "Une matière où l'on ne choisit pas au prix, mais à la confiance qu'inspire la page.", None, [
   ("roussel-associes","Roussel & Associés","Avocats · Montpellier","Divorce, licenciement, bail, succession : comprendre ses droits dès le premier rendez-vous, honoraires écrits.",['#101A2E', '#C4A15A', '#ECE8DD'],"avocats/01-roussel-associes/",True),
@@ -237,7 +240,7 @@ def build():
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
-  <meta name="referrer" content="strict-origin-when-cross-answer">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>ZYAGENCY — Être la réponse que les IA recommandent</title>
   <meta name="description" content="Vos clients demandent désormais à une IA qui appeler. Les moteurs d'IA ne citent que ce qu'ils ont lu : sans site, vous n'êtes pas une réponse possible. {total} sites vitrines ZYAGENCY, optimisés pour Google et pour les IA (GEO), prêts à porter votre nom.">
   <link rel="icon" href="assets/zy-logo.svg">

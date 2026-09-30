@@ -1,12 +1,12 @@
 # Portfolio ZYAGENCY — contexte du projet
 
-Vitrine commerciale de **ZYAGENCY** (agence web) : 49 sites vitrines de démonstration,
+Vitrine commerciale de **ZYAGENCY** (agence web) : 52 sites vitrines de démonstration,
 présentés sur une landing page et destinés à être **vendus** à de futurs clients.
 Tous les textes sont en français.
 
 ## État actuel
 
-- **49 sites consultables**, tous en pages HTML lisibles directement par le navigateur.
+- **52 sites consultables**, tous en pages HTML lisibles directement par le navigateur.
 - Branche de travail : `claude/recap-sites-produits-c5abux`.
 - PR ouverte vers `main` : ZIAgency/luxury-service-websites#1, **à fusionner**.
 - Déployé sur Vercel (portfolio non indexé) : https://luxury-service-websites.vercel.app/
@@ -18,7 +18,7 @@ Tous les textes sont en français.
 | `medecins/01..06` | 6 cabinets de médecine générale | **Générés** depuis le dépôt `ZIAgency/medecins-generalistes` |
 | `sante/01..03` | Vision Étoile, Verveine, Les Petits Pas | **Générés** depuis `opt-premium-one`, `verveine`, `les-petits-pas` |
 | `artisanat/01..05` | Braise, Boréal, Auprès, Bleu Confiance, Acier & Laiton | **Générés** depuis les dépôts `Site-*` |
-| `plomberie/`, `serrurerie/`, `taxis/`, `dentistes/`, `ophtalmologie/` (5 chacun), `paysagistes/`, `avocats/`, `platriers/`, `isolation/`, `terrassiers/`, `tapissiers/`, `cuisinistes/`, `cordonniers/`, `macons/`, `carrossiers/` | 35 sites orientés client | **Générés** par `assets/build-metiers.py` à partir de `assets/sites/*.py` (une liste `SITES` par famille) et de `assets/metiers-base.css`. Ne jamais éditer leurs `index.html`, `styles.css`, `script.js`, `llms.txt` à la main. |
+| `plomberie/`, `serrurerie/`, `taxis/`, `dentistes/`, `ophtalmologie/` (5 chacun), `paysagistes/`, `avocats/`, `platriers/`, `isolation/`, `terrassiers/`, `tapissiers/`, `cuisinistes/`, `cordonniers/`, `macons/`, `carrossiers/` | 38 sites orientés client | **Générés** par `assets/build-metiers.py` à partir de `assets/sites/*.py` (une liste `SITES` par famille) et de `assets/metiers-base.css`. Ne jamais éditer leurs `index.html`, `styles.css`, `script.js`, `llms.txt` à la main. |
 | `assets/previews/` | Une capture d'écran par site (1440×960, JPEG) | Capturées au navigateur |
 | `assets/fonts/`, `assets/zy-logo.svg` | Police Sentient et logo ZY de l'agence | Dépôt `ZIAgency/zyagency` |
 
