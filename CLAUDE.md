@@ -15,14 +15,10 @@ Tous les textes sont en français.
 
 | Dossier | Contenu | Origine |
 |---|---|---|
-| `plomberie/`, `serrurerie/`, `taxis/`, `dentistes/`, `ophtalmologie/` | 5 marques chacun + un `index.html` de série | Écrits à la main (`index.html` + `styles.css` + `script.js`) |
-| `paysagistes/01-seve-pierre/` | Sève & Pierre, paysagiste concepteur | Écrit à la main |
-| `avocats/01-roussel-associes/` | Roussel & Associés, cabinet d'avocats | Écrit à la main |
 | `medecins/01..06` | 6 cabinets de médecine générale | **Générés** depuis le dépôt `ZIAgency/medecins-generalistes` |
 | `sante/01..03` | Vision Étoile, Verveine, Les Petits Pas | **Générés** depuis `opt-premium-one`, `verveine`, `les-petits-pas` |
 | `artisanat/01..05` | Braise, Boréal, Auprès, Bleu Confiance, Acier & Laiton | **Générés** depuis les dépôts `Site-*` |
-| `platriers/01-morel-platrerie/` | Morel Plâtrerie : **modèle de référence** des sites orientés client (écrit à la main) | Écrit à la main |
-| `isolation/`, `terrassiers/`, `tapissiers/`, `cuisinistes/`, `cordonniers/`, `macons/`, `carrossiers/` | 1 site chacun, même logique que le plâtrier | **Générés** par `assets/build-metiers.py` (ne pas éditer à la main) |
+| `plomberie/`, `serrurerie/`, `taxis/`, `dentistes/`, `ophtalmologie/` (5 chacun), `paysagistes/`, `avocats/`, `platriers/`, `isolation/`, `terrassiers/`, `tapissiers/`, `cuisinistes/`, `cordonniers/`, `macons/`, `carrossiers/` | 35 sites orientés client | **Générés** par `assets/build-metiers.py` à partir de `assets/sites/*.py` (une liste `SITES` par famille) et de `assets/metiers-base.css`. Ne jamais éditer leurs `index.html`, `styles.css`, `script.js`, `llms.txt` à la main. |
 | `assets/previews/` | Une capture d'écran par site (1440×960, JPEG) | Capturées au navigateur |
 | `assets/fonts/`, `assets/zy-logo.svg` | Police Sentient et logo ZY de l'agence | Dépôt `ZIAgency/zyagency` |
 
@@ -48,8 +44,20 @@ tout de suite, situations concrètes qui préremplissent le formulaire, FAQ des 
 questions, barre mobile « Appeler / Devis ». Données structurées (entreprise, services,
 FAQ) et `llms.txt` pour être lisible par les IA.
 
-Photos : Pexels (licence libre, usage commercial), `hero.jpg` dans le dossier du site,
-téléchargées avec l'accord de Yacine. Crédits dans `assets/build-metiers.py` (`photo`).
+Photos : Pexels (licence libre, usage commercial), `hero.jpg` dans le dossier du site
+(max ~300 Ko), téléchargées avec l'accord de Yacine. Crédits : clé `photo` de chaque site.
+
+Générer : `python3 assets/build-metiers.py` (tout) ou `python3 assets/build-metiers.py taxis/`
+(filtre sur le chemin). Formulaires : `form` = `devis` (défaut), `rdv` (santé, droit) ou
+`taxi`. `urgent: True` met l'appel en bouton principal. Heros alternés : `layout` =
+`overlay` (photo plein écran, texte par-dessus), `split-right` ou `split-left`.
+
+SEO/GEO (appliqué via les fiches `~/.claude/skills/ai-seo.md` et `schema.md`) : H1 = métier + ville
+(`seo_h1`), accroche en `p.headline`, JSON-LD `@graph` (entreprise + WebPage daté + FAQPage,
+services, `knowsAbout`, fondateur), Open Graph, canonical sur `BASE_URL`, date « Page mise à
+jour » en pied de page, `llms.txt` complet (services, engagements, FAQ). Pas d'avis en données
+structurées (Google sanctionne les avis auto-déclarés). À la livraison d'un site : remplacer
+`BASE_URL` par le domaine du client, retirer le `noindex`, créer la fiche Google Business Profile.
 
 ## Règles à respecter
 

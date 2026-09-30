@@ -312,7 +312,9 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
 }
 
 /* Variantes de hero */
-.hero h1 { font-size: clamp(2rem, 4vw, 3.1rem); }
+.hero h1.eyebrow { font-size: .82rem; font-weight: 600; letter-spacing: .08em; line-height: 1.4; margin: 0 0 12px; }
+.hero .headline { font-family: var(--head); font-size: clamp(2rem, 4vw, 3.1rem); font-weight: 800; line-height: 1.12; letter-spacing: -.025em; margin: 0; }
+.hero .headline em { font-style: normal; color: var(--ochre-deep); }
 .hero.split-left .hero-visual { order: -1; }
 .hero.split-left .hero-badge { left: auto; right: -24px; }
 .hero.overlay { position: relative; padding: 0; background: var(--ink); color: #fff; overflow: hidden; }
@@ -322,7 +324,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
 .hero.overlay .hero-grid { position: relative; grid-template-columns: minmax(0, 680px); min-height: min(720px, 88vh); align-content: center; padding: 72px 0; }
 .hero.overlay .lead, .hero.overlay .proofs li { color: #fff; }
 .hero.overlay .lead { color: #D4D4D5; }
-.hero.overlay h1 em { color: var(--ochre); }
+.hero.overlay .headline em { color: var(--ochre); }
 .hero.overlay .eyebrow { color: var(--ochre); }
 .hero.overlay .btn-ghost { border-color: rgba(255, 255, 255, .7); color: #fff; }
 .hero.overlay .btn-ghost:hover { background: #fff; color: var(--ink); }
@@ -330,6 +332,8 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
 .hero.overlay .hero-badge { position: static; display: inline-flex; margin-top: 28px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .2); box-shadow: none; }
 .hero.overlay .hero-badge strong { color: var(--ochre); }
 .hero.overlay .hero-badge span { color: #D4D4D5; }
+.signature { margin-top: 26px; font-size: .95rem; color: var(--muted); }
+.signature strong { color: var(--ink); font-family: var(--head); }
 @media (max-width: 860px) {
   .hero.split-left .hero-badge { right: auto; left: 12px; }
   .hero-bg::after { background: linear-gradient(180deg, rgba(38, 40, 43, .72) 0%, rgba(38, 40, 43, .9) 55%, rgba(38, 40, 43, .96) 100%); }

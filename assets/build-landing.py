@@ -11,46 +11,46 @@ CART = ('<svg class="cart" viewBox="0 0 24 24" width="17" height="17" fill="none
 
 # (slug, nom, étiquette, description, [3 couleurs], lien d'aperçu, en_ligne)
 SECTIONS = [
- ("Plomberie", "Des artisans de l'eau à qui l'on confie ses clés.", "plomberie/", [
-  ("aqua-lumiere","Aqua Lumière","Atelier privé","Une plomberie de prestige, au service d'une clientèle qui attend le même soin qu'un hôtel cinq étoiles.",["#0E6E8C","#C8A24B","#101418"],"plomberie/01-aqua-lumiere/",True),
-  ("meridian","Meridian","Précision d'ingénieur","Pour l'artisan qui rassure par la méthode : chaque chantier documenté, chaque devis limpide.",["#D7263D","#1A2A3A","#F2F2F2"],"plomberie/02-meridian/",True),
-  ("copperline","Copperline & Sons","Maison familiale","L'entreprise transmise de père en fils, dont la réputation se construit depuis 1962.",["#B87333","#2B2118","#EFE6D8"],"plomberie/03-copperline/",True),
-  ("stillwater","Stillwater","Confort & bien-être","Pour ceux qui vendent moins une réparation qu'un foyer apaisé. Entretien par abonnement.",["#3E7C8B","#DCEBEA","#12242A"],"plomberie/04-stillwater/",True),
-  ("nexa","NEXA","Maison connectée","L'installateur tourné vers demain : pilotage de l'eau, détection de fuite, suivi en direct.",["#00E0B8","#0B0F1A","#7A8CA3"],"plomberie/05-nexa/",True),
+ ("Plomberie", "Cinq plombiers, cinq clientèles : de la salle de bains de luxe à la fuite introuvable.", None, [
+  ("aqua-lumiere","Aqua Lumière","Salles de bains · Paris 16e","Rénovation de salles de bains haut de gamme : plan 3D offert, chef de chantier unique, date de livraison écrite dans le devis.",['#0F2A33', '#C8A24B', '#EFEAE0'],"plomberie/01-aqua-lumiere/",True),
+  ("meridian","Plomberie Méridien","Plombier · Grenoble","Pour le client qui craint l'arnaque : prix annoncé avant d'intervenir, compte rendu photo après chaque dépannage.",['#1A2A3A', '#F2665A', '#EAEEF3'],"plomberie/02-meridian/",True),
+  ("copperline","Lefèvre & Fils","Plombiers depuis 1962 · Reims","L'entreprise familiale de quartier : dépannage sous 24 h, entretien de chaudière, salles de bains adaptées aux seniors.",['#2B2118', '#D08A4E', '#F1E7DA'],"plomberie/03-copperline/",True),
+  ("stillwater","Onde Claire","Entretien eau et chauffage · Annecy","Vendre la tranquillité plutôt que la réparation : contrat d'entretien annuel, dépannage prioritaire, sans engagement.",['#173238', '#7CC3C9', '#E6F0F0'],"plomberie/04-stillwater/",True),
+  ("nexa","NEXA Plomberie","Recherche de fuite · Montpellier","Recherche de fuite sans casse et rapport pour l'assurance : capter les propriétaires qui voient leur facture d'eau exploser.",['#0B1A24', '#2FE0BC', '#E6EEF2'],"plomberie/05-nexa/",True),
  ]),
- ("Serrurerie", "La sécurité se vend d'abord par la confiance qu'on inspire.", "serrurerie/", [
-  ("bastion-clef","Bastion & Clef","Atelier d'exception","Serrurerie haut de gamme pour biens d'exception : discrétion, savoir-faire, sur-mesure.",["#0E0E10","#B8973F","#E8E4DA"],"serrurerie/01-bastion-clef/",True),
-  ("keystone-lock","Keystone Lock Co.","Expertise technique","L'expert qui démontre : mécanismes expliqués, contrôle qualité affiché, tarifs sans surprise.",["#E8631A","#121110","#F0EDE6"],"serrurerie/02-keystone-lock/",True),
-  ("ironhaven","Ironhaven & Sons","Héritage d'atelier","Depuis 1954. Le poids de l'histoire familiale comme meilleure garantie de sérieux.",["#C1440E","#1A1512","#D9C7A3"],"serrurerie/03-ironhaven/",True),
-  ("haven-hour","Haven & Hour","Urgence rassurante","Pensé pour l'appel de 3 h du matin : un ton calme, une présence, une intervention rapide.",["#1B2A4A","#E4B35A","#EDEFF5"],"serrurerie/04-haven-hour/",True),
-  ("aperio","Aperio Systems","Contrôle d'accès","Pour l'entreprise qui équipe résidences et bureaux : badges, accès, gestion centralisée.",["#2D7FF9","#0A0E14","#AEB9C7"],"serrurerie/05-aperio/",True),
+ ("Serrurerie", "Du dépannage de nuit au contrôle d'accès : la confiance se gagne dès l'appel.", None, [
+  ("bastion-clef","Bastion & Clef","Haute sécurité · Paris 8e","Portes blindées et serrures A2P pour une clientèle exigeante : audit de sécurité gratuit, discrétion absolue.",['#0E0E10', '#C9A54B', '#ECE7DC'],"serrurerie/01-bastion-clef/",True),
+  ("keystone-lock","Clé de Voûte","Serrurier · Nantes, 7 j/7","Le serrurier anti-arnaque : prix affichés, devis signé avant d'agir, facture identique. L'appel passe en premier.",['#121110', '#F07A2E', '#EEEBE4'],"serrurerie/02-keystone-lock/",True),
+  ("ironhaven","Serrurerie Hardy","Clés et serrures depuis 1954 · Strasbourg","La boutique de quartier : doubles de clés en 5 minutes, badges, clés de voiture, serrures anciennes restaurées.",['#1A1512', '#D9733F', '#EFE6D8'],"serrurerie/03-ironhaven/",True),
+  ("haven-hour","Serrurier de Garde","Urgence 24 h/24 · Lyon","Pensé pour l'appel de 3 h du matin : un humain répond, le tarif de nuit est annoncé, un serrurier arrive en 40 minutes.",['#1B2A4A', '#E4B35A', '#E7EAF2'],"serrurerie/04-haven-hour/",True),
+  ("aperio","Aperio Accès","Contrôle d'accès · Île-de-France","Pour les syndics et les entreprises : interphones, badges Vigik, contrôle d'accès, astreinte 24 h/24.",['#0A0E14', '#4C93FF', '#E6ECF6'],"serrurerie/05-aperio/",True),
  ]),
- ("Taxis & chauffeurs", "Du trajet quotidien à la course de prestige.", "taxis/", [
-  ("onyx-chauffeur","ONYX Chauffeurs","Grande remise","Clientèle affaires et soirées : voitures noires, chauffeurs en costume, ponctualité absolue.",["#0A0A0A","#C9A24B","#E8E8E8"],"taxis/01-onyx-chauffeur/",True),
-  ("vector-taxi","Vector Taxi Co.","Prix forfaitaire","L'argument qui convertit : le prix connu d'avance, affiché avant même la réservation.",["#E4C04A","#101216","#F4F4F0"],"taxis/02-vector-taxi/",True),
-  ("checker-cab","Checker & Sons","Institution locale","Depuis 1947. La compagnie que toute la ville connaît, et qu'on appelle par réflexe.",["#F2C200","#000000","#FFFFFF"],"taxis/03-checker-cab/",True),
-  ("lumen-ride","Lumen Rides","Trajet serein","Le transport doux : véhicules silencieux, conduite posée, pour une clientèle qui veut souffler.",["#243B55","#E9A857","#F3EEE6"],"taxis/04-lumen-ride/",True),
-  ("pulse-taxi","PULSE","Réservation instantanée","La flotte réactive : commande immédiate, véhicule suivi en direct, temps d'attente affiché.",["#00D97E","#0A0D12","#9AA7B4"],"taxis/05-pulse-taxi/",True),
+ ("Taxis & chauffeurs", "VTC, taxi conventionné, course immédiate : chacun répond à une question précise du voyageur.", None, [
+  ("onyx-chauffeur","Onyx Chauffeurs","Chauffeur privé · Paris","VTC haut de gamme : prix fixe confirmé à la réservation, suivi de vol, pancarte à l'arrivée. Réservation en deux minutes.",['#0A0A0A', '#C9A24B', '#EAE8E3'],"taxis/01-onyx-chauffeur/",True),
+  ("vector-taxi","Vecteur Taxi","Taxi à prix fixe · Marseille","Aéroport, gare, croisières : le prix est annoncé avant de monter. L'argument qui convertit les voyageurs méfiants.",['#101216', '#E4C04A', '#F0EDE0'],"taxis/02-vector-taxi/",True),
+  ("checker-cab","Taxis Damier","Taxi conventionné · Bordeaux","Transport médical sans avance de frais, chauffeur attitré pour les séances régulières. Depuis 1947.",['#111111', '#F2C200', '#F1EEE4'],"taxis/03-checker-cab/",True),
+  ("lumen-ride","Lumen Trajets","Taxi calme · Tours","Accompagnement porte à porte des seniors, SMS aux proches au départ et à l'arrivée, trajets longue distance.",['#243B55', '#E9A857', '#EDE6DB'],"taxis/04-lumen-ride/",True),
+  ("pulse-taxi","Pulse Taxi","Taxi 24 h/24 · Lille","Course immédiate en 10 minutes en moyenne, jour et nuit. L'appel en premier, la réservation ensuite.",['#0A0D12', '#00D97E', '#E3EDEA'],"taxis/05-pulse-taxi/",True),
  ]),
- ("Dentistes", "Un cabinet dentaire se choisit autant à la confiance qu'au sourire.", "dentistes/", [
-  ("eclat-dental","Éclat Dental","Esthétique du sourire","Facettes et blanchiment pour une patientèle exigeante, prête à investir dans son sourire.",["#0F3A36","#D29B85","#FAF5EC"],"dentistes/01-eclat-dental/",True),
-  ("arcline-dental","Arcline Dental Studio","Cabinet moderne","Pour les patients qui veulent comprendre : diagnostics illustrés et forfaits transparents.",["#1848C8","#0B1526","#FFFFFF"],"dentistes/02-arcline-dental/",True),
-  ("hollyfield-dental","Hollyfield Family Dental","Cabinet de famille","Depuis 1961. Trois générations de patients, des enfants aux grands-parents.",["#1E3B2C","#B08D4A","#F7F1E3"],"dentistes/03-hollyfield-dental/",True),
-  ("still-point-dental","Still Point Dental","Sans appréhension","Conçu pour les patients anxieux : ton apaisant, parcours rassurant, options de confort.",["#5B8A8A","#EAF1F0","#1B2E2E"],"dentistes/04-still-point-dental/",True),
-  ("nova-smile","NOVA Smile Lab","Sourire sur mesure","La projection du résultat avant le traitement : l'argument qui déclenche la décision.",["#7B5CFF","#0A0A12","#B9C0D0"],"dentistes/05-nova-smile/",True),
+ ("Dentistes", "Nouveaux patients, patients anxieux, implants, esthétique : chaque cabinet parle à ses patients.", None, [
+  ("eclat-dental","Éclat","Dentiste esthétique · Paris 16e","Facettes, blanchiment, alignement : le patient voit son futur sourire en simulation avant de décider.",['#0F3A36', '#D9A690', '#F2EBE1'],"dentistes/01-eclat-dental/",True),
+  ("arcline-dental","Cabinet Arcline","Implants · Lyon 6e","Implants dentaires expliqués étape par étape, avec la part remboursée écrite sur le devis. Rassure sur un gros budget.",['#0B1526', '#5B8CFF', '#E7EDF7'],"dentistes/02-arcline-dental/",True),
+  ("hollyfield-dental","Cabinet dentaire du Parc","Dentistes de famille · Angers","« Nouveaux patients acceptés » en tête de page : la réponse à la pénurie de dentistes, des enfants aux seniors.",['#1E3B2C', '#D1AE5E', '#EEE8D8'],"dentistes/03-hollyfield-dental/",True),
+  ("still-point-dental","Cabinet Sérénade","Patients anxieux · Bordeaux","Pour ceux qui repoussent le dentiste depuis des années : premier rendez-vous sans soin, gaz relaxant, aucun jugement.",['#1B2E2E', '#8CC3BE', '#E4EFEE'],"dentistes/04-still-point-dental/",True),
+  ("nova-smile","Nova Sourire","Orthodontie adulte · Nice","Gouttières transparentes et simulation 3D offerte : le résultat visible avant de s'engager.",['#0F0C24', '#9B85FF', '#EAE7F7'],"dentistes/05-nova-smile/",True),
  ]),
- ("Ophtalmologie", "De la consultation de quartier au plateau chirurgical.", "ophtalmologie/", [
-  ("iris-prive","Iris Privé","Lunetterie d'auteur","L'optique comme pièce de créateur, pour une clientèle attachée au geste et à la matière.",["#1C3F5A","#C9A24B","#EDE7DA"],"ophtalmologie/01-iris-prive/",True),
-  ("meridian-eye","Meridian Eye Institute","Institut chirurgical","Chirurgie réfractive : rassurer par les chiffres, les protocoles et les résultats mesurés.",["#0E63C4","#0B1420","#DCE6F2"],"ophtalmologie/02-meridian-eye/",True),
-  ("hawthorne-eye","Hawthorne Eye Care","Cabinet de quartier","Depuis 1968. L'ophtalmologiste de famille, connu et recommandé de bouche à oreille.",["#2E4A3A","#B99653","#F1EBDD"],"ophtalmologie/03-hawthorne-eye/",True),
-  ("serene-vision","Serene Vision","Douceur & pédiatrie","Sécheresse oculaire et jeunes patients : un univers rassurant pour les parents.",["#7FB0C4","#EAF4F6","#183642"],"ophtalmologie/04-serene-vision/",True),
-  ("vizn-lab","VIZN Lab","Dépistage avancé","L'imagerie rétinienne comme différenciateur : détecter plus tôt, expliquer mieux.",["#00C2FF","#05070D","#8B98A8"],"ophtalmologie/05-vizn-lab/",True),
+ ("Ophtalmologie", "De l'opticien créateur à la chirurgie de la vue, des rendez-vous qui ne se font plus attendre.", None, [
+  ("iris-prive","Iris Privé","Opticien créateur · Paris 6e","Essayage privé d'une heure, montures de créateurs, verres ajustés à vos usages. Tiers payant.",['#1C3F5A', '#C9A24B', '#EEE9DE'],"ophtalmologie/01-iris-prive/",True),
+  ("meridian-eye","Institut Méridien","Chirurgie de la vue · Lyon","Opération de la myopie et de la cataracte : un bilan complet d'abord, aucune pression, devis écrit.",['#0B1420', '#4FA3F0', '#E4EDF6'],"ophtalmologie/02-meridian-eye/",True),
+  ("hawthorne-eye","Cabinet de l'Aubépine","Ophtalmologistes · Rouen","Un rendez-vous en quatre semaines, pas en six mois : l'argument qui compte le plus pour les patients.",['#2E4A3A', '#C9A96A', '#EDE8DC'],"ophtalmologie/03-hawthorne-eye/",True),
+  ("serene-vision","Vision Douce","Yeux secs et enfants · Nantes","Deux spécialités qui demandent du temps : la sécheresse oculaire et l'ophtalmologie de l'enfant.",['#183642', '#8FC6D8', '#E3F0F3'],"ophtalmologie/04-serene-vision/",True),
+  ("vizn-lab","VIZN","Dépistage de la rétine · Toulouse","DMLA, glaucome, diabète : dépistage par OCT et résultats expliqués au patient le jour même.",['#05070D', '#33CFFF', '#E2EAF2'],"ophtalmologie/05-vizn-lab/",True),
  ]),
  ("Paysagistes", "Le jardin est un achat qui se juge sur vingt ans : le site doit le faire sentir.", None, [
-  ("seve-pierre","Sève & Pierre","Concepteur de jardins","Conception, terrasses et plantations haut de gamme. Un site qui vend la vision longue plutôt que le devis le moins cher.",["#1B3A2B","#C2703D","#F4EFE4"],"paysagistes/01-seve-pierre/",True),
+  ("seve-pierre","Sève & Pierre","Paysagistes · Yvelines","Création et entretien de jardins, crédit d'impôt de 50 % mis en avant : un jardin dont on profite au lieu d'y travailler.",['#1B3A2B', '#D08A55', '#ECE6D8'],"paysagistes/01-seve-pierre/",True),
  ]),
  ("Avocats", "Une matière où l'on ne choisit pas au prix, mais à la confiance qu'inspire la page.", None, [
-  ("roussel-associes","Roussel & Associés","Conseil & contentieux","Six domaines du droit, des honoraires annoncés par écrit. Le ton sobre qui rassure avant le premier appel.",["#101A2E","#B08D4A","#F5F2EA"],"avocats/01-roussel-associes/",True),
+  ("roussel-associes","Roussel & Associés","Avocats · Montpellier","Divorce, licenciement, bail, succession : comprendre ses droits dès le premier rendez-vous, honoraires écrits.",['#101A2E', '#C4A15A', '#ECE8DD'],"avocats/01-roussel-associes/",True),
  ]),
  ("Médecins généralistes", "Six cabinets, six façons d'installer la confiance dès la page d'accueil.", None, [
   ("cabinet-des-cedres","Cabinet des Cèdres","Médecine de famille · Lyon","Le suivi d'un médecin de famille, sans l'attente. Prise de rendez-vous mise en avant.",["#1B3A2B","#C9A24B","#F2EFE7"],"medecins/01-cabinet-des-cedres/",True),

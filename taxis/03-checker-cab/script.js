@@ -1,210 +1,91 @@
-/* ═══════════════════════════════════════════
-   CHECKER & SONS — interactions
-   nav · years-in-service · reveal · counters
-   contact · wizard
-   ═══════════════════════════════════════════ */
-(function () {
-  'use strict';
+/* Taxis Damier · navigation, préremplissage et formulaire de démonstration */
+(() => {
+  "use strict";
 
-  /* ── Years in service (counted, not guessed) ── */
-  const yearsServing = new Date().getFullYear() - 1947;
-  document.querySelectorAll('.js-yrs').forEach(el => { el.dataset.count = String(yearsServing); });
-  document.querySelectorAll('.js-yrs-inline').forEach(el => { el.textContent = String(yearsServing); });
+  const nav = document.getElementById("nav");
+  const burger = document.getElementById("burger");
+  const links = document.getElementById("navLinks");
 
-  /* ── Navigation state ── */
-  const nav = document.getElementById('nav');
-  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
-  window.addEventListener('scroll', onScroll, { passive: true });
+  // Ombre de la barre de navigation au défilement
+  const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 8);
   onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
 
-  /* ── Mobile menu ── */
-  const burger = document.getElementById('burger');
-  burger.addEventListener('click', () => {
-    const open = document.body.classList.toggle('menu-open');
-    burger.setAttribute('aria-expanded', String(open));
+  // Menu mobile
+  burger.addEventListener("click", () => {
+    const open = burger.getAttribute("aria-expanded") === "true";
+    burger.setAttribute("aria-expanded", String(!open));
+    burger.setAttribute("aria-label", open ? "Ouvrir le menu" : "Fermer le menu");
+    links.classList.toggle("open", !open);
   });
-  document.querySelectorAll('.links a').forEach(a =>
-    a.addEventListener('click', () => document.body.classList.remove('menu-open'))
+  links.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => {
+      burger.setAttribute("aria-expanded", "false");
+      links.classList.remove("open");
+    })
   );
 
-  /* ── Scroll reveal ── */
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('in'); revealObserver.unobserve(e.target); }
-    });
-  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-  /* ── Animated counters (ease-out cubic) ── */
-  function animateCount(el) {
-    const target = parseFloat(el.dataset.count);
-    const dur = 1700;
-    const start = performance.now();
-    const fmt = n => (el.dataset.decimal ? n.toFixed(1) : Math.round(n).toLocaleString('fr-FR')) + (el.dataset.suffix || '');
-    (function tick(now) {
-      const p = Math.min((now - start) / dur, 1);
-      const eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = fmt(target * eased);
-      if (p < 1) requestAnimationFrame(tick);
-    })(start);
-  }
-  const countObserver = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { animateCount(e.target); countObserver.unobserve(e.target); }
-    });
-  }, { threshold: 0.6 });
-  document.querySelectorAll('[data-count]').forEach(el => countObserver.observe(el));
-
-  /* ── Contact form ── */
-  const contactForm = document.getElementById('contactForm');
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    let ok = true;
-    contactForm.querySelectorAll('[required]').forEach(f => {
-      const bad = f.type === 'email'
-        ? !/^\S+@\S+\.\S+$/.test(f.value)
-        : !f.value.trim();
-      f.closest('.field').classList.toggle('error', bad);
-      if (bad) ok = false;
-    });
-    if (!ok) return;
-    contactForm.querySelector('fieldset').hidden = true;
-    contactForm.querySelector('.form-success').hidden = false;
-  });
-  contactForm.querySelectorAll('input,select,textarea').forEach(f =>
-    f.addEventListener('input', () => f.closest('.field').classList.remove('error'))
+  // Situations : préremplit le motif puis descend au formulaire
+  const work = document.getElementById("work");
+  document.querySelectorAll("[data-prefill]").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      work.value = btn.dataset.prefill;
+      work.closest(".field").classList.remove("invalid");
+      document.getElementById("devis").scrollIntoView({ behavior: "smooth" });
+      window.setTimeout(() => {
+        work.classList.remove("flash");
+        void work.offsetWidth;
+        work.classList.add("flash");
+        const next = document.querySelector("#quoteForm [data-rule]:not(#work)");
+        if (next) next.focus({ preventScroll: true });
+      }, 600);
+    })
   );
-  const subject = document.getElementById('cf-subject');
-  subject.addEventListener('change', () => subject.classList.toggle('filled', !!subject.value));
 
-  /* ── Booking wizard ── */
-  const form = document.getElementById('bookForm');
-  const panes = [...form.querySelectorAll('.pane')];
-  const steps = [...document.querySelectorAll('#wizSteps li')];
-  let cur = 0;
-  let booked = false;
-
-  const dateInput = document.getElementById('bk-date');
-  dateInput.min = new Date().toISOString().split('T')[0];
-
-  function show(i) {
-    panes.forEach((p, x) => p.classList.toggle('is-active', x === i));
-    steps.forEach((s, x) => {
-      s.classList.toggle('is-current', x === i);
-      s.classList.toggle('is-done', x < i);
-    });
+  // Apparition douce des blocs
+  const targets = document.querySelectorAll(".serv, .step-list li, .job, .review, .sit");
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.15 });
+    targets.forEach((t) => { t.classList.add("reveal"); io.observe(t); });
   }
 
-  function validatePane(pane) {
-    let ok = true;
-    pane.querySelectorAll('[required]').forEach(f => {
-      let bad;
-      if (f.type === 'radio') {
-        bad = !pane.querySelector(`input[name="${f.name}"]:checked`);
-        pane.querySelector('.choice-grid')?.classList.toggle('error', bad);
-      } else if (f.id === 'bk-time') {
-        bad = !f.value;
-        document.getElementById('timeGrid').classList.toggle('error', bad);
-      } else {
-        bad = !f.value.trim();
-        f.closest('.field')?.classList.toggle('error', bad);
-      }
-      if (bad) ok = false;
-    });
+  // Formulaire (démonstration : rien n'est envoyé)
+  const form = document.getElementById("quoteForm");
+  const loadedAt = Date.now();
+  const date = form.querySelector('input[type="date"]');
+  if (date) date.min = new Date().toISOString().slice(0, 10);
+  const tests = {
+    req: (v) => v.trim() !== "",
+    name: (v) => v.trim().length >= 2,
+    zip: (v) => /^\d{5}$/.test(v.trim()),
+    phone: (v) => /^0\d{9}$/.test(v.replace(/[\s.\-]/g, "").replace(/^\+33/, "0")),
+    email: (v) => v.trim() === "" || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()),
+  };
+  const fields = [...form.querySelectorAll("[data-rule]")];
+  const check = (el) => {
+    const ok = tests[el.dataset.rule](el.value);
+    el.closest(".field").classList.toggle("invalid", !ok);
+    el.setAttribute("aria-invalid", String(!ok));
     return ok;
-  }
+  };
+  fields.forEach((el) => el.addEventListener("blur", () => { if (el.value !== "") check(el); }));
 
-  form.addEventListener('click', (e) => {
-    if (e.target.closest('.js-next')) {
-      if (!validatePane(panes[cur])) return;
-      cur = Math.min(cur + 1, panes.length - 1);
-      show(cur);
-    }
-    if (e.target.closest('.js-prev')) {
-      cur = Math.max(cur - 1, 0);
-      show(cur);
-    }
-  });
-
-  document.querySelectorAll('#timeGrid .chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      document.querySelectorAll('#timeGrid .chip').forEach(c => c.classList.remove('sel'));
-      chip.classList.add('sel');
-      document.getElementById('bk-time').value = chip.dataset.v;
-      document.getElementById('timeGrid').classList.remove('error');
-    });
-  });
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    if (booked || !validatePane(panes[2])) return;
-    booked = true;
-    const svc = form.querySelector('input[name="svc"]:checked').value;
-    const when = dateInput.value
-      ? new Date(dateInput.value + 'T12:00:00').toLocaleDateString('fr-FR',
-          { weekday: 'long', month: 'long', day: 'numeric' }) + ' · ' + document.getElementById('bk-time').value.replace(':', 'h')
-      : '—';
-    document.getElementById('recap-name').textContent = document.getElementById('bk-name').value.split(' ')[0];
-    document.getElementById('recap-svc').textContent = svc;
-    document.getElementById('recap-when').textContent = when;
-    cur = 3;
-    show(3);
-  });
-
-  form.querySelectorAll('input,textarea').forEach(f =>
-    f.addEventListener('input', () => f.closest('.field')?.classList.remove('error'))
-  );
-
-  /* ── Year ── */
-  document.getElementById('year').textContent = new Date().getFullYear();
-})();
-
-
-/* ── Durcissement anti-abus ─────────────────────────────────
-   1. Honeypot : un champ caché rempli = robot → soumission ignorée
-   2. Piège temporel : soumission < 3 s après le chargement = robot
-   3. Limites de saisie + autocomplete posées proprement
-   NB : la protection réelle contre le flood/injection se joue côté
-   serveur lorsqu'un backend recevra ces formulaires. */
-(function () {
-  'use strict';
-  var PAGE_LOADED = performance.now();
-
-  function looksLikeBot(form) {
-    var hp = form.querySelector('.hp-field input');
-    if (hp && hp.value !== '') return true;
-    if (performance.now() - PAGE_LOADED < 3000) return true;
-    return false;
-  }
-
-  // Phase de capture sur document : s'exécute AVANT les handlers des formulaires.
-  document.addEventListener('submit', function (e) {
-    var form = e.target;
-    if (!(form instanceof HTMLFormElement) || form.dataset.hardened) return;
-    form.dataset.hardened = '1';
-    if (looksLikeBot(form)) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-    }
-  }, true);
-
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('form input, form textarea').forEach(function (f) {
-      if (f.closest('.hp-field')) return;
-      if (!f.maxLength || f.maxLength === -1) {
-        if (f.tagName === 'TEXTAREA') f.maxLength = 1500;
-        else if (f.type === 'email') f.maxLength = 120;
-        else if (f.type === 'tel') f.maxLength = 30;
-        else f.maxLength = 100;
-      }
-      if (!f.autocomplete || f.autocomplete === 'off') {
-        var id = (f.id || '') + ' ' + (f.name || '');
-        if (/adresse|address/i.test(id)) f.autocomplete = 'street-address';
-        else if (f.type === 'email') f.autocomplete = 'email';
-        else if (f.type === 'tel') f.autocomplete = 'tel';
-        else if (f.type === 'date') f.autocomplete = 'off';
-        else if (f.tagName !== 'TEXTAREA' && /nom|name/i.test(id)) f.autocomplete = 'name';
-      }
-    });
+  const WHEN = { "Matin": "le matin", "Midi": "entre 12 h et 14 h", "Après-midi": "l'après-midi" };
+  form.addEventListener("submit", (ev) => {
+    ev.preventDefault();
+    // Robots : champ piège rempli ou envoi en moins de 3 secondes
+    if (document.getElementById("website").value !== "" || Date.now() - loadedAt < 3000) return;
+    const bad = fields.filter((el) => !check(el));
+    if (bad.length) { bad[0].focus(); return; }
+    const first = document.getElementById("name").value.trim().split(/\s+/)[0];
+    const picked = form.querySelector('input[name="when"]:checked');
+    const when = picked ? WHEN[picked.value] : "";
+    document.getElementById("successMsg").textContent =
+      "Merci {first}. Nous vous rappelons pour confirmer votre transport et vérifier la prise en charge.".replace("{first}", first).replace("{when}", when);
+    document.getElementById("success").hidden = false;
   });
 })();

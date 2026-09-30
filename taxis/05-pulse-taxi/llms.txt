@@ -1,0 +1,55 @@
+# Pulse Taxi
+
+> Pulse Taxi à Lille, 24 h/24 : un taxi en 10 minutes en moyenne dans Lille, courses vers les gares Lille-Flandres et Lille-Europe, l'aéroport de Lesquin et toute la métropole. Paiement par carte.
+
+Mis à jour le 30 septembre 2026.
+
+## Contact
+
+- Téléphone : 06 39 98 55 03 (24 h/24, 7 j/7)
+- Adresse : 3 place des Buisses, 59800 Lille
+- Zone : Lille, Roubaix, Tourcoing, Villeneuve-d'Ascq, Marcq-en-Barœul, Lambersart, Gare Lille-Flandres, Gare Lille-Europe, Aéroport de Lille-Lesquin
+- Réservation : [formulaire](https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/#devis)
+- Interlocuteur : Romain Delattre, gérant, chauffeur de taxi
+
+## Services
+
+- **Course immédiate** : Un taxi en 10 minutes en moyenne dans Lille, 24 h/24 et 7 j/7.
+- **Gares** : Lille-Flandres et Lille-Europe : réservation conseillée aux heures de pointe.
+- **Aéroport de Lille-Lesquin** : Départs très matinaux et retours tardifs, suivi du vol.
+- **Soirées et retours de nuit** : Un trajet sûr jusqu'à votre porte, le chauffeur attend que vous soyez entré.
+- **Métropole et longue distance** : Roubaix, Tourcoing, Villeneuve-d'Ascq, mais aussi Bruxelles, Paris ou la côte.
+- **Entreprises** : Bons de transport, facturation mensuelle pour vos collaborateurs et clients.
+
+## Engagements
+
+- **Toujours en service.** Des taxis disponibles 24 h/24, week-ends et jours fériés.
+- **La carte partout.** Paiement par carte et sans contact dans toutes nos voitures.
+- **La sécurité de nuit.** Le chauffeur attend que vous soyez entré avant de repartir.
+- **Des taxis officiels.** Voitures autorisées, compteurs contrôlés, chauffeurs professionnels.
+
+## Questions fréquentes
+
+### Combien de temps pour avoir un taxi à Lille ?
+
+En moyenne une dizaine de minutes dans Lille intra-muros, un peu plus en périphérie ou aux heures de pointe. Vous recevez l'heure d'arrivée par SMS.
+
+### Peut-on payer par carte ?
+
+Oui, tous nos taxis acceptent la carte bancaire et le paiement sans contact.
+
+### Faut-il réserver pour la gare ou l'aéroport ?
+
+C'est conseillé aux heures de pointe et pour les départs très matinaux. Pour une course immédiate, appelez directement.
+
+### Combien coûte un taxi pour l'aéroport de Lesquin ?
+
+Le prix dépend de votre adresse de départ et de l'heure (tarif de nuit). Nous vous donnons une estimation à la réservation.
+
+### Allez-vous en Belgique ?
+
+Oui, Bruxelles, Courtrai ou Tournai, avec un prix annoncé avant le départ.
+
+### Proposez-vous des comptes entreprise ?
+
+Oui, avec bons de transport et facturation mensuelle.

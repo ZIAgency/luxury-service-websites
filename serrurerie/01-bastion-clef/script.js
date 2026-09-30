@@ -1,245 +1,91 @@
-/* ═══════════════════════════════════════════
-   BASTION & CLEF — interactions
-   nav · reveal · counters · mech · contact · wizard
-   ═══════════════════════════════════════════ */
-(function () {
-  'use strict';
+/* Bastion & Clef · navigation, préremplissage et formulaire de démonstration */
+(() => {
+  "use strict";
 
-  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const nav = document.getElementById("nav");
+  const burger = document.getElementById("burger");
+  const links = document.getElementById("navLinks");
 
-  /* ── Navigation state ── */
-  var nav = document.getElementById('nav');
-  var onScroll = function () { nav.classList.toggle('scrolled', window.scrollY > 40); };
-  window.addEventListener('scroll', onScroll, { passive: true });
+  // Ombre de la barre de navigation au défilement
+  const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 8);
   onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
 
-  /* ── Mobile menu ── */
-  var burger = document.getElementById('burger');
-  burger.addEventListener('click', function () {
-    var open = document.body.classList.toggle('menu-open');
-    burger.setAttribute('aria-expanded', String(open));
+  // Menu mobile
+  burger.addEventListener("click", () => {
+    const open = burger.getAttribute("aria-expanded") === "true";
+    burger.setAttribute("aria-expanded", String(!open));
+    burger.setAttribute("aria-label", open ? "Ouvrir le menu" : "Fermer le menu");
+    links.classList.toggle("open", !open);
   });
-  document.querySelectorAll('.links a').forEach(function (a) {
-    a.addEventListener('click', function () { document.body.classList.remove('menu-open'); });
-  });
+  links.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => {
+      burger.setAttribute("aria-expanded", "false");
+      links.classList.remove("open");
+    })
+  );
 
-  /* ── Scroll reveal ── */
-  var revealObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) { e.target.classList.add('in'); revealObserver.unobserve(e.target); }
-    });
-  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(function (el) { revealObserver.observe(el); });
+  // Situations : préremplit le motif puis descend au formulaire
+  const work = document.getElementById("work");
+  document.querySelectorAll("[data-prefill]").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      work.value = btn.dataset.prefill;
+      work.closest(".field").classList.remove("invalid");
+      document.getElementById("devis").scrollIntoView({ behavior: "smooth" });
+      window.setTimeout(() => {
+        work.classList.remove("flash");
+        void work.offsetWidth;
+        work.classList.add("flash");
+        const next = document.querySelector("#quoteForm [data-rule]:not(#work)");
+        if (next) next.focus({ preventScroll: true });
+      }, 600);
+    })
+  );
 
-  /* ── Animated counters (ease-out cubic) ── */
-  function animateCount(el) {
-    var target = parseFloat(el.dataset.count);
-    var dur = 1700;
-    var start = performance.now();
-    var fmt = function (n) {
-      return (el.dataset.decimal ? n.toFixed(1) : Math.round(n).toLocaleString()) + (el.dataset.suffix || '');
-    };
-    (function tick(now) {
-      var p = Math.min((now - start) / dur, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = fmt(target * eased);
-      if (p < 1) requestAnimationFrame(tick);
-    })(start);
-  }
-  var countObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) { animateCount(e.target); countObserver.unobserve(e.target); }
-    });
-  }, { threshold: 0.6 });
-  document.querySelectorAll('[data-count]').forEach(function (el) { countObserver.observe(el); });
-
-  /* ── Hero mechanism: tumblers set when hero is seen ── */
-  var mech = document.getElementById('heroMech');
-  if (mech) {
-    var mechObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { mech.classList.add('live'); mechObserver.unobserve(mech); }
+  // Apparition douce des blocs
+  const targets = document.querySelectorAll(".serv, .step-list li, .job, .review, .sit");
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
       });
-    }, { threshold: 0.4 });
-    mechObserver.observe(mech);
+    }, { threshold: 0.15 });
+    targets.forEach((t) => { t.classList.add("reveal"); io.observe(t); });
   }
 
-  /* ── Escutcheon tilt (atelier panel) ── */
-  var panel = document.querySelector('.atelier-panel');
-  if (panel && !reducedMotion && window.matchMedia('(pointer:fine)').matches) {
-    var frame = panel.closest('.atelier-frame');
-    frame.addEventListener('pointermove', function (ev) {
-      var r = frame.getBoundingClientRect();
-      var dx = (ev.clientX - r.left) / r.width - 0.5;
-      var dy = (ev.clientY - r.top) / r.height - 0.5;
-      panel.style.transform = 'perspective(700px) rotateY(' + (dx * 7).toFixed(2) + 'deg) rotateX(' + (-dy * 7).toFixed(2) + 'deg)';
-    });
-    frame.addEventListener('pointerleave', function () { panel.style.transform = ''; });
-  }
-
-  /* ── Floating-label sync (no native hint needed) ── */
-  function syncFilled(f) {
-    f.classList.toggle('filled', !!String(f.value).trim());
-  }
-  document.querySelectorAll('.field input, .field select, .field textarea').forEach(function (f) {
-    syncFilled(f);
-    f.addEventListener('input', function () { syncFilled(f); });
-    f.addEventListener('change', function () { syncFilled(f); });
-  });
-
-  /* ── Contact form ── */
-  var contactForm = document.getElementById('contactForm');
-  contactForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var ok = true;
-    contactForm.querySelectorAll('[required]').forEach(function (f) {
-      var bad = f.type === 'email'
-        ? !/^\S+@\S+\.\S+$/.test(f.value)
-        : !f.value.trim();
-      f.closest('.field').classList.toggle('error', bad);
-      if (bad) ok = false;
-    });
-    if (!ok) return;
-    contactForm.querySelector('fieldset').hidden = true;
-    contactForm.querySelector('.form-success').hidden = false;
-  });
-  contactForm.querySelectorAll('input,select,textarea').forEach(function (f) {
-    f.addEventListener('input', function () { f.closest('.field').classList.remove('error'); });
-  });
-
-  /* ── Booking wizard ── */
-  var form = document.getElementById('bookForm');
-  var panes = Array.prototype.slice.call(form.querySelectorAll('.pane'));
-  var steps = Array.prototype.slice.call(document.querySelectorAll('#wizSteps li'));
-  var cur = 0;
-  var booked = false;
-
-  var dateInput = document.getElementById('bk-date');
-  dateInput.min = new Date().toISOString().split('T')[0];
-
-  function show(i) {
-    panes.forEach(function (p, x) { p.classList.toggle('is-active', x === i); });
-    steps.forEach(function (s, x) {
-      s.classList.toggle('is-current', x === i);
-      s.classList.toggle('is-done', x < i);
-    });
-  }
-
-  function validatePane(pane) {
-    var ok = true;
-    pane.querySelectorAll('[required]').forEach(function (f) {
-      var bad;
-      if (f.type === 'radio') {
-        bad = !pane.querySelector('input[name="' + f.name + '"]:checked');
-        var grid = pane.querySelector('.choice-grid');
-        if (grid) grid.classList.toggle('error', bad);
-      } else if (f.id === 'bk-time') {
-        bad = !f.value;
-        document.getElementById('timeGrid').classList.toggle('error', bad);
-      } else {
-        bad = !f.value.trim();
-        var field = f.closest('.field');
-        if (field) field.classList.toggle('error', bad);
-      }
-      if (bad) ok = false;
-    });
+  // Formulaire (démonstration : rien n'est envoyé)
+  const form = document.getElementById("quoteForm");
+  const loadedAt = Date.now();
+  const date = form.querySelector('input[type="date"]');
+  if (date) date.min = new Date().toISOString().slice(0, 10);
+  const tests = {
+    req: (v) => v.trim() !== "",
+    name: (v) => v.trim().length >= 2,
+    zip: (v) => /^\d{5}$/.test(v.trim()),
+    phone: (v) => /^0\d{9}$/.test(v.replace(/[\s.\-]/g, "").replace(/^\+33/, "0")),
+    email: (v) => v.trim() === "" || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()),
+  };
+  const fields = [...form.querySelectorAll("[data-rule]")];
+  const check = (el) => {
+    const ok = tests[el.dataset.rule](el.value);
+    el.closest(".field").classList.toggle("invalid", !ok);
+    el.setAttribute("aria-invalid", String(!ok));
     return ok;
-  }
+  };
+  fields.forEach((el) => el.addEventListener("blur", () => { if (el.value !== "") check(el); }));
 
-  form.addEventListener('click', function (e) {
-    if (e.target.closest('.js-next')) {
-      if (!validatePane(panes[cur])) return;
-      cur = Math.min(cur + 1, panes.length - 1);
-      show(cur);
-    }
-    if (e.target.closest('.js-prev')) {
-      cur = Math.max(cur - 1, 0);
-      show(cur);
-    }
-  });
-
-  document.querySelectorAll('#timeGrid .chip').forEach(function (chip) {
-    chip.addEventListener('click', function () {
-      document.querySelectorAll('#timeGrid .chip').forEach(function (c) { c.classList.remove('sel'); });
-      chip.classList.add('sel');
-      document.getElementById('bk-time').value = chip.dataset.v;
-      document.getElementById('timeGrid').classList.remove('error');
-    });
-  });
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    if (booked || !validatePane(panes[2])) return;
-    booked = true;
-    var svc = form.querySelector('input[name="svc"]:checked').value;
-    var when = dateInput.value
-      ? new Date(dateInput.value + 'T12:00:00').toLocaleDateString('fr-FR',
-          { weekday: 'long', month: 'long', day: 'numeric' }) + ' · ' + document.getElementById('bk-time').value
-      : '—';
-    document.getElementById('recap-name').textContent = document.getElementById('bk-name').value.split(' ')[0];
-    document.getElementById('recap-svc').textContent = svc;
-    document.getElementById('recap-when').textContent = when;
-    cur = 3;
-    show(3);
-  });
-
-  form.querySelectorAll('input,textarea').forEach(function (f) {
-    f.addEventListener('input', function () {
-      var field = f.closest('.field');
-      if (field) field.classList.remove('error');
-    });
-  });
-
-  /* ── Year ── */
-  document.getElementById('year').textContent = new Date().getFullYear();
-})();
-
-
-/* ── Durcissement anti-abus ─────────────────────────────────
-   1. Honeypot : un champ caché rempli = robot → soumission ignorée
-   2. Piège temporel : soumission < 3 s après le chargement = robot
-   3. Limites de saisie + autocomplete posées proprement
-   NB : la protection réelle contre le flood/injection se joue côté
-   serveur lorsqu'un backend recevra ces formulaires. */
-(function () {
-  'use strict';
-  var PAGE_LOADED = performance.now();
-
-  function looksLikeBot(form) {
-    var hp = form.querySelector('.hp-field input');
-    if (hp && hp.value !== '') return true;
-    if (performance.now() - PAGE_LOADED < 3000) return true;
-    return false;
-  }
-
-  // Phase de capture sur document : s'exécute AVANT les handlers des formulaires.
-  document.addEventListener('submit', function (e) {
-    var form = e.target;
-    if (!(form instanceof HTMLFormElement) || form.dataset.hardened) return;
-    form.dataset.hardened = '1';
-    if (looksLikeBot(form)) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-    }
-  }, true);
-
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('form input, form textarea').forEach(function (f) {
-      if (f.closest('.hp-field')) return;
-      if (!f.maxLength || f.maxLength === -1) {
-        if (f.tagName === 'TEXTAREA') f.maxLength = 1500;
-        else if (f.type === 'email') f.maxLength = 120;
-        else if (f.type === 'tel') f.maxLength = 30;
-        else f.maxLength = 100;
-      }
-      if (!f.autocomplete || f.autocomplete === 'off') {
-        var id = (f.id || '') + ' ' + (f.name || '');
-        if (/adresse|address/i.test(id)) f.autocomplete = 'street-address';
-        else if (f.type === 'email') f.autocomplete = 'email';
-        else if (f.type === 'tel') f.autocomplete = 'tel';
-        else if (f.type === 'date') f.autocomplete = 'off';
-        else if (f.tagName !== 'TEXTAREA' && /nom|name/i.test(id)) f.autocomplete = 'name';
-      }
-    });
+  const WHEN = { "Matin": "le matin", "Midi": "entre 12 h et 14 h", "Après-midi": "l'après-midi" };
+  form.addEventListener("submit", (ev) => {
+    ev.preventDefault();
+    // Robots : champ piège rempli ou envoi en moins de 3 secondes
+    if (document.getElementById("website").value !== "" || Date.now() - loadedAt < 3000) return;
+    const bad = fields.filter((el) => !check(el));
+    if (bad.length) { bad[0].focus(); return; }
+    const first = document.getElementById("name").value.trim().split(/\s+/)[0];
+    const picked = form.querySelector('input[name="when"]:checked');
+    const when = picked ? WHEN[picked.value] : "";
+    document.getElementById("successMsg").textContent =
+      "Merci {first}. Nous vous rappelons {when} pour fixer votre audit de sécurité.".replace("{first}", first).replace("{when}", when);
+    document.getElementById("success").hidden = false;
   });
 })();

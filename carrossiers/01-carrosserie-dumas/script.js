@@ -25,7 +25,7 @@
     })
   );
 
-  // Situations : préremplit le type de travaux puis descend au formulaire
+  // Situations : préremplit le motif puis descend au formulaire
   const work = document.getElementById("work");
   document.querySelectorAll("[data-prefill]").forEach((btn) =>
     btn.addEventListener("click", () => {
@@ -36,7 +36,8 @@
         work.classList.remove("flash");
         void work.offsetWidth;
         work.classList.add("flash");
-        document.getElementById("name").focus({ preventScroll: true });
+        const next = document.querySelector("#quoteForm [data-rule]:not(#work)");
+        if (next) next.focus({ preventScroll: true });
       }, 600);
     })
   );
@@ -45,50 +46,46 @@
   const targets = document.querySelectorAll(".serv, .step-list li, .job, .review, .sit");
   if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      entries.forEach((en) => {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
       });
     }, { threshold: 0.15 });
     targets.forEach((t) => { t.classList.add("reveal"); io.observe(t); });
   }
 
-  // Formulaire de devis (démonstration : rien n'est envoyé)
+  // Formulaire (démonstration : rien n'est envoyé)
   const form = document.getElementById("quoteForm");
   const loadedAt = Date.now();
-  const rules = {
-    work: (v) => v !== "",
+  const date = form.querySelector('input[type="date"]');
+  if (date) date.min = new Date().toISOString().slice(0, 10);
+  const tests = {
+    req: (v) => v.trim() !== "",
     name: (v) => v.trim().length >= 2,
     zip: (v) => /^\d{5}$/.test(v.trim()),
-    phone: (v) => v.replace(/[\s.\-]/g, "").replace(/^\+33/, "0").match(/^0\d{9}$/) !== null,
+    phone: (v) => /^0\d{9}$/.test(v.replace(/[\s.\-]/g, "").replace(/^\+33/, "0")),
     email: (v) => v.trim() === "" || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()),
   };
-
-  const check = (id) => {
-    const el = document.getElementById(id);
-    const ok = rules[id](el.value);
+  const fields = [...form.querySelectorAll("[data-rule]")];
+  const check = (el) => {
+    const ok = tests[el.dataset.rule](el.value);
     el.closest(".field").classList.toggle("invalid", !ok);
     el.setAttribute("aria-invalid", String(!ok));
     return ok;
   };
-  Object.keys(rules).forEach((id) =>
-    document.getElementById(id).addEventListener("blur", () => {
-      if (document.getElementById(id).value !== "") check(id);
-    })
-  );
+  fields.forEach((el) => el.addEventListener("blur", () => { if (el.value !== "") check(el); }));
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+  const WHEN = { "Matin": "le matin", "Midi": "entre 12 h et 14 h", "Après-midi": "l'après-midi" };
+  form.addEventListener("submit", (ev) => {
+    ev.preventDefault();
     // Robots : champ piège rempli ou envoi en moins de 3 secondes
-    if (form.website.value !== "" || Date.now() - loadedAt < 3000) return;
-    const results = Object.keys(rules).map(check);
-    if (results.includes(false)) {
-      form.querySelector(".invalid input, .invalid select").focus();
-      return;
-    }
-    const when = form.querySelector('input[name="when"]:checked').value.toLowerCase();
+    if (document.getElementById("website").value !== "" || Date.now() - loadedAt < 3000) return;
+    const bad = fields.filter((el) => !check(el));
+    if (bad.length) { bad[0].focus(); return; }
     const first = document.getElementById("name").value.trim().split(/\s+/)[0];
+    const picked = form.querySelector('input[name="when"]:checked');
+    const when = picked ? WHEN[picked.value] : "";
     document.getElementById("successMsg").textContent =
-      `Merci ${first}. Nous vous rappelons ${when === "midi" ? "entre 12 h et 14 h" : when === "matin" ? "le matin" : "l'après-midi"} pour fixer l'estimation de votre véhicule.`;
+      "Merci {first}. Nous vous rappelons {when} pour fixer l'estimation de votre véhicule.".replace("{first}", first).replace("{when}", when);
     document.getElementById("success").hidden = false;
   });
 })();

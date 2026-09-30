@@ -1,0 +1,55 @@
+# Taxis Damier
+
+> Taxis Damier, taxis bordelais depuis 1947 : transport médical conventionné sans avance de frais, trajets vers le CHU, les cliniques, la gare Saint-Jean et l'aéroport. Réservation 24 h/24.
+
+Mis à jour le 30 septembre 2026.
+
+## Contact
+
+- Téléphone : 05 36 49 33 10 (24 h/24, 7 j/7)
+- Adresse : 5 cours de la Somme, 33000 Bordeaux
+- Zone : Bordeaux, Mérignac, Pessac, Talence, Bègles, Le Bouscat, Cenon, Lormont, CHU Pellegrin, Aéroport de Bordeaux-Mérignac
+- Réservation : [formulaire](https://luxury-service-websites.vercel.app/taxis/03-checker-cab/#devis)
+- Interlocuteur : Jean-Marc Dubreuil, gérant, troisième génération
+
+## Services
+
+- **Transport médical conventionné** : Consultations, examens, hospitalisations : sur prescription, avec tiers payant le plus souvent.
+- **Séances régulières** : Dialyse, chimiothérapie, radiothérapie, rééducation : un chauffeur attitré, des horaires fixes.
+- **Entrées et sorties d'hôpital** : CHU Pellegrin, Haut-Lévêque, Saint-André, cliniques : dépose au plus près du service.
+- **Gares et aéroport** : Saint-Jean et Mérignac, réservation conseillée la veille.
+- **Courses en ville** : Au compteur, avec paiement par carte à bord.
+- **Personnes à mobilité réduite** : Aide à la montée, fauteuil pliant transporté, patience garantie.
+
+## Engagements
+
+- **La patience.** On ne vous presse jamais, surtout à la sortie d'un soin.
+- **La régularité.** Pour vos séances, le même chauffeur autant que possible.
+- **La transparence.** Vous savez ce qui est pris en charge et ce qui reste éventuellement à votre charge.
+- **La disponibilité.** Réservation 24 h/24, 7 j/7.
+
+## Questions fréquentes
+
+### Qu'est-ce qu'un taxi conventionné ?
+
+Un taxi qui a signé une convention avec l'Assurance maladie pour transporter des patients sur prescription médicale. Le transport peut alors être pris en charge, souvent sans avance de frais grâce au tiers payant.
+
+### Quels documents faut-il pour un transport médical ?
+
+La prescription médicale de transport remplie par votre médecin, votre carte Vitale, et votre attestation de mutuelle ou de prise en charge à 100 % si vous en avez une.
+
+### Le transport médical est-il remboursé à 100 % ?
+
+Cela dépend de votre situation : affection de longue durée, hospitalisation, accident du travail, etc. Nous vous indiquons avant le trajet ce qui reste éventuellement à votre charge.
+
+### Puis-je avoir le même chauffeur pour mes séances ?
+
+Oui, nous organisons un chauffeur attitré autant que possible pour les séances régulières.
+
+### Transportez-vous les fauteuils roulants ?
+
+Nous transportons les fauteuils pliants et aidons à la montée. Pour un transport en fauteuil non pliant, il faut un véhicule adapté que nous pouvons vous indiquer.
+
+### Faites-vous aussi les courses classiques ?
+
+Oui, en ville, vers la gare et l'aéroport, 24 h/24, avec paiement par carte à bord.
