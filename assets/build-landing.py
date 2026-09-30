@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Génère la landing page portfolio ZYAGENCY (39 sites)."""
+"""Génère la landing page portfolio ZYAGENCY."""
 import html, io, os
 
-OUT = "/home/user/luxury-service-websites/index.html"
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "index.html")
 
 CART = ('<svg class="cart" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" '
         'stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
@@ -71,6 +71,16 @@ SECTIONS = [
   ("aupres-domicile","Auprès","Aide à domicile","Rester chez soi, entouré. Un ton juste qui s'adresse aux proches autant qu'aux aînés.",["#1B3628","#C08457","#F3EEE6"],"artisanat/03-aupres/",True),
   ("plombier-bleu-confiance","Bleu Confiance","Plombier chauffagiste","Le plombier qu'on rappelle : zones d'intervention, avis clients et devis en deux clics.",["#0F172A","#38B6EF","#F8FAFC"],"artisanat/04-bleu-confiance/",True),
   ("serrurier-acier-laiton","Acier & Laiton","Serrurier · urgence","Votre porte rouverte en trente minutes. Pensé pour capter la recherche d'urgence locale.",["#16181D","#C1902C","#F6F5F2"],"artisanat/05-acier-laiton/",True),
+ ]),
+ ("Bâtiment & métiers de proximité", "Des sites construits autour de la question du client : qui peut venir, quand, pour quoi, et comment le joindre en un geste.", None, [
+  ("morel-platrerie","Morel Plâtrerie","Plâtrier plaquiste · Lyon","Cloisons, plafonds, enduits. Six situations concrètes qui préremplissent le devis : le visiteur se reconnaît et demande sa visite.",["#1E2A33","#D98B3A","#F4F1EA"],"platriers/01-morel-platrerie/",True),
+  ("garnier-isolation","Garnier Isolation","Isolation · Nantes","Combles, murs, planchers. Le confort et les aides expliqués simplement, pour transformer la facture de chauffage en demande de devis.",["#12343B","#F2A541","#E9F1EF"],"isolation/01-garnier-isolation/",True),
+  ("lebrun-terrassement","Lebrun Terrassement","Terrassier · Gironde","Terrassement, viabilisation, assainissement. Pour capter les particuliers qui ont leur permis en poche et cherchent qui prépare le terrain.",["#2A2118","#F2C230","#EFE9DD"],"terrassiers/01-lebrun-terrassement/",True),
+  ("atelier-delorme","Atelier Delorme","Tapissier · Paris","Réfection de fauteuils, canapés et chaises. Devis sur photo et enlèvement à domicile : on retire tout frein avant la demande.",["#3B1520","#D9A79E","#F2E8DE"],"tapissiers/01-atelier-delorme/",True),
+  ("ferrer-cuisines-stores","Ferrer Cuisines & Stores","Cuisines et stores · Aix","Pose de cuisines toutes marques, même en kit, et stores. Le site répond au client qui a déjà acheté et cherche un poseur fiable.",["#26301F","#E3B964","#EFEBDD"],"cuisinistes/01-ferrer-cuisines-stores/",True),
+  ("cordonnerie-saint-clair","Cordonnerie Saint-Clair","Cordonnier · Toulouse","Ressemelage, talons minute, maroquinerie. Horaires, adresse et délais en évidence pour faire venir en boutique.",["#1F2B24","#D0935A","#F2E8D8"],"cordonniers/01-cordonnerie-saint-clair/",True),
+  ("maconnerie-rocher","Maçonnerie Rocher","Maçon · Rennes","Extension, mur porteur, dalle. Démarches et planning expliqués pour rassurer sur un gros budget avant le premier appel.",["#26282B","#E4683F","#ECEAE6"],"macons/01-maconnerie-rocher/",True),
+  ("carrosserie-dumas","Carrosserie Dumas","Carrossier · Lille","Sinistre, rayures, grêle. Le libre choix du garage et la gestion de l'assurance mis en avant : l'argument qui fait venir l'automobiliste.",["#15171C","#FF5A45","#E8EBF0"],"carrossiers/01-carrosserie-dumas/",True),
  ]),
 ]
 

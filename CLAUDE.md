@@ -1,16 +1,15 @@
 # Portfolio ZYAGENCY — contexte du projet
 
-Vitrine commerciale de **ZYAGENCY** (agence web) : 41 sites vitrines de démonstration,
+Vitrine commerciale de **ZYAGENCY** (agence web) : 49 sites vitrines de démonstration,
 présentés sur une landing page et destinés à être **vendus** à de futurs clients.
 Tous les textes sont en français.
 
 ## État actuel
 
-- **41 sites consultables**, tous en pages HTML lisibles directement par le navigateur.
+- **49 sites consultables**, tous en pages HTML lisibles directement par le navigateur.
 - Branche de travail : `claude/recap-sites-produits-c5abux`.
 - PR ouverte vers `main` : ZIAgency/luxury-service-websites#1, **à fusionner**.
-- Prochaine étape : déployer sur **Vercel** (Add New Project → Framework « Other » → Deploy).
-  `vercel.json` gère déjà les URLs propres et les en-têtes de sécurité.
+- Déployé sur Vercel (portfolio non indexé) : https://luxury-service-websites.vercel.app/
 
 ## Arborescence
 
@@ -22,6 +21,8 @@ Tous les textes sont en français.
 | `medecins/01..06` | 6 cabinets de médecine générale | **Générés** depuis le dépôt `ZIAgency/medecins-generalistes` |
 | `sante/01..03` | Vision Étoile, Verveine, Les Petits Pas | **Générés** depuis `opt-premium-one`, `verveine`, `les-petits-pas` |
 | `artisanat/01..05` | Braise, Boréal, Auprès, Bleu Confiance, Acier & Laiton | **Générés** depuis les dépôts `Site-*` |
+| `platriers/01-morel-platrerie/` | Morel Plâtrerie : **modèle de référence** des sites orientés client (écrit à la main) | Écrit à la main |
+| `isolation/`, `terrassiers/`, `tapissiers/`, `cuisinistes/`, `cordonniers/`, `macons/`, `carrossiers/` | 1 site chacun, même logique que le plâtrier | **Générés** par `assets/build-metiers.py` (ne pas éditer à la main) |
 | `assets/previews/` | Une capture d'écran par site (1440×960, JPEG) | Capturées au navigateur |
 | `assets/fonts/`, `assets/zy-logo.svg` | Police Sentient et logo ZY de l'agence | Dépôt `ZIAgency/zyagency` |
 
@@ -37,6 +38,18 @@ préfixer les liens `href="/..."` bruts par ce chemin).
 - Une ligne par site dans `SECTIONS` : slug, nom, étiquette, description, 3 couleurs,
   lien, état.
 - Chaque carte a un visuel, un lien « Voir le site » et un bouton **« Acheter ce site »**.
+
+## Sites orientés client (depuis septembre 2026)
+
+Direction voulue par Yacine, à appliquer à tout nouveau site métier : partir de la
+question du client. Hero avec **une vraie photo du métier** (jamais un aplat avec une
+phrase creuse), titre qui dit ce que le client obtient, téléphone et devis visibles
+tout de suite, situations concrètes qui préremplissent le formulaire, FAQ des vraies
+questions, barre mobile « Appeler / Devis ». Données structurées (entreprise, services,
+FAQ) et `llms.txt` pour être lisible par les IA.
+
+Photos : Pexels (licence libre, usage commercial), `hero.jpg` dans le dossier du site,
+téléchargées avec l'accord de Yacine. Crédits dans `assets/build-metiers.py` (`photo`).
 
 ## Règles à respecter
 
