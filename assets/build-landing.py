@@ -52,8 +52,11 @@ SECTIONS = [
   ("cime-racine","Cime & Racine","Élagueurs grimpeurs · Morbihan","Élagage, abattage par démontage au-dessus des toits, urgence après tempête : rassurer sur un travail risqué.",["#16241C","#E0A43A","#E6E9DE"],"paysagistes/03-cime-racine/",True),
   ("jardins-de-garrigue","Jardins de Garrigue","Jardins secs · Vaucluse","Des jardins beaux en août malgré les restrictions d'eau : une réponse directe à la question que se posent les propriétaires du Sud.",["#2F3A26","#D9895A","#F1E7D6"],"paysagistes/04-jardins-de-garrigue/",True),
  ]),
- ("Avocats", "Une matière où l'on ne choisit pas au prix, mais à la confiance qu'inspire la page.", None, [
+ ("Avocats", "Particuliers, entrepreneurs, victimes, urgences pénales : quatre cabinets, quatre façons de rassurer avant le premier appel.", None, [
   ("roussel-associes","Roussel & Associés","Avocats · Montpellier","Divorce, licenciement, bail, succession : comprendre ses droits dès le premier rendez-vous, honoraires écrits.",['#101A2E', '#C4A15A', '#ECE8DD'],"avocats/01-roussel-associes/",True),
+  ("castel-avocats","Castel Avocats","Avocats des entrepreneurs · Lyon","Création de société, contrats, impayés : des forfaits annoncés et une réponse en 48 h, le langage que comprennent les dirigeants.",["#14213D","#F4B942","#E7EAF0"],"avocats/02-castel-avocats/",True),
+  ("delmas-victimes","Delmas Avocats","Défense des victimes · Toulouse","« L'assureur a ses avocats, vous avez droit au vôtre » : capter les victimes d'accidents avant qu'elles signent une offre trop basse.",["#2B2330","#E3A07D","#F0E9E2"],"avocats/03-delmas-victimes/",True),
+  ("leroy-defense","Leroy Défense","Avocate pénaliste · Paris, 24 h/24","Pensé pour l'appel de la famille pendant une garde à vue : joignable la nuit, honoraires annoncés, l'appel en premier.",["#0D0D0D","#E55B5B","#E8E8E8"],"avocats/04-leroy-defense/",True),
  ]),
  ("Médecins généralistes", "Six cabinets, six façons d'installer la confiance dès la page d'accueil.", None, [
   ("cabinet-des-cedres","Cabinet des Cèdres","Médecine de famille · Lyon","Le suivi d'un médecin de famille, sans l'attente. Prise de rendez-vous mise en avant.",["#1B3A2B","#C9A24B","#F2EFE7"],"medecins/01-cabinet-des-cedres/",True),
