@@ -11,6 +11,7 @@
   <style>
     @font-face{font-family:'Sentient';src:url('assets/fonts/Sentient-Extralight.woff') format('woff');font-weight:200;font-style:normal;font-display:swap}
     @font-face{font-family:'Sentient';src:url('assets/fonts/Sentient-LightItalic.woff') format('woff');font-weight:300;font-style:italic;font-display:swap}
+    @font-face{font-family:'ZyTifinagh';src:url('assets/fonts/NotoSansTifinagh-Regular.otf') format('opentype');unicode-range:U+2D30-2D7F;font-display:swap}
     :root{
       --bg:#000;--fg:#fff;--primary:#FFC700;--primary-2:#E0AE00;
       --border:#424242;--muted:rgba(255,255,255,.6);--panel:#0A0A0A;
@@ -26,9 +27,9 @@
 
     header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.74);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
     .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-    .brand{display:flex;align-items:center;gap:.7rem}
-    .brand svg{width:26px;height:26px}
-    .brand .word{font-family:'Sentient',serif;font-weight:200;font-size:1.15rem;letter-spacing:.28em}
+    .brand{display:inline-flex;align-items:center;gap:.5rem;color:var(--fg)}
+    .brand svg{height:24px;width:auto;flex-shrink:0}
+    .brand .word{font-family:'Sentient','ZyTifinagh',sans-serif;font-weight:400;font-size:1.5rem;line-height:1;letter-spacing:-.025em}
     .nav-cta{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:#000;background:linear-gradient(to bottom,#fff,#d4d4d4);padding:.6rem 1.1rem;border-radius:999px;transition:transform .3s ease}
     .nav-cta:hover{transform:scale(1.05)}
 
@@ -108,21 +109,21 @@
 
     footer{border-top:1px solid var(--border);padding:2.6rem 0}
     .foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;font-family:var(--mono);font-size:.74rem;color:var(--muted);letter-spacing:.04em}
-    .foot .brand .word{font-size:.95rem}
+    .foot .brand .word{font-size:1.25rem}
+    .foot .brand svg{height:20px}
     @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
   </style>
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="zy">
-    <path fill="currentColor" d="M101.141 53H136.632C151.023 53 162.689 64.6662 162.689 79.0573V112.904H148.112V79.0573C148.112 78.7105 148.098 78.3662 148.072 78.0251L112.581 112.898C112.701 112.902 112.821 112.904 112.941 112.904H148.112V126.672H112.941C98.5504 126.672 86.5638 114.891 86.5638 100.5V66.7434H101.141V100.5C101.141 101.15 101.191 101.792 101.289 102.422L137.56 66.7816C137.255 66.7563 136.945 66.7434 136.632 66.7434H101.141V53Z"/>
-    <path fill="currentColor" d="M65.2926 124.136L14 66.7372H34.6355L64.7495 100.436V66.7372H80.1365V118.47C80.1365 126.278 70.4953 129.958 65.2926 124.136Z"/>
+    <path fill="currentColor" d="M13.2861 23.2163V35.6997H6.44141V29.647H0V23.2163H6.44141V23.2153L13.2861 23.2163ZM23.3506 13.7563H23.3516V20.187H23.3506V26.2397H16.5068V20.187H10.0654V13.7563H16.5068V13.7554L23.3506 13.7563ZM33.416 4.30029V16.7837H26.5723V10.731H20.1299V4.30029H33.416Z"/>
   </g></defs></svg>
 
   <header>
     <div class="container nav">
-      <a class="brand" href="#top" aria-label="ZYAGENCY — accueil">
-        <svg viewBox="0 0 180 180" style="color:var(--primary)"><use href="#zy"/></svg>
-        <span class="word">ZYAGENCY</span>
+      <a class="brand" href="#top" aria-label="Zyagency, accueil">
+        <svg viewBox="0 0 34 40" aria-hidden="true"><use href="#zy"/></svg>
+        <span class="word">ⵣⵢⴰgency</span>
       </a>
       <a class="nav-cta" href="#contact">Parlons de vos objectifs</a>
     </div>
@@ -336,9 +337,9 @@
 
   <footer>
     <div class="container foot">
-      <a class="brand" href="#top">
-        <svg viewBox="0 0 180 180" width="22" height="22" style="color:var(--primary)"><use href="#zy"/></svg>
-        <span class="word">ZYAGENCY</span>
+      <a class="brand" href="#top" aria-label="Zyagency, accueil">
+        <svg viewBox="0 0 34 40" aria-hidden="true"><use href="#zy"/></svg>
+        <span class="word">ⵣⵢⴰgency</span>
       </a>
       <span>© 2026 ZYAGENCY · Votre partenaire digital</span>
       <a class="card-demo" href="https://zyagency.fr" target="_blank" rel="noopener">zyagency.fr ↗</a>
