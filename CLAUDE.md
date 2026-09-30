@@ -23,9 +23,22 @@ Tous les textes sont en français.
 | `assets/fonts/`, `assets/zy-logo.svg` | Police Sentient et logo ZY de l'agence | Dépôt `ZIAgency/zyagency` |
 
 **Ne pas modifier à la main** `medecins/`, `sante/` et `artisanat/` : ce sont des exports.
-Pour changer un de ces sites, modifier son dépôt source puis régénérer l'export
-(`output: "export"`, `trailingSlash: true`, `basePath` = chemin de montage, puis
-préfixer les liens `href="/..."` bruts par ce chemin).
+Pour changer un de ces sites, modifier son dépôt source puis régénérer l'export.
+
+Sources de `artisanat/` (clonées dans `~/Claude`) et commande d'export :
+
+| Export | Dépôt source | Commande |
+|---|---|---|
+| `artisanat/01-braise` | `pros/braise-chauffage` (ZIAgency/Site-braise-chauffage) | `assets/export-next.sh ~/Claude/pros/braise-chauffage artisanat/01-braise` |
+| `artisanat/02-boreal` | `pros/boreal-climatisation` | `assets/export-next.sh ~/Claude/pros/boreal-climatisation artisanat/02-boreal` |
+| `artisanat/03-aupres` | `pros/aupres-domicile` | `assets/export-next.sh ~/Claude/pros/aupres-domicile artisanat/03-aupres` |
+| `artisanat/04-bleu-confiance` | `client-plombier` (ZIAgency/Site-plombier-1, Astro) | `assets/export-astro.sh ~/Claude/client-plombier artisanat/04-bleu-confiance` |
+| `artisanat/05-acier-laiton` | `client-serrurier` (ZIAgency/Site-serrurier-1, Astro) | `assets/export-astro.sh ~/Claude/client-serrurier artisanat/05-acier-laiton` |
+
+Les projets Next lisent `STATIC_EXPORT` et `NEXT_PUBLIC_BASE_PATH` (helper `asset()` pour
+les images de `/public`) ; les projets Astro utilisent `--base` et `withBase()`.
+Depuis le 30/09/2026, ces 5 sites ont des photos du métier dans leurs sections
+(étalonnées selon leur identité), les heros sont inchangés.
 
 ## La landing page
 
