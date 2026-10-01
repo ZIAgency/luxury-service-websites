@@ -66,7 +66,7 @@ SECTIONS = [
   ("racine-sante","Racine Santé","Approche globale · Annecy","Soigner la cause, pas seulement le symptôme. Pour une patientèle en quête de sens.",["#2E3320","#B79A67","#EDE7D6"],"medecins/05-racine-sante/",True),
   ("cabinet-des-tilleuls","Cabinet des Tilleuls","Cabinet apaisé · Nantes","Un cabinet où l'on respire : l'antidote à la salle d'attente anxiogène.",["#12403E","#E8765A","#EAF1F0"],"medecins/06-cabinet-des-tilleuls/",True),
  ]),
- ("Santé — spécialistes", "Des spécialités où la réassurance fait la prise de rendez-vous.", None, [
+ ("Santé, spécialistes", "Des spécialités où la réassurance fait la prise de rendez-vous.", None, [
   ("vision-etoile-paris","Vision Étoile","Ophtalmologie · Paris","Retrouver une vue nette, durablement. Tarifs, équipe et réponses aux craintes.",["#0E1A2B","#C9A24B","#EDE7DA"],"sante/01-vision-etoile/",True),
   ("verveine","Verveine","Sage-femme · Nantes","Accompagnées du premier jour au dernier : grossesse, naissance et post-partum.",["#26331F","#C98A9B","#F0EBE0"],"sante/02-verveine/",True),
   ("les-petits-pas","Les Petits Pas","Pédiatrie · Bordeaux","De la première visite aux grands pas : un parcours par âge qui parle aux parents.",["#123A56","#F0A6B0","#F5EFE6"],"sante/03-les-petits-pas/",True),
@@ -246,8 +246,8 @@ def build():
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>ZYAGENCY — Être la réponse que les IA recommandent</title>
-  <meta name="description" content="Vos clients demandent désormais à une IA qui appeler. Les moteurs d'IA ne citent que ce qu'ils ont lu : sans site, vous n'êtes pas une réponse possible. {total} sites vitrines ZYAGENCY, optimisés pour Google et pour les IA (GEO), prêts à porter votre nom.">
+  <title>Zyagency : Être la réponse que les IA recommandent</title>
+  <meta name="description" content="Vos clients demandent désormais à une IA qui appeler. Les moteurs d'IA ne citent que ce qu'ils ont lu : sans site, vous n'êtes pas une réponse possible. {total} sites vitrines Zyagency, optimisés pour Google et pour les IA (GEO), prêts à porter votre nom.">
   <link rel="icon" href="assets/zy-logo.svg">
   <style>{CSS}  </style>
 </head>
@@ -271,7 +271,7 @@ def build():
       <div class="container">
         <p class="eyebrow">Visibilité web · Référencement · GEO</p>
         <h1>Quand une IA recommandera<br>un professionnel,<br><i class="em">il faudra que ce soit vous.</i></h1>
-        <p class="lede">Vos clients ne tapent plus seulement sur Google : ils demandent à une IA qui appeler. Et ces moteurs ne citent que ce qu'ils ont lu et compris. Sans site, vous n'êtes pas mal classé — vous êtes absent de la réponse. {total} sites vitrines prêts à porter votre nom, construits pour être trouvés par Google <b>et</b> repris par les IA.</p>
+        <p class="lede">Vos clients ne tapent plus seulement sur Google : ils demandent à une IA qui appeler. Et ces moteurs ne citent que ce qu'ils ont lu et compris. Sans site, vous n'êtes pas mal classé : vous êtes absent de la réponse. {total} sites vitrines prêts à porter votre nom, construits pour être trouvés par Google <b>et</b> repris par les IA.</p>
         <div class="cta-row">
           <a class="btn btn-white" href="#geo">Pourquoi c'est urgent</a>
           <a class="btn btn-yellow" href="#contact">Parlons de vos objectifs</a>
@@ -347,7 +347,7 @@ def build():
         <svg viewBox="0 0 34 40" aria-hidden="true"><use href="#zy"/></svg>
         <span class="word">ⵣⵢⴰgency</span>
       </a>
-      <span>© 2026 ZYAGENCY · Votre partenaire digital</span>
+      <span>© 2026 Zyagency · Votre partenaire digital</span>
       <a class="card-demo" href="https://zyagency.fr" target="_blank" rel="noopener">zyagency.fr ↗</a>
     </div>
   </footer>
