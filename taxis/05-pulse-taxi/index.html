@@ -5,357 +5,661 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>PULSE — Taxi en dispatch en direct | La voiture est déjà à 4 minutes</title>
-  <meta name="description" content="PULSE fait tourner une grille de dispatch en direct : 260 voitures, un moteur de routage, une prise en charge moyenne de 4 minutes. Express aéroport, courses urbaines et mise à disposition horaire, sans tarification dynamique.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%23050607'/%3E%3Cpath d='M13 2 5 14h6l-1 8 9-13h-6z' fill='%23EFFF3C'/%3E%3C/svg%3E">
+  <title>Taxi Lille 24h/24 · Course immédiate, gares, aéroport | Pulse Taxi</title>
+  <meta name="description" content="Pulse Taxi à Lille, 24 h/24 : un taxi en 10 minutes en moyenne dans Lille, courses vers les gares Lille-Flandres et Lille-Europe, l&#x27;aéroport de Lesquin et toute la métropole. Paiement par carte.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0D12'/%3E%3Cg color='%2300D97E' fill='%2300D97E'%3E%3Crect class='blade' x='11' y='4' width='10' height='5' rx='1'/%3E%3Cpath d='M5 22l2.5-7C8 13.5 9.2 12.5 10.8 12.5h10.4c1.6 0 2.8 1 3.3 2.5L27 22v4H5z' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Pulse Taxi">
+  <meta property="og:title" content="Taxi Lille 24h/24 · Course immédiate, gares, aéroport | Pulse Taxi">
+  <meta property="og:description" content="Pulse Taxi à Lille, 24 h/24 : un taxi en 10 minutes en moyenne dans Lille, courses vers les gares Lille-Flandres et Lille-Europe, l&#x27;aéroport de Lesquin et toute la métropole. Paiement par carte.">
+  <meta property="og:url" content="https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/">
+  <meta property="og:image" content="https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/hero.jpg">
+  <meta property="og:image:alt" content="Des taxis avec leur lumineux allumé stationnés dans une rue la nuit">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TaxiService",
+      "@id": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/#entreprise",
+      "name": "Pulse Taxi",
+      "url": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/",
+      "description": "Pulse Taxi à Lille, 24 h/24 : un taxi en 10 minutes en moyenne dans Lille, courses vers les gares Lille-Flandres et Lille-Europe, l'aéroport de Lesquin et toute la métropole. Paiement par carte.",
+      "slogan": "Besoin d'un taxi maintenant ? Un appel, et une voiture arrive en 10 minutes en moyenne.",
+      "telephone": "+33639985503",
+      "image": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 place des Buisses",
+        "postalCode": "59800",
+        "addressLocality": "Lille",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Lille"
+        },
+        {
+          "@type": "Place",
+          "name": "Roubaix"
+        },
+        {
+          "@type": "Place",
+          "name": "Tourcoing"
+        },
+        {
+          "@type": "Place",
+          "name": "Villeneuve-d'Ascq"
+        },
+        {
+          "@type": "Place",
+          "name": "Marcq-en-Barœul"
+        },
+        {
+          "@type": "Place",
+          "name": "Lambersart"
+        },
+        {
+          "@type": "Place",
+          "name": "Gare Lille-Flandres"
+        },
+        {
+          "@type": "Place",
+          "name": "Gare Lille-Europe"
+        },
+        {
+          "@type": "Place",
+          "name": "Aéroport de Lille-Lesquin"
+        }
+      ],
+      "openingHours": "Mo-Su 00:00-23:59",
+      "knowsAbout": [
+        "Course immédiate",
+        "Gares",
+        "Aéroport de Lille-Lesquin",
+        "Soirées et retours de nuit",
+        "Métropole et longue distance",
+        "Entreprises"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Un taxi quand vous en avez besoin, pas quand ça arrange.",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Course immédiate",
+              "description": "Un taxi en 10 minutes en moyenne dans Lille, 24 h/24 et 7 j/7.",
+              "areaServed": "Lille et métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gares",
+              "description": "Lille-Flandres et Lille-Europe : réservation conseillée aux heures de pointe.",
+              "areaServed": "Lille et métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Aéroport de Lille-Lesquin",
+              "description": "Départs très matinaux et retours tardifs, suivi du vol.",
+              "areaServed": "Lille et métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Soirées et retours de nuit",
+              "description": "Un trajet sûr jusqu'à votre porte, le chauffeur attend que vous soyez entré.",
+              "areaServed": "Lille et métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Métropole et longue distance",
+              "description": "Roubaix, Tourcoing, Villeneuve-d'Ascq, mais aussi Bruxelles, Paris ou la côte.",
+              "areaServed": "Lille et métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Entreprises",
+              "description": "Bons de transport, facturation mensuelle pour vos collaborateurs et clients.",
+              "areaServed": "Lille et métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/#entreprise"
+              }
+            }
+          }
+        ]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Romain Delattre",
+        "jobTitle": "gérant, chauffeur de taxi"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/",
+      "url": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/",
+      "name": "Taxi Lille 24h/24 · Course immédiate, gares, aéroport | Pulse Taxi",
+      "description": "Pulse Taxi à Lille, 24 h/24 : un taxi en 10 minutes en moyenne dans Lille, courses vers les gares Lille-Flandres et Lille-Europe, l'aéroport de Lesquin et toute la métropole. Paiement par carte.",
+      "inLanguage": "fr-FR",
+      "dateModified": "2026-09-30",
+      "about": {
+        "@id": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/#entreprise"
+      },
+      "primaryImageOfPage": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/hero.jpg"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://luxury-service-websites.vercel.app/taxis/05-pulse-taxi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien de temps pour avoir un taxi à Lille ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En moyenne une dizaine de minutes dans Lille intra-muros, un peu plus en périphérie ou aux heures de pointe. Vous recevez l'heure d'arrivée par SMS."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on payer par carte ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, tous nos taxis acceptent la carte bancaire et le paiement sans contact."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il réserver pour la gare ou l'aéroport ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C'est conseillé aux heures de pointe et pour les départs très matinaux. Pour une course immédiate, appelez directement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien coûte un taxi pour l'aéroport de Lesquin ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le prix dépend de votre adresse de départ et de l'heure (tarif de nuit). Nous vous donnons une estimation à la réservation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Allez-vous en Belgique ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, Bruxelles, Courtrai ou Tournai, avec un prix annoncé avant le départ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Proposez-vous des comptes entreprise ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, avec bons de transport et facturation mensuelle."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
-  <!-- ══════════ NAV ══════════ -->
-  <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 5 14h6l-1 8 9-13h-6z"/></svg></span>
-        <span class="brand-text">PULSE<small>GRILLE DE DISPATCH EN DIRECT</small></span>
-      </a>
-      <nav class="links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#grid">La Grille</a>
-        <a href="#proof">Preuves</a>
-        <a href="#contact">Contact</a>
-        <a href="#book" class="nav-cta">RECEVOIR UNE VOITURE<span class="cta-dot"></span></a>
-      </nav>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <a class="skip" href="#devis">Aller au formulaire de réservation</a>
 
-  <!-- ══════════ HERO ══════════ -->
-  <section class="hero" id="top">
-    <div class="hero-scan" aria-hidden="true"></div>
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="hero-chip reveal"><span class="pulse-dot"></span> DISPATCH EN DIRECT · GRILLE ACTIVE · <span class="chip-mono">PRISE EN CHARGE MOY. 4,0 MIN</span></p>
-        <h1 class="reveal" style="--d:.1s">La voiture est déjà<br><span class="volt">à quatre minutes.</span></h1>
-        <p class="hero-sub reveal" style="--d:.2s">PULSE n'espère pas qu'une voiture soit à proximité — elle le sait. Un moteur de
-          routage surveille 260 chauffeurs, prédit la demande pâté de maisons par pâté de maisons, et affecte votre course avant
-          que vous n'ayez fini de taper l'adresse. Tarifs sans surge, transmis par texto avant que les roues ne bougent.</p>
-        <div class="hero-cta reveal" style="--d:.3s">
-          <a href="#book" class="btn btn-volt">RECEVOIR UNE VOITURE</a>
-          <a href="#grid" class="btn btn-glass">VOIR LA GRILLE</a>
-        </div>
-        <div class="hero-meta reveal" style="--d:.4s">
-          <span>260 VOITURES EN LIGNE</span>
-          <span>96,8 % À L'HEURE</span>
-          <span>AUCUN SURGE · AUCUN JEUX</span>
-        </div>
-      </div>
-
-      <aside class="dispatch reveal" style="--d:.28s">
-        <div class="dispatch-head"><span>PULSE DISPATCH — ZONE DTR-01</span><span class="live-dot"></span></div>
-        <svg class="citygrid" id="gridSvg" viewBox="0 0 420 300" aria-hidden="true">
-          <g class="streets">
-            <line x1="0" y1="50" x2="420" y2="50"/><line x1="0" y1="110" x2="420" y2="110"/>
-            <line x1="0" y1="170" x2="420" y2="170"/><line x1="0" y1="230" x2="420" y2="230"/>
-            <line x1="70" y1="0" x2="70" y2="300"/><line x1="150" y1="0" x2="150" y2="300"/>
-            <line x1="230" y1="0" x2="230" y2="300"/><line x1="310" y1="0" x2="310" y2="300"/>
-            <line x1="370" y1="0" x2="370" y2="300"/>
-          </g>
-          <g class="blocks">
-            <rect x="78" y="58" width="64" height="44"/><rect x="158" y="58" width="64" height="44"/>
-            <rect x="238" y="118" width="64" height="44"/><rect x="78" y="178" width="64" height="44"/>
-            <rect x="318" y="58" width="44" height="44"/><rect x="158" y="178" width="64" height="44"/>
-          </g>
-          <path class="route-line" d="M35 262 H150 V170 H230 V110 H310 V62 H392"/>
-          <circle class="pin-a" cx="35" cy="262" r="6"/>
-          <circle class="pin-b" cx="392" cy="62" r="6"/>
-          <circle class="car-dot" r="5.5">
-            <animateMotion dur="6.5s" repeatCount="indefinite" path="M35 262 H150 V170 H230 V110 H310 V62 H392"/>
-          </circle>
-          <text class="grid-label" x="44" y="284">VOUS</text>
-          <text class="grid-label" x="352" y="46">VOITURE</text>
-          <text class="grid-eta" x="160" y="140">ETA 04:12</text>
-        </svg>
-        <div class="telemetry">
-          <p><span>UNITÉ LA PLUS PROCHE</span><b>UNITÉ-114 · 1,1 KM</b></p>
-          <p><span>AFFECTATION</span><b class="cyan" id="etaVal">ETA 04:12</b></p>
-          <div class="zone-row"><span>CHARGE DE ZONE</span><div class="zone-bars"><i style="width:64%"></i><i style="width:38%"></i><i style="width:82%"></i></div></div>
-        </div>
-        <div class="dispatch-foot"><span class="blink">▮</span> EN ATTENTE DE VOTRE ÉPINGLE — 3 VOITURES EN POSITION À PROXIMITÉ</div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- ══════════ BANDE VOLT ══════════ -->
-  <div class="voltband" aria-hidden="true">
-    <div class="voltband-track">
-      <span>PRISE EN CHARGE MOY. 04:12 · AUCUN SURGE · 260 VOITURES EN LIGNE · GRILLE CENTRE 96 % · EXPRESS AÉROPORT TOUTES LES 90 S · AFFECTATIONS EN &lt;1 S ·&nbsp;</span>
-      <span>PRISE EN CHARGE MOY. 04:12 · AUCUN SURGE · 260 VOITURES EN LIGNE · GRILLE CENTRE 96 % · EXPRESS AÉROPORT TOUTES LES 90 S · AFFECTATIONS EN &lt;1 S ·&nbsp;</span>
+  <!-- Bandeau infos pratiques -->
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Lille et métropole</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.4V6h-2v7.6l5 3 1-1.7Z"/></svg>24 h/24, 7 j/7</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5Z"/></svg>Un taxi en 10 minutes en moyenne</span>
     </div>
   </div>
 
-  <!-- ══════════ SERVICES ══════════ -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="sec-head">
-        <p class="kicker reveal">// SERVICES</p>
-        <h2 class="reveal" style="--d:.08s">Six produits de dispatch.<br><span class="volt">Zéro minute d'inactivité.</span></h2>
-      </div>
-      <div class="svc-grid">
-        <article class="svc reveal" style="--d:.05s">
-          <div class="svc-top"><span class="idx">01</span><svg viewBox="0 0 24 24"><path d="M2 16h20M4 16V9l3-4h10l3 4v7M8 16v2m8-2v2M7 12h2m8 0h-2"/></svg></div>
-          <h3>Express aéroport</h3>
-          <p>Une voiture quitte la gare routière de l'aéroport toutes les 90 secondes et la grille suit l'atterrissage de votre vol. Tarif fixe, itinéraire surveillé, aucune file au comptoir.</p>
-          <div class="svc-foot"><span class="price">DÈS 48 €</span><a href="#book">DISPATCH →</a></div>
-        </article>
-        <article class="svc reveal" style="--d:.1s">
-          <div class="svc-top"><span class="idx">02</span><svg viewBox="0 0 24 24"><path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
-          <h3>Sprint urbain</h3>
-          <p>Point à point à travers la grille, avec le moteur de routage qui choisit la ligne légale la plus rapide. Tarif verrouillé à la réservation, calcul de surge aboli.</p>
-          <div class="svc-foot"><span class="price">DÈS 8,90 €</span><a href="#book">DISPATCH →</a></div>
-        </article>
-        <article class="svc reveal" style="--d:.15s">
-          <div class="svc-top"><span class="idx">03</span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
-          <h3>PULSE horaire</h3>
-          <p>Gardez un chauffeur en astreinte à l'heure. La voiture suit votre journée et se repositionne entre deux arrêts pendant que le compteur reste honnête.</p>
-          <div class="svc-foot"><span class="price">DÈS 40 €/H</span><a href="#book">DISPATCH →</a></div>
-        </article>
-        <article class="svc reveal" style="--d:.2s">
-          <div class="svc-top"><span class="idx">04</span><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 8h7M7 12h10M7 16h5"/></svg></div>
-          <h3>SLA Entreprise</h3>
-          <p>Des créneaux de prise en charge contractuels avec reporting adossé à la télémétrie. Si nous manquons le SLA, la course est offerte — cette clause a des dents.</p>
-          <div class="svc-foot"><span class="price">SUR CONTRAT</span><a href="#book">DISPATCH →</a></div>
-        </article>
-        <article class="svc reveal" style="--d:.25s">
-          <div class="svc-top"><span class="idx">05</span><svg viewBox="0 0 24 24"><rect x="2" y="7" width="15" height="10" rx="2"/><path d="M17 10h3l2 3v4h-5M6 20a1.6 1.6 0 1 0 0-3.2A1.6 1.6 0 0 0 6 20zm11 0a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2z"/></svg></div>
-          <h3>Van d'équipe</h3>
-          <p>Huit places, sacs de ski, matériel de tournage, un seul code de dispatch. La grille envoie le van le plus proche et un second en astreinte — gratuitement.</p>
-          <div class="svc-foot"><span class="price">DÈS 30 €</span><a href="#book">DISPATCH →</a></div>
-        </article>
-        <article class="svc reveal" style="--d:.3s">
-          <div class="svc-top"><span class="idx">06</span><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2M12 11v5"/></svg></div>
-          <h3>Coursier Drop Box</h3>
-          <p>Les colis empruntent la même grille, avec scans de chaîne de traçabilité au départ et à l'arrivée. Lien de suivi en direct, moyenne urbaine de 47 minutes.</p>
-          <div class="svc-foot"><span class="price">DÈS 12 €</span><a href="#book">DISPATCH →</a></div>
-        </article>
-      </div>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Pulse Taxi, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><rect class="blade" x="11" y="4" width="10" height="5" rx="1"/><path d="M5 22l2.5-7C8 13.5 9.2 12.5 10.8 12.5h10.4c1.6 0 2.8 1 3.3 2.5L27 22v4H5z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-text">Pulse Taxi<small>Taxi 24 h/24 · Lille</small></span>
+      </a>
+      <nav class="links" id="navLinks" aria-label="Navigation principale">
+        <a href="#services">Nos trajets</a>
+        <a href="#deroulement">Comment ça se passe</a>
+        <a href="#chantiers">Trajets</a>
+        <a href="#faq">Questions</a>
+        <a href="#devis" class="links-cta">Réserver à l&#x27;avance</a>
+      </nav>
+      <a class="nav-phone" href="tel:+33639985503">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+        <span>06 39 98 55 03</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
+  </header>
 
-  <!-- ══════════ LA GRILLE / HISTOIRE ══════════ -->
-  <section class="section grid-sec" id="grid">
-    <div class="container grid2">
-      <div class="grid-copy">
-        <p class="kicker reveal">// LA GRILLE</p>
-        <h2 class="reveal" style="--d:.08s">Le dispatch, <span class="volt">pas l'espoir.</span></h2>
-        <p class="reveal" style="--d:.14s">Les applis VTC devinent. PULSE calcule. Notre moteur ingère le trafic, la météo, les
-          calendriers d'événements et son propre historique de prises en charge, puis pré-positionne les voitures là où la demande
-          sera — pas là où elle était. À la réservation, l'unité la plus proche est choisie en moins d'une seconde et l'application
-          du chauffeur connaît déjà la ligne légale la plus rapide.</p>
-        <ul class="grid-list">
-          <li class="reveal" style="--d:.2s"><b>&gt;_</b> Le moteur d'affectation choisit votre voiture en 0,8 s en moyenne</li>
-          <li class="reveal" style="--d:.26s"><b>&gt;_</b> Le modèle de demande repositionne 40 % de la flotte de façon préventive</li>
-          <li class="reveal" style="--d:.32s"><b>&gt;_</b> Tarif verrouillé à la réservation — la tarification dynamique n'existe pas ici</li>
-          <li class="reveal" style="--d:.38s"><b>&gt;_</b> Télémétrie en direct sur chaque unité, à chaque seconde</li>
-        </ul>
-      </div>
+  <main id="top">
 
-      <div class="terminal reveal" style="--d:.2s">
-        <div class="term-head"><span>dispatch@pulse:~</span><span class="term-dots"><i></i><i></i><i></i></span></div>
-        <div class="term-body" id="dispatchLog">
-          <p><span class="t-time">18:04:02</span> <span class="t-ok">OK</span> course affectée — berline n°114 · zone DTR-01 · prise en charge en 0,7 s</p>
-          <p><span class="t-time">18:04:05</span> <span class="t-ok">OK</span> ETA calculée 04:12 · itinéraire verrouillé · surge : aucun</p>
-          <p><span class="t-time">18:04:11</span> <span class="t-info">GRILLE</span> pré-positionnement de 12 unités vers la sortie du stade</p>
-          <p><span class="t-time">18:04:18</span> <span class="t-ok">OK</span> express aéroport dépêché · terminal C · fréquence 90 s</p>
-        </div>
-        <div class="term-cursor"><span id="termCursor">▮</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ CHIFFRES ══════════ -->
-  <section class="stats" id="proof">
-    <div class="container stats-row">
-      <div class="stat reveal"><strong data-count="1400000" data-suffix="+">0</strong><span>dispatches servis</span></div>
-      <div class="stat reveal" style="--d:.08s"><strong data-count="96.8" data-decimal="1" data-suffix="%">0</strong><span>arrivées à l'heure</span></div>
-      <div class="stat reveal" style="--d:.16s"><strong data-count="4" data-suffix=" min">0</strong><span>prise en charge moy.</span></div>
-      <div class="stat reveal" style="--d:.24s"><strong data-count="260" data-suffix="">0</strong><span>voitures sur la grille</span></div>
-    </div>
-  </section>
-
-  <!-- ══════════ TÉMOIGNAGES ══════════ -->
-  <section class="section" id="testimonials">
-    <div class="container">
-      <div class="sec-head">
-        <p class="kicker reveal">// RAPPORTS DE TERRAIN</p>
-        <h2 class="reveal" style="--d:.08s">Consigné par les <span class="volt">passagers.</span></h2>
-      </div>
-      <div class="testi-grid">
-        <figure class="testi reveal" style="--d:.05s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Réservé à 5h42, voiture devant la porte à 5h46. J'ai vérifié l'appli deux fois tant je n'y croyais pas. L'ETA ne m'a pas menti une seule fois en huit mois. »</blockquote>
-          <figcaption><strong>J. Okafor</strong><span>412 courses consignées</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.15s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Toute notre équipe commerciale est sur SLA Entreprise. Le rapport trimestriel affiche 99,1 % dans le créneau. Le seul raté ? Tarif crédité avant même que je ne le remarque. C'est un système, pas de la chance. »</blockquote>
-          <figcaption><strong>M. Ferreira</strong><span>Responsable des opérations</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.25s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Envoyé un prototype de disque dur de l'autre côté de la ville à 2h du matin. À regarder le point du coursier avancer sur la grille comme une pièce d'échecs. Scanné aux deux extrémités. Magnifique. »</blockquote>
-          <figcaption><strong>Lin W.</strong><span>Habituée du Drop Box</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ CONTACT ══════════ -->
-  <section class="section contact" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-info">
-        <p class="kicker reveal">// OUVRIR UN CANAL</p>
-        <h2 class="reveal" style="--d:.08s">Parlez au <span class="volt">contrôle.</span></h2>
-        <p class="reveal" style="--d:.14s">Contrats, SLA entreprises, recrutement de chauffeurs ou colis introuvable — le contrôle
-          répond avec précision, pas avec des excuses.</p>
-        <ul class="info-list">
-          <li class="reveal" style="--d:.2s"><b>SALLE OPS</b><span>Grid Station 1, Sous-sol 2<br>90 Junction Blvd</span></li>
-          <li class="reveal" style="--d:.26s"><b>CONTRÔLE</b><span>+1 (555) 099-4747</span></li>
-          <li class="reveal" style="--d:.32s"><b>DISPONIBILITÉ</b><span>Grille : 24/7/365<br>Bureau : lundi–vendredi, 8h00 – 18h00</span></li>
-        </ul>
-      </div>
-
-      <form class="contact-form reveal" id="contactForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-        <fieldset>
-          <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Nom / indicatif</label></div>
-          <div class="field-row">
-            <div class="field"><input type="email" id="cf-email" required placeholder=" "><label for="cf-email">Adresse e-mail</label></div>
-            <div class="field"><input type="tel" id="cf-phone" placeholder=" "><label for="cf-phone">Téléphone (facultatif)</label></div>
+    <section class="hero split-right">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="eyebrow">Taxi à Lille 24 h/24 : course immédiate et réservation</h1>
+          <p class="headline">Besoin d&#x27;un taxi maintenant ? <em>Un appel, et une voiture arrive en 10 minutes en moyenne.</em></p>
+          <p class="lead">Jour et nuit, un taxi Pulse est toujours en service dans la métropole lilloise. Appelez pour une course immédiate, ou réservez à l&#x27;avance pour la gare, l&#x27;aéroport ou une sortie. Paiement par carte dans toutes nos voitures.</p>
+          <ul class="proofs">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Course immédiate, 24 h/24</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>SMS avec le numéro du taxi et son heure d&#x27;arrivée</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Carte bancaire et sans contact dans tous nos taxis</li>
+          </ul>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="tel:+33639985503">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              Appeler maintenant · 06 39 98 55 03
+            </a>
+            <a class="btn btn-ghost" href="#devis">Réserver à l&#x27;avance</a>
           </div>
-          <div class="field select-field">
-            <select id="cf-subject" required>
-              <option value="" selected disabled></option>
-              <option>Demande de SLA entreprise</option>
-              <option>Compte grand compte</option>
-              <option>Conduire pour PULSE</option>
-              <option>Coursier Drop Box</option>
-              <option>Objet trouvé</option>
-              <option>Autre transmission</option>
-            </select>
-            <label for="cf-subject">Canal</label>
+          <p class="hero-note">Pour tout de suite, appelez : c&#x27;est le plus rapide.</p>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="hero-photo">
+            <img src="hero.jpg" alt="Des taxis avec leur lumineux allumé stationnés dans une rue la nuit" width="1199" height="1600" fetchpriority="high">
+          </figure>
+          <div class="hero-badge">
+            <strong>10 min</strong>
+            <span>d'attente moyenne<br>dans Lille intra-muros</span>
           </div>
-          <div class="field"><textarea id="cf-msg" rows="4" required placeholder=" "></textarea><label for="cf-msg">Charge utile du message</label></div>
-          <button type="submit" class="btn btn-volt btn-wide">TRANSMETTRE</button>
-          <p class="form-note">Chiffré en transit. Lu par une vraie personne. Répondu dans l'heure.</p>
-        </fieldset>
-        <div class="form-success" hidden>
-          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-          <h3>TRANSMISSION REÇUE.</h3>
-          <p>Consignée au contrôle. Réponse attendue dans l'heure ouvrée.</p>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ══════════ RÉSERVATION ══════════ -->
-  <section class="section booking" id="book">
-    <div class="container">
-      <div class="sec-head">
-        <p class="kicker reveal">// NOUVELLE RÉSERVATION</p>
-        <h2 class="reveal" style="--d:.08s">Quatre étapes vers <span class="volt">votre voiture.</span></h2>
-      </div>
-
-      <div class="book-frame reveal" style="--d:.1s">
-        <div class="book-inner">
-          <ol class="wiz-steps" id="wizSteps">
-            <li class="is-current"><span>Service</span></li>
-            <li><span>Créneau</span></li>
-            <li><span>Passager</span></li>
-            <li><span>Affecté</span></li>
-          </ol>
-
-          <form id="bookForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-            <!-- ÉTAPE 1 · SERVICE -->
-            <fieldset class="pane is-active">
-              <legend>Sélectionnez le produit de dispatch.</legend>
-              <div class="choice-grid">
-                <label class="choice"><input type="radio" name="svc" value="Express aéroport" required><span>Transfert aéroport</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Course en ville"><span>Course en ville</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Mise à disposition horaire"><span>Mise à disposition horaire</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Compte entreprise"><span>Compte entreprise</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Van & groupe"><span>Van &amp; groupe</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Course express"><span>Course express</span></label>
-              </div>
-              <p class="choice-error">// ERREUR : SÉLECTIONNEZ UN PRODUIT POUR CONTINUER</p>
-              <div class="wiz-nav"><span></span><button type="button" class="btn btn-volt js-next">CONTINUER</button></div>
-            </fieldset>
-
-            <!-- ÉTAPE 2 · CRÉNEAU -->
-            <fieldset class="pane">
-              <legend>Définissez le créneau de prise en charge.</legend>
-              <div class="field date-field">
-                <input type="date" id="bk-date" required>
-                <label>Date de prise en charge</label>
-              </div>
-              <div class="time-grid" id="timeGrid">
-                <button type="button" class="chip" data-v="5:30">5h30</button>
-                <button type="button" class="chip" data-v="7:15">7h15</button>
-                <button type="button" class="chip" data-v="9:30">9h30</button>
-                <button type="button" class="chip" data-v="12:00">12h00</button>
-                <button type="button" class="chip" data-v="15:45">15h45</button>
-                <button type="button" class="chip" data-v="19:00">19h00</button>
-              </div>
-              <input type="hidden" id="bk-time">
-              <p class="choice-error">// ERREUR : SÉLECTIONNEZ UN CRÉNEAU DE PRISE EN CHARGE</p>
-              <div class="wiz-nav"><button type="button" class="btn btn-glass js-prev">RETOUR</button><button type="button" class="btn btn-volt js-next">CONTINUER</button></div>
-            </fieldset>
-
-            <!-- ÉTAPE 3 · PASSAGER -->
-            <fieldset class="pane">
-              <legend>Manifeste du passager.</legend>
-              <div class="field-row">
-                <div class="field"><input type="text" id="bk-name" required placeholder=" "><label>Nom du passager</label></div>
-                <div class="field"><input type="tel" id="bk-phone" required placeholder=" "><label>Numéro de téléphone</label></div>
-              </div>
-              <div class="field"><input type="text" id="bk-address" required placeholder=" "><label>Adresse de prise en charge</label></div>
-              <div class="field"><textarea id="bk-notes" rows="3" placeholder=" "></textarea><label>Notes d'itinéraire (facultatif)</label></div>
-              <div class="wiz-nav"><button type="button" class="btn btn-glass js-prev">RETOUR</button><button type="submit" class="btn btn-volt">ME DISPATCHER</button></div>
-            </fieldset>
-
-            <!-- ÉTAPE 4 · AFFECTÉ -->
-            <fieldset class="pane pane-success">
-              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-              <h3>UNITÉ AFFECTÉE.</h3>
-              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est verrouillé pour le<br><strong id="recap-when">—</strong>.</p>
-              <p class="recap-sub">La confirmation avec l'ID du chauffeur, la plaque et l'ETA en direct est en route. La grille est déjà en mouvement.</p>
-            </fieldset>
-          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ PIED DE PAGE ══════════ -->
+    <!-- SITUATIONS -->
+    <section class="situations" aria-labelledby="sit-title">
+      <div class="wrap">
+        <h2 id="sit-title" class="h-small">Où allez-vous ?</h2>
+        <div class="sit-grid">
+          <button class="sit" data-prefill="Course immédiate">
+            <span class="sit-q">Il me faut un taxi tout de suite</span>
+            <span class="sit-a">Appelez : le taxi le plus proche part vers vous.</span>
+          </button>
+          <button class="sit" data-prefill="Gare">
+            <span class="sit-q">J&#x27;ai un train à Lille-Flandres ou Lille-Europe</span>
+            <span class="sit-a">Réservation conseillée aux heures de pointe.</span>
+          </button>
+          <button class="sit" data-prefill="Aéroport de Lille-Lesquin">
+            <span class="sit-q">Je prends l&#x27;avion à Lesquin</span>
+            <span class="sit-a">Prise en charge à l&#x27;heure, même à 4 h du matin.</span>
+          </button>
+          <button class="sit" data-prefill="Retour de soirée">
+            <span class="sit-q">Je rentre de soirée</span>
+            <span class="sit-a">Un taxi sûr pour rentrer, sans attendre dans le froid.</span>
+          </button>
+          <button class="sit" data-prefill="Métropole">
+            <span class="sit-q">Je vais à Roubaix ou Tourcoing</span>
+            <span class="sit-a">Toute la métropole, au compteur ou prix annoncé.</span>
+          </button>
+          <button class="sit" data-prefill="Longue distance">
+            <span class="sit-q">Je dois aller à Bruxelles ou Paris</span>
+            <span class="sit-a">Longue distance avec prix annoncé.</span>
+          </button>
+        </div>
+        <p class="sit-hint">Cliquez sur votre trajet : le formulaire de réservation se remplit tout seul.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-labelledby="serv-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Nos trajets</p>
+          <h2 id="serv-title">Un taxi quand vous en avez besoin, pas quand ça arrange.</h2>
+        </div>
+        <div class="serv-grid">
+          <article class="serv">
+            <span class="serv-n">01</span>
+            <h3>Course immédiate</h3>
+            <p>Un taxi en 10 minutes en moyenne dans Lille, 24 h/24 et 7 j/7.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">02</span>
+            <h3>Gares</h3>
+            <p>Lille-Flandres et Lille-Europe : réservation conseillée aux heures de pointe.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">03</span>
+            <h3>Aéroport de Lille-Lesquin</h3>
+            <p>Départs très matinaux et retours tardifs, suivi du vol.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">04</span>
+            <h3>Soirées et retours de nuit</h3>
+            <p>Un trajet sûr jusqu&#x27;à votre porte, le chauffeur attend que vous soyez entré.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">05</span>
+            <h3>Métropole et longue distance</h3>
+            <p>Roubaix, Tourcoing, Villeneuve-d&#x27;Ascq, mais aussi Bruxelles, Paris ou la côte.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">06</span>
+            <h3>Entreprises</h3>
+            <p>Bons de transport, facturation mensuelle pour vos collaborateurs et clients.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÉROULEMENT -->
+    <section class="steps" id="deroulement" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Comment ça se passe</p>
+          <h2 id="steps-title">Un taxi, sans application à installer.</h2>
+        </div>
+        <ol class="step-list">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Vous appelez ou réservez</h3>
+            <p>Un appel pour tout de suite, le formulaire pour plus tard.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Taxi assigné</h3>
+            <p>Le plus proche de vous part immédiatement.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>SMS de suivi</h3>
+            <p>Numéro du taxi et heure d&#x27;arrivée estimée.</p>
+          </li>
+          <li>
+            <span class="step-n">4</span>
+            <h3>Paiement simple</h3>
+            <p>Carte, sans contact ou espèces, reçu par e-mail.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS -->
+    <section class="jobs" id="chantiers" aria-labelledby="jobs-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Trajets récents</p>
+          <h2 id="jobs-title">Quelques exemples de ces derniers mois.</h2>
+        </div>
+        <div class="job-grid">
+          <article class="job">
+            <p class="job-where">Vieux-Lille → Gare Lille-Europe</p>
+            <h3>Course immédiate un lundi à 8 h</h3>
+            <dl>
+              <div><dt>Trajet</dt><dd>Gare</dd></div>
+              <div><dt>Attente</dt><dd>7 min</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Wazemmes → Aéroport de Lesquin</p>
+            <h3>Réservation pour un départ à 4 h 30</h3>
+            <dl>
+              <div><dt>Trajet</dt><dd>Aéroport</dd></div>
+              <div><dt>Attente</dt><dd>Réservé</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Solférino → Lambersart</p>
+            <h3>Retour de soirée un samedi à 2 h</h3>
+            <dl>
+              <div><dt>Trajet</dt><dd>Course de nuit</dd></div>
+              <div><dt>Attente</dt><dd>9 min</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENTS + AVIS -->
+    <section class="trust" aria-labelledby="trust-title">
+      <div class="wrap trust-grid">
+        <div>
+          <p class="eyebrow">Nos engagements</p>
+          <h2 id="trust-title">Nos engagements.</h2>
+          <ul class="pledges">
+            <li><strong>Toujours en service.</strong> Des taxis disponibles 24 h/24, week-ends et jours fériés.</li>
+            <li><strong>La carte partout.</strong> Paiement par carte et sans contact dans toutes nos voitures.</li>
+            <li><strong>La sécurité de nuit.</strong> Le chauffeur attend que vous soyez entré avant de repartir.</li>
+            <li><strong>Des taxis officiels.</strong> Voitures autorisées, compteurs contrôlés, chauffeurs professionnels.</li>
+          </ul>
+          <p class="signature"><strong>Romain Delattre</strong>, gérant, chauffeur de taxi</p>
+        </div>
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>« Appel à 2 h du matin en sortant du bar, taxi là en 8 minutes, et il a attendu que je sois rentrée. »</blockquote>
+            <figcaption>Manon G. · Lille · Retour de soirée</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>« Réservé la veille pour un vol à 6 h, le taxi était devant chez moi à 4 h 25. Parfait. »</blockquote>
+            <figcaption>Hugo B. · Wazemmes · Aéroport</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="sec-head">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Ce qu'on nous demande le plus souvent.</h2>
+          <p class="faq-more">Votre question n'est pas là ?<br>Appelez-nous au <a href="tel:+33639985503">06 39 98 55 03</a>.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Combien de temps pour avoir un taxi à Lille ?</summary>
+            <p>En moyenne une dizaine de minutes dans Lille intra-muros, un peu plus en périphérie ou aux heures de pointe. Vous recevez l&#x27;heure d&#x27;arrivée par SMS.</p>
+          </details>
+          <details>
+            <summary>Peut-on payer par carte ?</summary>
+            <p>Oui, tous nos taxis acceptent la carte bancaire et le paiement sans contact.</p>
+          </details>
+          <details>
+            <summary>Faut-il réserver pour la gare ou l&#x27;aéroport ?</summary>
+            <p>C&#x27;est conseillé aux heures de pointe et pour les départs très matinaux. Pour une course immédiate, appelez directement.</p>
+          </details>
+          <details>
+            <summary>Combien coûte un taxi pour l&#x27;aéroport de Lesquin ?</summary>
+            <p>Le prix dépend de votre adresse de départ et de l&#x27;heure (tarif de nuit). Nous vous donnons une estimation à la réservation.</p>
+          </details>
+          <details>
+            <summary>Allez-vous en Belgique ?</summary>
+            <p>Oui, Bruxelles, Courtrai ou Tournai, avec un prix annoncé avant le départ.</p>
+          </details>
+          <details>
+            <summary>Proposez-vous des comptes entreprise ?</summary>
+            <p>Oui, avec bons de transport et facturation mensuelle.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVIS -->
+    <section class="quote" id="devis" aria-labelledby="quote-title">
+      <div class="wrap quote-grid">
+        <div class="quote-side">
+          <p class="eyebrow">Réservation</p>
+          <h2 id="quote-title">Réservez à l&#x27;avance.</h2>
+          <p>Pour une course immédiate, appelez le 06 39 98 55 03. Pour plus tard, indiquez votre trajet ici.</p>
+          <div class="contact-card">
+            <a class="contact-line big" href="tel:+33639985503">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              06 39 98 55 03
+            </a>
+            <p class="contact-line">24 h/24, 7 j/7</p>
+            <p class="contact-line">3 place des Buisses, 59800 Lille</p>
+            <p class="zone"><strong>Nous intervenons à</strong> Lille, Roubaix, Tourcoing, Villeneuve-d&#x27;Ascq, Marcq-en-Barœul, Lambersart, Gare Lille-Flandres, Gare Lille-Europe, Aéroport de Lille-Lesquin.</p>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label for="website">Ne pas remplir</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field">
+              <label for="work">Type de trajet</label>
+              <select id="work" name="work" data-rule="req" required>
+                <option value="">Choisissez</option>
+                <option>Gare</option>
+                <option>Aéroport de Lille-Lesquin</option>
+                <option>Retour de soirée</option>
+                <option>Métropole</option>
+                <option>Longue distance</option>
+                <option>Autre</option>
+              </select>
+              <p class="err">Faites un choix dans la liste.</p>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="from">Adresse de départ</label>
+              <input type="text" id="from" name="from" maxlength="120" placeholder="Ex. : 12 rue de la Gare" data-rule="req" required>
+              <p class="err">Indiquez l&#x27;adresse de départ.</p>
+            </div>
+            <div class="field">
+              <label for="to">Destination</label>
+              <input type="text" id="to" name="to" maxlength="120" placeholder="Ex. : gare Lille-Europe" data-rule="req" required>
+              <p class="err">Indiquez la destination.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" data-rule="req" required>
+              <p class="err">Choisissez une date.</p>
+            </div>
+            <div class="field">
+              <label for="time">Heure de prise en charge</label>
+              <input type="time" id="time" name="time" data-rule="req" required>
+              <p class="err">Choisissez une heure.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="pax">Passagers</label>
+              <select id="pax" name="pax">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 à 7</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="flight">Numéro de vol ou de train <span class="opt">(facultatif)</span></label>
+              <input type="text" id="flight" name="flight" maxlength="80" placeholder="Ex. : TGV 7012">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Informations utiles <span class="opt">(facultatif)</span></label>
+            <textarea id="details" name="details" rows="3" maxlength="800" placeholder="Ex. : 2 valises, siège enfant"></textarea>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" maxlength="80" autocomplete="name" data-rule="name" required>
+              <p class="err">Indiquez votre nom.</p>
+            </div>
+            <div class="field">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" maxlength="20" autocomplete="tel" data-rule="phone" required>
+              <p class="err">Un numéro à 10 chiffres pour vous joindre.</p>
+            </div>
+          </div>
+
+          <div class="field">
+              <label for="email">E-mail <span class="opt">(facultatif)</span></label>
+              <input type="email" id="email" name="email" maxlength="120" autocomplete="email" data-rule="email">
+              <p class="err">Cette adresse ne semble pas valide.</p>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">Réserver ma course</button>
+          <p class="form-legal">Vos coordonnées servent uniquement à vous recontacter pour cette demande.</p>
+
+          <div class="success" id="success" role="status" aria-live="polite" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="m14 24 7 7 13-14"/></svg>
+            <h3>Demande bien reçue</h3>
+            <p id="successMsg"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="foot-brand">
-        <a class="brand" href="#top">
-          <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 5 14h6l-1 8 9-13h-6z"/></svg></span>
-          <span class="brand-text">PULSE<small>GRILLE DE DISPATCH EN DIRECT</small></span>
-        </a>
-        <p>Un moteur de routage, 260 chauffeurs, et une promesse de quatre minutes que la grille tient à chaque heure.</p>
-      </div>
-      <div><h4>SYSTÈME</h4><a href="#services">Services</a><a href="#grid">La Grille</a><a href="#proof">Preuves</a><a href="#testimonials">Rapports de terrain</a></div>
-      <div><h4>PRODUITS</h4><a href="#book">Express aéroport</a><a href="#book">Course en ville</a><a href="#book">SLA Entreprise</a><a href="#book">Drop Box</a></div>
-      <div><h4>CONTRÔLE</h4><a href="tel:+15550994747">+1 (555) 099-4747</a><a href="#contact">control@pulsegrid.co</a><span>Grid Station 1, Sous-sol 2</span></div>
+    <div class="wrap footer-inner">
+      <p><strong>Pulse Taxi</strong> · Taxi 24 h/24 · Lille · 3 place des Buisses, 59800 Lille</p>
+      <p>SIRET 000 000 000 00000 · Assurance n° à préciser · Page mise à jour le <time datetime="2026-09-30">30 septembre 2026</time> · <a href="#top">Retour en haut</a></p>
     </div>
-    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> PULSE Dispatch Systems. Tous droits réservés.</span><span>Flotte sous licence · Garantie SLA · Sans surge par conception</span></div></div>
   </footer>
+
+  <!-- Barre d'action mobile -->
+  <div class="mobile-bar">
+    <a href="tel:+33639985503" class="mb-call">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+      Appeler
+    </a>
+    <a href="#devis" class="mb-quote">Réserver</a>
+  </div>
 
   <script src="script.js"></script>
 </body>
