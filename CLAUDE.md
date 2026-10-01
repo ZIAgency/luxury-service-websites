@@ -65,7 +65,7 @@ Générer : `python3 assets/build-metiers.py` (tout) ou `python3 assets/build-me
 `taxi`. `urgent: True` met l'appel en bouton principal. Heros alternés : `layout` =
 `overlay` (photo plein écran, texte par-dessus), `split-right` ou `split-left`.
 
-Parallax : les heros `overlay` et la photo des heros `split` ont un parallax en CSS pur (`animation-timeline: scroll(root)`, dans `build-metiers.py`), sans bibliothèque ni code copié ; désactivé par `prefers-reduced-motion`. Inspiré de 21st.dev (Parallax Scrolling, licence inconnue : idée réécrite, pas copiée). Layout `expand` (photo qui s'agrandit au scroll, bureau uniquement, hero collant) : validé sur paysagistes/01-seve-pierre, aussi sur 03-cime-racine et taxis/01-onyx-chauffeur, à étendre au cas par cas. Autre piste : éventail de réalisations.
+Parallax : les heros `overlay` et la photo des heros `split` ont un parallax en CSS pur (`animation-timeline: scroll(root)`, dans `build-metiers.py`), sans bibliothèque ni code copié ; désactivé par `prefers-reduced-motion`. Inspiré de 21st.dev (Parallax Scrolling, licence inconnue : idée réécrite, pas copiée). Layout `expand` (photo qui s'agrandit au scroll, bureau uniquement, hero collant) : validé sur paysagistes/01-seve-pierre, aussi sur 03-cime-racine, taxis/01-onyx-chauffeur, taxis/04-lumen-ride, terrassiers/01, macons/01 (pas sur les sites d urgence : l appel doit rester immédiat), à étendre au cas par cas. Autre piste : éventail de réalisations.
 
 Éventail de réalisations : si un site définit `job_photos` (3 descriptions) et `job-1..3.jpg` dans son dossier, la section « réalisations » devient un éventail de cartes photo qui s'ouvre au scroll (CSS pur, bureau). Validé sur cuisinistes/01-ferrer-cuisines-stores ; crédits dans `job_photos_credit`.
 

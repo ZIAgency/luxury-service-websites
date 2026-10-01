@@ -288,7 +288,7 @@ SITES = [
     "desc": "Lumen Trajets, taxi à Tours pour les personnes âgées et les trajets qui demandent du calme : accompagnement porte à porte, aide aux bagages, trajets longue distance vers Paris, Nantes et les aéroports.",
     "fonts": ("Quicksand", "Quicksand:wght@600;700", "Karla", "Karla:wght@400;500;600"),
     "pal": dict(paper="#F7F4EF", chalk="#EDE6DB", ink="#243B55", muted="#5B6778", line="#DFD6C8", accent="#E9A857", deep="#9A5F12"),
-    "layout": "overlay",
+    "layout": "expand",
     "icon": CAR,
     "eyebrow": "Taxi calme · Tours",
     "h1": ("Un trajet sans stress pour vos parents,", "et un message pour vous dire qu'ils sont bien arrivés."),
