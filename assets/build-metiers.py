@@ -110,6 +110,24 @@ VARIANT_CSS = """
   .hero-photo img { transform: scale(1.12); animation: photo-drift linear both; animation-timeline: scroll(root); animation-range: 0 80vh; }
 }
 @keyframes photo-drift { from { transform: scale(1.12) translateY(-3%); } to { transform: scale(1.12) translateY(4%); } }
+.job-photo { margin: -26px -26px 6px; border-radius: var(--radius) var(--radius) 0 0; overflow: hidden; aspect-ratio: 4 / 3; }
+.job-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (min-width: 861px) {
+  .job-grid.fan { gap: 0; padding: 12px 0 28px; }
+  .job-grid.fan .job { box-shadow: 0 18px 40px -18px rgba(0, 0, 0, .35); transition: transform .35s ease, box-shadow .35s ease; transform: rotate(var(--tilt, 0deg)); position: relative; }
+  .job-grid.fan .job:nth-child(1) { --tilt: -4deg; margin-right: -36px; z-index: 1; }
+  .job-grid.fan .job:nth-child(2) { --tilt: 1.5deg; z-index: 2; margin-top: -12px; }
+  .job-grid.fan .job:nth-child(3) { --tilt: 4deg; margin-left: -36px; z-index: 1; }
+  .job-grid.fan .job:hover { transform: rotate(0deg) translateY(-8px); z-index: 3; }
+  @supports (animation-timeline: view()) {
+    .job-grid.fan .job { animation: fan-open linear both; animation-timeline: view(); animation-range: entry 10% cover 45%; }
+    .job-grid.fan .job:nth-child(1) { animation-name: fan-open-l; }
+    .job-grid.fan .job:nth-child(3) { animation-name: fan-open-r; }
+  }
+}
+@keyframes fan-open { from { transform: rotate(1.5deg) translateY(30px); } to { transform: rotate(0deg) translateY(0); } }
+@keyframes fan-open-l { from { transform: rotate(-4deg) translateX(40px); margin-right: -36px; } to { transform: rotate(0deg) translateX(0); margin-right: 20px; } }
+@keyframes fan-open-r { from { transform: rotate(4deg) translateX(-40px); margin-left: -36px; } to { transform: rotate(0deg) translateX(0); margin-left: 20px; } }
 @keyframes hero-parallax { from { transform: scale(1.18) translateY(0); } to { transform: scale(1.18) translateY(9%); } }
 @keyframes hero-lift { from { transform: translateY(0); opacity: 1; } to { transform: translateY(-28px); opacity: .55; } }
 .signature { margin-top: 26px; font-size: .95rem; color: var(--muted); }
@@ -333,14 +351,20 @@ def page(s):
             <p>{e(d)}</p>
           </li>''' for i, (t, d) in enumerate(s["steps"], 1))
     l1, l2 = s["job_labels"]
+    jp = s.get("job_photos") or []
+    def job_fig(i):
+        if i >= len(jp):
+            return ""
+        w, h = img_size(ROOT / s["dir"] / f"job-{i + 1}.jpg")
+        return f'<figure class="job-photo"><img src="job-{i + 1}.jpg" alt="{e(jp[i])}" width="{w}" height="{h}" loading="lazy"></figure>\n            '
     jobs = "\n".join(f'''          <article class="job">
-            <p class="job-where">{e(w)}</p>
+            {job_fig(i)}<p class="job-where">{e(w)}</p>
             <h3>{e(t)}</h3>
             <dl>
               <div><dt>{l1}</dt><dd>{e(a)}</dd></div>
               <div><dt>{l2}</dt><dd>{e(b)}</dd></div>
             </dl>
-          </article>''' for w, t, a, b in s["jobs"])
+          </article>''' for i, (w, t, a, b) in enumerate(s["jobs"]))
     signature = (f'\n          <p class="signature"><strong>{e(s["founder"][0])}</strong>, {e(s["founder"][1])}</p>'
                  if s.get("founder") else "")
     pledges = "\n".join(f"            <li><strong>{e(a)}</strong> {e(b)}</li>" for a, b in s["pledges"])
@@ -498,7 +522,7 @@ def page(s):
           <p class="eyebrow">{e(jobs_eyebrow)}</p>
           <h2 id="jobs-title">{e(jobs_h2)}</h2>
         </div>
-        <div class="job-grid">
+        <div class="job-grid{" fan" if jp else ""}">
 {jobs}
         </div>
       </div>

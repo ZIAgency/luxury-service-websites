@@ -390,6 +390,8 @@ SITES = [
       ("Pose et mise en service", "Tout est testé avec vous avant notre départ, emballages évacués."),
     ],
     "job_labels": ("Pose", "Durée"),
+    "job_photos": ["Cuisine moderne avec îlot et plan de travail clair", "Store banne rayé vert sur une terrasse ensoleillée", "Plan de travail en quartz veiné avec évier et électroménager encastré"],
+    "job_photos_credit": ("Pexels : Max Vakhtbovych (7533765), Sacha Moreau (18867724), Curtis Adams (10827340)"),
     "jobs": [
       ("Aix-en-Provence · Appartement", "Cuisine en kit de 4 mètres linéaires avec îlot", "Montage et raccordements", "3 jours"),
       ("Venelles · Villa", "Store banne motorisé de 5 mètres sur terrasse", "Pose et motorisation", "1 jour"),
