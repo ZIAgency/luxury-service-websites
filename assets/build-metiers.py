@@ -96,6 +96,16 @@ VARIANT_CSS = """
   .hero-bg img { animation: hero-parallax linear both; animation-timeline: scroll(root); animation-range: 0 90vh; }
   .hero.overlay .hero-grid { animation: hero-lift linear both; animation-timeline: scroll(root); animation-range: 0 70vh; }
 }
+@media (min-width: 861px) {
+  @supports (animation-timeline: scroll()) {
+    .hero.expand { height: 175vh; overflow: clip; }
+    .hero.expand .expand-stick { position: sticky; top: 64px; height: calc(100vh - 64px); min-height: 520px; overflow: hidden; }
+    .hero.expand .hero-bg { animation: hero-expand ease-out both; animation-timeline: scroll(root); animation-range: 0 75vh; }
+    .hero.expand .hero-bg img { animation: none; transform: none; }
+    .hero.expand .hero-grid { animation: none; min-height: 0; height: 100%; padding: 0; }
+  }
+}
+@keyframes hero-expand { from { clip-path: inset(9% 5% 9% 5% round 28px); } to { clip-path: inset(0 0 0 0 round 0); } }
 @keyframes hero-parallax { from { transform: scale(1.18) translateY(0); } to { transform: scale(1.18) translateY(9%); } }
 @keyframes hero-lift { from { transform: translateY(0); opacity: 1; } to { transform: translateY(-28px); opacity: .55; } }
 .signature { margin-top: 26px; font-size: .95rem; color: var(--muted); }
@@ -156,6 +166,15 @@ def hero(s):
           </div>'''
     w, h = img_size(ROOT / s["dir"] / "hero.jpg")
     img = f'<img src="hero.jpg" alt="{e(s["alt"])}" width="{w}" height="{h}" fetchpriority="high">'
+    if s["layout"] == "expand":
+        return f'''    <section class="hero overlay expand">
+      <div class="expand-stick">
+        <figure class="hero-bg">{img}</figure>
+        <div class="wrap hero-grid">
+{copy.replace("{BADGE_IN}", chr(10) + "          " + badge)}
+        </div>
+      </div>
+    </section>'''
     if s["layout"] == "overlay":
         return f'''    <section class="hero overlay">
       <figure class="hero-bg">{img}</figure>

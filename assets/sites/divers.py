@@ -21,7 +21,7 @@ SITES = [
     "desc": "Sève & Pierre, paysagistes dans les Yvelines depuis 2003 : conception et création de jardins, terrasses, plantations, arrosage, et entretien régulier ouvrant droit au crédit d'impôt de 50 %.",
     "fonts": ("Fraunces", "Fraunces:opsz,wght@9..144,600;9..144,700", "Karla", "Karla:wght@400;500;600"),
     "pal": dict(paper="#F7F4EC", chalk="#ECE6D8", ink="#1B3A2B", muted="#5B6A5F", line="#DDD5C3", accent="#D08A55", deep="#9A5427"),
-    "layout": "overlay",
+    "layout": "expand",
     "icon": LEAF,
     "eyebrow": "Paysagistes · Yvelines",
     "h1": ("Un jardin dont vous profitez,", "au lieu d'y passer tous vos week-ends."),
