@@ -53,6 +53,8 @@ SITES = [
       ("Travaux et nettoyage", "Date de démarrage tenue, sols et meubles protégés, aspiration chaque soir. Vous validez avant notre départ."),
     ],
     "job_labels": ("Travaux", "Durée"),
+    "job_photos": ['Mur lissé à la lame dans une pièce en rénovation', "Ponçage d'un plafond en plaques de plâtre", "Corniche et moulures d'angle ornées d'un plafond ancien"],
+    "job_photos_credit": "Pexels : Antoni Shkraba (5493658), Tima Miroshnichenko (6474295), Irina Novikova (36639797)",
     "jobs": [
       ("Lyon 3e · Appartement", "Une chambre créée dans un séjour de 38 m²", "Cloison phonique, porte, doublage", "4 jours"),
       ("Villeurbanne · Maison", "Plafond refait après une fuite à l'étage", "Dépose, plaques neuves, enduit", "3 jours"),
@@ -222,6 +224,8 @@ SITES = [
       ("Chantier et remise en état", "Démarches réseaux faites, date tenue, terrain laissé propre et nivelé."),
     ],
     "job_labels": ("Travaux", "Durée"),
+    "job_photos": ["Mini-pelle sur un terrain de fondations, vue en noir et blanc", "Tranchée avec drain et gravier pour une viabilisation", "Godet de pelle chargé de terre et de roches"],
+    "job_photos_credit": "Pexels : Peter Dyllong (36606405), D Goug (37627673), Nadtochiy Photography (34422183)",
     "jobs": [
       ("Pessac · Maison neuve", "Terrassement et plateforme pour une maison de plain-pied", "Fouilles et plateforme", "3 jours"),
       ("Saint-Médard-en-Jalles · Terrain à bâtir", "Viabilisation complète sur 40 mètres", "Eau, électricité, fibre, eaux usées", "4 jours"),
@@ -306,6 +310,8 @@ SITES = [
       ("Enlèvement et livraison", "On vient chercher le meuble et on vous le rapporte, refait, à la date prévue."),
     ],
     "job_labels": ("Travail", "Délai"),
+    "job_photos": ["Fauteuil ancien rose sous un lustre à pampilles", "Chaise sculptée dorée au tissu capitonné, contre un mur ensoleillé", "Canapé trois places bleu clair avec coussins assortis"],
+    "job_photos_credit": "Pexels : Zumrad Normatova (10974994), Fran S (19457945), Max Vakhtbovych (8135269)",
     "jobs": [
       ("Paris 11e · Fauteuil Voltaire", "Garniture traditionnelle refaite au crin, velours côtelé", "Réfection complète", "4 semaines"),
       ("Vincennes · Six chaises de salle à manger", "Assises refaites et recouvertes en lin lavé", "Série de chaises", "3 semaines"),
@@ -561,6 +567,8 @@ SITES = [
       ("Chantier suivi", "Un point avec vous chaque semaine, réception des travaux ensemble."),
     ],
     "job_labels": ("Travaux", "Durée"),
+    "job_photos": ["Maçons posant des briques rouges sur un mur en construction", "Chantier de murs en briques avec échafaudage", "Mur ancien en pierres apparentes, jointoyé"],
+    "job_photos_credit": "Pexels : Yura Forrat (11429199), Jaime Joel Vargas Huacre (39576121), cottonbro studio (9943061)",
     "jobs": [
       ("Cesson-Sévigné · Maison des années 80", "Extension de 25 m² pour une suite parentale", "Fondations, murs, dalle", "5 semaines"),
       ("Rennes · Maison de ville", "Mur porteur ouvert entre cuisine et séjour", "Étaiement et poutre acier", "4 jours"),
@@ -645,6 +653,8 @@ SITES = [
       ("Restitution lavée", "Votre voiture vous est rendue réparée, contrôlée et lavée."),
     ],
     "job_labels": ("Réparation", "Immobilisation"),
+    "job_photos": ['Peintre en combinaison blanche pistolet à la main devant un pare-chocs', 'Débosselage sans peinture sur une portière avec une lampe de contrôle', "Carrossier polissant la carrosserie d'une voiture sombre"],
+    "job_photos_credit": "Pexels : Mohammad Hammad (30250199), Melih Can (35149611), Gustavo Fring (6870310)",
     "jobs": [
       ("Citadine · Choc arrière", "Pare-chocs et hayon remplacés, prise en charge assurance", "Sinistre", "4 jours"),
       ("Berline · Grêle", "35 impacts débosselés sans peinture", "Débosselage", "2 jours"),
