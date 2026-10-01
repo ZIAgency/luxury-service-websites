@@ -106,7 +106,7 @@ SITES = [
     "desc": "Cime & Racine, élagueurs grimpeurs dans le Morbihan : élagage, abattage délicat par démontage, dessouchage, broyage des branches, intervention d'urgence après tempête. Devis gratuit, assurance professionnelle.",
     "fonts": ("Big Shoulders Display", "Big+Shoulders+Display:wght@700;800", "Barlow", "Barlow:wght@400;500;600"),
     "pal": dict(paper="#F5F6F1", chalk="#E6E9DE", ink="#16241C", muted="#56625A", line="#D5DBCC", accent="#E0A43A", deep="#8E5D0C"),
-    "layout": "overlay",
+    "layout": "expand",
     "icon": TREE,
     "eyebrow": "Élagueurs grimpeurs · Morbihan",
     "h1": ("Un arbre trop grand, trop près de la maison ?", "On le taille ou on le démonte, branche par branche, sans rien abîmer."),

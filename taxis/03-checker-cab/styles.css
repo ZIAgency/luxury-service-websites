@@ -347,6 +347,10 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
   }
 }
 @keyframes hero-expand { from { clip-path: inset(9% 5% 9% 5% round 28px); } to { clip-path: inset(0 0 0 0 round 0); } }
+@supports (animation-timeline: scroll()) {
+  .hero-photo img { transform: scale(1.12); animation: photo-drift linear both; animation-timeline: scroll(root); animation-range: 0 80vh; }
+}
+@keyframes photo-drift { from { transform: scale(1.12) translateY(-3%); } to { transform: scale(1.12) translateY(4%); } }
 @keyframes hero-parallax { from { transform: scale(1.18) translateY(0); } to { transform: scale(1.18) translateY(9%); } }
 @keyframes hero-lift { from { transform: translateY(0); opacity: 1; } to { transform: translateY(-28px); opacity: .55; } }
 .signature { margin-top: 26px; font-size: .95rem; color: var(--muted); }

@@ -65,7 +65,7 @@ Générer : `python3 assets/build-metiers.py` (tout) ou `python3 assets/build-me
 `taxi`. `urgent: True` met l'appel en bouton principal. Heros alternés : `layout` =
 `overlay` (photo plein écran, texte par-dessus), `split-right` ou `split-left`.
 
-Parallax : les heros `overlay` ont un parallax en CSS pur (`animation-timeline: scroll(root)`, dans `build-metiers.py`), sans bibliothèque ni code copié ; désactivé par `prefers-reduced-motion`. Inspiré de 21st.dev (Parallax Scrolling, licence inconnue : idée réécrite, pas copiée). Layout `expand` (photo qui s'agrandit au scroll, bureau uniquement, hero collant) : validé sur paysagistes/01-seve-pierre, à étendre au cas par cas. Autre piste : éventail de réalisations.
+Parallax : les heros `overlay` et la photo des heros `split` ont un parallax en CSS pur (`animation-timeline: scroll(root)`, dans `build-metiers.py`), sans bibliothèque ni code copié ; désactivé par `prefers-reduced-motion`. Inspiré de 21st.dev (Parallax Scrolling, licence inconnue : idée réécrite, pas copiée). Layout `expand` (photo qui s'agrandit au scroll, bureau uniquement, hero collant) : validé sur paysagistes/01-seve-pierre, aussi sur 03-cime-racine et taxis/01-onyx-chauffeur, à étendre au cas par cas. Autre piste : éventail de réalisations.
 
 SEO/GEO (appliqué via les fiches `~/.claude/skills/ai-seo.md` et `schema.md`) : H1 = métier + ville
 (`seo_h1`), accroche en `p.headline`, JSON-LD `@graph` (entreprise + WebPage daté + FAQPage,

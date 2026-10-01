@@ -24,7 +24,7 @@ SITES = [
     "desc": "Onyx Chauffeurs, chauffeurs privés à Paris : transferts vers Roissy-CDG et Orly, mises à disposition pour rendez-vous d'affaires et soirées. Berlines et vans noirs, prix fixe confirmé à la réservation.",
     "fonts": ("Marcellus", "Marcellus", "Inter", "Inter:wght@400;500;600"),
     "pal": dict(paper="#F6F5F2", chalk="#EAE8E3", ink="#0A0A0A", muted="#5A5854", line="#DAD7D0", accent="#C9A24B", deep="#856515"),
-    "layout": "overlay",
+    "layout": "expand",
     "icon": CAR,
     "eyebrow": "Chauffeur privé · Paris",
     "h1": ("Votre chauffeur vous attend à l'arrivée,", "votre nom sur la tablette, sans compteur qui tourne."),
