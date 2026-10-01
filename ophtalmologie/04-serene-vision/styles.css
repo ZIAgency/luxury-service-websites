@@ -332,6 +332,13 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
 .hero.overlay .hero-badge { position: static; display: inline-flex; margin-top: 28px; background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .2); box-shadow: none; }
 .hero.overlay .hero-badge strong { color: var(--ochre); }
 .hero.overlay .hero-badge span { color: #D1D7D9; }
+.hero-bg img { transform: scale(1.18); transform-origin: 50% 30%; }
+@supports (animation-timeline: scroll()) {
+  .hero-bg img { animation: hero-parallax linear both; animation-timeline: scroll(root); animation-range: 0 90vh; }
+  .hero.overlay .hero-grid { animation: hero-lift linear both; animation-timeline: scroll(root); animation-range: 0 70vh; }
+}
+@keyframes hero-parallax { from { transform: scale(1.18) translateY(0); } to { transform: scale(1.18) translateY(9%); } }
+@keyframes hero-lift { from { transform: translateY(0); opacity: 1; } to { transform: translateY(-28px); opacity: .55; } }
 .signature { margin-top: 26px; font-size: .95rem; color: var(--muted); }
 .signature strong { color: var(--ink); font-family: var(--head); }
 @media (max-width: 860px) {
