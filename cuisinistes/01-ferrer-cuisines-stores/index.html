@@ -3,14 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Pose de cuisine et stores à Aix-en-Provence | Ferrer Cuisines &amp; Stores</title>
   <meta name="description" content="Installateur à Aix-en-Provence et Marseille : pose de cuisines (y compris achetées en grande surface), plans de travail, électroménager encastré, stores bannes, stores intérieurs et volets roulants motorisés.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2326301F'/%3E%3Cg color='%23E3B964' fill='%23E3B964'%3E%3Crect x='6' y='8' width='20' height='16' rx='2' fill='none' stroke='currentColor' stroke-width='2.4'/%3E%3Cpath class='blade' d='M6 13h20v3H6z'/%3E%3C/g%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1280.webp 1280w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  src: url(fonts/DMSans-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/DMSerifDisplay-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://luxury-service-websites.vercel.app/cuisinistes/01-ferrer-cuisines-stores/">
   <meta property="og:type" content="website">
@@ -312,7 +328,7 @@
 
         <div class="hero-visual">
           <figure class="hero-photo">
-            <img src="hero.jpg" alt="Un poseur installe des meubles de cuisine dans une maison en rénovation" width="1280" height="853" fetchpriority="high">
+            <img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1280.webp 1280w" sizes="(min-width: 900px) 50vw, 100vw" alt="Un poseur installe des meubles de cuisine dans une maison en rénovation" width="1280" height="853" fetchpriority="high" decoding="async">
           </figure>
           <div class="hero-badge">
             <strong>2 à 4 j</strong>
@@ -439,7 +455,7 @@
         </div>
         <div class="job-grid fan">
           <article class="job">
-            <figure class="job-photo"><img src="job-1.jpg" alt="Cuisine moderne avec îlot et plan de travail clair" width="900" height="593" loading="lazy"></figure>
+            <figure class="job-photo"><img src="job-1-800.webp" srcset="job-1-480.webp 480w, job-1-800.webp 800w" sizes="(min-width: 900px) 30vw, 90vw" alt="Cuisine moderne avec îlot et plan de travail clair" width="900" height="593" loading="lazy" decoding="async"></figure>
             <p class="job-where">Aix-en-Provence · Appartement</p>
             <h3>Cuisine en kit de 4 mètres linéaires avec îlot</h3>
             <dl>
@@ -448,7 +464,7 @@
             </dl>
           </article>
           <article class="job">
-            <figure class="job-photo"><img src="job-2.jpg" alt="Store banne rayé vert sur une terrasse ensoleillée" width="900" height="1350" loading="lazy"></figure>
+            <figure class="job-photo"><img src="job-2-800.webp" srcset="job-2-480.webp 480w, job-2-800.webp 800w" sizes="(min-width: 900px) 30vw, 90vw" alt="Store banne rayé vert sur une terrasse ensoleillée" width="900" height="1350" loading="lazy" decoding="async"></figure>
             <p class="job-where">Venelles · Villa</p>
             <h3>Store banne motorisé de 5 mètres sur terrasse</h3>
             <dl>
@@ -457,7 +473,7 @@
             </dl>
           </article>
           <article class="job">
-            <figure class="job-photo"><img src="job-3.jpg" alt="Plan de travail en quartz veiné avec évier et électroménager encastré" width="900" height="600" loading="lazy"></figure>
+            <figure class="job-photo"><img src="job-3-800.webp" srcset="job-3-480.webp 480w, job-3-800.webp 800w" sizes="(min-width: 900px) 30vw, 90vw" alt="Plan de travail en quartz veiné avec évier et électroménager encastré" width="900" height="600" loading="lazy" decoding="async"></figure>
             <p class="job-where">Marseille 8e · Maison</p>
             <h3>Plan de travail en quartz et électroménager encastré</h3>
             <dl>

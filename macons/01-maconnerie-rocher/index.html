@@ -3,14 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Maçon à Rennes · Extension, ouverture de mur, dalle | Maçonnerie Rocher</title>
   <meta name="description" content="Maçon à Rennes et en Ille-et-Vilaine : extension de maison, ouverture de mur porteur, dalles et fondations, murs de clôture, rénovation de façade et de pierre. Visite et devis gratuits.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2326282B'/%3E%3Cg color='%23E4683F' fill='%23E4683F'%3E%3Cpath d='M5 10h22M5 16h22M5 22h22M12 10v6M20 16v6M16 22v4M16 4v6' stroke='currentColor' stroke-width='2.2'/%3E%3Crect class='blade' x='12' y='16' width='8' height='6'/%3E%3C/g%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-932.webp 932w" imagesizes="100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500 700;
+  src: url(fonts/Oswald-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/SourceSans3-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://luxury-service-websites.vercel.app/macons/01-maconnerie-rocher/">
   <meta property="og:type" content="website">
@@ -291,7 +307,7 @@
 
     <section class="hero overlay expand">
       <div class="expand-stick">
-        <figure class="hero-bg"><img src="hero.jpg" alt="Un maçon monte un mur en parpaings sur un chantier" width="932" height="1400" fetchpriority="high"></figure>
+        <figure class="hero-bg"><img src="hero-932.webp" srcset="hero-640.webp 640w, hero-932.webp 932w" sizes="100vw" alt="Un maçon monte un mur en parpaings sur un chantier" width="932" height="1400" fetchpriority="high" decoding="async"></figure>
         <div class="wrap hero-grid">
         <div class="hero-copy">
           <h1 class="eyebrow">Maçon à Rennes et en Ille-et-Vilaine</h1>
@@ -436,7 +452,7 @@
         </div>
         <div class="job-grid fan">
           <article class="job">
-            <figure class="job-photo"><img src="job-1.jpg" alt="Maçons posant des briques rouges sur un mur en construction" width="900" height="600" loading="lazy"></figure>
+            <figure class="job-photo"><img src="job-1-800.webp" srcset="job-1-480.webp 480w, job-1-800.webp 800w" sizes="(min-width: 900px) 30vw, 90vw" alt="Maçons posant des briques rouges sur un mur en construction" width="900" height="600" loading="lazy" decoding="async"></figure>
             <p class="job-where">Cesson-Sévigné · Maison des années 80</p>
             <h3>Extension de 25 m² pour une suite parentale</h3>
             <dl>
@@ -445,7 +461,7 @@
             </dl>
           </article>
           <article class="job">
-            <figure class="job-photo"><img src="job-2.jpg" alt="Chantier de murs en briques avec échafaudage" width="750" height="1000" loading="lazy"></figure>
+            <figure class="job-photo"><img src="job-2-750.webp" srcset="job-2-480.webp 480w, job-2-750.webp 750w" sizes="(min-width: 900px) 30vw, 90vw" alt="Chantier de murs en briques avec échafaudage" width="750" height="1000" loading="lazy" decoding="async"></figure>
             <p class="job-where">Rennes · Maison de ville</p>
             <h3>Mur porteur ouvert entre cuisine et séjour</h3>
             <dl>
@@ -454,7 +470,7 @@
             </dl>
           </article>
           <article class="job">
-            <figure class="job-photo"><img src="job-3.jpg" alt="Mur ancien en pierres apparentes, jointoyé" width="750" height="1125" loading="lazy"></figure>
+            <figure class="job-photo"><img src="job-3-750.webp" srcset="job-3-480.webp 480w, job-3-750.webp 750w" sizes="(min-width: 900px) 30vw, 90vw" alt="Mur ancien en pierres apparentes, jointoyé" width="750" height="1125" loading="lazy" decoding="async"></figure>
             <p class="job-where">Bruz · Longère</p>
             <h3>Façade en pierre rejointoyée à la chaux</h3>
             <dl>

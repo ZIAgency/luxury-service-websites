@@ -3,14 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Plombier à Grenoble · Dépannage, fuite, chauffe-eau | Plomberie Méridien</title>
   <meta name="description" content="Plombier à Grenoble et dans l&#x27;agglomération : dépannage de fuites, débouchage, chauffe-eau, remplacement de canalisations. Prix annoncé avant de commencer, compte rendu photo après chaque intervention.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A2A3A'/%3E%3Cg color='%23F2665A' fill='%23F2665A'%3E%3Cpath d='M21 5a6 6 0 0 0-6 8L6 22l4 4 9-9a6 6 0 0 0 8-6l-4 1-3-3z' fill='none' stroke='currentColor' stroke-width='2.4' stroke-linejoin='round'/%3E%3Ccircle class='blade' cx='8' cy='24' r='2'/%3E%3C/g%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-787.webp 787w" imagesizes="100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/Inter-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500 700;
+  src: url(fonts/SpaceGrotesk-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://luxury-service-websites.vercel.app/plomberie/02-meridian/">
   <meta property="og:type" content="website">
@@ -286,7 +302,7 @@
   <main id="top">
 
     <section class="hero overlay">
-      <figure class="hero-bg"><img src="hero.jpg" alt="Un plombier en tenue de travail resserre un raccord avec une clé" width="787" height="1400" fetchpriority="high"></figure>
+      <figure class="hero-bg"><img src="hero-787.webp" srcset="hero-640.webp 640w, hero-787.webp 787w" sizes="100vw" alt="Un plombier en tenue de travail resserre un raccord avec une clé" width="787" height="1400" fetchpriority="high" decoding="async"></figure>
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <h1 class="eyebrow">Plombier à Grenoble et dans l&#x27;agglomération</h1>

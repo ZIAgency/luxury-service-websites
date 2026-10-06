@@ -144,6 +144,39 @@ VARIANT_CSS = """
 e = html.escape
 
 
+def responsive(stem, d, sizes):
+    """Attributs src/srcset/sizes pour les WebP générés par optimize-images.py (repli : JPEG)."""
+    files = sorted((int(m.group(1)), f.name) for f in (ROOT / d).glob(f"{stem}-*.webp")
+                   if (m := re.fullmatch(rf"{stem}-(\d+)\.webp", f.name)))
+    if not files:
+        return f'src="{stem}.jpg"'
+    srcset = ", ".join(f"{n} {w}w" for w, n in files)
+    mid = files[len(files) // 2][1]
+    return f'src="{mid}" srcset="{srcset}" sizes="{sizes}"'
+
+
+def hero_sizes(s):
+    return "100vw" if s["layout"] in ("overlay", "expand") else "(min-width: 900px) 50vw, 100vw"
+
+
+def hero_preload(s):
+    attrs = responsive("hero", s["dir"], hero_sizes(s))
+    if "srcset" not in attrs:
+        return ""
+    srcset = re.search(r'srcset="([^"]+)"', attrs).group(1)
+    return f'<link rel="preload" as="image" imagesrcset="{srcset}" imagesizes="{hero_sizes(s)}" fetchpriority="high">'
+
+
+def font_links(s, head_q, body_q):
+    """Polices hébergées avec le site (fonts.css inliné, produit par fetch-fonts.py) ; repli : Google Fonts."""
+    css = ROOT / s["dir"] / "fonts.css"
+    if css.exists():
+        return "  <style>\n" + css.read_text(encoding="utf-8").strip() + "\n  </style>"
+    return ('  <link rel="preconnect" href="https://fonts.googleapis.com">\n'
+            '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
+            f'  <link href="https://fonts.googleapis.com/css2?family={head_q}&family={body_q}&display=swap" rel="stylesheet">')
+
+
 def img_size(path):
     """Largeur et hauteur d'un JPEG, lues dans l'en-tête (1280 × 853 par défaut)."""
     try:
@@ -187,7 +220,7 @@ def hero(s):
             <span>{s["badge"][1]}</span>
           </div>'''
     w, h = img_size(ROOT / s["dir"] / "hero.jpg")
-    img = f'<img src="hero.jpg" alt="{e(s["alt"])}" width="{w}" height="{h}" fetchpriority="high">'
+    img = f'<img {responsive("hero", s["dir"], hero_sizes(s))} alt="{e(s["alt"])}" width="{w}" height="{h}" fetchpriority="high" decoding="async">'
     if s["layout"] == "expand":
         return f'''    <section class="hero overlay expand">
       <div class="expand-stick">
@@ -356,7 +389,7 @@ def page(s):
         if i >= len(jp):
             return ""
         w, h = img_size(ROOT / s["dir"] / f"job-{i + 1}.jpg")
-        return f'<figure class="job-photo"><img src="job-{i + 1}.jpg" alt="{e(jp[i])}" width="{w}" height="{h}" loading="lazy"></figure>\n            '
+        return f'<figure class="job-photo"><img {responsive(f"job-{i + 1}", s["dir"], "(min-width: 900px) 30vw, 90vw")} alt="{e(jp[i])}" width="{w}" height="{h}" loading="lazy" decoding="async"></figure>\n            '
     jobs = "\n".join(f'''          <article class="job">
             {job_fig(i)}<p class="job-where">{e(w)}</p>
             <h3>{e(t)}</h3>
@@ -414,14 +447,13 @@ def page(s):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>{e(s["title"])}</title>
   <meta name="description" content="{e(s["desc"])}">
   <link rel="icon" href="data:image/svg+xml,{favicon(s)}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family={head_q}&family={body_q}&display=swap" rel="stylesheet">
+  {hero_preload(s)}
+{font_links(s, head_q, body_q)}
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="{url}">
   <meta property="og:type" content="website">

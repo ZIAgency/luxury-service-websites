@@ -3,14 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Avocat pénaliste Paris 24h/24 · Garde à vue, comparution immédiate, permis | Leroy Défense</title>
   <meta name="description" content="Me Claire Leroy, avocate pénaliste à Paris, joignable 24 h/24 : garde à vue, comparution immédiate, convocation au tribunal, retrait de permis, défense des victimes. Honoraires annoncés avant d&#x27;intervenir.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230D0D0D'/%3E%3Cg color='%23E55B5B' fill='%23E55B5B'%3E%3Cpath d='M16 5v22M9 27h14M6 9h20' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linecap='round'/%3E%3Cpath class='blade' d='M6 10l-4 8a4 4 0 0 0 8 0zM26 10l-4 8a4 4 0 0 0 8 0z'/%3E%3C/g%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: normal;
+  font-weight: 600 700;
+  src: url(fonts/BodoniModa-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/Inter-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://luxury-service-websites.vercel.app/avocats/04-leroy-defense/">
   <meta property="og:type" content="website">
@@ -292,7 +308,7 @@
 
         <div class="hero-visual">
           <figure class="hero-photo">
-            <img src="hero.jpg" alt="Une avocate en robe noire dans une bibliothèque juridique" width="1600" height="1067" fetchpriority="high">
+            <img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" sizes="(min-width: 900px) 50vw, 100vw" alt="Une avocate en robe noire dans une bibliothèque juridique" width="1600" height="1067" fetchpriority="high" decoding="async">
           </figure>
           <div class="hero-badge">
             <strong>24 h/24</strong>

@@ -3,14 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Paysagiste Saint-Germain-en-Laye · Création, terrasses, entretien de jardin | Sève &amp; Pierre</title>
   <meta name="description" content="Sève &amp; Pierre, paysagistes dans les Yvelines depuis 2003 : conception et création de jardins, terrasses, plantations, arrosage, et entretien régulier ouvrant droit au crédit d&#x27;impôt de 50 %.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231B3A2B'/%3E%3Cg color='%23D08A55' fill='%23D08A55'%3E%3Cpath class='blade' d='M26 5C13 5 6 12 6 21c0 2 .6 3.8 1.6 5.2L5 28.8 6.4 30.2l2.6-2.6C10.4 28.4 12 29 14 29c9 0 14-7 14-20 0-1.5-.7-3-2-4z'/%3E%3C/g%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1400.webp 1400w" imagesizes="100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 600 700;
+  src: url(fonts/Fraunces-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/Karla-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://luxury-service-websites.vercel.app/paysagistes/01-seve-pierre/">
   <meta property="og:type" content="website">
@@ -287,7 +303,7 @@
 
     <section class="hero overlay expand">
       <div class="expand-stick">
-        <figure class="hero-bg"><img src="hero.jpg" alt="Un jardinier taille une haie dans un jardin ensoleillé" width="1400" height="933" fetchpriority="high"></figure>
+        <figure class="hero-bg"><img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1400.webp 1400w" sizes="100vw" alt="Un jardinier taille une haie dans un jardin ensoleillé" width="1400" height="933" fetchpriority="high" decoding="async"></figure>
         <div class="wrap hero-grid">
         <div class="hero-copy">
           <h1 class="eyebrow">Paysagiste à Saint-Germain-en-Laye : création et entretien de jardins dans les Yvelines</h1>

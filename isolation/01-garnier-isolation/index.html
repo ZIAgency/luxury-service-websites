@@ -3,14 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Isolation combles, murs et planchers à Nantes | Garnier Isolation</title>
   <meta name="description" content="Isolation des combles, des murs par l&#x27;intérieur ou l&#x27;extérieur et des planchers à Nantes. Artisan RGE : vos travaux peuvent ouvrir droit aux aides. Visite thermique et devis gratuits.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2312343B'/%3E%3Cg color='%23F2A541' fill='%23F2A541'%3E%3Cpath d='M5 26 16 6l11 20' fill='none' stroke='currentColor' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath class='blade' d='M10 22h12l-2-4h-8z'/%3E%3C/g%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1280.webp 1280w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/Karla-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 500 800;
+  src: url(fonts/Sora-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://luxury-service-websites.vercel.app/isolation/01-garnier-isolation/">
   <meta property="og:type" content="website">
@@ -308,7 +324,7 @@
 
         <div class="hero-visual">
           <figure class="hero-photo">
-            <img src="hero.jpg" alt="Un artisan pose des rouleaux de laine isolante entre les montants d&#x27;un mur" width="1280" height="854" fetchpriority="high">
+            <img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1280.webp 1280w" sizes="(min-width: 900px) 50vw, 100vw" alt="Un artisan pose des rouleaux de laine isolante entre les montants d&#x27;un mur" width="1280" height="854" fetchpriority="high" decoding="async">
           </figure>
           <div class="hero-badge">
             <strong>RGE</strong>

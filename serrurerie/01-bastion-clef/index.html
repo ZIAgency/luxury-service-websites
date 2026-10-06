@@ -3,14 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Porte blindée et serrure haute sécurité à Paris | Bastion &amp; Clef</title>
   <meta name="description" content="Bastion &amp; Clef sécurise les appartements et hôtels particuliers parisiens : portes blindées, serrures certifiées A2P, coffres-forts, cartes de clés protégées. Audit de sécurité gratuit à domicile.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230E0E10'/%3E%3Cg color='%23C9A54B' fill='%23C9A54B'%3E%3Ccircle cx='11' cy='11' r='6' fill='none' stroke='currentColor' stroke-width='2.6'/%3E%3Cpath class='blade' d='M15 15l11 11-2.5 2.5-2-2-2 2-2-2 2-2-6.5-6.5z'/%3E%3C/g%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" imagesizes="100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/Montserrat-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 600;
+  src: url(fonts/PlayfairDisplay-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600 700;
+  src: url(fonts/PlayfairDisplay-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://luxury-service-websites.vercel.app/serrurerie/01-bastion-clef/">
   <meta property="og:type" content="website">
@@ -274,7 +298,7 @@
   <main id="top">
 
     <section class="hero overlay">
-      <figure class="hero-bg"><img src="hero.jpg" alt="Une serrure de sécurité avec sa clé sur une porte d&#x27;entrée" width="1600" height="1067" fetchpriority="high"></figure>
+      <figure class="hero-bg"><img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" sizes="100vw" alt="Une serrure de sécurité avec sa clé sur une porte d&#x27;entrée" width="1600" height="1067" fetchpriority="high" decoding="async"></figure>
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <h1 class="eyebrow">Serrurier haute sécurité à Paris : portes blindées et serrures A2P</h1>

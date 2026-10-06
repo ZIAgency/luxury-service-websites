@@ -3,14 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Dentiste pour patients anxieux à Bordeaux · Soins sans stress, MEOPA | Sérénade</title>
   <meta name="description" content="Cabinet dentaire Sérénade à Bordeaux, pensé pour les patients qui ont peur du dentiste : premier rendez-vous sans soin, anesthésie douce, sédation au MEOPA, signal pour arrêter à tout moment.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231B2E2E'/%3E%3Cg color='%238CC3BE' fill='%238CC3BE'%3E%3Cpath class='blade' d='M9 5c-3 0-5 2.5-5 6 0 4 2 6 3 10l1.5 6c.4 1.4 2.4 1.4 2.8 0L13 20c.5-1.6 2.5-1.6 3 0l1.7 7c.4 1.4 2.4 1.4 2.8 0L22 21c1-4 3-6 3-10 0-3.5-2-6-5-6-2 0-3 1-4.5 1S11 5 9 5z'/%3E%3C/g%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,600&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" imagesizes="100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/Karla-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 600;
+  src: url(fonts/Lora-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600 700;
+  src: url(fonts/Lora-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://luxury-service-websites.vercel.app/dentistes/04-still-point-dental/">
   <meta property="og:type" content="website">
@@ -274,7 +298,7 @@
   <main id="top">
 
     <section class="hero overlay">
-      <figure class="hero-bg"><img src="hero.jpg" alt="Une jeune femme détendue et souriante dans un fauteuil dentaire" width="1600" height="1067" fetchpriority="high"></figure>
+      <figure class="hero-bg"><img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" sizes="100vw" alt="Une jeune femme détendue et souriante dans un fauteuil dentaire" width="1600" height="1067" fetchpriority="high" decoding="async"></figure>
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <h1 class="eyebrow">Dentiste pour patients anxieux à Bordeaux : soins sans stress</h1>

@@ -3,14 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Rénovation de salle de bains et plombier à Paris 16e | Aqua Lumière</title>
   <meta name="description" content="Rénovation de salles de bains haut de gamme et plomberie à Paris Ouest et Neuilly : douches à l&#x27;italienne, baignoires, robinetterie de designer, dépannage discret. Visite et devis détaillé gratuits.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F2A33'/%3E%3Cg color='%23C8A24B' fill='%23C8A24B'%3E%3Cpath class='blade' d='M16 4c5 7 8 11 8 15a8 8 0 0 1-16 0c0-4 3-8 8-15z'/%3E%3C/g%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 600;
+  src: url(fonts/CormorantGaramond-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600 700;
+  src: url(fonts/CormorantGaramond-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/Jost-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://luxury-service-websites.vercel.app/plomberie/01-aqua-lumiere/">
   <meta property="og:type" content="website">
@@ -300,7 +324,7 @@
 
         <div class="hero-visual">
           <figure class="hero-photo">
-            <img src="hero.jpg" alt="Une salle de bains en marbre avec douche vitrée et robinetterie moderne" width="1600" height="1600" fetchpriority="high">
+            <img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" sizes="(min-width: 900px) 50vw, 100vw" alt="Une salle de bains en marbre avec douche vitrée et robinetterie moderne" width="1600" height="1600" fetchpriority="high" decoding="async">
           </figure>
           <div class="hero-badge">
             <strong>3 sem.</strong>
