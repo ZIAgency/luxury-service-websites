@@ -1,0 +1,63 @@
+# VIZN
+
+> VIZN à Toulouse : dépistage et suivi des maladies de la rétine (DMLA, glaucome, rétinopathie diabétique) par OCT et rétinographie. Examens rapides, résultats expliqués le jour même par un ophtalmologiste.
+
+Mis à jour le 30 septembre 2026.
+
+## Contact
+
+- Téléphone : 05 36 49 84 27 (Du lundi au samedi, 8 h à 19 h)
+- Adresse : 48 avenue de Rangueil, 31400 Toulouse
+- Zone : Toulouse, Ramonville-Saint-Agne, Castanet-Tolosan, Balma, Blagnac, Colomiers, Haute-Garonne
+- Rendez-vous : [formulaire](https://luxury-service-websites.vercel.app/ophtalmologie/05-vizn-lab/#devis)
+- Interlocuteur : Dr Karim Haddad, ophtalmologiste, rétine médicale
+
+## Services
+
+- **OCT** : Coupe en haute définition de la rétine et du nerf optique, sans contact, en quelques minutes.
+- **Rétinographie** : Photographie du fond d'œil, souvent sans dilatation de la pupille.
+- **Champ visuel** : Mesure de l'étendue de la vision, indispensable au suivi du glaucome.
+- **Dépistage diabétique** : Recherche des premières lésions de rétinopathie, compte rendu transmis à votre médecin.
+- **Suivi DMLA** : Contrôles réguliers et orientation rapide vers un traitement si besoin.
+- **Comparaison dans le temps** : Vos images comparées à celles des années précédentes pour détecter la moindre évolution.
+
+## Engagements
+
+- **Comprendre vos images.** Pas de compte rendu incompréhensible : on vous explique.
+- **Un suivi comparatif.** Vos examens sont conservés pour mesurer toute évolution.
+- **Un lien avec vos médecins.** Compte rendu transmis à votre ophtalmologiste et à votre médecin traitant.
+- **Des tarifs clairs.** Examens pris en charge selon la nomenclature, dépassements annoncés s'il y en a.
+
+## Questions fréquentes
+
+### Qu'est-ce qu'un OCT ?
+
+Un examen d'imagerie qui réalise des coupes très fines de la rétine et du nerf optique, sans contact avec l'œil. Il dure quelques minutes et n'est pas douloureux.
+
+### Faut-il dilater les pupilles ?
+
+Pas toujours. Certains examens se font sans dilatation. Si elle est nécessaire, prévoyez de ne pas conduire pendant quelques heures.
+
+### Qui devrait faire un dépistage de la DMLA ?
+
+Les personnes de plus de 55 ans, surtout en cas d'antécédent familial, de tabagisme ou de vision déformée. Un contrôle régulier est conseillé.
+
+### Pourquoi les diabétiques doivent-ils surveiller leur rétine ?
+
+Le diabète peut abîmer les petits vaisseaux de la rétine sans symptôme au début. Un dépistage régulier permet de traiter tôt.
+
+### Le glaucome donne-t-il des symptômes ?
+
+Rarement au début : il réduit la vision périphérique progressivement. D'où l'intérêt du dépistage en cas d'antécédent familial ou après 40 ans.
+
+### Les examens sont-ils remboursés ?
+
+Les examens prescrits sont pris en charge par l'Assurance maladie selon la nomenclature. Nous vous indiquons le tarif avant.
+
+### Combien de temps dure un examen de dépistage de la rétine ?
+
+En général moins d'une heure, du dépistage à l'explication du résultat. Selon les examens (OCT, rétinographie), certains se font sans dilatation. Les résultats vous sont expliqués le jour même.
+
+### À quelle fréquence faire un dépistage de la rétine ?
+
+Cela dépend de votre âge et de vos facteurs de risque : diabète, antécédents familiaux, forte myopie. L'ophtalmologiste fixe le rythme adapté, souvent tous les un à deux ans.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://exemple-serrurier.fr/sitemap-index.xml

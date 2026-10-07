@@ -3,364 +3,686 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Hawthorne Eye Care — Un cabinet de famille depuis 1968</title>
-  <meta name="description" content="Hawthorne Eye Care dessert la même communauté depuis 1968 — trois générations d'ophtalmologistes, des examens sans hâte, des conseils honnêtes et une chirurgie seulement quand elle est vraiment nécessaire.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%235E1620'/%3E%3Ccircle cx='12' cy='12' r='6.5' fill='none' stroke='%23B08D57' stroke-width='1.4'/%3E%3Ccircle cx='12' cy='12' r='2.2' fill='%23B08D57'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Ophtalmologiste à Rouen · Rendez-vous rapide, enfants, glaucome, lunettes | Cabinet de l&#x27;Aubépine</title>
+  <meta name="description" content="Cabinet d&#x27;ophtalmologie de l&#x27;Aubépine à Rouen, depuis 1968 : consultations adultes et enfants, renouvellement de lunettes avec orthoptiste, suivi du glaucome et du diabète. Rendez-vous sous 4 semaines.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232E4A3A'/%3E%3Cg color='%23C9A96A' fill='%23C9A96A'%3E%3Cpath d='M3 16s5-8 13-8 13 8 13 8-5 8-13 8S3 16 3 16z' fill='none' stroke='currentColor' stroke-width='2.4'/%3E%3Ccircle class='blade' cx='16' cy='16' r='4.5'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/LibreCaslonText-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/LibreCaslonText-normal-2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/WorkSans-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Cabinet d&#x27;ophtalmologie de l&#x27;Aubépine">
+  <meta property="og:title" content="Ophtalmologiste à Rouen · Rendez-vous rapide, enfants, glaucome, lunettes | Cabinet de l&#x27;Aubépine">
+  <meta property="og:description" content="Cabinet d&#x27;ophtalmologie de l&#x27;Aubépine à Rouen, depuis 1968 : consultations adultes et enfants, renouvellement de lunettes avec orthoptiste, suivi du glaucome et du diabète. Rendez-vous sous 4 semaines.">
+  <meta property="og:url" content="https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/">
+  <meta property="og:image" content="https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/hero.jpg">
+  <meta property="og:image:alt" content="Un patient passe un examen de la vue chez l&#x27;ophtalmologiste">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Physician",
+      "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/#entreprise",
+      "name": "Cabinet d'ophtalmologie de l'Aubépine",
+      "url": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/",
+      "description": "Cabinet d'ophtalmologie de l'Aubépine à Rouen, depuis 1968 : consultations adultes et enfants, renouvellement de lunettes avec orthoptiste, suivi du glaucome et du diabète. Rendez-vous sous 4 semaines.",
+      "slogan": "Un rendez-vous chez l'ophtalmo en quelques semaines, pas en six mois.",
+      "telephone": "+33261914760",
+      "image": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "22 rue Jeanne-d'Arc",
+        "postalCode": "76000",
+        "addressLocality": "Rouen",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Rouen"
+        },
+        {
+          "@type": "Place",
+          "name": "Mont-Saint-Aignan"
+        },
+        {
+          "@type": "Place",
+          "name": "Bois-Guillaume"
+        },
+        {
+          "@type": "Place",
+          "name": "Sotteville-lès-Rouen"
+        },
+        {
+          "@type": "Place",
+          "name": "Le Grand-Quevilly"
+        },
+        {
+          "@type": "Place",
+          "name": "Bihorel"
+        },
+        {
+          "@type": "Place",
+          "name": "Darnétal"
+        }
+      ],
+      "openingHours": "Mo-Fr 08:30-18:30",
+      "knowsAbout": [
+        "Consultation générale",
+        "Ophtalmologie pédiatrique",
+        "Glaucome",
+        "Diabète et rétine",
+        "Cataracte",
+        "Urgences"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Toute l'ophtalmologie de famille, sans attendre des mois.",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Consultation générale",
+              "description": "Mesure de la vue, examen de l'œil, ordonnance de lunettes ou de lentilles.",
+              "areaServed": "Rouen centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ophtalmologie pédiatrique",
+              "description": "Dépistage des troubles visuels, strabisme, rééducation orthoptique.",
+              "areaServed": "Rouen centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Glaucome",
+              "description": "Mesure de la pression de l'œil, champ visuel, OCT, suivi au long cours.",
+              "areaServed": "Rouen centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Diabète et rétine",
+              "description": "Fond d'œil de dépistage, suivi de la rétinopathie diabétique.",
+              "areaServed": "Rouen centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cataracte",
+              "description": "Diagnostic et orientation vers la chirurgie quand elle devient utile.",
+              "areaServed": "Rouen centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Urgences",
+              "description": "Œil rouge, douleur, corps étranger, baisse de vue soudaine : créneaux quotidiens.",
+              "areaServed": "Rouen centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/#entreprise"
+              }
+            }
+          }
+        ]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Dr François Leroux",
+        "jobTitle": "ophtalmologiste"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/",
+      "url": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/",
+      "name": "Ophtalmologiste à Rouen · Rendez-vous rapide, enfants, glaucome, lunettes | Cabinet de l'Aubépine",
+      "description": "Cabinet d'ophtalmologie de l'Aubépine à Rouen, depuis 1968 : consultations adultes et enfants, renouvellement de lunettes avec orthoptiste, suivi du glaucome et du diabète. Rendez-vous sous 4 semaines.",
+      "inLanguage": "fr-FR",
+      "dateModified": "2026-09-30",
+      "about": {
+        "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/#entreprise"
+      },
+      "primaryImageOfPage": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/hero.jpg"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/03-hawthorne-eye/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien de temps pour avoir un rendez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En moyenne moins de quatre semaines pour un premier rendez-vous, et des créneaux chaque jour pour les urgences."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi voir d'abord l'orthoptiste ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "L'orthoptiste réalise les mesures et examens préparatoires. L'ophtalmologiste peut ainsi se concentrer sur le diagnostic, ce qui permet de recevoir plus de patients."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quand consulter en urgence ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Œil rouge et douloureux, baisse brutale de la vue, éclairs lumineux ou voile devant l'œil, choc ou produit dans l'œil : appelez immédiatement, ou le 15 en dehors de nos horaires."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À quel âge faire examiner les yeux d'un enfant ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Des examens sont recommandés dans la petite enfance et avant l'entrée à l'école, et à tout âge si l'enfant plisse les yeux, louche ou se plaint de maux de tête."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un diabétique doit-il voir un ophtalmologiste chaque année ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un dépistage régulier de la rétinopathie diabétique est recommandé, en général tous les ans ou tous les deux ans selon votre situation. Nous planifions ce suivi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Y a-t-il des dépassements d'honoraires ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non, nos ophtalmologistes sont conventionnés en secteur 1 et appliquent les tarifs de l'Assurance maladie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À partir de quel âge faut-il surveiller le glaucome ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un dépistage est conseillé à partir de 40 ans, plus tôt en cas d'antécédent familial. Le glaucome évolue souvent sans symptôme : seule la mesure de la pression de l'œil et l'examen du nerf optique le détectent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment se passe le renouvellement de lunettes pour un enfant ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Après examen, l'ophtalmologiste prescrit les verres adaptés. Pour un renouvellement, l'orthoptiste peut réaliser les mesures préparatoires, ce qui raccourcit l'attente."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
-  <!-- ══════════ NAV ══════════ -->
-  <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"/><path d="M8 16V8l4 5 4-5v8"/></svg>
-        </span>
-        <span class="brand-text">Hawthorne<small>Eye Care · Fondé en 1968</small></span>
-      </a>
-      <nav class="links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#story">Notre histoire</a>
-        <a href="#generations">Générations</a>
-        <a href="#voices">Patients</a>
-        <a href="#contact">Contact</a>
-        <a href="#book" class="nav-cta">Prendre rendez-vous</a>
-      </nav>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <a class="skip" href="#devis">Aller au formulaire de rendez-vous</a>
 
-  <!-- ══════════ HERO ══════════ -->
-  <section class="hero" id="top">
-    <div class="hero-rules" aria-hidden="true"></div>
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="overline reveal">Ophtalmologie · Troisième génération</p>
-        <h1 class="reveal" style="--d:.1s">Le même examen soigné,<br><em class="brass-text">bien fait,</em><br>depuis 1968.</h1>
-        <p class="hero-sub reveal" style="--d:.22s">Nos grands-parents examinaient les yeux de cette ville à la lampe à pétrole ; nous
-          examinons leurs petits-enfants avec un OCT. Ce qui n'a pas changé, c'est la manière — une heure sans hâte,
-          un médecin qui se souvient de votre nom, et une chirurgie recommandée seulement quand elle est vraiment nécessaire.</p>
-        <div class="hero-cta reveal" style="--d:.34s">
-          <a href="#book" class="btn btn-brass">Prendre rendez-vous</a>
-          <a href="#story" class="btn btn-outline">Rencontrer la famille</a>
-        </div>
-        <p class="hero-note reveal" style="--d:.44s">Nous accueillons aujourd'hui les petits-enfants de nos premiers patients.</p>
-      </div>
-
-      <div class="hero-visual reveal" style="--d:.28s">
-        <div class="seal-frame">
-          <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
-            <defs><path id="sealArc" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs>
-            <circle cx="100" cy="100" r="96" class="seal-ring"/>
-            <circle cx="100" cy="100" r="86" class="seal-ring thin"/>
-            <circle cx="100" cy="100" r="54" class="seal-ring"/>
-            <text class="seal-text"><textPath href="#sealArc" startOffset="0%">HAWTHORNE EYE CARE · FONDÉ EN 1968 · CABINET FAMILIAL ·</textPath></text>
-            <path class="seal-h" d="M84 124V76l16 20 16-20v48"/>
-          </svg>
-          <div class="seal-caption">
-            <strong><span id="yearsInPractice">57</span> ans</strong>
-            <span>d'une même adresse, d'une même exigence</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ MOTTLE STRIP ══════════ -->
-  <div class="strip" aria-hidden="true">
-    <div class="container strip-inner">
-      <span>Examens complets</span><i>❦</i><span>Chirurgie au laser &amp; implants</span><i>❦</i><span>Suivi du glaucome</span><i>❦</i><span>Vision de l'enfant</span><i>❦</i><span>Soulagement de l'œil sec</span>
+  <!-- Bandeau infos pratiques -->
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Rouen centre</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.4V6h-2v7.6l5 3 1-1.7Z"/></svg>Du lundi au vendredi, 8 h 30 à 18 h 30</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5Z"/></svg>Rendez-vous sous 4 semaines</span>
     </div>
   </div>
 
-  <!-- ══════════ SERVICES ══════════ -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Ce que nous faisons</p>
-        <h2>Des soins pour chaque <em>génération</em></h2>
-        <p class="sec-sub">Six services, prodigués comme en 1968 — lentement, personnellement — avec tout ce que
-          cinquante ans de pratique nous ont appris.</p>
-      </div>
-      <div class="svc-grid">
-        <article class="svc reveal" style="--d:.05s">
-          <span class="svc-num">01</span>
-          <h3>Examen de la vue complet</h3>
-          <p>Une heure pleine avec le médecin, pas avec le chronomètre : réfraction, tension, champs visuels et un long regard attentif sur la santé de vos rétines — tout expliqué au comptoir, en français clair.</p>
-          <a href="#book" class="svc-link">à partir de 165 € <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.1s">
-          <span class="svc-num">02</span>
-          <h3>Prise en charge LASIK &amp; SMILE</h3>
-          <p>Nous mesurons, conseillons et préparons la correction laser avec des chirurgiens en qui nous avons confiance depuis des décennies — et nous assurons votre suivi ici, à la maison, où nous pouvons bien le surveiller.</p>
-          <a href="#book" class="svc-link">à partir de 2 300 € / œil <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.15s">
-          <span class="svc-num">03</span>
-          <h3>Chirurgie de la cataracte</h3>
-          <p>Quand le cristallin se trouble, nous le remplaçons — en douceur, par une incision plus petite que ce O. Implants monofocaux et toriques choisis autour de la vie que vous menez, pas autour de la brochure qui les accompagne.</p>
-          <a href="#book" class="svc-link">à partir de 3 400 € / œil <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.2s">
-          <span class="svc-num">04</span>
-          <h3>Glaucome &amp; Rétine</h3>
-          <p>Le glaucome est un marathon, pas un sprint. Vos tensions, champs et scans restent dans un même registre qui remonte à des décennies, et nous ne changeons de cap que lorsque le registre nous le demande.</p>
-          <a href="#book" class="svc-link">à partir de 240 € <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.25s">
-          <span class="svc-num">05</span>
-          <h3>Thérapie de soulagement de l'œil sec</h3>
-          <p>Compresses chaudes, hygiène palpébrale, bouchons lacrymaux et conseils honnêtes sur les écrans et les radiateurs. Une médecine banale et efficace — celle qui marche vraiment.</p>
-          <a href="#book" class="svc-link">à partir de 135 € <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.3s">
-          <span class="svc-num">06</span>
-          <h3>Vision de l'enfant &amp; Myopie</h3>
-          <p>Les dépistages scolaires en laissent passer. Nous examinons les enfants comme il faut — y compris ceux qui ne savent pas encore lire les lettres — et suivons la myopie pendant la croissance, pour des yeux aussi sains que de bonnes notes.</p>
-          <a href="#book" class="svc-link">à partir de 350 € <span>→</span></a>
-        </article>
-      </div>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Cabinet d&#x27;ophtalmologie de l&#x27;Aubépine, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M3 16s5-8 13-8 13 8 13 8-5 8-13 8S3 16 3 16z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle class="blade" cx="16" cy="16" r="4.5"/></svg>
+        </span>
+        <span class="brand-text">Cabinet d&#x27;ophtalmologie de l&#x27;Aubépine<small>Ophtalmologistes depuis 1968 · Rouen</small></span>
+      </a>
+      <nav class="links" id="navLinks" aria-label="Navigation principale">
+        <a href="#services">Nos consultations</a>
+        <a href="#deroulement">Votre rendez-vous</a>
+        <a href="#chantiers">Parcours</a>
+        <a href="#faq">Questions</a>
+        <a href="#devis" class="links-cta">Demander un rendez-vous</a>
+      </nav>
+      <a class="nav-phone" href="tel:+33261914760">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+        <span>02 61 91 47 60</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
+  </header>
 
-  <!-- ══════════ STORY ══════════ -->
-  <section class="section story" id="story">
-    <div class="container story-grid">
-      <div class="story-visual reveal">
-        <div class="story-frame">
-          <div class="story-panel">
-            <svg class="story-eye" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5"/><path d="M8 16V8l4 5 4-5v8"/></svg>
-            <p class="story-year">1968</p>
-            <p class="story-motto">« Un œil est une pauvre chose<br>à presser. »</p>
-            <p class="story-sign">— Dr Harold Hawthorne, fondateur</p>
+  <main id="top">
+
+    <section class="hero split-right">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="eyebrow">Ophtalmologiste à Rouen : consultations, enfants, glaucome, depuis 1968</h1>
+          <p class="headline">Un rendez-vous chez l&#x27;ophtalmo en quelques semaines, <em>pas en six mois.</em></p>
+          <p class="lead">Grâce au travail en équipe avec nos orthoptistes, nous proposons un rendez-vous sous quatre semaines pour la plupart des motifs. Consultations adultes et enfants, renouvellement de lunettes, suivi du glaucome et du diabète.</p>
+          <ul class="proofs">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Rendez-vous sous 4 semaines en moyenne</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Orthoptistes et ophtalmologistes au même endroit</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Créneaux réservés aux enfants et aux urgences</li>
+          </ul>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#devis">Demander un rendez-vous</a>
+            <a class="btn btn-ghost" href="tel:+33261914760">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              02 61 91 47 60
+            </a>
           </div>
-          <div class="story-badge">
-            <strong><span id="badgeYears">57</span></strong>
-            <span>ans sur<br>Maple Street</span>
+          <p class="hero-note">Œil rouge et douloureux, baisse de vue brutale : appelez directement.</p>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="hero-photo">
+            <img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" sizes="(min-width: 900px) 50vw, 100vw" alt="Un patient passe un examen de la vue chez l&#x27;ophtalmologiste" width="1600" height="1067" fetchpriority="high" decoding="async">
+          </figure>
+          <div class="hero-badge">
+            <strong>4 sem.</strong>
+            <span>de délai moyen pour<br>un premier rendez-vous</span>
           </div>
         </div>
       </div>
-      <div class="story-copy">
-        <p class="overline reveal">Notre histoire</p>
-        <h2 class="reveal" style="--d:.08s">Trois générations,<br><em class="brass-text">un même fauteuil d'examen.</em></h2>
-        <p class="reveal" style="--d:.16s">Le Dr Harold Hawthorne a ouvert en 1968 un cabinet de deux pièces au-dessus de la
-          pharmacie, avec une lampe à fente, un rétinoscope et la conviction qu'aucun patient ne doit se sentir
-          traité à la chaîne. Sa fille Margaret a repris le cabinet en 1984 et a apporté le premier laser au comté.
-          Sa petite-fille Clare dirige le cabinet aujourd'hui — et utilise encore le rétinoscope d'Harold chaque vendredi.</p>
-        <ul class="story-list">
-          <li class="reveal" style="--d:.22s"><span>❦</span> Chaque médecin de la famille, formé dans la famille</li>
-          <li class="reveal" style="--d:.28s"><span>❦</span> Vos dossiers gardés sur Maple Street, jamais externalisés</li>
-          <li class="reveal" style="--d:.34s"><span>❦</span> Le médecin qui vous connaît réalise votre chirurgie</li>
-          <li class="reveal" style="--d:.4s"><span>❦</span> Honoraires annoncés avant les soins, inchangés après</li>
-        </ul>
-        <a href="#contact" class="btn btn-brass reveal" style="--d:.46s">Écrire au cabinet</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ GENERATIONS TIMELINE ══════════ -->
-  <section class="section" id="generations">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Le registre</p>
-        <h2>Un cabinet, <em>mesuré en décennies</em></h2>
-      </div>
-      <ol class="timeline">
-        <li class="reveal" style="--d:.05s"><span class="tl-year">1968</span><h3>Les deux pièces au-dessus de la pharmacie</h3><p>Harold Hawthorne accroche son enseigne. Patients de la première année : 612. Le café toujours prêt.</p></li>
-        <li class="reveal" style="--d:.12s"><span class="tl-year">1984</span><h3>Margaret prend le fauteuil</h3><p>Le premier laser ophtalmologique du comté arrive — avec la première plante verte de la salle d'attente du comté.</p></li>
-        <li class="reveal" style="--d:.19s"><span class="tl-year">2003</span><h3>Le numérique arrive, la courtoisie reste</h3><p>Dossiers électroniques et imagerie OCT, adoptés lentement et expliqués à chaque patient, deux fois.</p></li>
-        <li class="reveal" style="--d:.26s"><span class="tl-year">2019</span><h3>Clare rejoint le cabinet</h3><p>La troisième génération termine son internat et apporte la prise en charge de la myopie pédiatrique à Maple Street.</p></li>
-        <li class="reveal" style="--d:.33s"><span class="tl-year">Aujourd'hui</span><h3>Votre famille, et la nôtre</h3><p>Plus de la moitié de nos nouveaux patients arrivent par le bouche-à-oreille — souvent un parent d'un parent.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ══════════ STATS ══════════ -->
-  <section class="stats-band">
-    <div class="container stats-grid">
-      <div class="reveal"><strong data-count="74000" data-suffix="+">0</strong><span>Examens depuis 1968</span></div>
-      <div class="reveal" style="--d:.1s"><strong data-count="95" data-suffix="%">0</strong><span>20/20 ou mieux après chirurgie</span></div>
-      <div class="reveal" style="--d:.2s"><strong data-count="57" data-suffix="">0</strong><span>Années sur Maple Street</span></div>
-      <div class="reveal" style="--d:.3s"><strong data-count="4.9" data-decimal="1" data-suffix="/5">0</strong><span>Note des patients, 3 100 avis</span></div>
-    </div>
-  </section>
-
-  <!-- ══════════ TESTIMONIALS ══════════ -->
-  <section class="section" id="voices">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Du registre</p>
-        <h2>Des patients, <em>certains venus deux fois</em></h2>
-      </div>
-      <div class="testi-grid">
-        <figure class="testi reveal" style="--d:.05s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Le Dr Hawthorne a examiné mon père en 1979, moi en 1998, et ma fille le printemps dernier. Trois rendez-vous espacés de trente ans — la même heure sans hâte, la même écriture sur le même mur. »</blockquote>
-          <figcaption><strong>Marion T.</strong><span>Patient du cabinet depuis 1979</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.15s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Ils m'ont découragé de l'opération de la cataracte pendant deux ans, jusqu'à ce que ma vision la justifie vraiment — puis ils l'ont réalisée avec un tel calme que j'étais rentré avant le déjeuner. Qui fait encore ça ? »</blockquote>
-          <figcaption><strong>Robert &amp; June K.</strong><span>Patients cataracte</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.25s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« La myopie de mon fils est restée stable pendant quatre ans grâce au programme du Dr Clare. Elle lui explique à lui, pas seulement à moi — et il l'écoute vraiment. »</blockquote>
-          <figcaption><strong>Denise A.</strong><span>Suivi de la myopie, 11 ans</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ CONTACT ══════════ -->
-  <section class="section contact" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-side">
-        <p class="overline reveal">Correspondance</p>
-        <h2 class="reveal" style="--d:.08s">Écrire à <em class="brass-text">Maple Street</em></h2>
-        <p class="reveal" style="--d:.14s">Questions, dossiers, ou un dossier d'un grand-parent que vous aimeriez poursuivre — notre
-          standardiste répond elle-même au téléphone, et nos médecins répondent sous un jour ouvré.</p>
-        <ul class="info-list">
-          <li class="reveal" style="--d:.2s"><span class="info-ic">❦</span><div><strong>Le Cabinet</strong><span>48 Maple Street<br>Vieux quartier</span></div></li>
-          <li class="reveal" style="--d:.26s"><span class="info-ic">❦</span><div><strong>Réception</strong><span>+1 (555) 068-1968</span></div></li>
-          <li class="reveal" style="--d:.32s"><span class="info-ic">❦</span><div><strong>Horaires</strong><span>Lun.–Ven. · 8h30 – 17h30<br>Le samedi matin, sauf en période de récolte</span></div></li>
-        </ul>
-      </div>
-
-      <form class="contact-form reveal" id="contactForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-        <fieldset>
-          <div class="field"><input type="text" id="cf-name" required><label for="cf-name">Votre nom</label></div>
-          <div class="field-row">
-            <div class="field"><input type="email" id="cf-email" required><label for="cf-email">E-mail</label></div>
-            <div class="field"><input type="tel" id="cf-phone"><label for="cf-phone">Téléphone (facultatif)</label></div>
-          </div>
-          <div class="field select-field">
-            <select id="cf-subject" required>
-              <option value="" selected disabled></option>
-              <option>Demander un examen</option>
-              <option>Deuxième avis</option>
-              <option>Transférer des dossiers de famille</option>
-              <option>Question œil sec</option>
-              <option>Autre chose entièrement</option>
-            </select>
-            <label for="cf-subject">De quoi s'agit-il ?</label>
-          </div>
-          <div class="field"><textarea id="cf-msg" rows="4" required></textarea><label for="cf-msg">Votre lettre</label></div>
-          <button type="submit" class="btn btn-brass btn-wide">Envoyer à la réception</button>
-          <p class="form-note">Lu par notre standardiste, répondu par un médecin.</p>
-        </fieldset>
-        <div class="form-success" hidden>
-          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-          <h3>Reçue, et lue.</h3>
-          <p>Votre lettre est dans le panier du courrier du matin. Un membre de la famille répond sous un jour ouvré.</p>
+    <!-- SITUATIONS -->
+    <section class="situations" aria-labelledby="sit-title">
+      <div class="wrap">
+        <h2 id="sit-title" class="h-small">Pourquoi consultez-vous ?</h2>
+        <div class="sit-grid">
+          <button class="sit" data-prefill="Renouvellement de lunettes">
+            <span class="sit-q">Je dois renouveler mes lunettes</span>
+            <span class="sit-a">Bilan par l&#x27;orthoptiste puis consultation, dans la même visite.</span>
+          </button>
+          <button class="sit" data-prefill="Enfant">
+            <span class="sit-q">Pour mon enfant</span>
+            <span class="sit-a">Dépistage, strabisme, première paire : créneaux dédiés.</span>
+          </button>
+          <button class="sit" data-prefill="Glaucome">
+            <span class="sit-q">J&#x27;ai un glaucome ou on me le suspecte</span>
+            <span class="sit-a">Champ visuel, OCT et suivi régulier.</span>
+          </button>
+          <button class="sit" data-prefill="Diabète">
+            <span class="sit-q">Je suis diabétique</span>
+            <span class="sit-a">Fond d&#x27;œil annuel recommandé, rendez-vous planifié.</span>
+          </button>
+          <button class="sit" data-prefill="Urgence">
+            <span class="sit-q">J&#x27;ai l&#x27;œil rouge ou une baisse de vue</span>
+            <span class="sit-a">Créneaux d&#x27;urgence chaque jour : appelez.</span>
+          </button>
+          <button class="sit" data-prefill="Vision trouble">
+            <span class="sit-q">Je vois flou ou trouble de loin la nuit</span>
+            <span class="sit-a">Recherche d&#x27;une cataracte ou d&#x27;un autre trouble.</span>
+          </button>
         </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ══════════ BOOKING ══════════ -->
-  <section class="section booking" id="book">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Rendez-vous</p>
-        <h2>Réservez votre <em>visite</em></h2>
-        <p class="sec-sub">Quatre petites étapes — celles que notre standardiste vous poserait au téléphone.</p>
+        <p class="sit-hint">Cliquez sur votre situation : le motif de rendez-vous se remplit tout seul.</p>
       </div>
+    </section>
 
-      <div class="book-frame reveal" style="--d:.1s">
-        <div class="book-inner">
-          <ol class="wiz-steps" id="wizSteps">
-            <li class="is-current"><span>Soins</span></li>
-            <li><span>Date</span></li>
-            <li><span>Patient</span></li>
-            <li><span>Confirmé</span></li>
-          </ol>
-
-          <form id="bookForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-            <!-- STEP 1 -->
-            <fieldset class="pane is-active">
-              <legend>Qu'est-ce qui vous amène ?</legend>
-              <div class="pick-grid">
-                <label class="pick"><input type="radio" name="svc" value="Examen de la vue complet" required><span>Examen de la vue complet</span></label>
-                <label class="pick"><input type="radio" name="svc" value="Prise en charge LASIK / SMILE" required><span>LASIK &amp; SMILE — prise en charge</span></label>
-                <label class="pick"><input type="radio" name="svc" value="Chirurgie de la cataracte" required><span>Chirurgie de la cataracte</span></label>
-                <label class="pick"><input type="radio" name="svc" value="Glaucome &amp; Rétine" required><span>Glaucome &amp; Rétine</span></label>
-                <label class="pick"><input type="radio" name="svc" value="Soulagement de l'œil sec" required><span>Soulagement de l'œil sec</span></label>
-                <label class="pick"><input type="radio" name="svc" value="Vision de l'enfant &amp; Myopie" required><span>Vision de l'enfant &amp; Myopie</span></label>
-              </div>
-              <p class="pick-error">Choisissez donc le motif de votre visite.</p>
-              <div class="wiz-nav"><span></span><button type="button" class="btn btn-brass js-next">Continuer</button></div>
-            </fieldset>
-
-            <!-- STEP 2 -->
-            <fieldset class="pane">
-              <legend>Quel jour vous convient ?</legend>
-              <div class="field date-field">
-                <input type="date" id="bk-date" required>
-                <label>Date du rendez-vous</label>
-              </div>
-              <div class="time-grid" id="timeGrid">
-                <button type="button" class="chip" data-v="8:30">8h30</button>
-                <button type="button" class="chip" data-v="10:00">10h00</button>
-                <button type="button" class="chip" data-v="11:30">11h30</button>
-                <button type="button" class="chip" data-v="13:30">13h30</button>
-                <button type="button" class="chip" data-v="15:00">15h00</button>
-                <button type="button" class="chip" data-v="16:30">16h30</button>
-              </div>
-              <input type="hidden" id="bk-time">
-              <p class="pick-error">Choisissez une heure, s'il vous plaît.</p>
-              <div class="wiz-nav"><button type="button" class="btn btn-outline js-prev">Retour</button><button type="button" class="btn btn-brass js-next">Continuer</button></div>
-            </fieldset>
-
-            <!-- STEP 3 -->
-            <fieldset class="pane">
-              <legend>Et qui attendons-nous ?</legend>
-              <div class="field-row">
-                <div class="field"><input type="text" id="bk-name" required><label>Nom complet</label></div>
-                <div class="field"><input type="tel" id="bk-phone" required><label>Téléphone</label></div>
-              </div>
-              <div class="field"><input type="text" id="bk-extra" required><label>Assurance / mutuelle ou cabinet préféré</label></div>
-              <div class="field"><textarea id="bk-notes" rows="3"></textarea><label>Ce que le médecin devrait savoir (facultatif)</label></div>
-              <div class="wiz-nav"><button type="button" class="btn btn-outline js-prev">Retour</button><button type="submit" class="btn btn-brass">Réserver le fauteuil</button></div>
-            </fieldset>
-
-            <!-- STEP 4 -->
-            <fieldset class="pane pane-success">
-              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-              <h3>Le fauteuil est à vous.</h3>
-              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est prévu pour<br><strong id="recap-when">—</strong>.</p>
-              <p class="recap-sub">La réception confirmera par téléphone, comme nous le faisons depuis 1968. Merci d'apporter vos lunettes et la liste de vos médicaments.</p>
-            </fieldset>
-          </form>
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-labelledby="serv-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Nos consultations</p>
+          <h2 id="serv-title">Toute l&#x27;ophtalmologie de famille, sans attendre des mois.</h2>
+        </div>
+        <div class="serv-grid">
+          <article class="serv">
+            <span class="serv-n">01</span>
+            <h3>Consultation générale</h3>
+            <p>Mesure de la vue, examen de l&#x27;œil, ordonnance de lunettes ou de lentilles.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">02</span>
+            <h3>Ophtalmologie pédiatrique</h3>
+            <p>Dépistage des troubles visuels, strabisme, rééducation orthoptique.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">03</span>
+            <h3>Glaucome</h3>
+            <p>Mesure de la pression de l&#x27;œil, champ visuel, OCT, suivi au long cours.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">04</span>
+            <h3>Diabète et rétine</h3>
+            <p>Fond d&#x27;œil de dépistage, suivi de la rétinopathie diabétique.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">05</span>
+            <h3>Cataracte</h3>
+            <p>Diagnostic et orientation vers la chirurgie quand elle devient utile.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">06</span>
+            <h3>Urgences</h3>
+            <p>Œil rouge, douleur, corps étranger, baisse de vue soudaine : créneaux quotidiens.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ FOOTER ══════════ -->
+    <!-- DÉROULEMENT -->
+    <section class="steps" id="deroulement" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Votre rendez-vous</p>
+          <h2 id="steps-title">Comment se passe votre visite.</h2>
+        </div>
+        <ol class="step-list">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Vous demandez un rendez-vous</h3>
+            <p>Téléphone ou formulaire, avec le motif.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Bilan orthoptique</h3>
+            <p>Mesures de la vue et examens préparatoires par l&#x27;orthoptiste.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Consultation</h3>
+            <p>L&#x27;ophtalmologiste examine vos yeux et vous explique.</p>
+          </li>
+          <li>
+            <span class="step-n">4</span>
+            <h3>Ordonnance et suivi</h3>
+            <p>Lunettes, traitement, et prochain rendez-vous si besoin.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS -->
+    <section class="jobs" id="chantiers" aria-labelledby="jobs-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Au quotidien</p>
+          <h2 id="jobs-title">Des patients de 6 mois à 100 ans.</h2>
+        </div>
+        <div class="job-grid">
+          <article class="job">
+            <p class="job-where">Enfant de 4 ans</p>
+            <h3>Strabisme dépisté à l&#x27;école, rééducation engagée</h3>
+            <dl>
+              <div><dt>Consultation</dt><dd>Pédiatrie</dd></div>
+              <div><dt>Durée</dt><dd>45 min</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Patient de 58 ans</p>
+            <h3>Glaucome suivi tous les six mois</h3>
+            <dl>
+              <div><dt>Consultation</dt><dd>Suivi glaucome</dd></div>
+              <div><dt>Durée</dt><dd>40 min</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Patiente de 45 ans</p>
+            <h3>Premières lunettes pour lire</h3>
+            <dl>
+              <div><dt>Consultation</dt><dd>Renouvellement</dd></div>
+              <div><dt>Durée</dt><dd>30 min</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENTS + AVIS -->
+    <section class="trust" aria-labelledby="trust-title">
+      <div class="wrap trust-grid">
+        <div>
+          <p class="eyebrow">Nos engagements</p>
+          <h2 id="trust-title">Nos engagements.</h2>
+          <ul class="pledges">
+            <li><strong>Des délais raisonnables.</strong> Un premier rendez-vous sous quatre semaines pour la plupart des motifs.</li>
+            <li><strong>Des urgences prises.</strong> Des créneaux gardés chaque jour pour les vrais problèmes.</li>
+            <li><strong>Des explications claires.</strong> Vous repartez en sachant ce que vous avez et ce qu&#x27;il faut faire.</li>
+            <li><strong>Conventionné secteur 1.</strong> Tarifs de l&#x27;Assurance maladie, sans dépassement d&#x27;honoraires.</li>
+          </ul>
+          <p class="signature"><strong>Dr François Leroux</strong>, ophtalmologiste</p>
+        </div>
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>« Rendez-vous obtenu en trois semaines alors qu&#x27;on m&#x27;annonçait six mois ailleurs. Consultation sérieuse et bien expliquée. »</blockquote>
+            <figcaption>Claire D. · Mont-Saint-Aignan · Renouvellement</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>« Mon fils avait un strabisme. Prise en charge rapide et très douce avec les enfants. »</blockquote>
+            <figcaption>Aurélien P. · Rouen · Pédiatrie</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="sec-head">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Ce qu'on nous demande le plus souvent.</h2>
+          <p class="faq-more">Votre question n'est pas là ?<br>Appelez-nous au <a href="tel:+33261914760">02 61 91 47 60</a>.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Combien de temps pour avoir un rendez-vous ?</summary>
+            <p>En moyenne moins de quatre semaines pour un premier rendez-vous, et des créneaux chaque jour pour les urgences.</p>
+          </details>
+          <details>
+            <summary>Pourquoi voir d&#x27;abord l&#x27;orthoptiste ?</summary>
+            <p>L&#x27;orthoptiste réalise les mesures et examens préparatoires. L&#x27;ophtalmologiste peut ainsi se concentrer sur le diagnostic, ce qui permet de recevoir plus de patients.</p>
+          </details>
+          <details>
+            <summary>Quand consulter en urgence ?</summary>
+            <p>Œil rouge et douloureux, baisse brutale de la vue, éclairs lumineux ou voile devant l&#x27;œil, choc ou produit dans l&#x27;œil : appelez immédiatement, ou le 15 en dehors de nos horaires.</p>
+          </details>
+          <details>
+            <summary>À quel âge faire examiner les yeux d&#x27;un enfant ?</summary>
+            <p>Des examens sont recommandés dans la petite enfance et avant l&#x27;entrée à l&#x27;école, et à tout âge si l&#x27;enfant plisse les yeux, louche ou se plaint de maux de tête.</p>
+          </details>
+          <details>
+            <summary>Un diabétique doit-il voir un ophtalmologiste chaque année ?</summary>
+            <p>Un dépistage régulier de la rétinopathie diabétique est recommandé, en général tous les ans ou tous les deux ans selon votre situation. Nous planifions ce suivi.</p>
+          </details>
+          <details>
+            <summary>Y a-t-il des dépassements d&#x27;honoraires ?</summary>
+            <p>Non, nos ophtalmologistes sont conventionnés en secteur 1 et appliquent les tarifs de l&#x27;Assurance maladie.</p>
+          </details>
+          <details>
+            <summary>À partir de quel âge faut-il surveiller le glaucome ?</summary>
+            <p>Un dépistage est conseillé à partir de 40 ans, plus tôt en cas d&#x27;antécédent familial. Le glaucome évolue souvent sans symptôme : seule la mesure de la pression de l&#x27;œil et l&#x27;examen du nerf optique le détectent.</p>
+          </details>
+          <details>
+            <summary>Comment se passe le renouvellement de lunettes pour un enfant ?</summary>
+            <p>Après examen, l&#x27;ophtalmologiste prescrit les verres adaptés. Pour un renouvellement, l&#x27;orthoptiste peut réaliser les mesures préparatoires, ce qui raccourcit l&#x27;attente.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVIS -->
+    <section class="quote" id="devis" aria-labelledby="quote-title">
+      <div class="wrap quote-grid">
+        <div class="quote-side">
+          <p class="eyebrow">Rendez-vous</p>
+          <h2 id="quote-title">Demandez un rendez-vous.</h2>
+          <p>Indiquez le motif. Nous vous rappelons pour vous proposer un créneau.</p>
+          <div class="contact-card">
+            <a class="contact-line big" href="tel:+33261914760">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              02 61 91 47 60
+            </a>
+            <p class="contact-line">Du lundi au vendredi, 8 h 30 à 18 h 30</p>
+            <p class="contact-line">22 rue Jeanne-d&#x27;Arc, 76000 Rouen</p>
+            <p class="zone"><strong>Patients venant de</strong> Rouen, Mont-Saint-Aignan, Bois-Guillaume, Sotteville-lès-Rouen, Le Grand-Quevilly, Bihorel, Darnétal.</p>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label for="website">Ne pas remplir</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field">
+              <label for="work">Motif</label>
+              <select id="work" name="work" data-rule="req" required>
+                <option value="">Choisissez</option>
+                <option>Renouvellement de lunettes</option>
+                <option>Enfant</option>
+                <option>Glaucome</option>
+                <option>Diabète</option>
+                <option>Urgence</option>
+                <option>Vision trouble</option>
+                <option>Autre</option>
+              </select>
+              <p class="err">Faites un choix dans la liste.</p>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="who">Pour qui ? <span class="opt">(facultatif)</span></label>
+              <input type="text" id="who" name="who" maxlength="80" placeholder="Ex. : moi, mon fils de 6 ans">
+            </div>
+            <div class="field">
+              <label for="avail">Vos disponibilités</label>
+              <select id="avail" name="avail">
+                <option>Dès que possible</option>
+                <option>Cette semaine</option>
+                <option>Dans le mois</option>
+                <option>Je préfère en parler</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Précisions <span class="opt">(facultatif)</span></label>
+            <textarea id="details" name="details" rows="3" maxlength="800" placeholder="Ex. : dernière consultation il y a 3 ans, je vois moins bien de près"></textarea>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" maxlength="80" autocomplete="name" data-rule="name" required>
+              <p class="err">Indiquez votre nom.</p>
+            </div>
+            <div class="field">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" maxlength="20" autocomplete="tel" data-rule="phone" required>
+              <p class="err">Un numéro à 10 chiffres pour vous joindre.</p>
+            </div>
+          </div>
+
+          <div class="field">
+              <label for="email">E-mail <span class="opt">(facultatif)</span></label>
+              <input type="email" id="email" name="email" maxlength="120" autocomplete="email" data-rule="email">
+              <p class="err">Cette adresse ne semble pas valide.</p>
+          </div>
+
+          <fieldset class="field">
+            <legend>Quand vous rappeler ?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="when" value="Matin" checked><span>Le matin</span></label>
+              <label class="chip"><input type="radio" name="when" value="Midi"><span>Entre 12 h et 14 h</span></label>
+              <label class="chip"><input type="radio" name="when" value="Après-midi"><span>L'après-midi</span></label>
+            </div>
+          </fieldset>
+
+          <button class="btn btn-primary btn-block" type="submit">Demander un rendez-vous</button>
+          <p class="form-legal">Vos informations servent uniquement à organiser votre rendez-vous. Ne transmettez pas de données médicales détaillées par ce formulaire.</p>
+
+          <div class="success" id="success" role="status" aria-live="polite" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="m14 24 7 7 13-14"/></svg>
+            <h3>Demande bien reçue</h3>
+            <p id="successMsg"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="foot-brand">
-        <a class="brand" href="#top">
-          <span class="brand-mark"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><path d="M8 16V8l4 5 4-5v8"/></svg></span>
-          <span class="brand-text">Hawthorne<small>Eye Care · Fondé en 1968</small></span>
-        </a>
-        <p>Trois générations d'yeux attentifs, au même coin de Maple Street.</p>
-      </div>
-      <div><h4>Le Cabinet</h4><a href="#services">Services</a><a href="#story">Notre histoire</a><a href="#generations">Générations</a><a href="#voices">Patients</a></div>
-      <div><h4>Services</h4><a href="#book">Examens</a><a href="#book">Chirurgie de la cataracte</a><a href="#book">Suivi du glaucome</a><a href="#book">Vision de l'enfant</a></div>
-      <div><h4>Réception</h4><a href="tel:+15550681968">+1 (555) 068-1968</a><a href="#contact">reception@hawthorneeye.com</a><span>48 Maple Street, Vieux quartier</span></div>
+    <div class="wrap footer-inner">
+      <p><strong>Cabinet d&#x27;ophtalmologie de l&#x27;Aubépine</strong> · Ophtalmologistes depuis 1968 · Rouen · 22 rue Jeanne-d&#x27;Arc, 76000 Rouen</p>
+      <p>SIRET 000 000 000 00000 · Assurance n° à préciser · Page mise à jour le <time datetime="2026-09-30">30 septembre 2026</time> · <a href="#top">Retour en haut</a></p>
     </div>
-    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Hawthorne Eye Care. Tous droits réservés.</span><span>Cabinet de famille depuis 1968 · Agréé et certifié</span></div></div>
   </footer>
+
+  <!-- Barre d'action mobile -->
+  <div class="mobile-bar">
+    <a href="tel:+33261914760" class="mb-call">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+      Appeler
+    </a>
+    <a href="#devis" class="mb-quote">Rendez-vous</a>
+  </div>
 
   <script src="script.js"></script>
 </body>

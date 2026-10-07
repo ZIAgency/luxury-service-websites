@@ -3,354 +3,682 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>NEXA — Systèmes d'Eau Intelligents | Plomberie Connectée</title>
-  <meta name="description" content="NEXA marie la plomberie de maître à l'intelligence IoT — prédiction des fuites, coupure automatique, analyse de l'eau en direct. L'eau de votre maison, conçue pour l'avenir.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 20 20 4v16z' fill='%2300E5C7'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <title>Recherche de fuite sans casse et plomberie à Montpellier | NEXA Plomberie</title>
+  <meta name="description" content="Recherche de fuite non destructive à Montpellier (caméra thermique, gaz traceur, acoustique), coupe-eau connecté, plomberie. Rapport technique pour votre assurance, intervention sous 48 h.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B1A24'/%3E%3Cg color='%232FE0BC' fill='%232FE0BC'%3E%3Cpath class='blade' d='M16 4c5 7 8 11 8 15a8 8 0 0 1-16 0c0-4 3-8 8-15z'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-787.webp 787w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/Inter-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600 800;
+  src: url(fonts/Sora-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://luxury-service-websites.vercel.app/plomberie/05-nexa/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="NEXA Plomberie">
+  <meta property="og:title" content="Recherche de fuite sans casse et plomberie à Montpellier | NEXA Plomberie">
+  <meta property="og:description" content="Recherche de fuite non destructive à Montpellier (caméra thermique, gaz traceur, acoustique), coupe-eau connecté, plomberie. Rapport technique pour votre assurance, intervention sous 48 h.">
+  <meta property="og:url" content="https://luxury-service-websites.vercel.app/plomberie/05-nexa/">
+  <meta property="og:image" content="https://luxury-service-websites.vercel.app/plomberie/05-nexa/hero.jpg">
+  <meta property="og:image:alt" content="Un technicien règle une pompe et une vanne sur une installation d&#x27;eau">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Plumber",
+      "@id": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/#entreprise",
+      "name": "NEXA Plomberie",
+      "url": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/",
+      "description": "Recherche de fuite non destructive à Montpellier (caméra thermique, gaz traceur, acoustique), coupe-eau connecté, plomberie. Rapport technique pour votre assurance, intervention sous 48 h.",
+      "slogan": "Une fuite quelque part, mais impossible de la voir ? On la trouve sans casser vos murs.",
+      "telephone": "+33465716412",
+      "image": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "30 rue du Pont Juvénal",
+        "postalCode": "34000",
+        "addressLocality": "Montpellier",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Montpellier"
+        },
+        {
+          "@type": "Place",
+          "name": "Castelnau-le-Lez"
+        },
+        {
+          "@type": "Place",
+          "name": "Lattes"
+        },
+        {
+          "@type": "Place",
+          "name": "Pérols"
+        },
+        {
+          "@type": "Place",
+          "name": "Juvignac"
+        },
+        {
+          "@type": "Place",
+          "name": "Saint-Jean-de-Védas"
+        },
+        {
+          "@type": "Place",
+          "name": "Mauguio"
+        },
+        {
+          "@type": "Place",
+          "name": "Grabels"
+        },
+        {
+          "@type": "Place",
+          "name": "Palavas-les-Flots"
+        }
+      ],
+      "openingHours": "Mo-Fr 08:00-19:00",
+      "knowsAbout": [
+        "Recherche de fuite non destructive",
+        "Réparation ciblée",
+        "Rapport pour l'assurance",
+        "Fuites de piscine",
+        "Coupe-eau connecté",
+        "Plomberie générale"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Trouver la fuite, la réparer, et vous éviter la prochaine.",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Recherche de fuite non destructive",
+              "description": "Caméra thermique, gaz traceur, corrélation acoustique : la méthode adaptée à chaque situation.",
+              "areaServed": "Montpellier et Hérault",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Réparation ciblée",
+              "description": "Une ouverture limitée à l'endroit exact de la fuite, puis réparation et rebouchage.",
+              "areaServed": "Montpellier et Hérault",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Rapport pour l'assurance",
+              "description": "Photos, relevés et localisation : le document que demandent les assureurs et les experts.",
+              "areaServed": "Montpellier et Hérault",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fuites de piscine",
+              "description": "Test du bassin, des skimmers, des refoulements et des canalisations enterrées.",
+              "areaServed": "Montpellier et Hérault",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Coupe-eau connecté",
+              "description": "Une vanne motorisée coupe l'eau automatiquement en cas de fuite, alerte sur votre téléphone.",
+              "areaServed": "Montpellier et Hérault",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Plomberie générale",
+              "description": "Remplacement de canalisations, robinetterie, chauffe-eau, dépannage.",
+              "areaServed": "Montpellier et Hérault",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/#entreprise"
+              }
+            }
+          }
+        ]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Yanis Roussel",
+        "jobTitle": "gérant, technicien détection de fuites"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/",
+      "url": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/",
+      "name": "Recherche de fuite sans casse et plomberie à Montpellier | NEXA Plomberie",
+      "description": "Recherche de fuite non destructive à Montpellier (caméra thermique, gaz traceur, acoustique), coupe-eau connecté, plomberie. Rapport technique pour votre assurance, intervention sous 48 h.",
+      "inLanguage": "fr-FR",
+      "dateModified": "2026-09-30",
+      "about": {
+        "@id": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/#entreprise"
+      },
+      "primaryImageOfPage": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/hero.jpg"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://luxury-service-websites.vercel.app/plomberie/05-nexa/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "La recherche de fuite est-elle prise en charge par l'assurance ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Souvent oui, lorsqu'elle est liée à un dégât des eaux. Les conditions dépendent de votre contrat : notre rapport vous aide à constituer le dossier."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment trouvez-vous une fuite sans casser ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Selon le cas : caméra thermique pour les écarts de température, gaz traceur injecté dans la canalisation, ou écoute acoustique du bruit de la fuite."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps dure une recherche de fuite ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En général de une à trois heures. Le rapport vous est envoyé sous 48 h."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment savoir si j'ai une fuite ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fermez tous les robinets et relevez le compteur, puis relevez-le à nouveau une heure plus tard. S'il a tourné, il y a probablement une fuite."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À quoi sert un coupe-eau connecté ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Des capteurs détectent l'eau au sol et une vanne motorisée coupe l'arrivée générale automatiquement, avec une alerte sur votre téléphone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Réparez-vous aussi la fuite ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, dans la foulée si c'est possible, avec un prix annoncé avant de commencer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que contient le rapport de recherche de fuite ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La localisation précise de la fuite, la méthode utilisée, des photos et les constatations utiles à votre dossier d'assurance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi ma facture d'eau a-t-elle augmenté ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une fuite invisible (chasse d'eau, canalisation enterrée ou encastrée) peut en être la cause. Le test du compteur permet de le vérifier avant d'appeler."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
-  <!-- ══════════ NAV ══════════ -->
+  <a class="skip" href="#devis">Aller au formulaire de devis</a>
+
+  <!-- Bandeau infos pratiques -->
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Montpellier et Hérault</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.4V6h-2v7.6l5 3 1-1.7Z"/></svg>Du lundi au vendredi, 8 h à 19 h</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5Z"/></svg>Détection sans casse</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
   <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 20 4v16H4z"/></svg></span>
-        <span class="brand-text">NEXA<small>SYSTÈMES D'EAU INTELLIGENTS</small></span>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="NEXA Plomberie, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path class="blade" d="M16 4c5 7 8 11 8 15a8 8 0 0 1-16 0c0-4 3-8 8-15z"/></svg>
+        </span>
+        <span class="brand-text">NEXA Plomberie<small>Plomberie et détection de fuites · Montpellier</small></span>
       </a>
-      <nav class="links" id="navLinks">
-        <a href="#systems">Systèmes</a>
-        <a href="#platform">Plateforme</a>
-        <a href="#proof">Preuves</a>
-        <a href="#contact">Contact</a>
-        <a href="#book" class="nav-cta">Installer NEXA<span class="cta-dot"></span></a>
+      <nav class="links" id="navLinks" aria-label="Navigation principale">
+        <a href="#services">Nos interventions</a>
+        <a href="#deroulement">Comment ça se passe</a>
+        <a href="#chantiers">Chantiers</a>
+        <a href="#faq">Questions</a>
+        <a href="#devis" class="links-cta">Faire rechercher ma fuite</a>
       </nav>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a class="nav-phone" href="tel:+33465716412">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+        <span>04 65 71 64 12</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <!-- ══════════ HERO ══════════ -->
-  <section class="hero" id="top">
-    <div class="hero-aurora" aria-hidden="true"></div>
-    <div class="hero-grid-lines" aria-hidden="true"></div>
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="hero-chip reveal"><span class="pulse-dot"></span> v4.2 · Moteur prédictif désormais actif</p>
-        <h1 class="reveal" style="--d:.1s">L'eau de votre maison,<br><span class="grad-text">enfin intelligente.</span></h1>
-        <p class="hero-sub reveal" style="--d:.2s">NEXA marie la plomberie de niveau maître à l'intelligence IoT. Des capteurs veillent sur chaque canalisation,
-          l'IA anticipe les pannes avant qu'elles n'arrivent, et la coupure automatique protège votre maison — même quand vous êtes à l'autre bout du monde.</p>
-        <div class="hero-cta reveal" style="--d:.3s">
-          <a href="#book" class="btn btn-neo">Réserver l'installation</a>
-          <a href="#platform" class="btn btn-glass">Découvrir la plateforme</a>
-        </div>
-        <div class="hero-logos reveal" style="--d:.4s">
-          <span>ILS NOUS FONT CONFIANCE</span>
-          <b>HALCYON</b><b>VERTA</b><b>KINDRED</b><b>AXIOM</b>
-        </div>
-      </div>
+  <main id="top">
 
-      <!-- Live dashboard mock -->
-      <div class="dash reveal" style="--d:.28s">
-        <div class="dash-top">
-          <span class="dash-title"><svg viewBox="0 0 24 24"><path d="M4 20 20 4v16H4z"/></svg> NEXA HOME</span>
-          <span class="dash-status"><span class="pulse-dot"></span> TOUS SYSTÈMES NOMINAUX</span>
-        </div>
-        <div class="dash-metrics">
-          <div class="metric">
-            <span class="m-label">DÉBIT</span>
-            <span class="m-value" id="mFlow">8.4 <i>L/min</i></span>
-            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,18 12,14 24,16 36,9 48,12 60,7 72,10 84,6 100,8"/></svg>
+    <section class="hero split-right">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="eyebrow">Recherche de fuite sans casse et plombier à Montpellier</h1>
+          <p class="headline">Une fuite quelque part, mais impossible de la voir ? <em>On la trouve sans casser vos murs.</em></p>
+          <p class="lead">Caméra thermique, gaz traceur, écoute acoustique : nous localisons les fuites cachées au centimètre près, puis nous réparons. Vous recevez un rapport technique à transmettre à votre assurance.</p>
+          <ul class="proofs">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Localisation sans démolition</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Rapport technique pour l&#x27;assurance</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Coupe-eau connecté pour ne plus jamais être surpris</li>
+          </ul>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#devis">Faire rechercher ma fuite</a>
+            <a class="btn btn-ghost" href="tel:+33465716412">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              04 65 71 64 12
+            </a>
           </div>
-          <div class="metric">
-            <span class="m-label">PRESSION</span>
-            <span class="m-value" id="mPress">3.2 <i>bar</i></span>
-            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,14 12,15 24,11 36,13 48,9 60,12 72,10 84,13 100,11"/></svg>
-          </div>
-          <div class="metric">
-            <span class="m-label">TEMPÉRATURE DE L'EAU</span>
-            <span class="m-value" id="mTemp">41 <i>°C</i></span>
-            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,20 12,17 24,18 36,13 48,15 60,11 72,12 84,8 100,10"/></svg>
-          </div>
+          <p class="hero-note">Intervention sous 48 h, en urgence si l&#x27;eau coule encore.</p>
         </div>
-        <div class="dash-alert">
-          <span class="alert-ic">✓</span>
-          <div><b>Risque de fuite : 0,3 % — nominal</b><span>Dernière anomalie détectée il y a 114 jours · Auto-test de la vanne principale réussi</span></div>
-        </div>
-        <div class="dash-nodes">
-          <span class="node active">CUISINE</span>
-          <span class="node active">SDB 1</span>
-          <span class="node active">SDB 2</span>
-          <span class="node active">BUANDERIE</span>
-          <span class="node active">SOUS-SOL</span>
-          <span class="node active">JARDIN</span>
-        </div>
-      </div>
-    </div>
-    <div class="hero-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
-  </section>
 
-  <!-- ══════════ STATS ══════════ -->
-  <section class="stats">
-    <div class="container stats-row">
-      <div class="stat reveal"><strong data-count="99.98" data-decimal="2" data-suffix="%">0</strong><span>précision de détection des fuites</span></div>
-      <div class="stat reveal" style="--d:.08s"><strong data-count="1800" data-suffix="+">0</strong><span>foyers protégés</span></div>
-      <div class="stat reveal" style="--d:.16s"><strong data-count="4.1" data-decimal="1" data-suffix="M">0</strong><span>litres de dégâts évités</span></div>
-      <div class="stat reveal" style="--d:.24s"><strong data-count="24" data-suffix="/7">0</strong><span>supervision par l'IA</span></div>
-    </div>
-  </section>
-
-  <!-- ══════════ SYSTEMS ══════════ -->
-  <section class="section" id="systems">
-    <div class="container">
-      <div class="sec-head">
-        <p class="kicker reveal">// SYSTÈMES</p>
-        <h2 class="reveal" style="--d:.08s">La plomberie de maître,<br><span class="grad-text">dotée de sens.</span></h2>
-        <p class="sec-sub reveal" style="--d:.14s">Chaque installation NEXA associe un artisanat d'élite à un véritable système nerveux de capteurs.</p>
-      </div>
-      <div class="sys-grid">
-        <article class="sys reveal" style="--d:.05s">
-          <div class="sys-head"><span class="sys-ic">◎</span><span class="sys-tag">CŒUR</span></div>
-          <h3>Maille Sentinel anti-fuites</h3>
-          <p>Des nœuds d'humidité à chaque point à risque. Détection en une fraction de seconde, coupure automatique immédiate et notification avant même que vous l'ayez lue.</p>
-          <div class="sys-foot"><span class="ok">● ACTIF</span><span class="price">à partir de 1 290 €</span></div>
-        </article>
-        <article class="sys reveal" style="--d:.1s">
-          <div class="sys-head"><span class="sys-ic">⌁</span><span class="sys-tag">DÉBIT</span></div>
-          <h3>IA prédictive de débit</h3>
-          <p>Apprentissage automatique sur votre signature hydrique — elle repère vannes défaillantes, fuites silencieuses et vieillissement du chauffe-eau des semaines à l'avance.</p>
-          <div class="sys-foot"><span class="ok">● ACTIF</span><span class="price">à partir de 890 €</span></div>
-        </article>
-        <article class="sys reveal" style="--d:.15s">
-          <div class="sys-head"><span class="sys-ic">◍</span><span class="sys-tag">PUR</span></div>
-          <h3>Filtration quantique</h3>
-          <p>Purification en cinq étapes avec télémétrie TDS en direct dans l'application. Une eau de qualité hospitalière à chaque robinet.</p>
-          <div class="sys-foot"><span class="ok">● ACTIF</span><span class="price">à partir de 1 740 €</span></div>
-        </article>
-        <article class="sys reveal" style="--d:.2s">
-          <div class="sys-head"><span class="sys-ic">≡</span><span class="sys-tag">CHAUD</span></div>
-          <h3>Cœur thermique adaptatif</h3>
-          <p>Chauffe-eau instantané qui apprend vos habitudes et préchauffe au moment juste. Jusqu'à 34 % d'économies sur la facture d'eau chaude.</p>
-          <div class="sys-foot"><span class="ok">● ACTIF</span><span class="price">à partir de 2 450 €</span></div>
-        </article>
-        <article class="sys reveal" style="--d:.25s">
-          <div class="sys-head"><span class="sys-ic">⬡</span><span class="sys-tag">ARTISANAT</span></div>
-          <h3>Rénovation de précision</h3>
-          <p>Anciennes canalisations remplacées par du PEX réticulé et du cuivre, cartographiés numériquement. Chaque soudure vérifiée au laser, documentée pour toujours.</p>
-          <div class="sys-foot"><span class="ok">● ACTIF</span><span class="price">à partir de 3 900 €</span></div>
-        </article>
-        <article class="sys reveal" style="--d:.3s">
-          <div class="sys-head"><span class="sys-ic">⊕</span><span class="sys-tag">SOIN</span></div>
-          <h3>Intervention aux petits soins</h3>
-          <p>De vrais maîtres plombiers, un SLA urbain de 60 minutes, dépêchés avec le jumeau numérique complet de votre maison déjà en main.</p>
-          <div class="sys-foot"><span class="ok">● ACTIF</span><span class="price">à partir de 145 €</span></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ PLATFORM ══════════ -->
-  <section class="section platform" id="platform">
-    <div class="container plat-grid">
-      <div class="plat-copy">
-        <p class="kicker reveal">// PLATEFORME</p>
-        <h2 class="reveal" style="--d:.08s">Une seule app.<br><span class="grad-text">L'eau, sous contrôle total.</span></h2>
-        <p class="reveal" style="--d:.14s">NEXA OS transforme votre plomberie en tableau de bord vivant — chaque goutte mesurée, chaque anomalie expliquée, chaque réparation à un geste.</p>
-        <ul class="plat-list">
-          <li class="reveal" style="--d:.2s"><b>01</b><div><strong>Percevoir</strong><span>Douze familles de capteurs surveillent débit, pression, humidité et température en temps réel.</span></div></li>
-          <li class="reveal" style="--d:.26s"><b>02</b><div><strong>Prédire</strong><span>Une IA embarquée anticipe les pannes sur un horizon de 14 jours avec 99,98 % de précision.</span></div></li>
-          <li class="reveal" style="--d:.32s"><b>03</b><div><strong>Protéger</strong><span>Coupure automatique en &lt;0,4 s, certifiée par les assureurs, avec chronologie complète des événements pour vos dossiers.</span></div></li>
-        </ul>
-      </div>
-      <div class="plat-visual reveal" style="--d:.18s">
-        <div class="phone">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <p class="ph-greet">Bonsoir, Aria</p>
-            <p class="ph-sub">Les 6 zones sont protégées</p>
-            <div class="ph-ring">
-              <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" class="ring-bg"/><circle cx="40" cy="40" r="34" class="ring-fg"/></svg>
-              <div class="ph-ring-txt"><b>98</b><span>SANTÉ</span></div>
-            </div>
-            <div class="ph-row"><span>Eau consommée aujourd'hui</span><b>184 L</b></div>
-            <div class="ph-row"><span>vs. moyenne du voisinage</span><b class="good">−22 %</b></div>
-            <div class="ph-row"><span>Prochain entretien prévu</span><b>12 nov.</b></div>
-            <div class="ph-bar"><span></span></div>
+        <div class="hero-visual">
+          <figure class="hero-photo">
+            <img src="hero-787.webp" srcset="hero-640.webp 640w, hero-787.webp 787w" sizes="(min-width: 900px) 50vw, 100vw" alt="Un technicien règle une pompe et une vanne sur une installation d&#x27;eau" width="787" height="1400" fetchpriority="high" decoding="async">
+          </figure>
+          <div class="hero-badge">
+            <strong>0 casse</strong>
+            <span>pour localiser la fuite<br>dans la grande majorité des cas</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ PROOF ══════════ -->
-  <section class="section" id="proof">
-    <div class="container">
-      <div class="sec-head">
-        <p class="kicker reveal">// PREUVES</p>
-        <h2 class="reveal" style="--d:.08s">Rapports de terrain de<br><span class="grad-text">foyers protégés.</span></h2>
+    <!-- SITUATIONS -->
+    <section class="situations" aria-labelledby="sit-title">
+      <div class="wrap">
+        <h2 id="sit-title" class="h-small">Quels signes voyez-vous ?</h2>
+        <div class="sit-grid">
+          <button class="sit" data-prefill="Surconsommation d&#x27;eau">
+            <span class="sit-q">Ma facture d&#x27;eau a doublé sans raison</span>
+            <span class="sit-a">Contrôle du compteur, puis recherche de la fuite sur tout le réseau.</span>
+          </button>
+          <button class="sit" data-prefill="Tache d&#x27;humidité">
+            <span class="sit-q">Une tache d&#x27;humidité s&#x27;agrandit au mur</span>
+            <span class="sit-a">Caméra thermique et humidimètre pour trouver l&#x27;origine exacte.</span>
+          </button>
+          <button class="sit" data-prefill="Dégât des eaux">
+            <span class="sit-q">Mon voisin du dessous a un dégât des eaux</span>
+            <span class="sit-a">Localisation, réparation et rapport pour les deux assurances.</span>
+          </button>
+          <button class="sit" data-prefill="Fuite de piscine">
+            <span class="sit-q">Ma piscine perd de l&#x27;eau</span>
+            <span class="sit-a">Test d&#x27;étanchéité du bassin et des canalisations enterrées.</span>
+          </button>
+          <button class="sit" data-prefill="Fuite de chauffage">
+            <span class="sit-q">La pression de ma chaudière baisse</span>
+            <span class="sit-a">Recherche de fuite sur le circuit de chauffage, souvent sous dalle.</span>
+          </button>
+          <button class="sit" data-prefill="Coupe-eau connecté">
+            <span class="sit-q">Je veux être alerté avant les dégâts</span>
+            <span class="sit-a">Détecteurs et coupe-eau automatique pilotés depuis votre téléphone.</span>
+          </button>
+        </div>
+        <p class="sit-hint">Cliquez sur votre situation : le formulaire se remplit tout seul.</p>
       </div>
-      <div class="proof-grid">
-        <figure class="review glass reveal" style="--d:.05s">
-          <div class="rev-stars">★★★★★</div>
-          <blockquote>« Un raccord a cédé à 3 h du matin pendant que nous étions à Tokyo. NEXA a fermé la vanne principale avant que l'eau n'atteigne le seuil. Nous avons suivi tout l'événement depuis l'application, un café à la main. Rien n'a été endommagé. »</blockquote>
-          <figcaption><b>Daniel R.</b><span>Maille Sentinel + IA de débit · Propriétaire</span></figcaption>
-        </figure>
-        <figure class="review glass reveal" style="--d:.12s">
-          <div class="rev-stars">★★★★★</div>
-          <blockquote>« L'équipe d'installation a refait toute la plomberie de notre maison des années 60 en trois jours et nous a laissé une carte numérique de chaque canalisation. Leur facture correspondait au centime au devis — données des capteurs à l'appui. »</blockquote>
-          <figcaption><b>Sophie M.</b><span>Rénovation de précision · Installation vérifiée</span></figcaption>
-        </figure>
-        <figure class="review glass reveal" style="--d:.19s">
-          <div class="rev-stars">★★★★★</div>
-          <blockquote>« Ma facture d'eau a chuté de 31 % dès le premier trimestre, et l'application m'a expliqué pourquoi. Voilà ce que chaque maison aura dans dix ans. NEXA y est simplement arrivé le premier. »</blockquote>
-          <figcaption><b>Jacques O.</b><span>Écosystème NEXA complet · Membre du programme Soin</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ CONTACT ══════════ -->
-  <section class="section contact" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-side">
-        <p class="kicker reveal">// CONTACT</p>
-        <h2 class="reveal" style="--d:.08s">Initialiser<br><span class="grad-text">la conversation.</span></h2>
-        <p class="reveal" style="--d:.14s">Parlez à un ingénieur humain — ou laissez les robots tout planifier. À vous de choisir, littéralement.</p>
-        <div class="c-lines">
-          <div class="c-line reveal" style="--d:.18s"><span class="c-ic">◈</span><div><b>Ligne humaine</b><a href="tel:+15550992026">+1 (555) 099-2026</a></div></div>
-          <div class="c-line reveal" style="--d:.24s"><span class="c-ic">✉</span><div><b>Courrier chiffré</b><a href="mailto:hello@nexa.systems">hello@nexa.systems</a></div></div>
-          <div class="c-line reveal" style="--d:.3s"><span class="c-ic">⌂</span><div><b>Showroom</b><span>2201 Foundry District — sur rendez-vous</span></div></div>
-          <div class="c-line reveal" style="--d:.36s"><span class="c-ic">◷</span><div><b>SLA de réponse</b><span>&lt; 1 heure ouvrée · urgences 24h/24, 7j/7</span></div></div>
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-labelledby="serv-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Nos interventions</p>
+          <h2 id="serv-title">Trouver la fuite, la réparer, et vous éviter la prochaine.</h2>
+        </div>
+        <div class="serv-grid">
+          <article class="serv">
+            <span class="serv-n">01</span>
+            <h3>Recherche de fuite non destructive</h3>
+            <p>Caméra thermique, gaz traceur, corrélation acoustique : la méthode adaptée à chaque situation.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">02</span>
+            <h3>Réparation ciblée</h3>
+            <p>Une ouverture limitée à l&#x27;endroit exact de la fuite, puis réparation et rebouchage.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">03</span>
+            <h3>Rapport pour l&#x27;assurance</h3>
+            <p>Photos, relevés et localisation : le document que demandent les assureurs et les experts.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">04</span>
+            <h3>Fuites de piscine</h3>
+            <p>Test du bassin, des skimmers, des refoulements et des canalisations enterrées.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">05</span>
+            <h3>Coupe-eau connecté</h3>
+            <p>Une vanne motorisée coupe l&#x27;eau automatiquement en cas de fuite, alerte sur votre téléphone.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">06</span>
+            <h3>Plomberie générale</h3>
+            <p>Remplacement de canalisations, robinetterie, chauffe-eau, dépannage.</p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <form class="contact-form glass reveal" id="contactForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-        <div class="form-top"><span>CANAL SÉCURISÉ</span><span class="pulse-dot"></span></div>
-        <fieldset>
-          <div class="field-row">
-            <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Nom *</label></div>
-            <div class="field"><input type="tel" id="cf-phone" placeholder=" "><label for="cf-phone">Téléphone</label></div>
+    <!-- DÉROULEMENT -->
+    <section class="steps" id="deroulement" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Comment ça se passe</p>
+          <h2 id="steps-title">De la fuite suspectée au dossier d&#x27;assurance bouclé.</h2>
+        </div>
+        <ol class="step-list">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Vous décrivez les signes</h3>
+            <p>Facture, tache, pression qui baisse : chaque indice nous oriente.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Recherche sur place</h3>
+            <p>Le technicien choisit la méthode adaptée et localise la fuite.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Réparation</h3>
+            <p>Ouverture minimale, réparation, rebouchage. Tout est chiffré avant.</p>
+          </li>
+          <li>
+            <span class="step-n">4</span>
+            <h3>Rapport envoyé</h3>
+            <p>Le rapport technique vous parvient sous 48 h pour votre assurance.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS -->
+    <section class="jobs" id="chantiers" aria-labelledby="jobs-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Chantiers récents</p>
+          <h2 id="jobs-title">Quelques exemples de ces derniers mois.</h2>
+        </div>
+        <div class="job-grid">
+          <article class="job">
+            <p class="job-where">Montpellier · Appartement</p>
+            <h3>Fuite sous carrelage localisée à 10 cm près</h3>
+            <dl>
+              <div><dt>Méthode</dt><dd>Gaz traceur</dd></div>
+              <div><dt>Durée</dt><dd>2 h</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Lattes · Villa</p>
+            <h3>Fuite sur canalisation de piscine enterrée</h3>
+            <dl>
+              <div><dt>Méthode</dt><dd>Test de pression et écoute</dd></div>
+              <div><dt>Durée</dt><dd>3 h</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Castelnau-le-Lez · Maison</p>
+            <h3>Fuite du plancher chauffant trouvée sans casser la dalle</h3>
+            <dl>
+              <div><dt>Méthode</dt><dd>Caméra thermique</dd></div>
+              <div><dt>Durée</dt><dd>2 h 30</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENTS + AVIS -->
+    <section class="trust" aria-labelledby="trust-title">
+      <div class="wrap trust-grid">
+        <div>
+          <p class="eyebrow">Nos engagements</p>
+          <h2 id="trust-title">Nos engagements.</h2>
+          <ul class="pledges">
+            <li><strong>Le moins de casse possible.</strong> On localise d&#x27;abord, on n&#x27;ouvre qu&#x27;à l&#x27;endroit exact.</li>
+            <li><strong>Un rapport exploitable.</strong> Rédigé pour être compris par votre assureur et son expert.</li>
+            <li><strong>Un prix annoncé.</strong> Tarif de la recherche fixé avant le déplacement.</li>
+            <li><strong>Des données protégées.</strong> Les alertes de votre coupe-eau connecté restent chez vous, pas revendues.</li>
+          </ul>
+          <p class="signature"><strong>Yanis Roussel</strong>, gérant, technicien détection de fuites</p>
+        </div>
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>« Trois plombiers avant eux voulaient casser la salle de bains. NEXA a trouvé la fuite en deux heures, sans rien démolir. »</blockquote>
+            <figcaption>Nadia K. · Montpellier · Fuite sous carrelage</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>« Le rapport a été accepté tel quel par mon assurance. Le coupe-eau connecté m&#x27;a déjà évité un deuxième sinistre. »</blockquote>
+            <figcaption>Laurent F. · Castelnau-le-Lez · Recherche de fuite</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="sec-head">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Ce qu'on nous demande le plus souvent.</h2>
+          <p class="faq-more">Votre question n'est pas là ?<br>Appelez-nous au <a href="tel:+33465716412">04 65 71 64 12</a>.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>La recherche de fuite est-elle prise en charge par l&#x27;assurance ?</summary>
+            <p>Souvent oui, lorsqu&#x27;elle est liée à un dégât des eaux. Les conditions dépendent de votre contrat : notre rapport vous aide à constituer le dossier.</p>
+          </details>
+          <details>
+            <summary>Comment trouvez-vous une fuite sans casser ?</summary>
+            <p>Selon le cas : caméra thermique pour les écarts de température, gaz traceur injecté dans la canalisation, ou écoute acoustique du bruit de la fuite.</p>
+          </details>
+          <details>
+            <summary>Combien de temps dure une recherche de fuite ?</summary>
+            <p>En général de une à trois heures. Le rapport vous est envoyé sous 48 h.</p>
+          </details>
+          <details>
+            <summary>Comment savoir si j&#x27;ai une fuite ?</summary>
+            <p>Fermez tous les robinets et relevez le compteur, puis relevez-le à nouveau une heure plus tard. S&#x27;il a tourné, il y a probablement une fuite.</p>
+          </details>
+          <details>
+            <summary>À quoi sert un coupe-eau connecté ?</summary>
+            <p>Des capteurs détectent l&#x27;eau au sol et une vanne motorisée coupe l&#x27;arrivée générale automatiquement, avec une alerte sur votre téléphone.</p>
+          </details>
+          <details>
+            <summary>Réparez-vous aussi la fuite ?</summary>
+            <p>Oui, dans la foulée si c&#x27;est possible, avec un prix annoncé avant de commencer.</p>
+          </details>
+          <details>
+            <summary>Que contient le rapport de recherche de fuite ?</summary>
+            <p>La localisation précise de la fuite, la méthode utilisée, des photos et les constatations utiles à votre dossier d&#x27;assurance.</p>
+          </details>
+          <details>
+            <summary>Pourquoi ma facture d&#x27;eau a-t-elle augmenté ?</summary>
+            <p>Une fuite invisible (chasse d&#x27;eau, canalisation enterrée ou encastrée) peut en être la cause. Le test du compteur permet de le vérifier avant d&#x27;appeler.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVIS -->
+    <section class="quote" id="devis" aria-labelledby="quote-title">
+      <div class="wrap quote-grid">
+        <div class="quote-side">
+          <p class="eyebrow">Devis gratuit</p>
+          <h2 id="quote-title">Décrivez les signes de fuite.</h2>
+          <p>Plus vous nous en dites, plus la recherche sera rapide. On vous rappelle avec un créneau et le tarif.</p>
+          <div class="contact-card">
+            <a class="contact-line big" href="tel:+33465716412">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              04 65 71 64 12
+            </a>
+            <p class="contact-line">Du lundi au vendredi, 8 h à 19 h</p>
+            <p class="contact-line">30 rue du Pont Juvénal, 34000 Montpellier</p>
+            <p class="zone"><strong>Nous intervenons à</strong> Montpellier, Castelnau-le-Lez, Lattes, Pérols, Juvignac, Saint-Jean-de-Védas, Mauguio, Grabels, Palavas-les-Flots.</p>
           </div>
-          <div class="field"><input type="email" id="cf-email" required placeholder=" "><label for="cf-email">E-mail *</label></div>
+        </div>
+
+        <form class="quote-form" id="quoteForm" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label for="website">Ne pas remplir</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
           <div class="field">
-            <select id="cf-topic" required>
-              <option value="" selected disabled hidden></option>
-              <option>Maille Sentinel anti-fuites</option>
-              <option>IA prédictive de débit</option>
-              <option>Écosystème NEXA complet</option>
-              <option>Rénovation de précision</option>
-              <option>Assistance urgences</option>
-            </select>
-            <label for="cf-topic">Système qui vous intéresse *</label>
+              <label for="work">Situation</label>
+              <select id="work" name="work" data-rule="req" required>
+                <option value="">Choisissez</option>
+                <option>Surconsommation d&#x27;eau</option>
+                <option>Tache d&#x27;humidité</option>
+                <option>Dégât des eaux</option>
+                <option>Fuite de piscine</option>
+                <option>Fuite de chauffage</option>
+                <option>Coupe-eau connecté</option>
+                <option>Plomberie générale</option>
+              </select>
+              <p class="err">Faites un choix dans la liste.</p>
           </div>
-          <div class="field"><textarea id="cf-msg" rows="4" required placeholder=" "></textarea><label for="cf-msg">Briefer les ingénieurs *</label></div>
-          <button type="submit" class="btn btn-neo btn-block">Transmettre</button>
-          <p class="form-note">Pris en charge de bout en bout. Jamais de spam.</p>
-        </fieldset>
-        <div class="form-success" hidden>
-          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-          <h3>Transmission reçue.</h3>
-          <p>Position dans la file : n° 1. Un ingénieur répond sous l'heure.</p>
-        </div>
-      </form>
-    </div>
-  </section>
 
-  <!-- ══════════ BOOKING ══════════ -->
-  <section class="section book" id="book">
-    <div class="container">
-      <div class="sec-head">
-        <p class="kicker reveal">// INSTALLATION</p>
-        <h2 class="reveal" style="--d:.08s">Réservez votre <span class="grad-text">installation.</span></h2>
-        <p class="sec-sub reveal" style="--d:.14s">Scan du site → proposition sur mesure → jour d'installation. Généralement sous une semaine.</p>
-      </div>
-
-      <div class="book-shell glass reveal" style="--d:.1s">
-        <div class="book-tabs" id="bookTabs">
-          <div class="tab is-current"><i>01</i><span>Système</span></div>
-          <div class="tab"><i>02</i><span>Créneau</span></div>
-          <div class="tab"><i>03</i><span>Identité</span></div>
-          <div class="tab"><i>04</i><span>En ligne</span></div>
-        </div>
-
-        <form id="bookForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-          <!-- STEP 1 -->
-          <fieldset class="pane is-active">
-            <legend>Sélectionnez votre système</legend>
-            <div class="pick-grid">
-              <label class="pick"><input type="radio" name="svc" value="Maille Sentinel anti-fuites" required><span><b>Maille Sentinel anti-fuites</b><i>12 capteurs + coupure auto · 1 290 €</i></span></label>
-              <label class="pick"><input type="radio" name="svc" value="IA prédictive de débit" required><span><b>IA prédictive de débit</b><i>Prévision des pannes · 890 €</i></span></label>
-              <label class="pick"><input type="radio" name="svc" value="Filtration quantique" required><span><b>Filtration quantique</b><i>5 étapes + télémétrie · 1 740 €</i></span></label>
-              <label class="pick"><input type="radio" name="svc" value="Cœur thermique adaptatif" required><span><b>Cœur thermique adaptatif</b><i>Instantané intelligent · 2 450 €</i></span></label>
-              <label class="pick"><input type="radio" name="svc" value="Rénovation de précision" required><span><b>Rénovation de précision</b><i>Toute-maison numérique · 3 900 €</i></span></label>
-              <label class="pick"><input type="radio" name="svc" value="Écosystème NEXA complet" required><span><b>Écosystème NEXA complet</b><i>Tout, intégré · à partir de 5 900 €</i></span></label>
+          <div class="row">
+            <div class="field">
+              <label for="building">Type de logement <span class="opt">(facultatif)</span></label>
+              <input type="text" id="building" name="building" maxlength="80" placeholder="Ex. : maison avec piscine">
             </div>
-            <p class="pick-error">Sélectionnez un système pour continuer.</p>
-            <div class="nav-row"><span></span><button type="button" class="btn btn-neo js-next">Continuer →</button></div>
-          </fieldset>
-
-          <!-- STEP 2 -->
-          <fieldset class="pane">
-            <legend>Choisissez votre créneau</legend>
-            <div class="field date-field"><input type="date" id="bk-date" required><label>Date d'installation</label></div>
-            <div class="wins" id="timeGrid">
-              <button type="button" class="win" data-v="8h–10h">8h–10h</button>
-              <button type="button" class="win" data-v="10h–12h">10h–12h</button>
-              <button type="button" class="win" data-v="12h–14h">12h–14h</button>
-              <button type="button" class="win" data-v="14h–16h">14h–16h</button>
-              <button type="button" class="win" data-v="16h–18h">16h–18h</button>
+            <div class="field">
+              <label for="zip">Code postal</label>
+              <input type="text" id="zip" name="zip" maxlength="5" autocomplete="postal-code" inputmode="numeric" data-rule="zip" required>
+              <p class="err">5 chiffres, par exemple 34000.</p>
             </div>
-            <input type="hidden" id="bk-time">
-            <p class="pick-error">Choisissez un créneau d'arrivée.</p>
-            <div class="nav-row"><button type="button" class="btn btn-glass js-prev">← Retour</button><button type="button" class="btn btn-neo js-next">Continuer →</button></div>
-          </fieldset>
+          </div>
 
-          <!-- STEP 3 -->
-          <fieldset class="pane">
-            <legend>Identité &amp; site</legend>
-            <div class="field-row">
-              <div class="field"><input type="text" id="bk-name" required placeholder=" "><label>Nom complet *</label></div>
-              <div class="field"><input type="tel" id="bk-phone" required placeholder=" "><label>Téléphone *</label></div>
+          <div class="field">
+            <label for="details">Précisez votre demande <span class="opt">(facultatif)</span></label>
+            <textarea id="details" name="details" rows="3" maxlength="800" placeholder="Ex. : facture d&#x27;eau passée de 60 à 180 € sur le trimestre, rien de visible"></textarea>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" maxlength="80" autocomplete="name" data-rule="name" required>
+              <p class="err">Indiquez votre nom.</p>
             </div>
-            <div class="field"><input type="text" id="bk-address" required placeholder=" "><label>Adresse d'installation *</label></div>
-            <div class="field"><textarea id="bk-notes" rows="3" placeholder=" "></textarea><label>Notes de site — accès, animaux, systèmes existants (facultatif)</label></div>
-            <div class="nav-row"><button type="button" class="btn btn-glass js-prev">← Retour</button><button type="submit" class="btn btn-neo">Confirmer l'installation</button></div>
+            <div class="field">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" maxlength="20" autocomplete="tel" data-rule="phone" required>
+              <p class="err">Un numéro à 10 chiffres pour vous joindre.</p>
+            </div>
+          </div>
+
+          <div class="field">
+              <label for="email">E-mail <span class="opt">(facultatif)</span></label>
+              <input type="email" id="email" name="email" maxlength="120" autocomplete="email" data-rule="email">
+              <p class="err">Cette adresse ne semble pas valide.</p>
+          </div>
+
+          <fieldset class="field">
+            <legend>Quand vous rappeler ?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="when" value="Matin" checked><span>Le matin</span></label>
+              <label class="chip"><input type="radio" name="when" value="Midi"><span>Entre 12 h et 14 h</span></label>
+              <label class="chip"><input type="radio" name="when" value="Après-midi"><span>L'après-midi</span></label>
+            </div>
           </fieldset>
 
-          <!-- STEP 4 -->
-          <fieldset class="pane pane-live">
-            <div class="live-ring" aria-hidden="true"></div>
-            <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-            <h3>Installation planifiée.</h3>
-            <p class="live-copy"><b id="recap-name">—</b> · <em id="recap-svc">—</em><br><b id="recap-when">—</b></p>
-            <p class="live-sub">Ticket d'installation <code id="recap-ref">NX-0000</code> créé. Votre équipe arrive avec le jumeau numérique de votre maison.</p>
-          </fieldset>
+          <button class="btn btn-primary btn-block" type="submit">Envoyer ma demande</button>
+          <p class="form-legal">Vos coordonnées servent uniquement à vous recontacter pour cette demande.</p>
+
+          <div class="success" id="success" role="status" aria-live="polite" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="m14 24 7 7 13-14"/></svg>
+            <h3>Demande bien reçue</h3>
+            <p id="successMsg"></p>
+          </div>
         </form>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ FOOTER ══════════ -->
+  </main>
+
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="foot-brand">
-        <a class="brand" href="#top">
-          <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M4 20 20 4v16H4z"/></svg></span>
-          <span class="brand-text">NEXA<small>SYSTÈMES D'EAU INTELLIGENTS</small></span>
-        </a>
-        <p>La dernière entreprise de plomberie dont vous aurez besoin — parce que votre maison veille enfin sur sa propre eau.</p>
-      </div>
-      <div><h4>SYSTÈMES</h4><a href="#systems">Maille Sentinel</a><a href="#systems">IA de débit</a><a href="#systems">Filtration</a><a href="#systems">Rénovation</a></div>
-      <div><h4>PLATEFORME</h4><a href="#platform">NEXA OS</a><a href="#proof">Rapports de terrain</a><a href="#book">Installation</a></div>
-      <div><h4>CANAUX</h4><a href="tel:+15550992026">+1 (555) 099-2026</a><a href="mailto:hello@nexa.systems">hello@nexa.systems</a><span>2201 Foundry District</span></div>
+    <div class="wrap footer-inner">
+      <p><strong>NEXA Plomberie</strong> · Plomberie et détection de fuites · Montpellier · 30 rue du Pont Juvénal, 34000 Montpellier</p>
+      <p>SIRET 000 000 000 00000 · Assurance n° à préciser · Page mise à jour le <time datetime="2026-09-30">30 septembre 2026</time> · <a href="#top">Retour en haut</a></p>
     </div>
-    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> NEXA Systems Inc.</span><span>Agréés · Cautionnés · Assurés · Supervision SOC-2</span></div></div>
   </footer>
+
+  <!-- Barre d'action mobile -->
+  <div class="mobile-bar">
+    <a href="tel:+33465716412" class="mb-call">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+      Appeler
+    </a>
+    <a href="#devis" class="mb-quote">Devis gratuit</a>
+  </div>
 
   <script src="script.js"></script>
 </body>

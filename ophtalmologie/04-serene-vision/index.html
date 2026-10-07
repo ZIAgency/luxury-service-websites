@@ -3,373 +3,674 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Serene Vision — Des soins oculaires doux, sans hâte</title>
-  <meta name="description" content="Serene Vision est un studio de soins oculaires calme et sans hâte : spa de l'œil sec, soins pédiatriques en douceur et examens approfondis. Lumière tamisée, thé chaud, aucune précipitation — jamais.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23BFD9EA'/%3E%3Ccircle cx='12' cy='12' r='6' fill='%235E93B4' opacity='.75'/%3E%3Ccircle cx='12' cy='12' r='2.2' fill='%23FFFFFF'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700&family=Gilda+Display&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Sécheresse oculaire et ophtalmologue pour enfants à Nantes | Vision Douce</title>
+  <meta name="description" content="Vision Douce à Nantes : consultation spécialisée sécheresse oculaire (yeux secs, brûlures, lumière pulsée) et ophtalmologie de l&#x27;enfant (dépistage, strabisme, première paire). Consultations longues.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23183642'/%3E%3Cg color='%238FC6D8' fill='%238FC6D8'%3E%3Cpath d='M3 16s5-8 13-8 13 8 13 8-5 8-13 8S3 16 3 16z' fill='none' stroke='currentColor' stroke-width='2.4'/%3E%3Ccircle class='blade' cx='16' cy='16' r='4.5'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" imagesizes="100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Gilda Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/GildaDisplay-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-stretch: 100%;
+  src: url(fonts/NunitoSans-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Vision Douce">
+  <meta property="og:title" content="Sécheresse oculaire et ophtalmologue pour enfants à Nantes | Vision Douce">
+  <meta property="og:description" content="Vision Douce à Nantes : consultation spécialisée sécheresse oculaire (yeux secs, brûlures, lumière pulsée) et ophtalmologie de l&#x27;enfant (dépistage, strabisme, première paire). Consultations longues.">
+  <meta property="og:url" content="https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/">
+  <meta property="og:image" content="https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/hero.jpg">
+  <meta property="og:image:alt" content="Un ophtalmologiste examine les yeux d&#x27;une petite fille">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Physician",
+      "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/#entreprise",
+      "name": "Vision Douce",
+      "url": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/",
+      "description": "Vision Douce à Nantes : consultation spécialisée sécheresse oculaire (yeux secs, brûlures, lumière pulsée) et ophtalmologie de l'enfant (dépistage, strabisme, première paire). Consultations longues.",
+      "slogan": "Des yeux qui brûlent, qui piquent, qui pleurent ? On cherche enfin la cause, sans vous presser.",
+      "telephone": "+33261919205",
+      "image": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6 quai de la Fosse",
+        "postalCode": "44000",
+        "addressLocality": "Nantes",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Nantes"
+        },
+        {
+          "@type": "Place",
+          "name": "Rezé"
+        },
+        {
+          "@type": "Place",
+          "name": "Saint-Herblain"
+        },
+        {
+          "@type": "Place",
+          "name": "Orvault"
+        },
+        {
+          "@type": "Place",
+          "name": "Saint-Sébastien-sur-Loire"
+        },
+        {
+          "@type": "Place",
+          "name": "Vertou"
+        },
+        {
+          "@type": "Place",
+          "name": "Loire-Atlantique"
+        }
+      ],
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "knowsAbout": [
+        "Bilan de sécheresse oculaire",
+        "Traitements au cabinet",
+        "Lentilles et yeux sensibles",
+        "Dépistage chez l'enfant",
+        "Strabisme",
+        "Première paire de lunettes"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Deux spécialités qui demandent du temps.",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bilan de sécheresse oculaire",
+              "description": "Qualité des larmes, glandes des paupières, surface de l'œil : un bilan complet pour trouver la cause.",
+              "areaServed": "Nantes centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Traitements au cabinet",
+              "description": "Soins des paupières, lumière pulsée ou autres techniques selon votre cas, après explication.",
+              "areaServed": "Nantes centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Lentilles et yeux sensibles",
+              "description": "Conseils et adaptation quand les lentilles deviennent inconfortables.",
+              "areaServed": "Nantes centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dépistage chez l'enfant",
+              "description": "Examen adapté à l'âge, même avant qu'il sache lire.",
+              "areaServed": "Nantes centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Strabisme",
+              "description": "Diagnostic, rééducation avec l'orthoptiste, suivi.",
+              "areaServed": "Nantes centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Première paire de lunettes",
+              "description": "Ordonnance, conseils aux parents, suivi de l'adaptation.",
+              "areaServed": "Nantes centre",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/#entreprise"
+              }
+            }
+          }
+        ]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Dr Émilie Garreau",
+        "jobTitle": "ophtalmologiste, surface oculaire et pédiatrie"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/",
+      "url": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/",
+      "name": "Sécheresse oculaire et ophtalmologue pour enfants à Nantes | Vision Douce",
+      "description": "Vision Douce à Nantes : consultation spécialisée sécheresse oculaire (yeux secs, brûlures, lumière pulsée) et ophtalmologie de l'enfant (dépistage, strabisme, première paire). Consultations longues.",
+      "inLanguage": "fr-FR",
+      "dateModified": "2026-09-30",
+      "about": {
+        "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/#entreprise"
+      },
+      "primaryImageOfPage": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/hero.jpg"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://luxury-service-websites.vercel.app/ophtalmologie/04-serene-vision/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que la sécheresse oculaire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un trouble du film de larmes qui protège l'œil. Il provoque brûlures, sensation de sable, rougeurs ou paradoxalement des larmoiements. Les écrans, l'âge et certaines maladies le favorisent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les gouttes suffisent-elles ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pas toujours. Si la cause vient des glandes des paupières, d'autres traitements peuvent être plus efficaces. C'est ce que le bilan permet de savoir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "La lumière pulsée est-elle remboursée ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non, ces traitements au cabinet ne sont généralement pas pris en charge par l'Assurance maladie. Le tarif vous est indiqué avant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "À quel âge faire examiner les yeux de son enfant ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Des examens sont recommandés dans la petite enfance et avant l'entrée à l'école, et à tout âge s'il louche, plisse les yeux ou se plaint de maux de tête."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Un strabisme se soigne-t-il ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, d'autant mieux qu'il est pris en charge tôt : lunettes, rééducation orthoptique, parfois cache ou chirurgie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment se passe un examen chez un tout-petit ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Avec des tests adaptés à l'âge, sous forme de jeux. Pas besoin qu'il sache lire."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les écrans provoquent-ils la sécheresse oculaire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ils y contribuent : on cligne moins souvent devant un écran, donc le film de larmes se renouvelle moins. Des pauses régulières et des clignements volontaires aident, mais un bilan reste utile si la gêne persiste."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quand consulter pour une sécheresse oculaire ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dès que la gêne est quotidienne : brûlures, yeux rouges, sensation de sable ou larmoiement persistant. Un bilan identifie la cause et évite que la situation s'installe."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
-  <!-- ══════════ NAV ══════════ -->
-  <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="5.6"/><circle cx="12" cy="12" r="1.8"/></svg>
-        </span>
-        <span class="brand-text">Serene&nbsp;Vision<small>Studio de soins oculaires</small></span>
-      </a>
-      <nav class="links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#studio">Le Studio</a>
-        <a href="#rituals">Rituels</a>
-        <a href="#kind-words">Mots doux</a>
-        <a href="#contact">Contact</a>
-        <a href="#book" class="nav-cta">Prendre rendez-vous</a>
-      </nav>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <a class="skip" href="#devis">Aller au formulaire de rendez-vous</a>
 
-  <!-- ══════════ HERO ══════════ -->
-  <section class="hero" id="top">
-    <div class="hero-blob b1" aria-hidden="true"></div>
-    <div class="hero-blob b2" aria-hidden="true"></div>
-    <div class="breath-stage" aria-hidden="true">
-      <span class="breath r1"></span>
-      <span class="breath r2"></span>
-      <span class="breath r3"></span>
-      <span class="breath r4"></span>
-      <span class="breath-core"></span>
-    </div>
-
-    <div class="container hero-content">
-      <p class="overline reveal">Des soins oculaires, sans hâte</p>
-      <h1 class="reveal" style="--d:.12s">Vos yeux méritent<br><em class="deep-text">une heure plus paisible.</em></h1>
-      <p class="hero-sub reveal" style="--d:.24s">
-        Serene Vision est un petit studio bâti autour d'une idée simple : les bons soins oculaires arrivent quand
-        personne n'est pressé. Lumière douce, serviettes chaudes, un médecin qui reste dans la pièce — et des
-        thérapies dans lesquelles vos yeux peuvent vraiment se détendre.
-      </p>
-      <div class="hero-cta reveal" style="--d:.36s">
-        <a href="#book" class="btn btn-wave">Réserver une visite en douceur</a>
-        <a href="#services" class="btn btn-quiet">Découvrir nos soins</a>
-      </div>
-      <div class="hero-cues reveal" style="--d:.48s">
-        <span class="cue">Visites de 45 à 90 min</span>
-        <span class="cue">Serviettes chaudes, toujours</span>
-        <span class="cue">Enfants bienvenus</span>
-      </div>
-    </div>
-
-    <svg class="hero-dune" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0,44 C300,88 620,10 900,38 C1120,60 1300,30 1440,50 L1440,90 L0,90 Z" fill="#FEFEFD"/>
-    </svg>
-  </section>
-
-  <!-- ══════════ BREATHE STRIP ══════════ -->
-  <div class="breathe-strip" aria-hidden="true">
-    <div class="container breathe-inner">
-      <span class="b-dot"></span>
-      <span>inspirez… puis soufflez — c'est nous qui donnons le rythme, vous n'avez qu'à cligner des yeux</span>
+  <!-- Bandeau infos pratiques -->
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Nantes centre</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.4V6h-2v7.6l5 3 1-1.7Z"/></svg>Du lundi au vendredi, 9 h à 18 h, mercredi pour les enfants</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5Z"/></svg>Consultations longues, sans hâte</span>
     </div>
   </div>
 
-  <!-- ══════════ SERVICES ══════════ -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Nos soins</p>
-        <h2>Six façons de <em>prendre soin des yeux</em></h2>
-        <p class="sec-sub">Chaque rendez-vous est un rendez-vous à patient unique. Aucun chevauchement, aucune file dans le couloir — juste le temps dont vos yeux ont réellement besoin.</p>
-      </div>
-      <div class="svc-grid">
-        <article class="svc reveal" style="--d:.05s">
-          <span class="svc-orb"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.6"/></svg></span>
-          <h3>L'Examen oculaire sans hâte</h3>
-          <p>Un examen complet et doux — réfraction, tension oculaire, imagerie rétinienne — avec le temps de poser toutes les questions que vous avez apportées.</p>
-          <a href="#book" class="svc-link">à partir de 175 € <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.1s">
-          <span class="svc-orb"><svg viewBox="0 0 24 24"><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/><circle cx="12" cy="12" r="3"/></svg></span>
-          <h3>Consultations correction de la vision</h3>
-          <p>Vous pensez au LASIK ou au SMILE ? Nous mesurons calmement, expliquons l'éligibilité honnêtement et coordonnons avec des chirurgiens à qui nous confierions nos propres yeux.</p>
-          <a href="#book" class="svc-link">à partir de 2 400 € / œil <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.15s">
-          <span class="svc-orb"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.4"/><path d="M4 12c2.5 0 2.5 2 5 2s2.5-2 5-2 2.5 2 5 2" opacity=".0"/></svg></span>
-          <h3>Le Parcours cataracte en douceur</h3>
-          <p>Un parcours chirurgical à voix basse : mesures sans hâte, un horaire pensé pour venir accompagné, et des visites de suivi qui ne ressemblent jamais à un tapis roulant.</p>
-          <a href="#book" class="svc-link">à partir de 3 500 € / œil <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.2s">
-          <span class="svc-orb"><svg viewBox="0 0 24 24"><path d="M3 13c3-5 15-5 18 0"/><path d="M3 13c3 5 15 5 18 0"/><circle cx="12" cy="13" r="2.6"/></svg></span>
-          <h3>Glaucome &amp; Rétine</h3>
-          <p>Une surveillance silencieuse et régulière de la tension et de la santé rétinienne — cette attention constante qui détecte le changement tôt et garde l'inquiétude petite.</p>
-          <a href="#book" class="svc-link">à partir de 250 € <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.25s">
-          <span class="svc-orb"><svg viewBox="0 0 24 24"><path d="M4 16c0-4 3.6-7 8-7s8 3 8 7"/><rect x="4" y="16" width="16" height="4" rx="2"/></svg></span>
-          <h3>Spa de l'Œil Sec</h3>
-          <p>Notre rituel signature : compresses chaudes, nettoyage palpébral délicat, soins des glandes et masques rafraîchissants dans une pièce sombre et feutrée. Un soulagement qui ressemble au repos.</p>
-          <a href="#book" class="svc-link">à partir de 140 € <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.3s">
-          <span class="svc-orb"><svg viewBox="0 0 24 24"><circle cx="9.5" cy="10" r="5"/><circle cx="9.5" cy="10" r="1.8"/><path d="M14 14.5L21 21"/></svg></span>
-          <h3>Petits Yeux — Pédiatrie &amp; Myopie</h3>
-          <p>Des examens contés pour les enfants qui ne savent pas encore lire les échelles, et un contrôle de la myopie qui grandit gentiment avec eux. Stickers, patience, zéro larmes.</p>
-          <a href="#book" class="svc-link">à partir de 340 € <span>→</span></a>
-        </article>
-      </div>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Vision Douce, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M3 16s5-8 13-8 13 8 13 8-5 8-13 8S3 16 3 16z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle class="blade" cx="16" cy="16" r="4.5"/></svg>
+        </span>
+        <span class="brand-text">Vision Douce<small>Yeux secs et enfants · Nantes</small></span>
+      </a>
+      <nav class="links" id="navLinks" aria-label="Navigation principale">
+        <a href="#services">Nos consultations</a>
+        <a href="#deroulement">Votre rendez-vous</a>
+        <a href="#chantiers">Parcours</a>
+        <a href="#faq">Questions</a>
+        <a href="#devis" class="links-cta">Prendre rendez-vous</a>
+      </nav>
+      <a class="nav-phone" href="tel:+33261919205">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+        <span>02 61 91 92 05</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
+  </header>
 
-  <!-- ══════════ STUDIO / ABOUT ══════════ -->
-  <section class="section studio" id="studio">
-    <div class="container studio-grid">
-      <div class="studio-visual reveal">
-        <div class="studio-card">
-          <div class="studio-window">
-            <span class="sw-ring"></span>
-            <span class="sw-ring small"></span>
-            <p class="studio-year">fondé en 2014</p>
-            <p class="studio-motto">« Rien ici<br>n'a besoin d'être pressé. »</p>
+  <main id="top">
+
+    <section class="hero overlay">
+      <figure class="hero-bg"><img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" sizes="100vw" alt="Un ophtalmologiste examine les yeux d&#x27;une petite fille" width="1600" height="2397" fetchpriority="high" decoding="async"></figure>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="eyebrow">Sécheresse oculaire et ophtalmologie de l&#x27;enfant à Nantes</h1>
+          <p class="headline">Des yeux qui brûlent, qui piquent, qui pleurent ? <em>On cherche enfin la cause, sans vous presser.</em></p>
+          <p class="lead">La sécheresse oculaire gâche le quotidien de beaucoup d&#x27;adultes, et les enfants ont besoin qu&#x27;on prenne le temps. Nos consultations sont longues, les examens expliqués, et les traitements adaptés à chacun.</p>
+          <ul class="proofs">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Consultation dédiée aux yeux secs, bilan complet</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Mercredi réservé aux enfants</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Temps pris pour expliquer, jamais d&#x27;examen à la chaîne</li>
+          </ul>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#devis">Prendre rendez-vous</a>
+            <a class="btn btn-ghost" href="tel:+33261919205">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              02 61 91 92 05
+            </a>
           </div>
-          <div class="studio-note">
-            <strong>12</strong>
-            <span>années de<br>soirs en douceur</span>
+          <p class="hero-note">Délai moyen de trois semaines.</p>
+          <div class="hero-badge">
+            <strong>45 min</strong>
+            <span>de consultation<br>pour les yeux secs</span>
           </div>
         </div>
       </div>
-      <div class="studio-copy">
-        <p class="overline reveal">Le Studio</p>
-        <h2 class="reveal" style="--d:.08s">Une sorte d'ophtalmologiste<br><em class="deep-text">plus apaisée.</em></h2>
-        <p class="reveal" style="--d:.16s">Serene Vision a été fondé par le Dr Amara Chen après une décennie dans des
-          services hospitaliers animés, où elle voyait des patients repartir plus tendus qu'ils n'étaient arrivés.
-          Son studio compte quatre pièces au lieu de quarante, un médecin par heure, et une promesse affichée à la
-          porte : on ne vous pressera jamais ici.</p>
-        <ul class="studio-list">
-          <li class="reveal" style="--d:.22s"><span class="mark"></span> Un patient par médecin, par heure</li>
-          <li class="reveal" style="--d:.28s"><span class="mark"></span> Serviettes chaudes avant chaque examen</li>
-          <li class="reveal" style="--d:.34s"><span class="mark"></span> Lumière tamisée pour les yeux sensibles</li>
-          <li class="reveal" style="--d:.4s"><span class="mark"></span> Rendez-vous dans la semaine, toujours proposés</li>
-        </ul>
-        <a href="#contact" class="btn btn-wave reveal" style="--d:.46s">Dites bonjour</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ RITUALS ══════════ -->
-  <section class="section rituals" id="rituals">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Le Rituel</p>
-        <h2>Trois respirations lentes, <em>puis votre examen</em></h2>
-      </div>
-      <ol class="ritual-row">
-        <li class="reveal" style="--d:.06s">
-          <span class="r-step">I</span>
-          <h3>Arriver &amp; se poser</h3>
-          <p>Un thé dans la véranda, un oreiller de cou sans poids, et dix minutes où personne ne vous demande rien. Les retardataires ne sont jamais grondés.</p>
-        </li>
-        <li class="reveal" style="--d:.16s">
-          <span class="r-step">II</span>
-          <h3>Diagnostics sans hâte</h3>
-          <p>Imagerie et mesures en douceur, chaque appareil expliqué avant de s'approcher de vous. Les enfants s'assoient sur les genoux d'un parent à chaque étape.</p>
-        </li>
-        <li class="reveal" style="--d:.26s">
-          <span class="r-step">III</span>
-          <h3>La fin toute douce</h3>
-          <p>Les constats expliqués sans jargon, un plan écrit à emporter, et — pour les visites œil sec — un masque frais pour le chemin du retour.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ══════════ STATS ══════════ -->
-  <section class="stats-band">
-    <div class="container stats-grid">
-      <div class="reveal"><strong data-count="9800" data-suffix="+">0</strong><span>Visites &amp; rituels sans hâte</span></div>
-      <div class="reveal" style="--d:.1s"><strong data-count="95" data-suffix="%">0</strong><span>20/20 ou mieux après correction</span></div>
-      <div class="reveal" style="--d:.2s"><strong data-count="12" data-suffix="">0</strong><span>Années de pratique en douceur</span></div>
-      <div class="reveal" style="--d:.3s"><strong data-count="4.9" data-decimal="1" data-suffix="/5">0</strong><span>Note de 2 200 patients</span></div>
-    </div>
-  </section>
-
-  <!-- ══════════ TESTIMONIALS ══════════ -->
-  <section class="section" id="kind-words">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Mots doux</p>
-        <h2>Laisés par nos <em>patients</em></h2>
-      </div>
-      <div class="testi-grid">
-        <figure class="testi reveal" style="--d:.05s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Je souffre d'une forte photosensibilité et je repars d'habitude des rendez-vous ophtalmiques avec une migraine. Chez Serene Vision, ils ont tamisé la pièce avant que je ne demande. J'ai failli pleurer — de soulagement. »</blockquote>
-          <figcaption><strong>Hannah L.</strong><span>Habituée du spa œil sec</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.15s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Ma fille de cinq ans refusait les gouttes dans deux autres cliniques. Ici, elle s'est endormie pendant l'examen. Le Dr Chen a simplement attendu, puis a terminé. Cette patience n'a pas de prix. »</blockquote>
-          <figcaption><strong>Omar D.</strong><span>Parent — Petits Yeux</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.25s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Le rituel œil sec m'a rendu mes matins. Trois séances et j'ai arrêté de chercher mes gouttes avant le café. La pièce vaut à elle seule la visite. »</blockquote>
-          <figcaption><strong>Bea W.</strong><span>Spa de l'Œil Sec</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ CONTACT ══════════ -->
-  <section class="section contact" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-side">
-        <p class="overline reveal">Dites bonjour</p>
-        <h2 class="reveal" style="--d:.08s">Nous répondons <em class="deep-text">en douceur, et vite</em></h2>
-        <p class="reveal" style="--d:.14s">Questions sur la thérapie de l'œil sec, un enfant anxieux, ou un premier examen — écrivez quand vous voulez. Une vraie personne répond sous un jour ouvré, jamais un robot.</p>
-        <ul class="info-list">
-          <li class="reveal" style="--d:.2s"><span class="info-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.6"/></svg></span><div><strong>Le Studio</strong><span>9 Harbor Lane, niveau jardin<br>Quartier du Front de mer</span></div></li>
-          <li class="reveal" style="--d:.26s"><span class="info-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.6"/></svg></span><div><strong>Dites bonjour</strong><span>+1 (555) 044-2014</span></div></li>
-          <li class="reveal" style="--d:.32s"><span class="info-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.6"/></svg></span><div><strong>Heures paisibles</strong><span>Lun.–Sam. · 9h00 – 17h00<br>Le soir pour les rituels œil sec</span></div></li>
-        </ul>
-      </div>
-
-      <form class="contact-form reveal" id="contactForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-        <fieldset>
-          <div class="field"><input type="text" id="cf-name" required><label for="cf-name">Votre nom</label></div>
-          <div class="field-row">
-            <div class="field"><input type="email" id="cf-email" required><label for="cf-email">E-mail</label></div>
-            <div class="field"><input type="tel" id="cf-phone"><label for="cf-phone">Téléphone (facultatif)</label></div>
-          </div>
-          <div class="field select-field">
-            <select id="cf-subject" required>
-              <option value="" selected disabled></option>
-              <option>Réserver un examen sans hâte</option>
-              <option>Question spa de l'œil sec</option>
-              <option>Rendez-vous pour mon enfant</option>
-              <option>Consultation correction de la vision</option>
-              <option>Autre chose</option>
-            </select>
-            <label for="cf-subject">Comment pouvons-nous aider ?</label>
-          </div>
-          <div class="field"><textarea id="cf-msg" rows="4" required></textarea><label for="cf-msg">Votre mot</label></div>
-          <button type="submit" class="btn btn-wave btn-wide">Envoyer en douceur</button>
-          <p class="form-note">Votre mot reste entre nous. Le thé est en route, peut-être.</p>
-        </fieldset>
-        <div class="form-success" hidden>
-          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-          <h3>Reçu — merci.</h3>
-          <p>Votre mot est dans notre boîte aux lettres de la véranda. Une réponse humaine arrive sous un jour ouvré.</p>
+    <!-- SITUATIONS -->
+    <section class="situations" aria-labelledby="sit-title">
+      <div class="wrap">
+        <h2 id="sit-title" class="h-small">Vous vous reconnaissez ?</h2>
+        <div class="sit-grid">
+          <button class="sit" data-prefill="Yeux secs">
+            <span class="sit-q">Mes yeux brûlent le soir sur écran</span>
+            <span class="sit-a">Bilan de sécheresse oculaire et plan de traitement.</span>
+          </button>
+          <button class="sit" data-prefill="Sécheresse résistante">
+            <span class="sit-q">Les gouttes ne suffisent plus</span>
+            <span class="sit-a">Examen des glandes des paupières, traitements au cabinet.</span>
+          </button>
+          <button class="sit" data-prefill="Intolérance aux lentilles">
+            <span class="sit-q">Je ne supporte plus mes lentilles</span>
+            <span class="sit-a">Bilan de la surface de l&#x27;œil, adaptation ou alternatives.</span>
+          </button>
+          <button class="sit" data-prefill="Enfant : strabisme ou vue">
+            <span class="sit-q">Mon enfant plisse les yeux ou louche</span>
+            <span class="sit-a">Dépistage et prise en charge du strabisme.</span>
+          </button>
+          <button class="sit" data-prefill="Enfant : dépistage">
+            <span class="sit-q">L&#x27;école a signalé un problème de vue</span>
+            <span class="sit-a">Bilan complet, première paire si besoin.</span>
+          </button>
+          <button class="sit" data-prefill="Enfant : maux de tête">
+            <span class="sit-q">Mon enfant a mal à la tête en lisant</span>
+            <span class="sit-a">Recherche d&#x27;un trouble de la vision de près.</span>
+          </button>
         </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ══════════ BOOKING ══════════ -->
-  <section class="section booking" id="book">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Réserver</p>
-        <h2>Réservez une <em>visite en douceur</em></h2>
-        <p class="sec-sub">Quatre étapes toutes douces. Nous garderons la pièce, réchaufferons les serviettes, et laisserons la course à l'extérieur.</p>
+        <p class="sit-hint">Cliquez sur votre situation : le motif de rendez-vous se remplit tout seul.</p>
       </div>
+    </section>
 
-      <div class="book-frame reveal" style="--d:.1s">
-        <div class="book-inner">
-          <ol class="wiz-steps" id="wizSteps">
-            <li class="is-current"><span>Soins</span></li>
-            <li><span>Jour</span></li>
-            <li><span>Vous</span></li>
-            <li><span>Confirmé</span></li>
-          </ol>
-
-          <form id="bookForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-            <!-- STEP 1 -->
-            <fieldset class="pane is-active">
-              <legend>Qu'est-ce qui vous ferait du bien aujourd'hui ?</legend>
-              <div class="flow-grid">
-                <label class="flow"><input type="radio" name="svc" value="Examen oculaire sans hâte" required><span>L'Examen oculaire sans hâte</span></label>
-                <label class="flow"><input type="radio" name="svc" value="Consultation correction de la vision" required><span>Consultation correction de la vision</span></label>
-                <label class="flow"><input type="radio" name="svc" value="Parcours cataracte en douceur" required><span>Parcours cataracte en douceur</span></label>
-                <label class="flow"><input type="radio" name="svc" value="Glaucome &amp; Rétine" required><span>Glaucome &amp; Rétine</span></label>
-                <label class="flow"><input type="radio" name="svc" value="Rituel Spa de l'Œil Sec" required><span>Rituel Spa de l'Œil Sec</span></label>
-                <label class="flow"><input type="radio" name="svc" value="Petits Yeux — Pédiatrie" required><span>Petits Yeux — Pédiatrie</span></label>
-              </div>
-              <p class="flow-error">Merci de choisir un type de soin.</p>
-              <div class="wiz-nav"><span></span><button type="button" class="btn btn-wave js-next">Continuer</button></div>
-            </fieldset>
-
-            <!-- STEP 2 -->
-            <fieldset class="pane">
-              <legend>Quand est votre heure paisible ?</legend>
-              <div class="field date-field">
-                <input type="date" id="bk-date" required>
-                <label>Date du rendez-vous</label>
-              </div>
-              <div class="time-grid" id="timeGrid">
-                <button type="button" class="chip" data-v="9:00">9h00</button>
-                <button type="button" class="chip" data-v="10:30">10h30</button>
-                <button type="button" class="chip" data-v="12:00">12h00</button>
-                <button type="button" class="chip" data-v="14:00">14h00</button>
-                <button type="button" class="chip" data-v="15:30">15h30</button>
-                <button type="button" class="chip" data-v="17:00">17h00</button>
-              </div>
-              <input type="hidden" id="bk-time">
-              <p class="flow-error">Choisissez l'heure qui vous convient.</p>
-              <div class="wiz-nav"><button type="button" class="btn btn-quiet js-prev">Retour</button><button type="button" class="btn btn-wave js-next">Continuer</button></div>
-            </fieldset>
-
-            <!-- STEP 3 -->
-            <fieldset class="pane">
-              <legend>Et qui vient ?</legend>
-              <div class="field-row">
-                <div class="field"><input type="text" id="bk-name" required><label>Nom complet</label></div>
-                <div class="field"><input type="tel" id="bk-phone" required><label>Téléphone</label></div>
-              </div>
-              <div class="field"><input type="text" id="bk-extra" required><label>Assurance / mutuelle ou lieu préféré (Front de mer / Salles du Jardin)</label></div>
-              <div class="field"><textarea id="bk-notes" rows="3"></textarea><label>Ce qui vous mettrait plus à l'aise (facultatif)</label></div>
-              <div class="wiz-nav"><button type="button" class="btn btn-quiet js-prev">Retour</button><button type="submit" class="btn btn-wave">Réserver mon heure</button></div>
-            </fieldset>
-
-            <!-- STEP 4 -->
-            <fieldset class="pane pane-success">
-              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-              <h3>Considérez que c'est retenu.</h3>
-              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est réservé pour<br><strong id="recap-when">—</strong>.</p>
-              <p class="recap-sub">Une confirmation chaleureuse est en route. Venez comme vous êtes — les serviettes seront prêtes.</p>
-            </fieldset>
-          </form>
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-labelledby="serv-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Nos consultations</p>
+          <h2 id="serv-title">Deux spécialités qui demandent du temps.</h2>
+        </div>
+        <div class="serv-grid">
+          <article class="serv">
+            <span class="serv-n">01</span>
+            <h3>Bilan de sécheresse oculaire</h3>
+            <p>Qualité des larmes, glandes des paupières, surface de l&#x27;œil : un bilan complet pour trouver la cause.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">02</span>
+            <h3>Traitements au cabinet</h3>
+            <p>Soins des paupières, lumière pulsée ou autres techniques selon votre cas, après explication.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">03</span>
+            <h3>Lentilles et yeux sensibles</h3>
+            <p>Conseils et adaptation quand les lentilles deviennent inconfortables.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">04</span>
+            <h3>Dépistage chez l&#x27;enfant</h3>
+            <p>Examen adapté à l&#x27;âge, même avant qu&#x27;il sache lire.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">05</span>
+            <h3>Strabisme</h3>
+            <p>Diagnostic, rééducation avec l&#x27;orthoptiste, suivi.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">06</span>
+            <h3>Première paire de lunettes</h3>
+            <p>Ordonnance, conseils aux parents, suivi de l&#x27;adaptation.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ FOOTER ══════════ -->
+    <!-- DÉROULEMENT -->
+    <section class="steps" id="deroulement" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Votre rendez-vous</p>
+          <h2 id="steps-title">Comment se passe la consultation.</h2>
+        </div>
+        <ol class="step-list">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Vous prenez rendez-vous</h3>
+            <p>Motif précisé pour vous réserver le bon temps.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>On écoute</h3>
+            <p>Vos symptômes, vos habitudes, vos traitements déjà essayés.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>On examine et on explique</h3>
+            <p>Chaque examen décrit avant d&#x27;être fait.</p>
+          </li>
+          <li>
+            <span class="step-n">4</span>
+            <h3>Plan de traitement</h3>
+            <p>Étapes claires et rendez-vous de suivi.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS -->
+    <section class="jobs" id="chantiers" aria-labelledby="jobs-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Parcours de soin</p>
+          <h2 id="jobs-title">Quelques exemples.</h2>
+        </div>
+        <div class="job-grid">
+          <article class="job">
+            <p class="job-where">Patiente de 42 ans</p>
+            <h3>Yeux secs depuis des années, gouttes inefficaces</h3>
+            <dl>
+              <div><dt>Prise en charge</dt><dd>Soins des paupières</dd></div>
+              <div><dt>Suivi</dt><dd>3 séances</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Enfant de 5 ans</p>
+            <h3>Strabisme repéré par la maîtresse</h3>
+            <dl>
+              <div><dt>Prise en charge</dt><dd>Rééducation orthoptique</dd></div>
+              <div><dt>Suivi</dt><dd>6 mois</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Patient de 30 ans</p>
+            <h3>Intolérance aux lentilles après le télétravail</h3>
+            <dl>
+              <div><dt>Prise en charge</dt><dd>Bilan et adaptation</dd></div>
+              <div><dt>Suivi</dt><dd>2 consultations</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENTS + AVIS -->
+    <section class="trust" aria-labelledby="trust-title">
+      <div class="wrap trust-grid">
+        <div>
+          <p class="eyebrow">Nos engagements</p>
+          <h2 id="trust-title">Notre façon de travailler.</h2>
+          <ul class="pledges">
+            <li><strong>Du temps.</strong> Des consultations longues, parce que ces troubles le demandent.</li>
+            <li><strong>De la douceur avec les enfants.</strong> On explique, on joue, on ne force jamais.</li>
+            <li><strong>Des explications.</strong> Chaque examen et chaque traitement sont expliqués avant.</li>
+            <li><strong>Des tarifs annoncés.</strong> Les actes non remboursés sont indiqués avant d&#x27;être proposés.</li>
+          </ul>
+          <p class="signature"><strong>Dr Émilie Garreau</strong>, ophtalmologiste, surface oculaire et pédiatrie</p>
+        </div>
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>« Dix ans de gouttes sans résultat. Pour la première fois, on a cherché la cause. Mes yeux ne brûlent plus le soir. »</blockquote>
+            <figcaption>Nathalie B. · Nantes · Yeux secs</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>« Ma fille avait peur. Le docteur a pris le temps de jouer avec elle avant l&#x27;examen. Merci. »</blockquote>
+            <figcaption>Julien C. · Rezé · Enfant</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="sec-head">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Ce qu'on nous demande le plus souvent.</h2>
+          <p class="faq-more">Votre question n'est pas là ?<br>Appelez-nous au <a href="tel:+33261919205">02 61 91 92 05</a>.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Qu&#x27;est-ce que la sécheresse oculaire ?</summary>
+            <p>Un trouble du film de larmes qui protège l&#x27;œil. Il provoque brûlures, sensation de sable, rougeurs ou paradoxalement des larmoiements. Les écrans, l&#x27;âge et certaines maladies le favorisent.</p>
+          </details>
+          <details>
+            <summary>Les gouttes suffisent-elles ?</summary>
+            <p>Pas toujours. Si la cause vient des glandes des paupières, d&#x27;autres traitements peuvent être plus efficaces. C&#x27;est ce que le bilan permet de savoir.</p>
+          </details>
+          <details>
+            <summary>La lumière pulsée est-elle remboursée ?</summary>
+            <p>Non, ces traitements au cabinet ne sont généralement pas pris en charge par l&#x27;Assurance maladie. Le tarif vous est indiqué avant.</p>
+          </details>
+          <details>
+            <summary>À quel âge faire examiner les yeux de son enfant ?</summary>
+            <p>Des examens sont recommandés dans la petite enfance et avant l&#x27;entrée à l&#x27;école, et à tout âge s&#x27;il louche, plisse les yeux ou se plaint de maux de tête.</p>
+          </details>
+          <details>
+            <summary>Un strabisme se soigne-t-il ?</summary>
+            <p>Oui, d&#x27;autant mieux qu&#x27;il est pris en charge tôt : lunettes, rééducation orthoptique, parfois cache ou chirurgie.</p>
+          </details>
+          <details>
+            <summary>Comment se passe un examen chez un tout-petit ?</summary>
+            <p>Avec des tests adaptés à l&#x27;âge, sous forme de jeux. Pas besoin qu&#x27;il sache lire.</p>
+          </details>
+          <details>
+            <summary>Les écrans provoquent-ils la sécheresse oculaire ?</summary>
+            <p>Ils y contribuent : on cligne moins souvent devant un écran, donc le film de larmes se renouvelle moins. Des pauses régulières et des clignements volontaires aident, mais un bilan reste utile si la gêne persiste.</p>
+          </details>
+          <details>
+            <summary>Quand consulter pour une sécheresse oculaire ?</summary>
+            <p>Dès que la gêne est quotidienne : brûlures, yeux rouges, sensation de sable ou larmoiement persistant. Un bilan identifie la cause et évite que la situation s&#x27;installe.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVIS -->
+    <section class="quote" id="devis" aria-labelledby="quote-title">
+      <div class="wrap quote-grid">
+        <div class="quote-side">
+          <p class="eyebrow">Rendez-vous</p>
+          <h2 id="quote-title">Prenez rendez-vous.</h2>
+          <p>Indiquez le motif pour que nous réservions le bon temps de consultation.</p>
+          <div class="contact-card">
+            <a class="contact-line big" href="tel:+33261919205">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              02 61 91 92 05
+            </a>
+            <p class="contact-line">Du lundi au vendredi, 9 h à 18 h, mercredi pour les enfants</p>
+            <p class="contact-line">6 quai de la Fosse, 44000 Nantes</p>
+            <p class="zone"><strong>Patients venant de</strong> Nantes, Rezé, Saint-Herblain, Orvault, Saint-Sébastien-sur-Loire, Vertou, Loire-Atlantique.</p>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label for="website">Ne pas remplir</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field">
+              <label for="work">Motif</label>
+              <select id="work" name="work" data-rule="req" required>
+                <option value="">Choisissez</option>
+                <option>Yeux secs</option>
+                <option>Sécheresse résistante</option>
+                <option>Intolérance aux lentilles</option>
+                <option>Enfant : strabisme ou vue</option>
+                <option>Enfant : dépistage</option>
+                <option>Enfant : maux de tête</option>
+                <option>Autre</option>
+              </select>
+              <p class="err">Faites un choix dans la liste.</p>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="who">Pour qui ? <span class="opt">(facultatif)</span></label>
+              <input type="text" id="who" name="who" maxlength="80" placeholder="Ex. : ma fille de 5 ans">
+            </div>
+            <div class="field">
+              <label for="avail">Vos disponibilités</label>
+              <select id="avail" name="avail">
+                <option>Dès que possible</option>
+                <option>Cette semaine</option>
+                <option>Dans le mois</option>
+                <option>Je préfère en parler</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Précisions <span class="opt">(facultatif)</span></label>
+            <textarea id="details" name="details" rows="3" maxlength="800" placeholder="Ex. : yeux qui brûlent le soir depuis deux ans malgré les gouttes"></textarea>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" maxlength="80" autocomplete="name" data-rule="name" required>
+              <p class="err">Indiquez votre nom.</p>
+            </div>
+            <div class="field">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" maxlength="20" autocomplete="tel" data-rule="phone" required>
+              <p class="err">Un numéro à 10 chiffres pour vous joindre.</p>
+            </div>
+          </div>
+
+          <div class="field">
+              <label for="email">E-mail <span class="opt">(facultatif)</span></label>
+              <input type="email" id="email" name="email" maxlength="120" autocomplete="email" data-rule="email">
+              <p class="err">Cette adresse ne semble pas valide.</p>
+          </div>
+
+          <fieldset class="field">
+            <legend>Quand vous rappeler ?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="when" value="Matin" checked><span>Le matin</span></label>
+              <label class="chip"><input type="radio" name="when" value="Midi"><span>Entre 12 h et 14 h</span></label>
+              <label class="chip"><input type="radio" name="when" value="Après-midi"><span>L'après-midi</span></label>
+            </div>
+          </fieldset>
+
+          <button class="btn btn-primary btn-block" type="submit">Demander un rendez-vous</button>
+          <p class="form-legal">Vos informations servent uniquement à organiser votre rendez-vous. Ne transmettez pas de données médicales détaillées par ce formulaire.</p>
+
+          <div class="success" id="success" role="status" aria-live="polite" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="m14 24 7 7 13-14"/></svg>
+            <h3>Demande bien reçue</h3>
+            <p id="successMsg"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="foot-brand">
-        <a class="brand" href="#top">
-          <span class="brand-mark"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="5.6"/><circle cx="12" cy="12" r="1.8"/></svg></span>
-          <span class="brand-text">Serene&nbsp;Vision<small>Studio de soins oculaires</small></span>
-        </a>
-        <p>Des soins oculaires sans hâte sur Harbor Lane. Le thé est toujours chaud.</p>
-      </div>
-      <div><h4>Explorer</h4><a href="#services">Nos soins</a><a href="#studio">Le Studio</a><a href="#rituals">Rituels</a><a href="#kind-words">Mots doux</a></div>
-      <div><h4>Soins</h4><a href="#book">Examens de la vue</a><a href="#book">Spa de l'Œil Sec</a><a href="#book">Petits Yeux</a><a href="#book">Parcours cataracte</a></div>
-      <div><h4>Bonjour</h4><a href="tel:+15550442014">+1 (555) 044-2014</a><a href="#contact">hello@serenevision.care</a><span>9 Harbor Lane, niveau jardin</span></div>
+    <div class="wrap footer-inner">
+      <p><strong>Vision Douce</strong> · Yeux secs et enfants · Nantes · 6 quai de la Fosse, 44000 Nantes</p>
+      <p>SIRET 000 000 000 00000 · Assurance n° à préciser · Page mise à jour le <time datetime="2026-09-30">30 septembre 2026</time> · <a href="#top">Retour en haut</a></p>
     </div>
-    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Serene Vision. Tous droits réservés.</span><span>Sans hâte, toujours · Studio de soins oculaires agréé</span></div></div>
   </footer>
+
+  <!-- Barre d'action mobile -->
+  <div class="mobile-bar">
+    <a href="tel:+33261919205" class="mb-call">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+      Appeler
+    </a>
+    <a href="#devis" class="mb-quote">Rendez-vous</a>
+  </div>
 
   <script src="script.js"></script>
 </body>

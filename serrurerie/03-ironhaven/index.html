@@ -3,411 +3,690 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Ironhaven &amp; Sons — Serruriers depuis 1954 | Clés taillées à la main, sécurité de fer</title>
-  <meta name="description" content="Ironhaven & Sons répond à la cloche de nuit et taille des clés au même établi de la rue de la Fonderie depuis 1954. Trois générations de serruriers : clés taillées à la main, serrures restaurées, sécurité de fer.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='7' cy='12' r='4' fill='none' stroke='%235E1F24' stroke-width='2.4'/%3E%3Cpath d='M11 12h10M17 12v4M21 12v3' stroke='%235E1F24' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Serrurier et double de clés à Strasbourg depuis 1954 | Serrurerie Hardy</title>
+  <meta name="description" content="Serrurerie Hardy, au centre de Strasbourg depuis 1954 : doubles de clés, clés de voiture et badges, serrures, boîtes aux lettres, restauration de serrures anciennes. Boutique et interventions à domicile.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A1512'/%3E%3Cg color='%23D9733F' fill='%23D9733F'%3E%3Ccircle cx='11' cy='11' r='6' fill='none' stroke='currentColor' stroke-width='2.6'/%3E%3Cpath class='blade' d='M15 15l11 11-2.5 2.5-2-2-2 2-2-2 2-2-6.5-6.5z'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1400.webp 1400w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: italic;
+  font-weight: 400;
+  src: url(fonts/LibreCaslonText-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/LibreCaslonText-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Libre Caslon Text';
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/LibreCaslonText-normal-2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/WorkSans-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Serrurerie Hardy">
+  <meta property="og:title" content="Serrurier et double de clés à Strasbourg depuis 1954 | Serrurerie Hardy">
+  <meta property="og:description" content="Serrurerie Hardy, au centre de Strasbourg depuis 1954 : doubles de clés, clés de voiture et badges, serrures, boîtes aux lettres, restauration de serrures anciennes. Boutique et interventions à domicile.">
+  <meta property="og:url" content="https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/">
+  <meta property="og:image" content="https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/hero.jpg">
+  <meta property="og:image:alt" content="Un serrurier âgé taille une clé dans sa boutique remplie de clés">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Locksmith",
+      "@id": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/#entreprise",
+      "name": "Serrurerie Hardy",
+      "url": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/",
+      "description": "Serrurerie Hardy, au centre de Strasbourg depuis 1954 : doubles de clés, clés de voiture et badges, serrures, boîtes aux lettres, restauration de serrures anciennes. Boutique et interventions à domicile.",
+      "slogan": "Un double de clé en cinq minutes, une serrure réparée plutôt que remplacée.",
+      "telephone": "+33353014591",
+      "image": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "7 rue des Orfèvres",
+        "postalCode": "67000",
+        "addressLocality": "Strasbourg",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Strasbourg"
+        },
+        {
+          "@type": "Place",
+          "name": "Schiltigheim"
+        },
+        {
+          "@type": "Place",
+          "name": "Illkirch-Graffenstaden"
+        },
+        {
+          "@type": "Place",
+          "name": "Lingolsheim"
+        },
+        {
+          "@type": "Place",
+          "name": "Bischheim"
+        },
+        {
+          "@type": "Place",
+          "name": "Hoenheim"
+        },
+        {
+          "@type": "Place",
+          "name": "Ostwald"
+        }
+      ],
+      "openingHours": "Tu-Sa 09:00-18:30",
+      "knowsAbout": [
+        "Doubles de clés",
+        "Badges et télécommandes",
+        "Clés de voiture",
+        "Serrures anciennes",
+        "Serrures et cylindres",
+        "Petits dépannages"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "La boutique pour vos clés, les serruriers pour vos portes.",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Doubles de clés",
+              "description": "Plus de 2 000 modèles de clés en stock : plates, à gorges, à pompe, sécurisées sur carte.",
+              "areaServed": "Boutique au centre de Strasbourg",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Badges et télécommandes",
+              "description": "Copie de badges d'immeuble et de télécommandes de portail ou de garage.",
+              "areaServed": "Boutique au centre de Strasbourg",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Clés de voiture",
+              "description": "Clés à transpondeur et télécommandes pour la plupart des modèles, programmées sur place.",
+              "areaServed": "Boutique au centre de Strasbourg",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Serrures anciennes",
+              "description": "Réparation et restauration des serrures et crémones des immeubles anciens.",
+              "areaServed": "Boutique au centre de Strasbourg",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Serrures et cylindres",
+              "description": "Remplacement, mise en place de serrures multipoints, conseil de sécurité.",
+              "areaServed": "Boutique au centre de Strasbourg",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Petits dépannages",
+              "description": "Boîtes aux lettres, casiers, meubles, cadenas.",
+              "areaServed": "Boutique au centre de Strasbourg",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/#entreprise"
+              }
+            }
+          }
+        ]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Pierre Hardy",
+        "jobTitle": "serrurier, troisième génération"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/",
+      "url": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/",
+      "name": "Serrurier et double de clés à Strasbourg depuis 1954 | Serrurerie Hardy",
+      "description": "Serrurerie Hardy, au centre de Strasbourg depuis 1954 : doubles de clés, clés de voiture et badges, serrures, boîtes aux lettres, restauration de serrures anciennes. Boutique et interventions à domicile.",
+      "inLanguage": "fr-FR",
+      "dateModified": "2026-09-30",
+      "about": {
+        "@id": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/#entreprise"
+      },
+      "primaryImageOfPage": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/hero.jpg"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://luxury-service-websites.vercel.app/serrurerie/03-ironhaven/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien de temps pour un double de clé ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cinq minutes environ pour une clé courante, pendant que vous attendez. Les clés sécurisées demandent votre carte de propriété et parfois une commande."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pouvez-vous copier un badge d'immeuble ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dans la plupart des cas oui, en boutique. Certains badges cryptés ne sont pas copiables : on vous le dit tout de suite."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faites-vous les clés de voiture ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, pour la plupart des modèles, avec programmation de la puce et de la télécommande."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Réparez-vous les serrures anciennes ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, c'est une spécialité de l'atelier. Démontage, nettoyage, pièces refaites si besoin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il prendre rendez-vous ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non pour la boutique. Pour une intervention à domicile, appelez-nous ou utilisez le formulaire."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Où se trouve la boutique ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "7 rue des Orfèvres, au centre de Strasbourg, à deux pas de la cathédrale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que faire si je perds une clé sécurisée ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une clé protégée ne se copie qu'avec votre carte de propriété. Si vous la perdez, prévenez-nous : nous en commandons une nouvelle et, si besoin, nous changeons le cylindre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on copier une clé de boîte aux lettres ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, en boutique, à partir de la clé d'origine. Apportez-la avec vous : la copie se fait en quelques minutes."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
-  <!-- ══════════════ NAVIGATION ══════════════ -->
+  <a class="skip" href="#devis">Aller au formulaire de devis</a>
+
+  <!-- Bandeau infos pratiques -->
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Boutique au centre de Strasbourg</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.4V6h-2v7.6l5 3 1-1.7Z"/></svg>Du mardi au samedi, 9 h à 18 h 30</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5Z"/></svg>Double de clé en 5 minutes</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
   <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="12" r="4"/><path d="M11 12h10M17 12v4M21 12v3"/></svg>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Serrurerie Hardy, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="2.6"/><path class="blade" d="M15 15l11 11-2.5 2.5-2-2-2 2-2-2 2-2-6.5-6.5z"/></svg>
         </span>
-        <span class="brand-text">Ironhaven&nbsp;&amp;&nbsp;Sons<small>Serruriers · Rue de la Fonderie · Depuis 1954</small></span>
+        <span class="brand-text">Serrurerie Hardy<small>Serrurier et clés depuis 1954 · Strasbourg</small></span>
       </a>
-      <nav class="links" id="navLinks">
-        <a href="#services">Le Métier</a>
-        <a href="#forge">La Forge</a>
-        <a href="#legacy">La Lignée</a>
-        <a href="#kindwords">Mots Doux</a>
-        <a href="#contact">Contact</a>
-        <a href="#booking" class="nav-cta">Appeler la Forge</a>
+      <nav class="links" id="navLinks" aria-label="Navigation principale">
+        <a href="#services">L'atelier</a>
+        <a href="#deroulement">Comment ça se passe</a>
+        <a href="#chantiers">Réalisations</a>
+        <a href="#faq">Questions</a>
+        <a href="#devis" class="links-cta">Nous écrire</a>
       </nav>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <a class="nav-phone" href="tel:+33353014591">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+        <span>03 53 01 45 91</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- ══════════════ HERO ══════════════ -->
-  <section class="hero" id="top">
-    <div class="hero-embers" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
-      <span></span><span></span><span></span>
-    </div>
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="overline reveal">Serruriers rue de la Fonderie depuis 1954</p>
-        <h1 class="reveal" style="--d:.1s">Taillée à la main.<br><em>Gardée de cœur.</em></h1>
-        <p class="hero-sub reveal" style="--d:.2s">Ironhaven &amp; Sons répond à la cloche de nuit et taille des clés au
-          même établi que celui où notre grand-père a fondé la maison. Le maillet du grand-père, les limes du père,
-          notre patience — chaque serrure de votre maison mérite cette lignée-là.</p>
-        <div class="hero-cta reveal" style="--d:.3s">
-          <a href="#booking" class="btn btn-ember">Appeler la Forge</a>
-          <a href="#legacy" class="btn btn-outline">Trois générations</a>
+  <main id="top">
+
+    <section class="hero split-left">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="eyebrow">Serrurier et double de clés à Strasbourg depuis 1954</h1>
+          <p class="headline">Un double de clé en cinq minutes, <em>une serrure réparée plutôt que remplacée.</em></p>
+          <p class="lead">Notre boutique rue des Orfèvres reproduit vos clés, badges et télécommandes pendant que vous attendez. Nos serruriers se déplacent pour vos serrures, et restaurent les mécanismes anciens des immeubles strasbourgeois.</p>
+          <ul class="proofs">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Doubles de clés et badges pendant que vous attendez</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Serrures anciennes réparées à l&#x27;atelier</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Déplacement à domicile dans l&#x27;Eurométropole</li>
+          </ul>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#devis">Nous écrire</a>
+            <a class="btn btn-ghost" href="tel:+33353014591">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              03 53 01 45 91
+            </a>
+          </div>
+          <p class="hero-note">Sans rendez-vous en boutique, du mardi au samedi.</p>
         </div>
-        <div class="hero-sign reveal" style="--d:.4s">
-          <span>— Aldous, Walter, Marcus &amp; Elias Ironhaven</span>
-        </div>
-      </div>
-      <div class="hero-plaque reveal" style="--d:.25s">
-        <div class="plaque-inner">
-          <p class="plaque-top">LA CLÉ DU FONDATEUR — ENCORE EN SERVICE</p>
-          <svg class="forge-key" viewBox="0 0 340 90" aria-hidden="true">
-            <g class="key-lines">
-              <circle cx="40" cy="45" r="24"/>
-              <circle cx="40" cy="45" r="14"/>
-              <circle cx="40" cy="45" r="4" class="filled"/>
-              <path d="M64 45 H238"/>
-              <path d="M238 45 v16 h13 v-9 h12 v15 h13 v-8 h12 v20 h13 v-34"/>
-              <path class="tick" d="M92 41 v8"/><path class="tick" d="M132 41 v8"/>
-              <path class="tick" d="M172 41 v8"/><path class="tick" d="M204 41 v8"/>
-            </g>
-          </svg>
-          <div class="plaque-rule"></div>
-          <div class="plaque-foot">
-            <span>DEPUIS 1954</span>
-            <span>TAILLÉE MAIN · CLOCHE DE NUIT RÉPONDUE</span>
+
+        <div class="hero-visual">
+          <figure class="hero-photo">
+            <img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1400.webp 1400w" sizes="(min-width: 900px) 50vw, 100vw" alt="Un serrurier âgé taille une clé dans sa boutique remplie de clés" width="1400" height="978" fetchpriority="high" decoding="async">
+          </figure>
+          <div class="hero-badge">
+            <strong>1954</strong>
+            <span>trois générations<br>rue des Orfèvres</span>
           </div>
         </div>
-        <div class="plaque-stamp" aria-hidden="true">72<br>ANS</div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════════ SERVICES ══════════════ -->
-  <section class="section light" id="services">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Notre métier</p>
-        <h2>Des heures d'autrefois,<br><em>toutes sortes de serrures</em></h2>
-        <div class="sec-rule"></div>
-        <p class="sec-sub">Six métiers sous une même enclume. Si neuve soit la serrure, les manières datent de 1954 :
-          bottes essuyées, portes tenues, et le prix convenu avant de lever la lime.</p>
+    <!-- SITUATIONS -->
+    <section class="situations" aria-labelledby="sit-title">
+      <div class="wrap">
+        <h2 id="sit-title" class="h-small">Que peut-on faire pour vous ?</h2>
+        <div class="sit-grid">
+          <button class="sit" data-prefill="Double de clé">
+            <span class="sit-q">Il me faut un double de clé</span>
+            <span class="sit-a">Clés plates, à pompe, sécurisées : faites pendant que vous attendez.</span>
+          </button>
+          <button class="sit" data-prefill="Badge ou télécommande">
+            <span class="sit-q">Je veux copier le badge de mon immeuble</span>
+            <span class="sit-a">Badges et télécommandes de portail dupliqués en boutique.</span>
+          </button>
+          <button class="sit" data-prefill="Clé de voiture">
+            <span class="sit-q">J&#x27;ai perdu ma clé de voiture</span>
+            <span class="sit-a">Clés et télécommandes de voiture pour la plupart des modèles.</span>
+          </button>
+          <button class="sit" data-prefill="Serrure ancienne">
+            <span class="sit-q">Ma serrure ancienne est grippée</span>
+            <span class="sit-a">Démontage, réparation et nettoyage à l&#x27;atelier.</span>
+          </button>
+          <button class="sit" data-prefill="Changement de serrure">
+            <span class="sit-q">Je veux changer ma serrure</span>
+            <span class="sit-a">Conseil en boutique, pose à domicile.</span>
+          </button>
+          <button class="sit" data-prefill="Boîte aux lettres">
+            <span class="sit-q">Ma boîte aux lettres ne ferme plus</span>
+            <span class="sit-a">Serrures de boîtes aux lettres de toutes marques.</span>
+          </button>
+        </div>
+        <p class="sit-hint">Cliquez sur votre situation : le formulaire se remplit tout seul.</p>
       </div>
+    </section>
 
-      <div class="services-grid">
-        <article class="service reveal" style="--d:.05s">
-          <span class="svc-num">I</span>
-          <h3>Cloche de nuit &amp; fermetures</h3>
-          <p>La cloche à côté de la porte sonne à toute heure depuis 1954, et quelqu'un a toujours répondu.
-            Nous venons doucement, ouvrons sans abîmer, et vous voyons rentrer en sécurité.</p>
-          <a href="#booking" class="service-link">à partir de 135 € <span>→</span></a>
-        </article>
-        <article class="service reveal" style="--d:.1s">
-          <span class="svc-num">II</span>
-          <h3>Serrures connectées, bien posées</h3>
-          <p>Nous aimons le neuf qui se comporte comme l'ancien. Pênes à empreinte et à clé de téléphone, alignés,
-            protégés des intempéries, et expliqués jusqu'à ce que vous sachiez vous en servir les yeux mi-clos.</p>
-          <a href="#booking" class="service-link">à partir de 310 € <span>→</span></a>
-        </article>
-        <article class="service reveal" style="--d:.15s">
-          <span class="svc-num">III</span>
-          <h3>Changement de cylindres &amp; clés maîtresses</h3>
-          <p>Nouveaux locataires, vieilles maisons, bâtiments hérités. Nous goupillons les cylindres selon une
-            hiérarchie d'abord écrite au crayon avec vous — et poinçonnons chaque clé taillée.</p>
-          <a href="#booking" class="service-link">à partir de 175 € <span>→</span></a>
-        </article>
-        <article class="service reveal" style="--d:.2s">
-          <span class="svc-num">IV</span>
-          <h3>Coffres-forts, anciens &amp; modernes</h3>
-          <p>Le coffre au sol de grand-mère au cadran usé, ou la armoire à fusils arrivée sans sa clé.
-            Nous ouvrons, déplaçons, entretenons et remettons tout en service — lentement et dans les règles.</p>
-          <a href="#booking" class="service-link">à partir de 250 € <span>→</span></a>
-        </article>
-        <article class="service reveal" style="--d:.25s">
-          <span class="svc-num">V</span>
-          <h3>Clés auto &amp; utilitaires</h3>
-          <p>Du tracteur qui vous nourrit à la berline qui emmène les enfants — clés taillées, télécommandes
-            appairées, contacts ramenés à la vie, le plus souvent le jour même.</p>
-          <a href="#booking" class="service-link">à partir de 185 € <span>→</span></a>
-        </article>
-        <article class="service reveal" style="--d:.3s">
-          <span class="svc-num">VI</span>
-          <h3>Mises à niveau sécurité de fer</h3>
-          <p>Gâches renforcées, vis plus longues là où il faut, cylindres anti-crochetage. Rien de spectaculaire —
-            juste des portes qui rendent coup pour coup et gagnent.</p>
-          <a href="#booking" class="service-link">à partir de 265 € <span>→</span></a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════ THE FORGE / STORY ══════════════ -->
-  <section class="section dark forge" id="forge">
-    <div class="container forge-grid">
-      <div class="forge-copy">
-        <p class="overline reveal">La Forge</p>
-        <h2 class="reveal" style="--d:.08s">Certaines choses ne doivent<br><em>pas être pressées.</em></h2>
-        <p class="reveal" style="--d:.16s">Une serrure est une petite machine qui se dresse entre votre famille et la
-          nuit. Nous avons passé soixante-douze ans à apprendre à les construire et à les réparer pour que vous
-          n'ayez plus jamais à y penser. L'atelier a déménagé deux fois, la cloche a été refondue une fois, et la
-          règle au mur n'a jamais changé :</p>
-        <p class="forge-rule-line reveal" style="--d:.22s">« Laisse la porte plus solide que tu ne l'as trouvée. »</p>
-        <ul class="forge-list">
-          <li class="reveal" style="--d:.26s"><span>✚</span> Agréés, cautionnés &amp; assurés dès la deuxième année d'ouverture</li>
-          <li class="reveal" style="--d:.32s"><span>✚</span> Clés taillées à l'établi et poinçonnées à notre marque</li>
-          <li class="reveal" style="--d:.38s"><span>✚</span> Serrures anciennes restaurées, pas remplacées, quand l'honnêteté le permet</li>
-          <li class="reveal" style="--d:.44s"><span>✚</span> La cloche de nuit est répondue par un serrurier, jamais par une machine</li>
-        </ul>
-        <a href="#contact" class="btn btn-ember reveal" style="--d:.5s">Écrire à la Forge</a>
-      </div>
-      <div class="forge-visual reveal" style="--d:.15s">
-        <div class="anvil-frame">
-          <div class="anvil-panel">
-            <svg class="anvil-key" viewBox="0 0 340 90" aria-hidden="true">
-              <g class="key-lines">
-                <circle cx="40" cy="45" r="24"/>
-                <circle cx="40" cy="45" r="14"/>
-                <circle cx="40" cy="45" r="4" class="filled"/>
-                <path d="M64 45 H238"/>
-                <path d="M238 45 v16 h13 v-9 h12 v15 h13 v-8 h12 v20 h13 v-34"/>
-              </g>
-            </svg>
-            <p class="anvil-year">1954</p>
-            <p class="anvil-motto">« Une clé est une promesse<br>faite de laiton. »</p>
-          </div>
-          <div class="anvil-nails" aria-hidden="true"><i></i><i></i><i></i></div>
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-labelledby="serv-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">L&#x27;atelier</p>
+          <h2 id="serv-title">La boutique pour vos clés, les serruriers pour vos portes.</h2>
+        </div>
+        <div class="serv-grid">
+          <article class="serv">
+            <span class="serv-n">01</span>
+            <h3>Doubles de clés</h3>
+            <p>Plus de 2 000 modèles de clés en stock : plates, à gorges, à pompe, sécurisées sur carte.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">02</span>
+            <h3>Badges et télécommandes</h3>
+            <p>Copie de badges d&#x27;immeuble et de télécommandes de portail ou de garage.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">03</span>
+            <h3>Clés de voiture</h3>
+            <p>Clés à transpondeur et télécommandes pour la plupart des modèles, programmées sur place.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">04</span>
+            <h3>Serrures anciennes</h3>
+            <p>Réparation et restauration des serrures et crémones des immeubles anciens.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">05</span>
+            <h3>Serrures et cylindres</h3>
+            <p>Remplacement, mise en place de serrures multipoints, conseil de sécurité.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">06</span>
+            <h3>Petits dépannages</h3>
+            <p>Boîtes aux lettres, casiers, meubles, cadenas.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════════ LEGACY TIMELINE ══════════════ -->
-  <section class="section light legacy" id="legacy">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Trois générations</p>
-        <h2>Le long chemin<br><em>autour de l'établi</em></h2>
-        <div class="sec-rule"></div>
-      </div>
-      <ol class="timeline" id="timeline">
-        <li class="t-item reveal" style="--d:.05s">
-          <span class="t-node"></span>
-          <p class="t-year">1954</p>
-          <h3>La première cloche</h3>
-          <p>Aldous Ironhaven ouvre une forge de deux pièces rue de la Fonderie. Sa première clé est taillée dans un
-            ressort de charrette cassé ; elle ouvre encore la porte de derrière de l'atelier.</p>
-        </li>
-        <li class="t-item reveal" style="--d:.15s">
-          <span class="t-node"></span>
-          <p class="t-year">1979</p>
-          <h3>Une deuxième paire de mains</h3>
-          <p>Son fils Walter accroche son uniforme de service et prend les limes. L'atelier répond à sa première
-            fermeture de minuit — et n'en a raté aucune depuis.</p>
-        </li>
-        <li class="t-item reveal" style="--d:.25s">
-          <span class="t-node"></span>
-          <p class="t-year">2003</p>
-          <h3>Les fils prennent l'établi</h3>
-          <p>Les jumeaux Marcus et Elias rééquippent l'arrière-boutique pour les transpondeurs et les serrures
-            connectées, et laissent la taille à la main à l'établi d'entrée, là où elle a sa place.</p>
-        </li>
-        <li class="t-item reveal" style="--d:.35s">
-          <span class="t-node"></span>
-          <p class="t-year">Aujourd'hui</p>
-          <h3>La troisième génération</h3>
-          <p>Six serruriers, une cloche de nuit, et la règle du fondateur clouée au-dessus de la porte : laisse la
-            porte plus solide que tu ne l'as trouvée.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ══════════════ STATS ══════════════ -->
-  <section class="stats-band">
-    <div class="container stats-grid">
-      <div class="reveal"><strong data-count="72" data-suffix="">0</strong><span>Ans à l'établi</span></div>
-      <div class="reveal" style="--d:.1s"><strong data-count="3" data-suffix="">0</strong><span>Générations de forgerons</span></div>
-      <div class="reveal" style="--d:.2s"><strong data-count="58000" data-suffix="+">0</strong><span>Clés taillées main &amp; poinçonnées</span></div>
-      <div class="reveal" style="--d:.3s"><strong data-count="4.9" data-decimal="1" data-suffix="">0</strong><span>Note des voisins</span></div>
-    </div>
-  </section>
-
-  <!-- ══════════════ TESTIMONIALS ══════════════ -->
-  <section class="section light" id="kindwords">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Mots doux</p>
-        <h2>De la part de gens qui<br><em>se servent de leurs portes</em></h2>
-        <div class="sec-rule"></div>
-      </div>
-      <div class="testi-grid">
-        <figure class="testi reveal" style="--d:.05s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« La serrure d'entrée de notre auberge est plus vieille que la charte de la ville. Ironhaven l'a
-            restaurée au lieu de nous vendre du neuf, et aujourd'hui elle verrouille comme au jour de sa forge. »</blockquote>
-          <figcaption><strong>Helena M.</strong><span>Auberge du Ressort de Charrette</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.15s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Fermés dehors de la ferme à onze heures du soir, la grêle de côté. Le petit-fils de Walter nous
-            a fait entrer en vingt minutes et est resté huiler les gonds. »</blockquote>
-          <figcaption><strong>Tom &amp; Ruthie K.</strong><span>Ferme de Hollow Creek</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.25s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Ils ont re-keyé toute la maison paroissiale, taillé des clés pour chaque sacristain depuis 1998,
-            et tout étiqueté à la main. Des gens honnêtes, des prix honnêtes. »</blockquote>
-          <figcaption><strong>Père Amos D.</strong><span>Paroisse Saint-Brannoc</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════ CONTACT ══════════════ -->
-  <section class="section dark contact" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-info">
-        <p class="overline reveal">Correspondance</p>
-        <h2 class="reveal" style="--d:.08s">Frapper à<br><em>la Forge</em></h2>
-        <p class="reveal" style="--d:.14s">Écrivez, sonnez, ou venez au comptoir avec la pièce dans la main — c'est
-          ainsi que commencent nos chantiers préférés. Un serrurier répond en un jour ouvré.</p>
-        <ul class="info-list">
-          <li class="reveal" style="--d:.2s"><span class="info-ic">✚</span><div><strong>La Forge</strong><span>12 rue de la Fonderie<br>Quartier du Vieux Moulin</span></div></li>
-          <li class="reveal" style="--d:.26s"><span class="info-ic">✚</span><div><strong>Cloche de nuit</strong><span>+1 (555) 604-1954</span></div></li>
-          <li class="reveal" style="--d:.32s"><span class="info-ic">✚</span><div><strong>Horaires</strong><span>Lun–Sam · 8h00 – 18h00<br>La cloche ne dort jamais</span></div></li>
-        </ul>
-      </div>
-
-      <form class="contact-form reveal" id="contactForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-        <fieldset>
-          <div class="field"><input type="text" id="cf-name" required><label for="cf-name">Votre nom</label></div>
-          <div class="field-row">
-            <div class="field"><input type="email" id="cf-email" required><label for="cf-email">E-mail</label></div>
-            <div class="field"><input type="tel" id="cf-phone"><label for="cf-phone">Téléphone (facultatif)</label></div>
-          </div>
-          <div class="field select-field">
-            <select id="cf-subject" required>
-              <option value="" selected disabled></option>
-              <option>Un devis pour la maison</option>
-              <option>Une vieille serrure à restaurer</option>
-              <option>Des clés maîtresses pour un bâtiment</option>
-              <option>Un coffre-fort, à ouvrir ou déplacer</option>
-              <option>Autre chose tout à fait</option>
-            </select>
-            <label for="cf-subject">De quoi s'agit-il ?</label>
-          </div>
-          <div class="field"><textarea id="cf-msg" rows="4" required></textarea><label for="cf-msg">Parlez-nous de la porte</label></div>
-          <button type="submit" class="btn btn-ember btn-wide">Envoyer à l'établi</button>
-          <p class="form-note">Votre lettre finit dans la poche d'un serrurier, pas sur une liste marketing.</p>
-        </fieldset>
-        <div class="form-success" hidden>
-          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-          <h3>C'est sur l'établi.</h3>
-          <p>Votre message est lu au comptoir, pas trié par une machine. Réponse en un jour ouvré.</p>
+    <!-- DÉROULEMENT -->
+    <section class="steps" id="deroulement" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Comment ça se passe</p>
+          <h2 id="steps-title">Comme au comptoir, depuis soixante-dix ans.</h2>
         </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ══════════════ BOOKING ══════════════ -->
-  <section class="section light booking" id="booking">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Réserver l'établi</p>
-        <h2>Choisissez la porte,<br><em>et l'heure</em></h2>
-        <div class="sec-rule"></div>
-        <p class="sec-sub">Quatre étapes, comme nous faisons le papier : une seule fois, bien fait, en mots clairs.</p>
+        <ol class="step-list">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Vous passez en boutique</h3>
+            <p>Avec votre clé, votre badge ou une photo de votre serrure.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>On regarde ensemble</h3>
+            <p>Conseil, prix et délai annoncés au comptoir.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Fait sur place ou à l&#x27;atelier</h3>
+            <p>Doubles en cinq minutes, réparations en quelques jours.</p>
+          </li>
+          <li>
+            <span class="step-n">4</span>
+            <h3>Intervention à domicile</h3>
+            <p>Pour la pose de serrures, rendez-vous à l&#x27;heure qui vous arrange.</p>
+          </li>
+        </ol>
       </div>
+    </section>
 
-      <div class="book-frame reveal" style="--d:.1s">
-        <div class="book-inner">
-          <ol class="wiz-steps" id="wizSteps">
-            <li class="is-current"><span>Le travail</span></li>
-            <li><span>Jour &amp; heure</span></li>
-            <li><span>Qui &amp; où</span></li>
-            <li><span>C'est noté</span></li>
-          </ol>
-
-          <form id="bookForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-            <!-- STEP 1 · SERVICE -->
-            <fieldset class="pane is-active">
-              <legend>Qu'est-ce qui a besoin d'un serrurier ?</legend>
-              <div class="choice-grid">
-                <label class="choice"><input type="radio" name="svc" value="Cloche de Nuit &amp; Fermetures" required><span>Dépannage d'urgence 24h/24</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Serrures Connectées, Bien Posées"><span>Installation de serrures connectées</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Changement de Cylindres &amp; Clés Maîtresses"><span>Changement de cylindres</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Coffres-forts, Anciens &amp; Modernes"><span>Coffres-forts</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Clés Auto &amp; Utilitaires"><span>Clés de voiture</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Mises à Niveau Sécurité de Fer"><span>Serrures haute sécurité</span></label>
-              </div>
-              <p class="choice-error">Choisissez d'abord le travail — le reste suit.</p>
-              <div class="wiz-nav"><span></span><button type="button" class="btn btn-ember js-next">On continue</button></div>
-            </fieldset>
-
-            <!-- STEP 2 · DATE & TIME -->
-            <fieldset class="pane">
-              <legend>Qu'est-ce qui convient à la maison ?</legend>
-              <div class="field date-field">
-                <input type="date" id="bk-date" required>
-                <label>Jour souhaité</label>
-              </div>
-              <div class="time-grid" id="timeGrid">
-                <button type="button" class="chip" data-v="8:00 – 10:00">8h–10h</button>
-                <button type="button" class="chip" data-v="10:00 – 12:00">10h–12h</button>
-                <button type="button" class="chip" data-v="12:00 – 14:00">12h–14h</button>
-                <button type="button" class="chip" data-v="14:00 – 16:00">14h–16h</button>
-                <button type="button" class="chip" data-v="16:00 – 18:00">16h–18h</button>
-                <button type="button" class="chip" data-v="18:00 – 20:00">18h–20h</button>
-              </div>
-              <input type="hidden" id="bk-time">
-              <p class="choice-error">Choisissez une heure et nous la gardons.</p>
-              <div class="wiz-nav"><button type="button" class="btn btn-outline js-prev">Reculer d'un pas</button><button type="button" class="btn btn-ember js-next">On continue</button></div>
-            </fieldset>
-
-            <!-- STEP 3 · DETAILS -->
-            <fieldset class="pane">
-              <legend>Qui devrons-nous demander ?</legend>
-              <div class="field-row">
-                <div class="field"><input type="text" id="bk-name" required><label>Nom</label></div>
-                <div class="field"><input type="tel" id="bk-phone" required><label>Téléphone</label></div>
-              </div>
-              <div class="field"><input type="text" id="bk-address" required><label>Adresse de la porte</label></div>
-              <div class="field"><textarea id="bk-notes" rows="3"></textarea><label>Ce que le forgeron devrait savoir (facultatif)</label></div>
-              <div class="wiz-nav"><button type="button" class="btn btn-outline js-prev">Reculer d'un pas</button><button type="submit" class="btn btn-ember">Réserver la visite</button></div>
-            </fieldset>
-
-            <!-- STEP 4 · SUCCESS -->
-            <fieldset class="pane pane-success">
-              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-              <h3>Inscrit au registre.</h3>
-              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est notée pour<br><strong id="recap-when">—</strong>.</p>
-              <p class="recap-sub">Nous appellerons la veille pour confirmer, et le fourgon arrivera les bottes déjà essuyées.</p>
-            </fieldset>
-          </form>
+    <!-- RÉALISATIONS -->
+    <section class="jobs" id="chantiers" aria-labelledby="jobs-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Réalisations récentes</p>
+          <h2 id="jobs-title">Quelques exemples de ces derniers mois.</h2>
+        </div>
+        <div class="job-grid">
+          <article class="job">
+            <p class="job-where">Neustadt · Immeuble de 1900</p>
+            <h3>Serrure à gorges d&#x27;origine restaurée à l&#x27;atelier</h3>
+            <dl>
+              <div><dt>Travail</dt><dd>Restauration</dd></div>
+              <div><dt>Délai</dt><dd>4 jours</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Strasbourg · Copropriété</p>
+            <h3>Quinze badges d&#x27;entrée dupliqués pour les résidents</h3>
+            <dl>
+              <div><dt>Travail</dt><dd>Badges</dd></div>
+              <div><dt>Délai</dt><dd>1 h</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Schiltigheim · Maison</p>
+            <h3>Serrure 3 points posée sur porte d&#x27;entrée</h3>
+            <dl>
+              <div><dt>Travail</dt><dd>Pose à domicile</dd></div>
+              <div><dt>Délai</dt><dd>1 h 30</dd></div>
+            </dl>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════════ FOOTER ══════════════ -->
+    <!-- ENGAGEMENTS + AVIS -->
+    <section class="trust" aria-labelledby="trust-title">
+      <div class="wrap trust-grid">
+        <div>
+          <p class="eyebrow">Nos engagements</p>
+          <h2 id="trust-title">Ce que la maison vous garantit.</h2>
+          <ul class="pledges">
+            <li><strong>Des doubles qui fonctionnent.</strong> Si votre clé ne tourne pas bien, on la reprend gratuitement.</li>
+            <li><strong>Réparer d&#x27;abord.</strong> Une serrure ancienne réparable n&#x27;est pas remplacée.</li>
+            <li><strong>Des prix au comptoir.</strong> Tous nos tarifs de reproduction sont affichés en boutique.</li>
+            <li><strong>Un savoir-faire transmis.</strong> Trois générations de serruriers formés dans la même boutique.</li>
+          </ul>
+          <p class="signature"><strong>Pierre Hardy</strong>, serrurier, troisième génération</p>
+        </div>
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>« Double de clé fait en cinq minutes, qui fonctionne du premier coup. C&#x27;est rare. »</blockquote>
+            <figcaption>Lucie W. · Strasbourg · Double de clé</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>« Ils ont sauvé la serrure d&#x27;origine de notre porte de 1905 au lieu de la remplacer. Un vrai savoir-faire. »</blockquote>
+            <figcaption>Thomas K. · Neustadt · Serrure ancienne</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="sec-head">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Ce qu'on nous demande le plus souvent.</h2>
+          <p class="faq-more">Votre question n'est pas là ?<br>Appelez-nous au <a href="tel:+33353014591">03 53 01 45 91</a>.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Combien de temps pour un double de clé ?</summary>
+            <p>Cinq minutes environ pour une clé courante, pendant que vous attendez. Les clés sécurisées demandent votre carte de propriété et parfois une commande.</p>
+          </details>
+          <details>
+            <summary>Pouvez-vous copier un badge d&#x27;immeuble ?</summary>
+            <p>Dans la plupart des cas oui, en boutique. Certains badges cryptés ne sont pas copiables : on vous le dit tout de suite.</p>
+          </details>
+          <details>
+            <summary>Faites-vous les clés de voiture ?</summary>
+            <p>Oui, pour la plupart des modèles, avec programmation de la puce et de la télécommande.</p>
+          </details>
+          <details>
+            <summary>Réparez-vous les serrures anciennes ?</summary>
+            <p>Oui, c&#x27;est une spécialité de l&#x27;atelier. Démontage, nettoyage, pièces refaites si besoin.</p>
+          </details>
+          <details>
+            <summary>Faut-il prendre rendez-vous ?</summary>
+            <p>Non pour la boutique. Pour une intervention à domicile, appelez-nous ou utilisez le formulaire.</p>
+          </details>
+          <details>
+            <summary>Où se trouve la boutique ?</summary>
+            <p>7 rue des Orfèvres, au centre de Strasbourg, à deux pas de la cathédrale.</p>
+          </details>
+          <details>
+            <summary>Que faire si je perds une clé sécurisée ?</summary>
+            <p>Une clé protégée ne se copie qu&#x27;avec votre carte de propriété. Si vous la perdez, prévenez-nous : nous en commandons une nouvelle et, si besoin, nous changeons le cylindre.</p>
+          </details>
+          <details>
+            <summary>Peut-on copier une clé de boîte aux lettres ?</summary>
+            <p>Oui, en boutique, à partir de la clé d&#x27;origine. Apportez-la avec vous : la copie se fait en quelques minutes.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVIS -->
+    <section class="quote" id="devis" aria-labelledby="quote-title">
+      <div class="wrap quote-grid">
+        <div class="quote-side">
+          <p class="eyebrow">Devis gratuit</p>
+          <h2 id="quote-title">Une question, un devis ?</h2>
+          <p>Pour une pose de serrure ou une réparation, décrivez-nous votre besoin. On vous rappelle avec un prix.</p>
+          <div class="contact-card">
+            <a class="contact-line big" href="tel:+33353014591">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              03 53 01 45 91
+            </a>
+            <p class="contact-line">Du mardi au samedi, 9 h à 18 h 30</p>
+            <p class="contact-line">7 rue des Orfèvres, 67000 Strasbourg</p>
+            <p class="zone"><strong>Où nous trouver</strong> Strasbourg, Schiltigheim, Illkirch-Graffenstaden, Lingolsheim, Bischheim, Hoenheim, Ostwald.</p>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label for="website">Ne pas remplir</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field">
+              <label for="work">Votre besoin</label>
+              <select id="work" name="work" data-rule="req" required>
+                <option value="">Choisissez</option>
+                <option>Double de clé</option>
+                <option>Badge ou télécommande</option>
+                <option>Clé de voiture</option>
+                <option>Serrure ancienne</option>
+                <option>Changement de serrure</option>
+                <option>Boîte aux lettres</option>
+                <option>Autre</option>
+              </select>
+              <p class="err">Faites un choix dans la liste.</p>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="item">Clé ou serrure concernée <span class="opt">(facultatif)</span></label>
+              <input type="text" id="item" name="item" maxlength="80" placeholder="Ex. : clé de voiture, serrure de 1900">
+            </div>
+            <div class="field">
+              <label for="zip">Code postal</label>
+              <input type="text" id="zip" name="zip" maxlength="5" autocomplete="postal-code" inputmode="numeric" data-rule="zip" required>
+              <p class="err">5 chiffres, par exemple 67000.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Précisez votre demande <span class="opt">(facultatif)</span></label>
+            <textarea id="details" name="details" rows="3" maxlength="800" placeholder="Ex. : serrure à gorges d&#x27;origine qui accroche, porte d&#x27;immeuble ancien"></textarea>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" maxlength="80" autocomplete="name" data-rule="name" required>
+              <p class="err">Indiquez votre nom.</p>
+            </div>
+            <div class="field">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" maxlength="20" autocomplete="tel" data-rule="phone" required>
+              <p class="err">Un numéro à 10 chiffres pour vous joindre.</p>
+            </div>
+          </div>
+
+          <div class="field">
+              <label for="email">E-mail <span class="opt">(facultatif)</span></label>
+              <input type="email" id="email" name="email" maxlength="120" autocomplete="email" data-rule="email">
+              <p class="err">Cette adresse ne semble pas valide.</p>
+          </div>
+
+          <fieldset class="field">
+            <legend>Quand vous rappeler ?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="when" value="Matin" checked><span>Le matin</span></label>
+              <label class="chip"><input type="radio" name="when" value="Midi"><span>Entre 12 h et 14 h</span></label>
+              <label class="chip"><input type="radio" name="when" value="Après-midi"><span>L'après-midi</span></label>
+            </div>
+          </fieldset>
+
+          <button class="btn btn-primary btn-block" type="submit">Envoyer ma demande</button>
+          <p class="form-legal">Vos coordonnées servent uniquement à vous recontacter pour cette demande.</p>
+
+          <div class="success" id="success" role="status" aria-live="polite" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="m14 24 7 7 13-14"/></svg>
+            <h3>Demande bien reçue</h3>
+            <p id="successMsg"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="foot-brand">
-        <a class="brand" href="#top">
-          <span class="brand-mark"><svg viewBox="0 0 24 24"><circle cx="7" cy="12" r="4"/><path d="M11 12h10M17 12v4M21 12v3"/></svg></span>
-          <span class="brand-text">Ironhaven&nbsp;&amp;&nbsp;Sons<small>Serruriers · Rue de la Fonderie · Depuis 1954</small></span>
-        </a>
-        <p>Trois générations au même établi. Laisse la porte plus solide que tu ne l'as trouvée.</p>
-      </div>
-      <div><h4>L'Atelier</h4><a href="#services">Le Métier</a><a href="#forge">La Forge</a><a href="#legacy">La Lignée</a><a href="#kindwords">Mots Doux</a></div>
-      <div><h4>Les Métiers</h4><a href="#booking">Cloche de nuit</a><a href="#booking">Serrures connectées</a><a href="#booking">Clés maîtresses</a><a href="#booking">Coffres-forts</a></div>
-      <div><h4>Nous trouver</h4><a href="tel:+15556041954">+1 (555) 604-1954</a><a href="#contact">bench@ironhavenandsons.com</a><span>12 rue de la Fonderie, Quartier du Vieux Moulin</span></div>
+    <div class="wrap footer-inner">
+      <p><strong>Serrurerie Hardy</strong> · Serrurier et clés depuis 1954 · Strasbourg · 7 rue des Orfèvres, 67000 Strasbourg</p>
+      <p>SIRET 000 000 000 00000 · Assurance n° à préciser · Page mise à jour le <time datetime="2026-09-30">30 septembre 2026</time> · <a href="#top">Retour en haut</a></p>
     </div>
-    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Ironhaven &amp; Sons. Tous droits réservés.</span><span>Agréés &amp; cautionnés · Depuis 1954</span></div></div>
   </footer>
+
+  <!-- Barre d'action mobile -->
+  <div class="mobile-bar">
+    <a href="tel:+33353014591" class="mb-call">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+      Appeler
+    </a>
+    <a href="#devis" class="mb-quote">Devis gratuit</a>
+  </div>
 
   <script src="script.js"></script>
 </body>

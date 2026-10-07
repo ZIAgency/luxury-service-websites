@@ -3,377 +3,707 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Checker &amp; Sons — Flotte familiale de taxi depuis 1947 | Chaque raccourci, gagné</title>
-  <meta name="description" content="Checker & Sons tient le même garage depuis 1947. Trois générations de chauffeurs qui connaissent chaque raccourci, forfaits aéroport, et un standard qui répond toujours à la deuxième sonnerie.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%23F2B705'/%3E%3Crect x='3' y='3' width='9' height='9' fill='%2317130B'/%3E%3Crect x='12' y='12' width='9' height='9' fill='%2317130B'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Taxi conventionné à Bordeaux · Transport médical, hôpitaux, gare | Taxis Damier</title>
+  <meta name="description" content="Taxis Damier, taxis bordelais depuis 1947 : transport médical conventionné sans avance de frais, trajets vers le CHU, les cliniques, la gare Saint-Jean et l&#x27;aéroport. Réservation 24 h/24.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111111'/%3E%3Cg color='%23F2C200' fill='%23F2C200'%3E%3Crect class='blade' x='11' y='4' width='10' height='5' rx='1'/%3E%3Cpath d='M5 22l2.5-7C8 13.5 9.2 12.5 10.8 12.5h10.4c1.6 0 2.8 1 3.3 2.5L27 22v4H5z' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/DMSerifDisplay-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400 700;
+  src: url(fonts/Karla-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://luxury-service-websites.vercel.app/taxis/03-checker-cab/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Taxis Damier">
+  <meta property="og:title" content="Taxi conventionné à Bordeaux · Transport médical, hôpitaux, gare | Taxis Damier">
+  <meta property="og:description" content="Taxis Damier, taxis bordelais depuis 1947 : transport médical conventionné sans avance de frais, trajets vers le CHU, les cliniques, la gare Saint-Jean et l&#x27;aéroport. Réservation 24 h/24.">
+  <meta property="og:url" content="https://luxury-service-websites.vercel.app/taxis/03-checker-cab/">
+  <meta property="og:image" content="https://luxury-service-websites.vercel.app/taxis/03-checker-cab/hero.jpg">
+  <meta property="og:image:alt" content="Un chauffeur de taxi au volant, en route vers un rendez-vous">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TaxiService",
+      "@id": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/#entreprise",
+      "name": "Taxis Damier",
+      "url": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/",
+      "description": "Taxis Damier, taxis bordelais depuis 1947 : transport médical conventionné sans avance de frais, trajets vers le CHU, les cliniques, la gare Saint-Jean et l'aéroport. Réservation 24 h/24.",
+      "slogan": "Vos rendez-vous médicaux, sans avancer les frais ni chercher à vous garer.",
+      "telephone": "+33536493310",
+      "image": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5 cours de la Somme",
+        "postalCode": "33000",
+        "addressLocality": "Bordeaux",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Bordeaux"
+        },
+        {
+          "@type": "Place",
+          "name": "Mérignac"
+        },
+        {
+          "@type": "Place",
+          "name": "Pessac"
+        },
+        {
+          "@type": "Place",
+          "name": "Talence"
+        },
+        {
+          "@type": "Place",
+          "name": "Bègles"
+        },
+        {
+          "@type": "Place",
+          "name": "Le Bouscat"
+        },
+        {
+          "@type": "Place",
+          "name": "Cenon"
+        },
+        {
+          "@type": "Place",
+          "name": "Lormont"
+        },
+        {
+          "@type": "Place",
+          "name": "CHU Pellegrin"
+        },
+        {
+          "@type": "Place",
+          "name": "Aéroport de Bordeaux-Mérignac"
+        }
+      ],
+      "openingHours": "Mo-Su 00:00-23:59",
+      "knowsAbout": [
+        "Transport médical conventionné",
+        "Séances régulières",
+        "Entrées et sorties d'hôpital",
+        "Gares et aéroport",
+        "Courses en ville",
+        "Personnes à mobilité réduite"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Le taxi de confiance des Bordelais, pour les soins comme pour le reste.",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Transport médical conventionné",
+              "description": "Consultations, examens, hospitalisations : sur prescription, avec tiers payant le plus souvent.",
+              "areaServed": "Bordeaux Métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Séances régulières",
+              "description": "Dialyse, chimiothérapie, radiothérapie, rééducation : un chauffeur attitré, des horaires fixes.",
+              "areaServed": "Bordeaux Métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Entrées et sorties d'hôpital",
+              "description": "CHU Pellegrin, Haut-Lévêque, Saint-André, cliniques : dépose au plus près du service.",
+              "areaServed": "Bordeaux Métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gares et aéroport",
+              "description": "Saint-Jean et Mérignac, réservation conseillée la veille.",
+              "areaServed": "Bordeaux Métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Courses en ville",
+              "description": "Au compteur, avec paiement par carte à bord.",
+              "areaServed": "Bordeaux Métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Personnes à mobilité réduite",
+              "description": "Aide à la montée, fauteuil pliant transporté, patience garantie.",
+              "areaServed": "Bordeaux Métropole",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/#entreprise"
+              }
+            }
+          }
+        ]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Jean-Marc Dubreuil",
+        "jobTitle": "gérant, troisième génération"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/",
+      "url": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/",
+      "name": "Taxi conventionné à Bordeaux · Transport médical, hôpitaux, gare | Taxis Damier",
+      "description": "Taxis Damier, taxis bordelais depuis 1947 : transport médical conventionné sans avance de frais, trajets vers le CHU, les cliniques, la gare Saint-Jean et l'aéroport. Réservation 24 h/24.",
+      "inLanguage": "fr-FR",
+      "dateModified": "2026-09-30",
+      "about": {
+        "@id": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/#entreprise"
+      },
+      "primaryImageOfPage": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/hero.jpg"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://luxury-service-websites.vercel.app/taxis/03-checker-cab/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce qu'un taxi conventionné ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un taxi qui a signé une convention avec l'Assurance maladie pour transporter des patients sur prescription médicale. Le transport peut alors être pris en charge, souvent sans avance de frais grâce au tiers payant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels documents faut-il pour un transport médical ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La prescription médicale de transport remplie par votre médecin, votre carte Vitale, et votre attestation de mutuelle ou de prise en charge à 100 % si vous en avez une."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le transport médical est-il remboursé à 100 % ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cela dépend de votre situation : affection de longue durée, hospitalisation, accident du travail, etc. Nous vous indiquons avant le trajet ce qui reste éventuellement à votre charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Puis-je avoir le même chauffeur pour mes séances ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, nous organisons un chauffeur attitré autant que possible pour les séances régulières."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Transportez-vous les fauteuils roulants ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nous transportons les fauteuils pliants et aidons à la montée. Pour un transport en fauteuil non pliant, il faut un véhicule adapté que nous pouvons vous indiquer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faites-vous aussi les courses classiques ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, en ville, vers la gare et l'aéroport, 24 h/24, avec paiement par carte à bord."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce qu'une prescription médicale de transport ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un document rempli par votre médecin, qui précise le motif et le mode de transport. Il est nécessaire pour que le trajet puisse être pris en charge par l'Assurance maladie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il avancer les frais d'un transport médical ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le plus souvent non : le tiers payant permet que la part prise en charge soit réglée directement, selon votre situation."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
-  <!-- ══════════ NAV ══════════ -->
-  <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" fill="#F2B705"/><rect x="3" y="3" width="9" height="9" fill="#17130B"/><rect x="12" y="12" width="9" height="9" fill="#17130B"/></svg></span>
-        <span class="brand-text">Checker &amp;&nbsp;Sons<small>Flotte familiale · Depuis 1947</small></span>
-      </a>
-      <nav class="links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#garage">Le Garage</a>
-        <a href="#meter">Au compteur</a>
-        <a href="#regulars">Habitués</a>
-        <a href="#contact">Contact</a>
-        <a href="#booking" class="nav-cta">Réserver un taxi</a>
-      </nav>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <a class="skip" href="#devis">Aller au formulaire de réservation</a>
 
-  <!-- ══════════ HERO ══════════ -->
-  <section class="hero" id="top">
-    <div class="checker-top" aria-hidden="true"></div>
-    <div class="container hero-inner">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="overline reveal">Même garage · Même exigence · Depuis 1947</p>
-          <h1 class="reveal" style="--d:.1s">Chaque raccourci,<br><em>gagné.</em></h1>
-          <p class="hero-sub reveal" style="--d:.2s">Trois générations de Kowalczyk parcourent les rues de cette ville, ses
-            détours de cortège et ses zones scolaires de 16h. Quand vous appelez Checker &amp; Sons, c'est un voisin qui
-            décroche — et un taxi qui connaît le chemin qui arrive à l'heure.</p>
-          <div class="hero-cta reveal" style="--d:.32s">
-            <a href="#booking" class="btn btn-yellow">Réserver un taxi</a>
-            <a href="#garage" class="btn btn-line">Rencontrer la famille</a>
-          </div>
-          <div class="hero-stats reveal" style="--d:.42s">
-            <div><strong class="js-yrs" data-count="79" data-suffix="">0</strong><span>ans dans la rue</span></div>
-            <i></i>
-            <div><strong data-count="3" data-suffix="">0</strong><span>générations</span></div>
-            <i></i>
-            <div><strong>24/7</strong><span>standard</span></div>
-          </div>
-        </div>
-
-        <div class="hero-badge-wrap reveal" style="--d:.26s">
-          <svg class="hero-badge" viewBox="0 0 220 220" aria-hidden="true">
-            <defs>
-              <path id="badgeCirc" d="M110,110 m-84,0 a84,84 0 1,1 168,0 a84,84 0 1,1 -168,0"/>
-            </defs>
-            <g class="badge-ring">
-              <text class="badge-text"><textPath href="#badgeCirc">CHECKER &amp; SONS ★ FLOTTE FAMILIALE ★ DEPUIS 1947 ★&nbsp;</textPath></text>
-            </g>
-            <circle cx="110" cy="110" r="58" class="badge-disc"/>
-            <g class="badge-taxi">
-              <path d="M76 122c4-8 12-13 22-14 6-7 14-11 24-11 12 0 22 5 28 12 9 2 16 6 19 11 2 4 0 8-5 8H80c-5 0-7-4-4-6z"/>
-              <rect x="96" y="112" width="28" height="5" class="checker-stripe"/>
-              <circle cx="96" cy="132" r="7" class="badge-wheel"/>
-              <circle cx="152" cy="132" r="7" class="badge-wheel"/>
-            </g>
-          </svg>
-          <p class="badge-caption reveal" style="--d:.4s">Médaillon n° 7 — qui travaille encore la nuit.</p>
-        </div>
-      </div>
-
-      <div class="route-card reveal" style="--d:.5s">
-        <p class="route-title">PREMIÈRE COURSE DU JOUR — 5H40</p>
-        <svg class="route-map" viewBox="0 0 800 120" aria-hidden="true">
-          <g class="streets">
-            <line x1="0" y1="30" x2="800" y2="30"/><line x1="0" y1="62" x2="800" y2="62"/>
-            <line x1="0" y1="94" x2="800" y2="94"/>
-            <line x1="120" y1="0" x2="120" y2="120"/><line x1="260" y1="0" x2="260" y2="120"/>
-            <line x1="420" y1="0" x2="420" y2="120"/><line x1="580" y1="0" x2="580" y2="120"/>
-            <line x1="700" y1="0" x2="700" y2="120"/>
-          </g>
-          <path class="journey" d="M40 94 H120 V62 H260 V30 H420 V62 H580 V30 H700 V62 H770"/>
-          <circle class="stop" cx="40" cy="94" r="6"/>
-          <circle class="stop end" cx="770" cy="62" r="6"/>
-          <text class="stop-label" x="40" y="116">LE GARAGE</text>
-          <text class="stop-label" x="700" y="20">L'AÉROPORT</text>
-          <text class="eta-label" x="440" y="52">24 min · par les petites routes</text>
-        </svg>
-      </div>
-    </div>
-    <div class="checker-bottom" aria-hidden="true"></div>
-  </section>
-
-  <!-- ══════════ BANDE ÉTOILÉE ══════════ -->
-  <div class="starband" aria-hidden="true">
-    <div class="starband-track">
-      <span>FORFAITS AÉROPORT ★ DES CHAUFFEURS QUI CONNAISSENT VOTRE RUE ★ DEPUIS 1947 ★ PAS BESOIN D'APPLI ★ DES TAXIS À SIX PLACES ★&nbsp;</span>
-      <span>FORFAITS AÉROPORT ★ DES CHAUFFEURS QUI CONNAISSENT VOTRE RUE ★ DEPUIS 1947 ★ PAS BESOIN D'APPLI ★ DES TAXIS À SIX PLACES ★&nbsp;</span>
+  <!-- Bandeau infos pratiques -->
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Bordeaux Métropole</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.4V6h-2v7.6l5 3 1-1.7Z"/></svg>24 h/24, 7 j/7</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5Z"/></svg>Conventionné Assurance maladie</span>
     </div>
   </div>
 
-  <!-- ══════════ SERVICES ══════════ -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Devant chez vous</p>
-        <h2>Six façons de vous <em>conduire à bon port</em></h2>
-        <p class="sec-sub">Des tarifs affichés sur la vitre du garage avant votre naissance, ajustés avec équité et imprimés
-          lisiblement. Si un prix ne figure pas sur cette liste, le chauffeur vous le dira avant que les roues ne tournent.</p>
-      </div>
-      <div class="svc-grid">
-        <article class="svc reveal" style="--d:.05s">
-          <span class="svc-num">No 1</span>
-          <h3>Courses aéroport</h3>
-          <p>Un forfait unique vers l'un ou l'autre terminal, à toute heure, bagages toujours compris. Nous surveillons votre numéro de vol pour que vous n'ayez jamais à surveiller l'horloge.</p>
-          <a href="#booking" class="svc-link">forfait 38 € <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.1s">
-          <span class="svc-num">No 2</span>
-          <h3>En ville</h3>
-          <p>Le compteur honnête, prise en charge à 4,10 €, et un chauffeur qui emprunte le raccourci qu'aucune application ne suggérera. Demandez le quartier des théâtres à 18h.</p>
-          <a href="#booking" class="svc-link">prise en charge 4,10 € <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.15s">
-          <span class="svc-num">No 3</span>
-          <h3>Mise à disposition horaire</h3>
-          <p>Mariages, enterrements, visites de maison, après-midis de courses. Votre chauffeur attend moteur coupé et siège tiède.</p>
-          <a href="#booking" class="svc-link">dès 40 €/h <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.2s">
-          <span class="svc-num">No 4</span>
-          <h3>Courses professionnelles</h3>
-          <p>Des factures mensuelles avec chaque trajet détaillé, comme aime les lire votre comptable. Dispatch prioritaire pour l'express de 7h10.</p>
-          <a href="#booking" class="svc-link">facturation mensuelle <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.25s">
-          <span class="svc-num">No 5</span>
-          <h3>Groupes en grand taxi</h3>
-          <p>Nos checks à six places embarquent toute la famille, toute l'équipe et tout le problème de coffre. Un seul tarif, zéro dispute.</p>
-          <a href="#booking" class="svc-link">dès 32 € <span>→</span></a>
-        </article>
-        <article class="svc reveal" style="--d:.3s">
-          <span class="svc-num">No 6</span>
-          <h3>Livraison de colis</h3>
-          <p>Les clés chez le serrurier, le smoking chez le tailleur, la lasagne chez votre mère. Signé aux deux extrémités — même promesse depuis 1947.</p>
-          <a href="#booking" class="svc-link">dès 12 € <span>→</span></a>
-        </article>
-      </div>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Taxis Damier, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><rect class="blade" x="11" y="4" width="10" height="5" rx="1"/><path d="M5 22l2.5-7C8 13.5 9.2 12.5 10.8 12.5h10.4c1.6 0 2.8 1 3.3 2.5L27 22v4H5z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-text">Taxis Damier<small>Taxi conventionné depuis 1947 · Bordeaux</small></span>
+      </a>
+      <nav class="links" id="navLinks" aria-label="Navigation principale">
+        <a href="#services">Nos trajets</a>
+        <a href="#deroulement">Comment ça se passe</a>
+        <a href="#chantiers">Trajets</a>
+        <a href="#faq">Questions</a>
+        <a href="#devis" class="links-cta">Réserver un transport</a>
+      </nav>
+      <a class="nav-phone" href="tel:+33536493310">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+        <span>05 36 49 33 10</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
+  </header>
 
-  <!-- ══════════ LE GARAGE / HISTOIRE ══════════ -->
-  <section class="section dark" id="garage">
-    <div class="container garage-grid">
-      <div class="garage-copy">
-        <p class="overline reveal">Le Garage</p>
-        <h2 class="reveal" style="--d:.08s">Trois Générations,<br><em>Une Porte de Bas.</em></h2>
-        <p class="reveal" style="--d:.14s">En 1947, « Big Mike » Kowalczyk revient de la guerre, achète un taxi militaire réaffecté et
-          le gare derrière la boulangerie de son père. Son fils Walt prend le volant en 1972 et équipe chaque voiture de radio.
-          Sa fille Maria dirige aujourd'hui la flotte — quarante-six taxis, quatre-vingt-dix chauffeurs, et une liste d'attente pour
-          conduire chez nous dont nous sommes discrètement fiers.</p>
-        <ol class="timeline">
-          <li class="reveal" style="--d:.2s"><strong>1947</strong><span>Première course de Big Mike : un couple de jeunes mariés, pourboire compris dans le prix.</span></li>
-          <li class="reveal" style="--d:.26s"><strong>1972</strong><span>Walt équipe la flotte de radio. La prise en charge moyenne passe sous les dix minutes.</span></li>
-          <li class="reveal" style="--d:.32s"><strong>1998</strong><span>Premier ordinateur au bureau de dispatch. La carte papier reste accrochée au mur, malgré tout.</span></li>
-          <li class="reveal" style="--d:.38s"><strong>Aujourd'hui</strong><span>La flotte de Maria passe à l'électrique, mais le standard répond toujours à la deuxième sonnerie.</span></li>
+  <main id="top">
+
+    <section class="hero split-left">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="eyebrow">Taxi conventionné à Bordeaux depuis 1947 : transport médical et courses</h1>
+          <p class="headline">Vos rendez-vous médicaux, <em>sans avancer les frais ni chercher à vous garer.</em></p>
+          <p class="lead">Taxis conventionnés par l&#x27;Assurance maladie : avec une prescription médicale de transport, vous n&#x27;avancez rien dans la plupart des cas. Le même chauffeur pour vos séances régulières, et toutes vos courses à Bordeaux depuis 1947.</p>
+          <ul class="proofs">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Transport médical sans avance de frais le plus souvent</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Le même chauffeur pour vos séances régulières</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Aide à la montée et à la descente du véhicule</li>
+          </ul>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#devis">Réserver un transport</a>
+            <a class="btn btn-ghost" href="tel:+33536493310">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              05 36 49 33 10
+            </a>
+          </div>
+          <p class="hero-note">Pensez à votre prescription de transport et à votre carte Vitale.</p>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="hero-photo">
+            <img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" sizes="(min-width: 900px) 50vw, 100vw" alt="Un chauffeur de taxi au volant, en route vers un rendez-vous" width="1600" height="2400" fetchpriority="high" decoding="async">
+          </figure>
+          <div class="hero-badge">
+            <strong>1947</strong>
+            <span>trois générations<br>de taxis bordelais</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITUATIONS -->
+    <section class="situations" aria-labelledby="sit-title">
+      <div class="wrap">
+        <h2 id="sit-title" class="h-small">Pour quel trajet ?</h2>
+        <div class="sit-grid">
+          <button class="sit" data-prefill="Séances régulières">
+            <span class="sit-q">J&#x27;ai des séances régulières (dialyse, chimio, radiothérapie)</span>
+            <span class="sit-a">Le même chauffeur, aux mêmes horaires, pris en charge par l&#x27;Assurance maladie.</span>
+          </button>
+          <button class="sit" data-prefill="Consultation à l&#x27;hôpital">
+            <span class="sit-q">J&#x27;ai une consultation à l&#x27;hôpital</span>
+            <span class="sit-a">Dépose à l&#x27;entrée du service, attente ou retour organisé.</span>
+          </button>
+          <button class="sit" data-prefill="Sortie d&#x27;hospitalisation">
+            <span class="sit-q">Je sors d&#x27;une hospitalisation</span>
+            <span class="sit-a">Retour à domicile avec aide pour les bagages.</span>
+          </button>
+          <button class="sit" data-prefill="Gare Saint-Jean">
+            <span class="sit-q">Je dois prendre un train à Saint-Jean</span>
+            <span class="sit-a">Prise en charge à l&#x27;heure, aide pour les valises.</span>
+          </button>
+          <button class="sit" data-prefill="Aéroport de Mérignac">
+            <span class="sit-q">Je vais à l&#x27;aéroport de Mérignac</span>
+            <span class="sit-a">Réservation la veille, départ garanti même très tôt.</span>
+          </button>
+          <button class="sit" data-prefill="Course en ville">
+            <span class="sit-q">J&#x27;ai une course à faire en ville</span>
+            <span class="sit-a">Réservation ou course immédiate.</span>
+          </button>
+        </div>
+        <p class="sit-hint">Cliquez sur votre trajet : le formulaire de réservation se remplit tout seul.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-labelledby="serv-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Nos trajets</p>
+          <h2 id="serv-title">Le taxi de confiance des Bordelais, pour les soins comme pour le reste.</h2>
+        </div>
+        <div class="serv-grid">
+          <article class="serv">
+            <span class="serv-n">01</span>
+            <h3>Transport médical conventionné</h3>
+            <p>Consultations, examens, hospitalisations : sur prescription, avec tiers payant le plus souvent.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">02</span>
+            <h3>Séances régulières</h3>
+            <p>Dialyse, chimiothérapie, radiothérapie, rééducation : un chauffeur attitré, des horaires fixes.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">03</span>
+            <h3>Entrées et sorties d&#x27;hôpital</h3>
+            <p>CHU Pellegrin, Haut-Lévêque, Saint-André, cliniques : dépose au plus près du service.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">04</span>
+            <h3>Gares et aéroport</h3>
+            <p>Saint-Jean et Mérignac, réservation conseillée la veille.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">05</span>
+            <h3>Courses en ville</h3>
+            <p>Au compteur, avec paiement par carte à bord.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">06</span>
+            <h3>Personnes à mobilité réduite</h3>
+            <p>Aide à la montée, fauteuil pliant transporté, patience garantie.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÉROULEMENT -->
+    <section class="steps" id="deroulement" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Comment ça se passe</p>
+          <h2 id="steps-title">Un transport médical sans paperasse inutile.</h2>
+        </div>
+        <ol class="step-list">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Vous réservez</h3>
+            <p>Par téléphone ou formulaire, avec la date et l&#x27;adresse du rendez-vous.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Vous préparez vos papiers</h3>
+            <p>Prescription médicale de transport, carte Vitale, et justificatif de mutuelle si vous en avez.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Le chauffeur vient vous chercher</h3>
+            <p>À l&#x27;heure, avec aide pour monter en voiture si besoin.</p>
+          </li>
+          <li>
+            <span class="step-n">4</span>
+            <h3>Rien à avancer</h3>
+            <p>Nous nous occupons de la facturation à l&#x27;Assurance maladie dans la plupart des cas.</p>
+          </li>
         </ol>
       </div>
-      <div class="garage-visual reveal" style="--d:.2s">
-        <div class="medallion-frame">
-          <div class="medallion">
-            <p class="med-top">NOTRE VILLE · MÉDAILLON DE TAXI</p>
-            <p class="med-num">N° 7</p>
-            <div class="med-checker" aria-hidden="true"></div>
-            <p class="med-bottom">CHECKER &amp; SONS · EN RÈGLE · <span class="js-yrs-inline">79</span> ANS</p>
-          </div>
-          <div class="garage-note">
-            <strong>Toujours familial.</strong>
-            <span>Ni franchise, ni investisseurs extérieurs — la porte du garage s'ouvre pour le même nom qu'elle a toujours connu.</span>
-          </div>
+    </section>
+
+    <!-- RÉALISATIONS -->
+    <section class="jobs" id="chantiers" aria-labelledby="jobs-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Trajets récents</p>
+          <h2 id="jobs-title">Quelques exemples de ces derniers mois.</h2>
+        </div>
+        <div class="job-grid">
+          <article class="job">
+            <p class="job-where">Talence → CHU Pellegrin</p>
+            <h3>Séances de dialyse, même chauffeur depuis deux ans</h3>
+            <dl>
+              <div><dt>Trajet</dt><dd>Séances régulières</dd></div>
+              <div><dt>Fréquence</dt><dd>3 fois par semaine</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Bordeaux Caudéran → Clinique</p>
+            <h3>Sortie d&#x27;hospitalisation avec valise et déambulateur</h3>
+            <dl>
+              <div><dt>Trajet</dt><dd>Retour à domicile</dd></div>
+              <div><dt>Fréquence</dt><dd>Ponctuel</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Le Bouscat → Gare Saint-Jean</p>
+            <h3>Départ à 6 h pour un TGV, réservé la veille</h3>
+            <dl>
+              <div><dt>Trajet</dt><dd>Gare</dd></div>
+              <div><dt>Fréquence</dt><dd>Ponctuel</dd></div>
+            </dl>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ CHIFFRES ══════════ -->
-  <section class="stats-band" id="meter">
-    <div class="container stats-grid">
-      <div class="reveal"><strong data-count="3100000" data-suffix="+">0</strong><span>courses depuis 1947</span></div>
-      <div class="reveal" style="--d:.1s"><strong data-count="97.4" data-decimal="1" data-suffix="%">0</strong><span>prises en charge à l'heure</span></div>
-      <div class="reveal" style="--d:.2s"><strong data-count="7" data-suffix=" min">0</strong><span>prise en charge moy.</span></div>
-      <div class="reveal" style="--d:.3s"><strong data-count="46" data-suffix="">0</strong><span>taxis en flotte</span></div>
-    </div>
-  </section>
-
-  <!-- ══════════ TÉMOIGNAGES ══════════ -->
-  <section class="section" id="regulars">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Les habitués</p>
-        <h2>Ce que dit <em>la banquette arrière</em></h2>
-      </div>
-      <div class="testi-grid">
-        <figure class="testi reveal" style="--d:.05s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Le même chauffeur venait chercher mon père tous les mardis pour son traitement, pendant deux ans. Eddie a fini par connaître l'ascenseur qui évitait le hall bondé. Ça ne s'achète pas. Ça se gagne. »</blockquote>
-          <figcaption><strong>Helen W.</strong><span>Habituée depuis 2009</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.15s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Tempête de neige, embouteillages monstres, et l'aéroport fermé deux fois. Checker a quand même fait partir mon équipe sur le dernier vol. Le chauffeur a pris un itinéraire que je n'ai jamais vu avant ni depuis. »</blockquote>
-          <figcaption><strong>Sam O.</strong><span>Régisseur de tournée</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.25s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« J'ai appelé à 6h du matin et quelqu'un a décroché à la deuxième sonnerie. Un taxi était devant chez moi en neuf minutes, siège enfant déjà installé. Mes enfants l'appellent "l'ami jaune". »</blockquote>
-          <figcaption><strong>Nadia P.</strong><span>Maman du quartier</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ CONTACT ══════════ -->
-  <section class="section dark contact" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-info">
-        <p class="overline reveal">Le standard</p>
-        <h2 class="reveal" style="--d:.08s">Sonner au <em>Garage</em></h2>
-        <p class="reveal" style="--d:.14s">Réservations, gants perdus, discours de départ pour un chauffeur qu'on adore — le
-          standard est tenu par des gens qui connaissent la flotte par son prénom.</p>
-        <ul class="info-list">
-          <li class="reveal" style="--d:.2s"><span class="info-ic">★</span><div><strong>Le Garage</strong><span>47 Checker Row<br>Derrière l'ancienne boulangerie</span></div></li>
-          <li class="reveal" style="--d:.26s"><span class="info-ic">★</span><div><strong>Standard</strong><span>+1 (555) 47-1947</span></div></li>
-          <li class="reveal" style="--d:.32s"><span class="info-ic">★</span><div><strong>Horaires</strong><span>Taxis : en permanence<br>Bureau : lundi–samedi, 7h00 – 19h00</span></div></li>
-        </ul>
-      </div>
-
-      <form class="contact-form reveal" id="contactForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-        <fieldset>
-          <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Votre nom</label></div>
-          <div class="field-row">
-            <div class="field"><input type="email" id="cf-email" required placeholder=" "><label for="cf-email">Adresse e-mail</label></div>
-            <div class="field"><input type="tel" id="cf-phone" placeholder=" "><label for="cf-phone">Téléphone (facultatif)</label></div>
-          </div>
-          <div class="field select-field">
-            <select id="cf-subject" required>
-              <option value="" selected disabled></option>
-              <option>Réserver un taxi</option>
-              <option>Courses professionnelles &amp; factures</option>
-              <option>Mise à disposition pour un événement</option>
-              <option>Livraison de colis</option>
-              <option>Objet trouvé</option>
-              <option>Autre chose, tout à fait</option>
-            </select>
-            <label for="cf-subject">Que peut-on faire pour vous ?</label>
-          </div>
-          <div class="field"><textarea id="cf-msg" rows="4" required placeholder=" "></textarea><label for="cf-msg">Votre message</label></div>
-          <button type="submit" class="btn btn-yellow btn-wide">Sonner la cloche</button>
-          <p class="form-note">C'est une personne qui lit — en général dans l'heure, toujours le jour même.</p>
-        </fieldset>
-        <div class="form-success" hidden>
-          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-          <h3>Bien reçu, l'ami.</h3>
-          <p>Votre mot est sur le standard. Attendez-vous à un appel ou une réponse avant la fin de la journée.</p>
+    <!-- ENGAGEMENTS + AVIS -->
+    <section class="trust" aria-labelledby="trust-title">
+      <div class="wrap trust-grid">
+        <div>
+          <p class="eyebrow">Nos engagements</p>
+          <h2 id="trust-title">Ce qui fait notre réputation depuis 1947.</h2>
+          <ul class="pledges">
+            <li><strong>La patience.</strong> On ne vous presse jamais, surtout à la sortie d&#x27;un soin.</li>
+            <li><strong>La régularité.</strong> Pour vos séances, le même chauffeur autant que possible.</li>
+            <li><strong>La transparence.</strong> Vous savez ce qui est pris en charge et ce qui reste éventuellement à votre charge.</li>
+            <li><strong>La disponibilité.</strong> Réservation 24 h/24, 7 j/7.</li>
+          </ul>
+          <p class="signature"><strong>Jean-Marc Dubreuil</strong>, gérant, troisième génération</p>
         </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ══════════ RÉSERVATION ══════════ -->
-  <section class="section booking" id="booking">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="overline">Réserver à l'avance</p>
-        <h2>Réserver un taxi, <em>comme il faut</em></h2>
-        <p class="sec-sub">Quatre petites étapes — plus vite que d'expliquer l'adresse deux fois au téléphone.</p>
-      </div>
-
-      <div class="book-frame reveal" style="--d:.1s">
-        <div class="book-inner">
-          <ol class="wiz-steps" id="wizSteps">
-            <li class="is-current"><span>Course</span></li>
-            <li><span>Quand</span></li>
-            <li><span>Qui</span></li>
-            <li><span>C'est parti</span></li>
-          </ol>
-
-          <form id="bookForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-            <!-- ÉTAPE 1 · COURSE -->
-            <fieldset class="pane is-active">
-              <legend>Quelle course sera-ce ?</legend>
-              <div class="choice-grid">
-                <label class="choice"><input type="radio" name="svc" value="Course aéroport" required><span>Transfert aéroport</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Course en ville"><span>Course en ville</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Mise à disposition horaire"><span>Mise à disposition horaire</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Course professionnelle"><span>Course professionnelle</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Van & groupe"><span>Van &amp; groupe</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Course express"><span>Course express</span></label>
-              </div>
-              <p class="choice-error">Choisissez une course et on démarre.</p>
-              <div class="wiz-nav"><span></span><button type="button" class="btn btn-yellow js-next">La suite, s'il vous plaît</button></div>
-            </fieldset>
-
-            <!-- ÉTAPE 2 · QUAND -->
-            <fieldset class="pane">
-              <legend>Quand avez-vous besoin de nous ?</legend>
-              <div class="field date-field">
-                <input type="date" id="bk-date" required>
-                <label>Date de prise en charge</label>
-              </div>
-              <div class="time-grid" id="timeGrid">
-                <button type="button" class="chip" data-v="6:00">6h00</button>
-                <button type="button" class="chip" data-v="8:15">8h15</button>
-                <button type="button" class="chip" data-v="10:00">10h00</button>
-                <button type="button" class="chip" data-v="13:30">13h30</button>
-                <button type="button" class="chip" data-v="17:00">17h00</button>
-                <button type="button" class="chip" data-v="22:00">22h00</button>
-              </div>
-              <input type="hidden" id="bk-time">
-              <p class="choice-error">Choisissez une heure de prise en charge.</p>
-              <div class="wiz-nav"><button type="button" class="btn btn-line js-prev">Reculer d'un pas</button><button type="button" class="btn btn-yellow js-next">La suite, s'il vous plaît</button></div>
-            </fieldset>
-
-            <!-- ÉTAPE 3 · QUI -->
-            <fieldset class="pane">
-              <legend>Et qui monte à bord ?</legend>
-              <div class="field-row">
-                <div class="field"><input type="text" id="bk-name" required placeholder=" "><label>Nom du passager</label></div>
-                <div class="field"><input type="tel" id="bk-phone" required placeholder=" "><label>Numéro de téléphone</label></div>
-              </div>
-              <div class="field"><input type="text" id="bk-address" required placeholder=" "><label>Adresse de prise en charge</label></div>
-              <div class="field"><textarea id="bk-notes" rows="3" placeholder=" "></textarea><label>Ce que le chauffeur devrait savoir (facultatif)</label></div>
-              <div class="wiz-nav"><button type="button" class="btn btn-line js-prev">Reculer d'un pas</button><button type="submit" class="btn btn-yellow">Inscrivez-moi au tableau</button></div>
-            </fieldset>
-
-            <!-- ÉTAPE 4 · TERMINÉ -->
-            <fieldset class="pane pane-success">
-              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-              <h3>Vous êtes au tableau.</h3>
-              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est noté pour le<br><strong id="recap-when">—</strong>.</p>
-              <p class="recap-sub">Le dispatch appellera pour confirmer avec le nom de votre chauffeur. Pourboire seulement si le raccourci a sauvé votre matin.</p>
-            </fieldset>
-          </form>
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>« Pour mes séances de dialyse, c&#x27;est toujours Marc qui vient. Ponctuel, attentionné, et je n&#x27;avance jamais rien. »</blockquote>
+            <figcaption>Josette L. · Talence · Séances régulières</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>« Taxi réservé à 5 h pour la gare, chauffeur là à 4 h 55. Comme d&#x27;habitude avec eux. »</blockquote>
+            <figcaption>Pierre-Yves M. · Le Bouscat · Gare Saint-Jean</figcaption>
+          </figure>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ PIED DE PAGE ══════════ -->
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="sec-head">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Ce qu'on nous demande le plus souvent.</h2>
+          <p class="faq-more">Votre question n'est pas là ?<br>Appelez-nous au <a href="tel:+33536493310">05 36 49 33 10</a>.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Qu&#x27;est-ce qu&#x27;un taxi conventionné ?</summary>
+            <p>Un taxi qui a signé une convention avec l&#x27;Assurance maladie pour transporter des patients sur prescription médicale. Le transport peut alors être pris en charge, souvent sans avance de frais grâce au tiers payant.</p>
+          </details>
+          <details>
+            <summary>Quels documents faut-il pour un transport médical ?</summary>
+            <p>La prescription médicale de transport remplie par votre médecin, votre carte Vitale, et votre attestation de mutuelle ou de prise en charge à 100 % si vous en avez une.</p>
+          </details>
+          <details>
+            <summary>Le transport médical est-il remboursé à 100 % ?</summary>
+            <p>Cela dépend de votre situation : affection de longue durée, hospitalisation, accident du travail, etc. Nous vous indiquons avant le trajet ce qui reste éventuellement à votre charge.</p>
+          </details>
+          <details>
+            <summary>Puis-je avoir le même chauffeur pour mes séances ?</summary>
+            <p>Oui, nous organisons un chauffeur attitré autant que possible pour les séances régulières.</p>
+          </details>
+          <details>
+            <summary>Transportez-vous les fauteuils roulants ?</summary>
+            <p>Nous transportons les fauteuils pliants et aidons à la montée. Pour un transport en fauteuil non pliant, il faut un véhicule adapté que nous pouvons vous indiquer.</p>
+          </details>
+          <details>
+            <summary>Faites-vous aussi les courses classiques ?</summary>
+            <p>Oui, en ville, vers la gare et l&#x27;aéroport, 24 h/24, avec paiement par carte à bord.</p>
+          </details>
+          <details>
+            <summary>Qu&#x27;est-ce qu&#x27;une prescription médicale de transport ?</summary>
+            <p>Un document rempli par votre médecin, qui précise le motif et le mode de transport. Il est nécessaire pour que le trajet puisse être pris en charge par l&#x27;Assurance maladie.</p>
+          </details>
+          <details>
+            <summary>Faut-il avancer les frais d&#x27;un transport médical ?</summary>
+            <p>Le plus souvent non : le tiers payant permet que la part prise en charge soit réglée directement, selon votre situation.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVIS -->
+    <section class="quote" id="devis" aria-labelledby="quote-title">
+      <div class="wrap quote-grid">
+        <div class="quote-side">
+          <p class="eyebrow">Réservation</p>
+          <h2 id="quote-title">Réservez votre transport.</h2>
+          <p>Indiquez le trajet et l&#x27;heure du rendez-vous. On vous rappelle pour confirmer et vérifier la prise en charge.</p>
+          <div class="contact-card">
+            <a class="contact-line big" href="tel:+33536493310">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              05 36 49 33 10
+            </a>
+            <p class="contact-line">24 h/24, 7 j/7</p>
+            <p class="contact-line">5 cours de la Somme, 33000 Bordeaux</p>
+            <p class="zone"><strong>Nous intervenons à</strong> Bordeaux, Mérignac, Pessac, Talence, Bègles, Le Bouscat, Cenon, Lormont, CHU Pellegrin, Aéroport de Bordeaux-Mérignac.</p>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label for="website">Ne pas remplir</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field">
+              <label for="work">Type de trajet</label>
+              <select id="work" name="work" data-rule="req" required>
+                <option value="">Choisissez</option>
+                <option>Séances régulières</option>
+                <option>Consultation à l&#x27;hôpital</option>
+                <option>Sortie d&#x27;hospitalisation</option>
+                <option>Gare Saint-Jean</option>
+                <option>Aéroport de Mérignac</option>
+                <option>Course en ville</option>
+              </select>
+              <p class="err">Faites un choix dans la liste.</p>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="from">Adresse de départ</label>
+              <input type="text" id="from" name="from" maxlength="120" placeholder="Ex. : 12 rue de la Gare" data-rule="req" required>
+              <p class="err">Indiquez l&#x27;adresse de départ.</p>
+            </div>
+            <div class="field">
+              <label for="to">Destination</label>
+              <input type="text" id="to" name="to" maxlength="120" placeholder="Ex. : CHU Pellegrin, service de radiologie" data-rule="req" required>
+              <p class="err">Indiquez la destination.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" data-rule="req" required>
+              <p class="err">Choisissez une date.</p>
+            </div>
+            <div class="field">
+              <label for="time">Heure de prise en charge</label>
+              <input type="time" id="time" name="time" data-rule="req" required>
+              <p class="err">Choisissez une heure.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="pax">Passagers</label>
+              <select id="pax" name="pax">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 à 7</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="prescription">Prescription de transport <span class="opt">(facultatif)</span></label>
+              <input type="text" id="prescription" name="prescription" maxlength="80" placeholder="Ex. : oui, bon de transport">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Informations utiles <span class="opt">(facultatif)</span></label>
+            <textarea id="details" name="details" rows="3" maxlength="800" placeholder="Ex. : j&#x27;ai un déambulateur, rendez-vous à 10 h 30, retour à prévoir"></textarea>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" maxlength="80" autocomplete="name" data-rule="name" required>
+              <p class="err">Indiquez votre nom.</p>
+            </div>
+            <div class="field">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" maxlength="20" autocomplete="tel" data-rule="phone" required>
+              <p class="err">Un numéro à 10 chiffres pour vous joindre.</p>
+            </div>
+          </div>
+
+          <div class="field">
+              <label for="email">E-mail <span class="opt">(facultatif)</span></label>
+              <input type="email" id="email" name="email" maxlength="120" autocomplete="email" data-rule="email">
+              <p class="err">Cette adresse ne semble pas valide.</p>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">Réserver ma course</button>
+          <p class="form-legal">Vos coordonnées servent uniquement à vous recontacter pour cette demande.</p>
+
+          <div class="success" id="success" role="status" aria-live="polite" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="m14 24 7 7 13-14"/></svg>
+            <h3>Demande bien reçue</h3>
+            <p id="successMsg"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="footer">
-    <div class="checker-bottom" aria-hidden="true"></div>
-    <div class="container footer-grid">
-      <div class="foot-brand">
-        <a class="brand" href="#top">
-          <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" fill="#F2B705"/><rect x="3" y="3" width="9" height="9" fill="#17130B"/><rect x="12" y="12" width="9" height="9" fill="#17130B"/></svg></span>
-          <span class="brand-text">Checker &amp;&nbsp;Sons<small>Flotte familiale · Depuis 1947</small></span>
-        </a>
-        <p>Des chauffeurs qui connaissent chaque raccourci, et la famille qui les tient honnêtes depuis trois générations.</p>
-      </div>
-      <div><h4>Le Garage</h4><a href="#services">Services</a><a href="#garage">Notre histoire</a><a href="#meter">Au compteur</a><a href="#regulars">Les habitués</a></div>
-      <div><h4>Courses</h4><a href="#booking">Courses aéroport</a><a href="#booking">En ville</a><a href="#booking">Mise à disposition horaire</a><a href="#booking">Livraison de colis</a></div>
-      <div><h4>Standard</h4><a href="tel:+15554719470">+1 (555) 47-1947</a><a href="#contact">garage@checkerandsons.co</a><span>47 Checker Row</span></div>
+    <div class="wrap footer-inner">
+      <p><strong>Taxis Damier</strong> · Taxi conventionné depuis 1947 · Bordeaux · 5 cours de la Somme, 33000 Bordeaux</p>
+      <p>SIRET 000 000 000 00000 · Assurance n° à préciser · Page mise à jour le <time datetime="2026-09-30">30 septembre 2026</time> · <a href="#top">Retour en haut</a></p>
     </div>
-    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Checker &amp; Sons. Tous droits réservés.</span><span>Entreprise familiale depuis 1947 · Médaillon n° 7 en règle</span></div></div>
   </footer>
+
+  <!-- Barre d'action mobile -->
+  <div class="mobile-bar">
+    <a href="tel:+33536493310" class="mb-call">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+      Appeler
+    </a>
+    <a href="#devis" class="mb-quote">Réserver</a>
+  </div>
 
   <script src="script.js"></script>
 </body>

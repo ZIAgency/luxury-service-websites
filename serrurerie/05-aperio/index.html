@@ -3,390 +3,682 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Aperio Systems — Plateforme d'accès intelligent | Serrures biométriques, clés numériques, journal d'accès en direct</title>
-  <meta name="description" content="Aperio Systems réunit la serrurerie de maître et une plateforme d'accès intelligent : serrures biométriques, clés numériques, architecture de clés maîtresses et journal d'accès en direct pour chaque porte.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2 22 20 H2 Z' fill='none' stroke='%232EE6A8' stroke-width='2'/%3E%3Ccircle cx='12' cy='14' r='2.4' fill='%232EE6A8'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Contrôle d&#x27;accès, badges et interphones pour copropriétés | Aperio Accès</title>
+  <meta name="description" content="Aperio Accès équipe copropriétés et entreprises en Île-de-France : interphones et visiophones, badges Vigik, contrôle d&#x27;accès, serrures électroniques. Audit gratuit, maintenance et astreinte 24 h/24.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A0E14'/%3E%3Cg color='%234C93FF' fill='%234C93FF'%3E%3Crect class='blade' x='7' y='14' width='18' height='13' rx='2'/%3E%3Cpath d='M11 14v-4a5 5 0 0 1 10 0v4' fill='none' stroke='currentColor' stroke-width='2.6'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 600;
+  src: url(fonts/ChakraPetch-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Chakra Petch';
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/ChakraPetch-normal-2.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400 700;
+  src: url(fonts/Manrope-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://luxury-service-websites.vercel.app/serrurerie/05-aperio/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Aperio Accès">
+  <meta property="og:title" content="Contrôle d&#x27;accès, badges et interphones pour copropriétés | Aperio Accès">
+  <meta property="og:description" content="Aperio Accès équipe copropriétés et entreprises en Île-de-France : interphones et visiophones, badges Vigik, contrôle d&#x27;accès, serrures électroniques. Audit gratuit, maintenance et astreinte 24 h/24.">
+  <meta property="og:url" content="https://luxury-service-websites.vercel.app/serrurerie/05-aperio/">
+  <meta property="og:image" content="https://luxury-service-websites.vercel.app/serrurerie/05-aperio/hero.jpg">
+  <meta property="og:image:alt" content="Une personne compose un code sur l&#x27;interphone d&#x27;un immeuble">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Locksmith",
+      "@id": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/#entreprise",
+      "name": "Aperio Accès",
+      "url": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/",
+      "description": "Aperio Accès équipe copropriétés et entreprises en Île-de-France : interphones et visiophones, badges Vigik, contrôle d'accès, serrures électroniques. Audit gratuit, maintenance et astreinte 24 h/24.",
+      "slogan": "Des accès qui fonctionnent, des badges que vous gérez en deux clics.",
+      "telephone": "+33199007264",
+      "image": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "88 avenue Daumesnil",
+        "postalCode": "75012",
+        "addressLocality": "Paris",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Paris"
+        },
+        {
+          "@type": "Place",
+          "name": "Hauts-de-Seine"
+        },
+        {
+          "@type": "Place",
+          "name": "Seine-Saint-Denis"
+        },
+        {
+          "@type": "Place",
+          "name": "Val-de-Marne"
+        },
+        {
+          "@type": "Place",
+          "name": "Yvelines"
+        },
+        {
+          "@type": "Place",
+          "name": "Essonne"
+        },
+        {
+          "@type": "Place",
+          "name": "Val-d'Oise"
+        }
+      ],
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "knowsAbout": [
+        "Interphones et visiophones",
+        "Badges et Vigik",
+        "Contrôle d'accès",
+        "Serrures électroniques",
+        "Maintenance et astreinte",
+        "Audit et mise aux normes"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Les accès de votre immeuble ou de vos locaux, entretenus et maîtrisés.",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Interphones et visiophones",
+              "description": "Platines de rue, combinés ou application mobile, adaptés au nombre de logements.",
+              "areaServed": "Paris et Île-de-France",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Badges et Vigik",
+              "description": "Badges résidents, accès Vigik pour La Poste et les services, programmation à distance.",
+              "areaServed": "Paris et Île-de-France",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Contrôle d'accès",
+              "description": "Accès par zones et plages horaires pour bureaux, parkings et locaux techniques.",
+              "areaServed": "Paris et Île-de-France",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Serrures électroniques",
+              "description": "Serrures à badge ou à code pour portes de locaux, sans changer toute la porte.",
+              "areaServed": "Paris et Île-de-France",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Maintenance et astreinte",
+              "description": "Visites préventives et intervention 24 h/24 sous contrat.",
+              "areaServed": "Paris et Île-de-France",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Audit et mise aux normes",
+              "description": "État des lieux de vos accès et plan de remplacement chiffré.",
+              "areaServed": "Paris et Île-de-France",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/#entreprise"
+              }
+            }
+          }
+        ]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Laura Chen",
+        "jobTitle": "directrice technique"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/",
+      "url": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/",
+      "name": "Contrôle d'accès, badges et interphones pour copropriétés | Aperio Accès",
+      "description": "Aperio Accès équipe copropriétés et entreprises en Île-de-France : interphones et visiophones, badges Vigik, contrôle d'accès, serrures électroniques. Audit gratuit, maintenance et astreinte 24 h/24.",
+      "inLanguage": "fr-FR",
+      "dateModified": "2026-09-30",
+      "about": {
+        "@id": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/#entreprise"
+      },
+      "primaryImageOfPage": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/hero.jpg"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://luxury-service-websites.vercel.app/serrurerie/05-aperio/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que le Vigik ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un système qui permet à La Poste et à certains services autorisés d'accéder aux parties communes sans donner de code, avec des droits limités dans le temps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on désactiver un badge perdu ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, avec nos systèmes gérés en ligne, le gestionnaire désactive un badge en quelques secondes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il un vote en assemblée générale ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pour le remplacement de l'interphonie ou du contrôle d'accès en copropriété, généralement oui. Nous fournissons des documents prêts pour l'AG."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Reprenez-vous une installation existante ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, dans la plupart des cas. L'audit indique ce qui peut être conservé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que comprend l'astreinte ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un technicien joignable 24 h/24 pour les pannes bloquantes des installations sous contrat de maintenance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les résidents peuvent-ils ouvrir depuis leur téléphone ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, avec un visiophone connecté, chaque résident peut voir le visiteur et ouvrir depuis une application."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps dure le remplacement d'un interphone en copropriété ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Après le vote en assemblée générale, l'installation prend en général quelques jours selon la taille de l'immeuble, avec un planning communiqué aux résidents."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment gérer les accès des prestataires (ménage, livraisons) ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Des badges Vigik, des codes temporaires ou des accès par application donnent des droits limités dans le temps, que le gestionnaire retire à tout moment."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
-  <!-- ══════════ NAV ══════════ -->
+  <a class="skip" href="#devis">Aller au formulaire de devis</a>
+
+  <!-- Bandeau infos pratiques -->
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Paris et Île-de-France</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.4V6h-2v7.6l5 3 1-1.7Z"/></svg>Du lundi au vendredi, 8 h à 18 h, astreinte 24 h/24</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5Z"/></svg>Astreinte 24 h/24 pour nos contrats</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
   <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 20H2Z"/><circle cx="12" cy="14" r="2.4" class="core"/></svg></span>
-        <span class="brand-text">APERIO<small>SMART ACCESS SYSTEMS</small></span>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Aperio Accès, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><rect class="blade" x="7" y="14" width="18" height="13" rx="2"/><path d="M11 14v-4a5 5 0 0 1 10 0v4" fill="none" stroke="currentColor" stroke-width="2.6"/></svg>
+        </span>
+        <span class="brand-text">Aperio Accès<small>Contrôle d&#x27;accès et interphonie · Île-de-France</small></span>
       </a>
-      <nav class="links" id="navLinks">
-        <a href="#systems">Systèmes</a>
-        <a href="#platform">Plateforme</a>
-        <a href="#protocol">Déploiement</a>
-        <a href="#proof">Preuves</a>
-        <a href="#contact">Contact</a>
-        <a href="#booking" class="nav-cta">Déployer Aperio</a>
+      <nav class="links" id="navLinks" aria-label="Navigation principale">
+        <a href="#services">Nos solutions</a>
+        <a href="#deroulement">Comment ça se passe</a>
+        <a href="#chantiers">Réalisations</a>
+        <a href="#faq">Questions</a>
+        <a href="#devis" class="links-cta">Demander un audit gratuit</a>
       </nav>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <a class="nav-phone" href="tel:+33199007264">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+        <span>01 99 00 72 64</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <!-- ══════════ HERO ══════════ -->
-  <section class="hero" id="top">
-    <div class="hero-grid-bg" aria-hidden="true"></div>
-    <div class="hero-scan" aria-hidden="true"></div>
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="hero-chip reveal"><span class="pulse-dot"></span> APERIO OS v6.1 · Moteur d'accès prédictif en ligne</p>
-        <h1 class="reveal" style="--d:.1s">Chaque porte,<br><span class="grad-text">un seul trousseau.</span></h1>
-        <p class="hero-sub reveal" style="--d:.2s">Aperio associe une serrurerie de niveau maître à une véritable
-          plateforme d'accès : serrures biométriques, clés numériques qui expirent quand il le faut, et un journal
-          signé de chaque entrée — du portail d'entrée à la trappe du toit.</p>
-        <div class="hero-cta reveal" style="--d:.3s">
-          <a href="#booking" class="btn btn-neo">Réserver une visite technique</a>
-          <a href="#platform" class="btn btn-glass">Voir la plateforme</a>
-        </div>
-        <div class="hero-meta reveal" style="--d:.4s">
-          <span>RAPPORTS SOC 2</span><span>SERRURES HORS-LIGNE D'ABORD</span><span>ÉQUIPE TERRAIN 24/7</span>
-        </div>
-      </div>
+  <main id="top">
 
-      <!-- Live access dashboard mock -->
-      <div class="dash reveal" style="--d:.28s">
-        <div class="dash-top">
-          <span class="dash-title"><svg viewBox="0 0 24 24"><path d="M12 2 22 20H2Z"/></svg> APERIO · LOFTS HARBORVIEW</span>
-          <span class="dash-status"><span class="pulse-dot"></span> 14 PORTES · TOUT SÉCURISÉ</span>
-        </div>
-        <div class="dash-metrics">
-          <div class="metric">
-            <span class="m-label">DÉVERROUILLAGE MOYEN</span>
-            <span class="m-value" id="mUnlock">0,41 <i>s</i></span>
-            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,14 12,12 24,15 36,10 48,13 60,9 72,12 84,8 100,10"/></svg>
-          </div>
-          <div class="metric">
-            <span class="m-label">IDENTIFIANTS AUJOURD'HUI</span>
-            <span class="m-value" id="mCreds">37 <i>clés</i></span>
-            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,18 12,16 24,17 36,12 48,14 60,10 72,13 84,9 100,11"/></svg>
-          </div>
-          <div class="metric">
-            <span class="m-label">SIGNALEMENTS (30 J)</span>
-            <span class="m-value" id="mFlags">2 <i>événements</i></span>
-            <svg class="spark" viewBox="0 0 100 26"><polyline points="0,10 12,14 24,12 36,16 48,13 60,17 72,14 84,18 100,16"/></svg>
-          </div>
-        </div>
-        <div class="dash-log">
-          <div class="log-head"><span>JOURNAL D'ACCÈS · EN DIRECT</span><span id="logClock">--:--:--</span></div>
-          <ul id="logFeed">
-            <li><span class="l-t">09:41:07</span><span class="l-u">R. VANCE</span><span class="l-m bio">BIO</span><span class="l-d">HALL</span><span class="l-ok">✓</span></li>
-            <li><span class="l-t">09:38:52</span><span class="l-u">INVITÉ · 4H</span><span class="l-m app">APP</span><span class="l-d">PARKING</span><span class="l-ok">✓</span></li>
-            <li><span class="l-t">09:31:19</span><span class="l-u">S. IKE</span><span class="l-m pin">PIN</span><span class="l-d">SALLE</span><span class="l-ok">✓</span></li>
-            <li><span class="l-t">09:27:03</span><span class="l-u">INCONNU</span><span class="l-m key">CLÉ</span><span class="l-d">TOIT</span><span class="l-no">✕</span></li>
-            <li><span class="l-t">09:19:44</span><span class="l-u">M. OKAFOR</span><span class="l-m bio">BIO</span><span class="l-d">PORTAIL</span><span class="l-ok">✓</span></li>
+    <section class="hero split-right">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="eyebrow">Contrôle d&#x27;accès, badges et interphones pour copropriétés en Île-de-France</h1>
+          <p class="headline">Des accès qui fonctionnent, <em>des badges que vous gérez en deux clics.</em></p>
+          <p class="lead">Interphone en panne, badges perdus qu&#x27;on ne peut pas désactiver, prestataire injoignable ? Nous installons et entretenons l&#x27;interphonie et le contrôle d&#x27;accès de votre immeuble ou de vos locaux, avec une astreinte 24 h/24.</p>
+          <ul class="proofs">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Audit gratuit de vos accès</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Badges désactivables à distance en cas de perte</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Maintenance et astreinte 24 h/24 sous contrat</li>
           </ul>
-        </div>
-        <div class="dash-nodes">
-          <span class="node active">PORTAIL</span>
-          <span class="node active">HALL</span>
-          <span class="node active">SALLE</span>
-          <span class="node active">TOIT</span>
-          <span class="node active">PARKING</span>
-          <span class="node active">COURRIER</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ STATS ══════════ -->
-  <section class="stats">
-    <div class="container stats-row">
-      <div class="stat reveal"><strong data-count="3200" data-suffix="+">0</strong><span>sites sous gestion</span></div>
-      <div class="stat reveal" style="--d:.08s"><strong data-count="1.4" data-decimal="1" data-suffix="M">0</strong><span>clés numériques émises</span></div>
-      <div class="stat reveal" style="--d:.16s"><strong data-count="0.41" data-decimal="2" data-suffix="s">0</strong><span>temps de déverrouillage moyen</span></div>
-      <div class="stat reveal" style="--d:.24s"><strong data-count="99.99" data-decimal="2" data-suffix="%">0</strong><span>disponibilité de la plateforme</span></div>
-    </div>
-  </section>
-
-  <!-- ══════════ SYSTEMS / SERVICES ══════════ -->
-  <section class="section" id="systems">
-    <div class="container">
-      <div class="sec-head">
-        <p class="kicker reveal">// SYSTÈMES</p>
-        <h2 class="reveal" style="--d:.08s">La serrurerie de maître,<br><span class="grad-text">dotée de sens.</span></h2>
-        <p class="sec-sub reveal" style="--d:.14s">Six modules éprouvés sur le terrain. Combinez-les librement — chacun
-          est installé par un serrurier agréé, provisionné sur la plateforme et consigné dès la première vis.</p>
-      </div>
-      <div class="sys-grid">
-        <article class="sys reveal" style="--d:.05s">
-          <div class="sys-head"><span class="sys-ic">⏱</span><span class="sys-tag">TERRAIN</span></div>
-          <h3>Accès d'urgence — 24h/24</h3>
-          <p>Fermeture, pêne connecté bloqué, contrôleur en panne. L'équipe terrain est dépêchée avec les données de
-            la plateforme déjà chargées, et chaque intervention est inscrite à votre journal d'accès.</p>
-          <div class="sys-foot"><span class="ok">● DISPATCH 24H/24</span><span class="price">à partir de 129 €</span></div>
-        </article>
-        <article class="sys reveal" style="--d:.1s">
-          <div class="sys-head"><span class="sys-ic">◉</span><span class="sys-tag">BIO</span></div>
-          <h3>Déploiement de serrures connectées</h3>
-          <p>Matériel à empreinte, à clé de téléphone et à code ajusté à la porte — jamais forcé dessus.
-            Hors-ligne d'abord : un routeur mort ne signifie jamais une porte d'entrée morte.</p>
-          <div class="sys-foot"><span class="ok">● PAR PORTE</span><span class="price">à partir de 359 €</span></div>
-        </article>
-        <article class="sys reveal" style="--d:.15s">
-          <div class="sys-head"><span class="sys-ic">⌘</span><span class="sys-tag">ARBRE</span></div>
-          <h3>Changement de cylindres &amp; architecture de clés maîtresses</h3>
-          <p>Propriétaire, gestionnaire, personnel, invité ponctuel — conçu comme un arbre dans le tableau de bord,
-            goupillé dans les cylindres et répliqué numériquement pour que le papier et la plateforme disent toujours
-            la même chose.</p>
-          <div class="sys-foot"><span class="ok">● PAR SITE</span><span class="price">à partir de 179 €</span></div>
-        </article>
-        <article class="sys reveal" style="--d:.2s">
-          <div class="sys-head"><span class="sys-ic">▦</span><span class="sys-tag">COFFRE</span></div>
-          <h3>Ingénierie des coffres-forts</h3>
-          <p>Coffres ouverts, déplacés et câblés en capteurs : contact de porte, vibration, signal d'effraction —
-          tout remonte au même journal que la porte d'entrée. Aucun angle mort dans la salle des archives.</p>
-          <div class="sys-foot"><span class="ok">● PAR COFFRE</span><span class="price">à partir de 249 €</span></div>
-        </article>
-        <article class="sys reveal" style="--d:.25s">
-          <div class="sys-head"><span class="sys-ic">⇥</span><span class="sys-tag">AUTO</span></div>
-          <h3>Clés numériques automobiles</h3>
-          <p>Télécommandes de flotte, transpondeurs et provisionnement téléphone-comme-clé — appairés sur place,
-            attribués aux conducteurs et révocables dès qu'un utilitaire change de mains.</p>
-          <div class="sys-foot"><span class="ok">● PAR VÉHICULE</span><span class="price">à partir de 189 €</span></div>
-        </article>
-        <article class="sys reveal" style="--d:.3s">
-          <div class="sys-head"><span class="sys-ic">▲</span><span class="sys-tag">DURCIR</span></div>
-          <h3>Durcissement haute sécurité</h3>
-          <p>Cylindres anti-crochetage, gâches renforcées et kits de cadre — installés, serrés au couple et scannés
-            pour référence, afin de prouver la mise à niveau à n'importe quel auditeur.</p>
-          <div class="sys-foot"><span class="ok">● PAR PORTE</span><span class="price">à partir de 279 €</span></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ PLATFORM / STORY ══════════ -->
-  <section class="section dark" id="platform">
-    <div class="container platform-grid">
-      <div class="platform-copy">
-        <p class="kicker reveal">// PLATEFORME</p>
-        <h2 class="reveal" style="--d:.08s">Une serrure est du matériel.<br><span class="grad-text">L'accès est un système.</span></h2>
-        <p class="reveal" style="--d:.16s">Aperio a été fondée par un maître serrurier et une ingénieure en systèmes
-          distribués qui n'arrêtaient pas de se croiser au pire endroit possible : devant une porte « intelligente »
-          tombée en panne exactement au moment où l'on en avait besoin. Nous construisons le contraire — l'excellence
-          mécanique d'abord, un logiciel qui dit la vérité, et des journaux que vous pouvez remettre à un auditeur
-          sans frémir.</p>
-        <ul class="platform-list">
-          <li class="reveal" style="--d:.22s"><span>◇</span> Serrures hors-ligne d'abord : les identifiants sont vérifiés à la porte, pas dans une file d'attente cloud</li>
-          <li class="reveal" style="--d:.28s"><span>◇</span> Journal d'accès signé, en ajout seul — les entrées ne peuvent pas être modifiées en silence</li>
-          <li class="reveal" style="--d:.34s"><span>◇</span> Clés numériques avec expiration, fenêtres horaires et mode invité à usage unique</li>
-          <li class="reveal" style="--d:.4s"><span>◇</span> Chaque installation par des serruriers agréés, serrée au couple et documentée</li>
-        </ul>
-        <a href="#contact" class="btn btn-neo reveal" style="--d:.48s">Demander une démo de la plateforme</a>
-      </div>
-      <div class="tiers reveal" style="--d:.2s">
-        <div class="tiers-head"><span>HIÉRARCHIE DE CLÉS · HARBORVIEW</span><span>SYNC EN DIRECT</span></div>
-        <div class="tier t-owner"><span class="t-name">PROPRIÉTAIRE</span><span class="t-keys">Maîtresse · les 14 portes · sans limite</span></div>
-        <div class="tier-branch" aria-hidden="true"></div>
-        <div class="tier t-manager"><span class="t-name">GESTIONNAIRE</span><span class="t-keys">Clés de jour · 13 portes · expire au départ</span></div>
-        <div class="tier-branch" aria-hidden="true"></div>
-        <div class="tier t-staff"><span class="t-name">PERSONNEL</span><span class="t-keys">Clés à fenêtre · salle, courrier, parking</span></div>
-        <div class="tier-branch" aria-hidden="true"></div>
-        <div class="tier t-guest"><span class="t-name">INVITÉ · 4H</span><span class="t-keys">Usage unique · parking 09h00–13h00</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ PROTOCOL / DEPLOYMENT ══════════ -->
-  <section class="section" id="protocol">
-    <div class="container">
-      <div class="sec-head">
-        <p class="kicker reveal">// DÉPLOIEMENT</p>
-        <h2 class="reveal" style="--d:.08s">Quatre phases.<br><span class="grad-text">Zéro interruption.</span></h2>
-      </div>
-      <ol class="proto-row">
-        <li class="reveal" style="--d:.05s"><span class="ph">PHASE 01</span><h3>Relevé &amp; cartographie</h3><p>Chaque porte mesurée, photographiée et étiquetée. Cadres vérifiés pour l'alignement avant toute commande de matériel.</p></li>
-        <li class="reveal" style="--d:.15s"><span class="ph">PHASE 02</span><h3>Provisionnement</h3><p>La hiérarchie est construite d'abord dans le tableau de bord — personnes, portes, fenêtres et règles d'expiration convenues sur le papier.</p></li>
-        <li class="reveal" style="--d:.25s"><span class="ph">PHASE 03</span><h3>Déploiement</h3><p>Serrures posées porte par porte, étage par étage. Anciennes clés retirées, clés numériques émises, cylindres goupillés selon l'arbre.</p></li>
-        <li class="reveal" style="--d:.35s"><span class="ph">PHASE 04</span><h3>Supervision</h3><p>Le journal d'accès passe en direct, les signalements sont traités par une équipe 24h/24, et c'est un serrurier — pas un chatbot — qui répond à l'appel.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ══════════ TESTIMONIALS ══════════ -->
-  <section class="section" id="proof">
-    <div class="container">
-      <div class="sec-head">
-        <p class="kicker reveal">// PREUVES</p>
-        <h2 class="reveal" style="--d:.08s">Des exploitants qui <span class="grad-text">dorment mieux désormais.</span></h2>
-      </div>
-      <div class="testi-grid">
-        <figure class="testi reveal" style="--d:.05s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Nous gérons 212 portes dans six bâtiments. Le journal d'Aperio a définitivement clos le débat
-            « qui a ouvert le toit » — la réponse est toujours dans le dossier, et elle est signée. »</blockquote>
-          <figcaption><strong>Dana W.</strong><span>Directrice des opérations, Meridian Property Group</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.15s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Des clés d'invité qui expirent toutes seules. Des clés de ménage qui ne fonctionnent que de 9 h
-            à 17 h. Nos soirées de rotation sont passées du chaos à la liste de contrôle. »</blockquote>
-          <figcaption><strong>J. Marek</strong><span>Propriétaire, The Foglifter Boutique Hotel</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.25s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Un badge est mort pendant une tempête et la porte s'est quand même ouverte sur le lecteur de
-            secours. C'est à ce moment-là que j'ai compris ce que « hors-ligne d'abord » veut vraiment dire. »</blockquote>
-          <figcaption><strong>Priya S.</strong><span>Responsable technique, Travaux Publics Co.</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ CONTACT ══════════ -->
-  <section class="section dark contact" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-info">
-        <p class="kicker reveal">// CONTACT</p>
-        <h2 class="reveal" style="--d:.08s">Apportez-nous votre<br><span class="grad-text">pire porte.</span></h2>
-        <p class="reveal" style="--d:.14s">Celle au contrôleur mort et au registre des clés sur papier. Un ingénieur
-          déploiement répond en moins d'une heure ouvrée avec un créneau de relevé et une réponse franche.</p>
-        <ul class="info-list">
-          <li class="reveal" style="--d:.2s"><span class="info-ic">◇</span><div><strong>Siège</strong><span>Bâtiment C, 44 Foundry Tech Park<br>Quartier Grayfield</span></div></li>
-          <li class="reveal" style="--d:.26s"><span class="info-ic">◇</span><div><strong>Ligne terrain 24/7</strong><span>+1 (555) 402-6100</span></div></li>
-          <li class="reveal" style="--d:.32s"><span class="info-ic">◇</span><div><strong>SLA de réponse</strong><span>Devis en 1 heure ouvrée<br>Accès d'urgence, toujours pourvu</span></div></li>
-        </ul>
-      </div>
-
-      <form class="contact-form reveal" id="contactForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-        <fieldset>
-          <div class="field"><input type="text" id="cf-name" required><label for="cf-name">Nom complet</label></div>
-          <div class="field-row">
-            <div class="field"><input type="email" id="cf-email" required><label for="cf-email">E-mail professionnel</label></div>
-            <div class="field"><input type="tel" id="cf-phone"><label for="cf-phone">Téléphone (facultatif)</label></div>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#devis">Demander un audit gratuit</a>
+            <a class="btn btn-ghost" href="tel:+33199007264">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              01 99 00 72 64
+            </a>
           </div>
-          <div class="field select-field">
-            <select id="cf-subject" required>
-              <option value="" selected disabled></option>
-              <option>Démo de la plateforme</option>
-              <option>Visite technique</option>
-              <option>Accès d'urgence</option>
-              <option>Architecture de clés maîtresses</option>
-              <option>Autre</option>
-            </select>
-            <label for="cf-subject">Type de demande</label>
+          <p class="hero-note">Réponse sous 24 h ouvrées. Syndics et gestionnaires bienvenus.</p>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="hero-photo">
+            <img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" sizes="(min-width: 900px) 50vw, 100vw" alt="Une personne compose un code sur l&#x27;interphone d&#x27;un immeuble" width="1600" height="2400" fetchpriority="high" decoding="async">
+          </figure>
+          <div class="hero-badge">
+            <strong>24 h/24</strong>
+            <span>astreinte pour les<br>immeubles sous contrat</span>
           </div>
-          <div class="field"><textarea id="cf-msg" rows="4" required></textarea><label for="cf-msg">Nombre de portes, délai, points de douleur</label></div>
-          <button type="submit" class="btn btn-neo btn-wide">Envoyer à Aperio</button>
-          <p class="form-note">Réponse par un ingénieur. Vos données restent dans votre déploiement.</p>
-        </fieldset>
-        <div class="form-success" hidden>
-          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-          <h3>Demande enregistrée.</h3>
-          <p>Horodatée et acheminée — un ingénieur répond en moins d'une heure ouvrée avec les prochaines étapes.</p>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ══════════ BOOKING ══════════ -->
-  <section class="section booking" id="booking">
-    <div class="container">
-      <div class="sec-head">
-        <p class="kicker reveal">// RÉSERVATION DÉPLOIEMENT</p>
-        <h2 class="reveal" style="--d:.08s">Réservez un <span class="grad-text">créneau sur site.</span></h2>
-        <p class="sec-sub reveal" style="--d:.14s">Quatre étapes. Le fourgon arrive avec vos données de portes préchargées.</p>
-      </div>
-
-      <div class="book-frame reveal" style="--d:.1s">
-        <div class="book-inner">
-          <ol class="wiz-steps" id="wizSteps">
-            <li class="is-current"><span>MODULE</span></li>
-            <li><span>CRÉNEAU</span></li>
-            <li><span>DONNÉES SITE</span></li>
-            <li><span>CONFIRMÉ</span></li>
-          </ol>
-
-          <form id="bookForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-            <!-- STEP 1 · SERVICE -->
-            <fieldset class="pane is-active">
-              <legend>Sélectionnez le module à déployer.</legend>
-              <div class="choice-grid">
-                <label class="choice"><input type="radio" name="svc" value="Accès d'urgence — 24h/24" required><span>Dépannage d'urgence — 24h/24</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Déploiement de Serrures Connectées"><span>Installation de serrures connectées</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Changement de Cylindres &amp; Clés Maîtresses"><span>Changement de cylindres &amp; clés maîtresses</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Ingénierie des Coffres-forts"><span>Coffres-forts</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Clés Numériques Automobiles"><span>Clés de voiture</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Durcissement Haute Sécurité"><span>Serrures haute sécurité</span></label>
-              </div>
-              <p class="choice-error">Sélectionnez un module pour continuer.</p>
-              <div class="wiz-nav"><span></span><button type="button" class="btn btn-neo js-next">Continuer</button></div>
-            </fieldset>
-
-            <!-- STEP 2 · DATE & TIME -->
-            <fieldset class="pane">
-              <legend>Réservez la fenêtre de déploiement.</legend>
-              <div class="field date-field">
-                <input type="date" id="bk-date" required>
-                <label>Date cible</label>
-              </div>
-              <div class="time-grid" id="timeGrid">
-                <button type="button" class="chip" data-v="07:00 – 09:00">7h–9h</button>
-                <button type="button" class="chip" data-v="09:00 – 12:00">9h–12h</button>
-                <button type="button" class="chip" data-v="12:00 – 15:00">12h–15h</button>
-                <button type="button" class="chip" data-v="15:00 – 18:00">15h–18h</button>
-                <button type="button" class="chip" data-v="18:00 – 21:00">18h–21h</button>
-                <button type="button" class="chip" data-v="21:00 – 24:00">21h–24h</button>
-              </div>
-              <input type="hidden" id="bk-time">
-              <p class="choice-error">Choisissez une fenêtre — créneaux de nuit inclus.</p>
-              <div class="wiz-nav"><button type="button" class="btn btn-glass js-prev">Retour</button><button type="button" class="btn btn-neo js-next">Continuer</button></div>
-            </fieldset>
-
-            <!-- STEP 3 · DETAILS -->
-            <fieldset class="pane">
-              <legend>Fiche site &amp; contact.</legend>
-              <div class="field-row">
-                <div class="field"><input type="text" id="bk-name" required><label>Nom complet</label></div>
-                <div class="field"><input type="tel" id="bk-phone" required><label>Téléphone</label></div>
-              </div>
-              <div class="field"><input type="text" id="bk-address" required><label>Adresse du site</label></div>
-              <div class="field"><textarea id="bk-notes" rows="3"></textarea><label>Nombre de portes, heures d'accès, remarques (facultatif)</label></div>
-              <div class="wiz-nav"><button type="button" class="btn btn-glass js-prev">Retour</button><button type="submit" class="btn btn-neo">Confirmer le déploiement</button></div>
-            </fieldset>
-
-            <!-- STEP 4 · SUCCESS -->
-            <fieldset class="pane pane-success">
-              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-              <h3>Créneau confirmé.</h3>
-              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est planifié pour<br><strong id="recap-when">—</strong>.</p>
-              <p class="recap-sub">Vous recevrez une confirmation et une liste de contrôle de relevé. L'équipe terrain envoie un SMS à l'arrivée — et chaque vis qu'elle tourne finit dans le journal.</p>
-            </fieldset>
-          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ FOOTER ══════════ -->
+    <!-- SITUATIONS -->
+    <section class="situations" aria-labelledby="sit-title">
+      <div class="wrap">
+        <h2 id="sit-title" class="h-small">Où en êtes-vous ?</h2>
+        <div class="sit-grid">
+          <button class="sit" data-prefill="Interphone en panne">
+            <span class="sit-q">L&#x27;interphone de notre immeuble est en panne</span>
+            <span class="sit-a">Dépannage, puis remplacement par un visiophone si nécessaire.</span>
+          </button>
+          <button class="sit" data-prefill="Gestion des badges">
+            <span class="sit-q">On ne sait plus combien de badges circulent</span>
+            <span class="sit-a">Inventaire, désactivation des badges perdus, nouveau système gérable en ligne.</span>
+          </button>
+          <button class="sit" data-prefill="Accès Vigik">
+            <span class="sit-q">Le facteur ne peut pas entrer</span>
+            <span class="sit-a">Mise en place du Vigik pour La Poste et les services autorisés.</span>
+          </button>
+          <button class="sit" data-prefill="Visiophone">
+            <span class="sit-q">Nous voulons un visiophone</span>
+            <span class="sit-a">Voir qui sonne et ouvrir depuis son téléphone.</span>
+          </button>
+          <button class="sit" data-prefill="Contrôle d&#x27;accès entreprise">
+            <span class="sit-q">Nos bureaux ont besoin d&#x27;accès par badge</span>
+            <span class="sit-a">Contrôle d&#x27;accès par zones et horaires, historique des passages.</span>
+          </button>
+          <button class="sit" data-prefill="Reprise de maintenance">
+            <span class="sit-q">Notre prestataire ne répond plus</span>
+            <span class="sit-a">Reprise de la maintenance de votre installation existante.</span>
+          </button>
+        </div>
+        <p class="sit-hint">Cliquez sur votre situation : le formulaire se remplit tout seul.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-labelledby="serv-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Nos solutions</p>
+          <h2 id="serv-title">Les accès de votre immeuble ou de vos locaux, entretenus et maîtrisés.</h2>
+        </div>
+        <div class="serv-grid">
+          <article class="serv">
+            <span class="serv-n">01</span>
+            <h3>Interphones et visiophones</h3>
+            <p>Platines de rue, combinés ou application mobile, adaptés au nombre de logements.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">02</span>
+            <h3>Badges et Vigik</h3>
+            <p>Badges résidents, accès Vigik pour La Poste et les services, programmation à distance.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">03</span>
+            <h3>Contrôle d&#x27;accès</h3>
+            <p>Accès par zones et plages horaires pour bureaux, parkings et locaux techniques.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">04</span>
+            <h3>Serrures électroniques</h3>
+            <p>Serrures à badge ou à code pour portes de locaux, sans changer toute la porte.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">05</span>
+            <h3>Maintenance et astreinte</h3>
+            <p>Visites préventives et intervention 24 h/24 sous contrat.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">06</span>
+            <h3>Audit et mise aux normes</h3>
+            <p>État des lieux de vos accès et plan de remplacement chiffré.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÉROULEMENT -->
+    <section class="steps" id="deroulement" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Comment ça se passe</p>
+          <h2 id="steps-title">Un projet mené sans perturber les résidents.</h2>
+        </div>
+        <ol class="step-list">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Prise de contact</h3>
+            <p>Syndic, conseil syndical ou entreprise : vous nous décrivez l&#x27;existant.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Audit sur place</h3>
+            <p>Relevé des portes, du câblage et des besoins, rapport remis.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Proposition chiffrée</h3>
+            <p>Solution, planning et contrat de maintenance, prêts pour l&#x27;assemblée générale.</p>
+          </li>
+          <li>
+            <span class="step-n">4</span>
+            <h3>Installation et formation</h3>
+            <p>Pose planifiée, badges programmés, gestionnaire formé.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS -->
+    <section class="jobs" id="chantiers" aria-labelledby="jobs-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Réalisations récentes</p>
+          <h2 id="jobs-title">Quelques exemples de ces derniers mois.</h2>
+        </div>
+        <div class="job-grid">
+          <article class="job">
+            <p class="job-where">Paris 12e · Copropriété de 40 lots</p>
+            <h3>Visiophone et badges gérés en ligne</h3>
+            <dl>
+              <div><dt>Installation</dt><dd>Remplacement complet</dd></div>
+              <div><dt>Durée</dt><dd>3 jours</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Boulogne-Billancourt · Bureaux</p>
+            <h3>Contrôle d&#x27;accès sur 3 étages et parking</h3>
+            <dl>
+              <div><dt>Installation</dt><dd>Badges par zones</dd></div>
+              <div><dt>Durée</dt><dd>5 jours</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Montreuil · Résidence</p>
+            <h3>Vigik installé, fin des sonneries pour le courrier</h3>
+            <dl>
+              <div><dt>Installation</dt><dd>Accès Vigik</dd></div>
+              <div><dt>Durée</dt><dd>1 jour</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENTS + AVIS -->
+    <section class="trust" aria-labelledby="trust-title">
+      <div class="wrap trust-grid">
+        <div>
+          <p class="eyebrow">Nos engagements</p>
+          <h2 id="trust-title">Nos engagements.</h2>
+          <ul class="pledges">
+            <li><strong>Des systèmes ouverts.</strong> Vous n&#x27;êtes pas prisonnier d&#x27;un prestataire : les accès restent les vôtres.</li>
+            <li><strong>Une astreinte réelle.</strong> Un technicien joignable 24 h/24 pour les installations sous contrat.</li>
+            <li><strong>Des données protégées.</strong> Historiques d&#x27;accès conservés selon la réglementation, accès limité au gestionnaire.</li>
+            <li><strong>Des devis prêts pour l&#x27;AG.</strong> Documents clairs pour faciliter le vote en assemblée générale.</li>
+          </ul>
+          <p class="signature"><strong>Laura Chen</strong>, directrice technique</p>
+        </div>
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>« Nous ne savions plus qui avait des badges. Tout est maintenant visible en ligne, et on désactive un badge perdu en deux clics. »</blockquote>
+            <figcaption>Conseil syndical · Paris 12e · Copropriété</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>« Installation faite sans bloquer nos équipes, et une vraie astreinte le week-end. »</blockquote>
+            <figcaption>Responsable des services généraux · Boulogne-Billancourt</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="sec-head">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Ce qu'on nous demande le plus souvent.</h2>
+          <p class="faq-more">Votre question n'est pas là ?<br>Appelez-nous au <a href="tel:+33199007264">01 99 00 72 64</a>.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Qu&#x27;est-ce que le Vigik ?</summary>
+            <p>Un système qui permet à La Poste et à certains services autorisés d&#x27;accéder aux parties communes sans donner de code, avec des droits limités dans le temps.</p>
+          </details>
+          <details>
+            <summary>Peut-on désactiver un badge perdu ?</summary>
+            <p>Oui, avec nos systèmes gérés en ligne, le gestionnaire désactive un badge en quelques secondes.</p>
+          </details>
+          <details>
+            <summary>Faut-il un vote en assemblée générale ?</summary>
+            <p>Pour le remplacement de l&#x27;interphonie ou du contrôle d&#x27;accès en copropriété, généralement oui. Nous fournissons des documents prêts pour l&#x27;AG.</p>
+          </details>
+          <details>
+            <summary>Reprenez-vous une installation existante ?</summary>
+            <p>Oui, dans la plupart des cas. L&#x27;audit indique ce qui peut être conservé.</p>
+          </details>
+          <details>
+            <summary>Que comprend l&#x27;astreinte ?</summary>
+            <p>Un technicien joignable 24 h/24 pour les pannes bloquantes des installations sous contrat de maintenance.</p>
+          </details>
+          <details>
+            <summary>Les résidents peuvent-ils ouvrir depuis leur téléphone ?</summary>
+            <p>Oui, avec un visiophone connecté, chaque résident peut voir le visiteur et ouvrir depuis une application.</p>
+          </details>
+          <details>
+            <summary>Combien de temps dure le remplacement d&#x27;un interphone en copropriété ?</summary>
+            <p>Après le vote en assemblée générale, l&#x27;installation prend en général quelques jours selon la taille de l&#x27;immeuble, avec un planning communiqué aux résidents.</p>
+          </details>
+          <details>
+            <summary>Comment gérer les accès des prestataires (ménage, livraisons) ?</summary>
+            <p>Des badges Vigik, des codes temporaires ou des accès par application donnent des droits limités dans le temps, que le gestionnaire retire à tout moment.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVIS -->
+    <section class="quote" id="devis" aria-labelledby="quote-title">
+      <div class="wrap quote-grid">
+        <div class="quote-side">
+          <p class="eyebrow">Devis gratuit</p>
+          <h2 id="quote-title">Parlez-nous de vos accès.</h2>
+          <p>Syndic, conseil syndical ou entreprise : décrivez-nous votre immeuble ou vos locaux. On vous rappelle pour fixer l&#x27;audit.</p>
+          <div class="contact-card">
+            <a class="contact-line big" href="tel:+33199007264">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              01 99 00 72 64
+            </a>
+            <p class="contact-line">Du lundi au vendredi, 8 h à 18 h, astreinte 24 h/24</p>
+            <p class="contact-line">88 avenue Daumesnil, 75012 Paris</p>
+            <p class="zone"><strong>Nous intervenons à</strong> Paris, Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne, Yvelines, Essonne, Val-d&#x27;Oise.</p>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label for="website">Ne pas remplir</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field">
+              <label for="work">Votre besoin</label>
+              <select id="work" name="work" data-rule="req" required>
+                <option value="">Choisissez</option>
+                <option>Interphone en panne</option>
+                <option>Gestion des badges</option>
+                <option>Accès Vigik</option>
+                <option>Visiophone</option>
+                <option>Contrôle d&#x27;accès entreprise</option>
+                <option>Reprise de maintenance</option>
+                <option>Autre</option>
+              </select>
+              <p class="err">Faites un choix dans la liste.</p>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="size">Nombre de lots ou de salariés <span class="opt">(facultatif)</span></label>
+              <input type="text" id="size" name="size" maxlength="80" placeholder="Ex. : 40 logements">
+            </div>
+            <div class="field">
+              <label for="zip">Code postal</label>
+              <input type="text" id="zip" name="zip" maxlength="5" autocomplete="postal-code" inputmode="numeric" data-rule="zip" required>
+              <p class="err">5 chiffres, par exemple 75012.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Précisez votre demande <span class="opt">(facultatif)</span></label>
+            <textarea id="details" name="details" rows="3" maxlength="800" placeholder="Ex. : immeuble de 1975, interphone d&#x27;origine, badges distribués sans suivi"></textarea>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" maxlength="80" autocomplete="name" data-rule="name" required>
+              <p class="err">Indiquez votre nom.</p>
+            </div>
+            <div class="field">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" maxlength="20" autocomplete="tel" data-rule="phone" required>
+              <p class="err">Un numéro à 10 chiffres pour vous joindre.</p>
+            </div>
+          </div>
+
+          <div class="field">
+              <label for="email">E-mail <span class="opt">(facultatif)</span></label>
+              <input type="email" id="email" name="email" maxlength="120" autocomplete="email" data-rule="email">
+              <p class="err">Cette adresse ne semble pas valide.</p>
+          </div>
+
+          <fieldset class="field">
+            <legend>Quand vous rappeler ?</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="when" value="Matin" checked><span>Le matin</span></label>
+              <label class="chip"><input type="radio" name="when" value="Midi"><span>Entre 12 h et 14 h</span></label>
+              <label class="chip"><input type="radio" name="when" value="Après-midi"><span>L'après-midi</span></label>
+            </div>
+          </fieldset>
+
+          <button class="btn btn-primary btn-block" type="submit">Envoyer ma demande</button>
+          <p class="form-legal">Vos coordonnées servent uniquement à vous recontacter pour cette demande.</p>
+
+          <div class="success" id="success" role="status" aria-live="polite" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="m14 24 7 7 13-14"/></svg>
+            <h3>Demande bien reçue</h3>
+            <p id="successMsg"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="footer">
-    <div class="container footer-grid">
-      <div class="foot-brand">
-        <a class="brand" href="#top">
-          <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M12 2 22 20H2Z"/><circle cx="12" cy="14" r="2.4" class="core"/></svg></span>
-          <span class="brand-text">APERIO<small>SMART ACCESS SYSTEMS</small></span>
-        </a>
-        <p>L'excellence mécanique d'abord, un logiciel qui dit la vérité. Serrurerie de maître, accès de niveau plateforme.</p>
-      </div>
-      <div><h4>Système</h4><a href="#systems">Modules</a><a href="#platform">Plateforme</a><a href="#protocol">Déploiement</a><a href="#proof">Preuves</a></div>
-      <div><h4>Modules</h4><a href="#booking">Serrures connectées</a><a href="#booking">Arbre de clés maîtresses</a><a href="#booking">Coffres-forts</a><a href="#booking">Durcissement</a></div>
-      <div><h4>Contact</h4><a href="tel:+15554026100">+1 (555) 402-6100</a><a href="#contact">ops@aperiosystems.io</a><span>Bâtiment C, 44 Foundry Tech Park</span></div>
+    <div class="wrap footer-inner">
+      <p><strong>Aperio Accès</strong> · Contrôle d&#x27;accès et interphonie · Île-de-France · 88 avenue Daumesnil, 75012 Paris</p>
+      <p>SIRET 000 000 000 00000 · Assurance n° à préciser · Page mise à jour le <time datetime="2026-09-30">30 septembre 2026</time> · <a href="#top">Retour en haut</a></p>
     </div>
-    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Aperio Systems. Tous droits réservés.</span><span>Serruriers agréés · Rapports SOC 2 · Hors-ligne d'abord</span></div></div>
   </footer>
+
+  <!-- Barre d'action mobile -->
+  <div class="mobile-bar">
+    <a href="tel:+33199007264" class="mb-call">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+      Appeler
+    </a>
+    <a href="#devis" class="mb-quote">Devis gratuit</a>
+  </div>
 
   <script src="script.js"></script>
 </body>

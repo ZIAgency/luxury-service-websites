@@ -3,353 +3,700 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Vector Taxi Co. — Forfait. Zéro compteur. | Le taxi de précision</title>
-  <meta name="description" content="Vector Taxi Co. assure des courses aéroport au forfait, des tarifs point à point transparents et des ETA disciplinés. Le prix est le prix — fixé avant l'embarquement.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%23FFD400'/%3E%3Cpath d='M4 12h12M12 6l6 6-6 6' stroke='%230A0A0A' stroke-width='2.6' fill='none'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Taxi Marseille prix fixe · Aéroport, gare, croisières | Vecteur Taxi</title>
+  <meta name="description" content="Vecteur Taxi à Marseille : trajets à prix fixe vers l&#x27;aéroport Marseille-Provence, la gare Saint-Charles, Aix TGV et le terminal croisières. Prix annoncé avant le départ, paiement par carte.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23101216'/%3E%3Cg color='%23E4C04A' fill='%23E4C04A'%3E%3Crect class='blade' x='11' y='4' width='10' height='5' rx='1'/%3E%3Cpath d='M5 22l2.5-7C8 13.5 9.2 12.5 10.8 12.5h10.4c1.6 0 2.8 1 3.3 2.5L27 22v4H5z' fill='none' stroke='currentColor' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preload" as="image" imagesrcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+  <style>
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 600 800;
+  font-stretch: 100%;
+  src: url(fonts/Archivo-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400 600;
+  src: url(fonts/Figtree-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: swap;
+}
+  </style>
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Vecteur Taxi">
+  <meta property="og:title" content="Taxi Marseille prix fixe · Aéroport, gare, croisières | Vecteur Taxi">
+  <meta property="og:description" content="Vecteur Taxi à Marseille : trajets à prix fixe vers l&#x27;aéroport Marseille-Provence, la gare Saint-Charles, Aix TGV et le terminal croisières. Prix annoncé avant le départ, paiement par carte.">
+  <meta property="og:url" content="https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/">
+  <meta property="og:image" content="https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/hero.jpg">
+  <meta property="og:image:alt" content="Un chauffeur charge des bagages dans le coffre d&#x27;une berline">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TaxiService",
+      "@id": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/#entreprise",
+      "name": "Vecteur Taxi",
+      "url": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/",
+      "description": "Vecteur Taxi à Marseille : trajets à prix fixe vers l'aéroport Marseille-Provence, la gare Saint-Charles, Aix TGV et le terminal croisières. Prix annoncé avant le départ, paiement par carte.",
+      "slogan": "Aéroport, gare, port : le prix est annoncé avant de monter, pas à l'arrivée.",
+      "telephone": "+33639982715",
+      "image": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "12 boulevard des Dames",
+        "postalCode": "13002",
+        "addressLocality": "Marseille",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Marseille"
+        },
+        {
+          "@type": "Place",
+          "name": "Aéroport Marseille-Provence"
+        },
+        {
+          "@type": "Place",
+          "name": "Gare Saint-Charles"
+        },
+        {
+          "@type": "Place",
+          "name": "Gare d'Aix-en-Provence TGV"
+        },
+        {
+          "@type": "Place",
+          "name": "Terminal croisières"
+        },
+        {
+          "@type": "Place",
+          "name": "Aix-en-Provence"
+        },
+        {
+          "@type": "Place",
+          "name": "Cassis"
+        },
+        {
+          "@type": "Place",
+          "name": "La Ciotat"
+        }
+      ],
+      "openingHours": "Mo-Su 00:00-23:59",
+      "knowsAbout": [
+        "Aéroport Marseille-Provence",
+        "Gares",
+        "Terminal croisières",
+        "Courses en ville",
+        "Excursions",
+        "Comptes entreprise"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Les trajets les plus demandés, à prix fixe.",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Aéroport Marseille-Provence",
+              "description": "Depuis Marseille et les communes voisines, dans les deux sens, prix fixe par zone.",
+              "areaServed": "Marseille, aéroport et gares",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gares",
+              "description": "Saint-Charles, Aix-en-Provence TGV, Blancarde : ponctualité garantie avant votre train.",
+              "areaServed": "Marseille, aéroport et gares",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Terminal croisières",
+              "description": "Transferts entre hôtel, gare, aéroport et port, avec les bagages.",
+              "areaServed": "Marseille, aéroport et gares",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Courses en ville",
+              "description": "Réservation ou course immédiate, au compteur ou prix fixe annoncé.",
+              "areaServed": "Marseille, aéroport et gares",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Excursions",
+              "description": "Cassis, calanques, Aix, Luberon : prix fixe pour la journée ou le trajet.",
+              "areaServed": "Marseille, aéroport et gares",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/#entreprise"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Comptes entreprise",
+              "description": "Facturation mensuelle pour les entreprises et les hôtels.",
+              "areaServed": "Marseille, aéroport et gares",
+              "provider": {
+                "@id": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/#entreprise"
+              }
+            }
+          }
+        ]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Sofiane Belkacem",
+        "jobTitle": "gérant, chauffeur de taxi"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/",
+      "url": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/",
+      "name": "Taxi Marseille prix fixe · Aéroport, gare, croisières | Vecteur Taxi",
+      "description": "Vecteur Taxi à Marseille : trajets à prix fixe vers l'aéroport Marseille-Provence, la gare Saint-Charles, Aix TGV et le terminal croisières. Prix annoncé avant le départ, paiement par carte.",
+      "inLanguage": "fr-FR",
+      "dateModified": "2026-09-30",
+      "about": {
+        "@id": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/#entreprise"
+      },
+      "primaryImageOfPage": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/hero.jpg"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://luxury-service-websites.vercel.app/taxis/02-vector-taxi/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien coûte un taxi de Marseille à l'aéroport ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le prix dépend de votre adresse de départ et de l'heure. Nous vous l'annonçons à la réservation et il ne change pas, bagages compris."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on payer par carte ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, tous nos taxis acceptent la carte bancaire et le sans contact. Une facture peut vous être envoyée par e-mail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il réserver à l'avance ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "C'est conseillé pour l'aéroport et les gares, surtout tôt le matin. Pour une course immédiate, appelez-nous directement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de passagers et de bagages ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jusqu'à 4 passagers en berline et 7 en van. Précisez le nombre de valises à la réservation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Que se passe-t-il si mon train a du retard ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Donnez-nous le numéro du train : le chauffeur adapte son heure d'arrivée."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faites-vous les excursions dans les calanques ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, nous déposons et reprenons les visiteurs aux accès des calanques, avec un prix fixe annoncé."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on réserver un taxi pour plusieurs trajets dans la journée ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, nous planifions les trajets avec des horaires convenus à l'avance, et un prix annoncé pour chacun."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les animaux sont-ils acceptés ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les chiens guides d'aveugle sont toujours acceptés. Pour les autres animaux, prévenez-nous à la réservation : le chauffeur confirme selon le véhicule."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
-  <!-- ══════════ NAV ══════════ -->
-  <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="brand" href="#top">
-        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" fill="#FFD400"/><path d="M4 12h12M12 6l6 6-6 6" stroke="#0A0A0A" stroke-width="2.6" fill="none"/></svg></span>
-        <span class="brand-text">VECTOR<em>Taxi&nbsp;Co.</em></span>
-      </a>
-      <nav class="links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#manifesto">Manifeste</a>
-        <a href="#proof">Preuves</a>
-        <a href="#contact">Contact</a>
-        <a href="#book" class="nav-cta">Réserver une course</a>
-      </nav>
-      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <a class="skip" href="#devis">Aller au formulaire de réservation</a>
 
-  <!-- ══════════ HERO ══════════ -->
-  <section class="hero" id="top">
-    <div class="hero-speedlines" aria-hidden="true">
-      <span style="--t:6%"></span><span style="--t:16%"></span><span style="--t:78%"></span>
-      <span style="--t:88%"></span><span style="--t:94%"></span>
-    </div>
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="tag reveal">[ FORFAITS · AUCUN COMPTEUR · AU SERVICE DE LA GRILLE DEPUIS 2016 ]</p>
-        <h1 class="reveal" style="--d:.1s">LE PRIX<br>EST <span class="hl">LE PRIX.</span></h1>
-        <p class="hero-sub reveal" style="--d:.2s">Vector annonce votre tarif avant que la portière ne s'ouvre. Pas d'angoisse du
-          compteur, pas de calcul de surge, pas d'astérisque. Une société de taxi tenue comme un horaire suisse — et conduite comme tel.</p>
-        <ul class="spec-list reveal" style="--d:.3s">
-          <li>Tarif fixé avant la prise en charge</li>
-          <li>Heure d'arrivée envoyée par SMS deux minutes avant</li>
-          <li>Pas de tarification dynamique. Jamais.</li>
-        </ul>
-        <div class="hero-cta reveal" style="--d:.4s">
-          <a href="#book" class="btn btn-solid">Réserver une course</a>
-          <a href="tel:+15550102016" class="btn btn-line">☎ 555·010·2016</a>
-        </div>
-      </div>
-
-      <aside class="rateboard reveal" style="--d:.28s">
-        <div class="rate-head"><span>TABLEAU DES FORFAITS — ZONE 1</span><span class="live-dot" aria-hidden="true"></span></div>
-        <svg class="route" viewBox="0 0 360 190" aria-hidden="true">
-          <g class="route-grid">
-            <line x1="0" y1="40" x2="360" y2="40"/><line x1="0" y1="95" x2="360" y2="95"/>
-            <line x1="0" y1="150" x2="360" y2="150"/>
-            <line x1="60" y1="0" x2="60" y2="190"/><line x1="150" y1="0" x2="150" y2="190"/>
-            <line x1="240" y1="0" x2="240" y2="190"/><line x1="320" y1="0" x2="320" y2="190"/>
-          </g>
-          <path class="route-line" d="M22 162 C90 158 96 96 168 92 S280 48 330 34"/>
-          <polygon class="route-arrow" points="330,34 316,30 321,44"/>
-          <circle class="route-a" cx="22" cy="162" r="6"/>
-          <circle class="route-b" cx="330" cy="34" r="5"/>
-          <text class="route-label" x="34" y="180">DÉPART</text>
-          <text class="route-label" x="266" y="20">ARRIVÉE</text>
-          <text class="route-eta" x="130" y="128">ETA 06:42</text>
-        </svg>
-        <div class="rate-rows">
-          <p><span>AÉROPORT ⇄ CENTRE-VILLE</span><b>52 €</b></p>
-          <p><span>GARE ⇄ QUARTIER CENTRAL</span><b>18 €</b></p>
-          <p><span>QUARTIER DU PORT</span><b>24 €</b></p>
-        </div>
-        <div class="rate-foot">
-          <span>AUCUN COMPTEUR · AUCUN SURGE · AUCUN ASTÉRISQUE</span>
-          <time class="clock" id="dispatchClock">00:00:00</time>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- ══════════ BANDE DAMIER ══════════ -->
-  <div class="checker-band" aria-hidden="true"></div>
-
-  <!-- ══════════ TICKER ══════════ -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span>FORFAITS ■ AUCUN SURGE ■ FIXÉ AVANT L'EMBARQUEMENT ■ ETA DISCIPLINÉS ■ 140 TAXIS SUR LA GRILLE ■ REÇUS TOUJOURS ■&nbsp;</span>
-      <span>FORFAITS ■ AUCUN SURGE ■ FIXÉ AVANT L'EMBARQUEMENT ■ ETA DISCIPLINÉS ■ 140 TAXIS SUR LA GRILLE ■ REÇUS TOUJOURS ■&nbsp;</span>
+  <!-- Bandeau infos pratiques -->
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Marseille, aéroport et gares</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.4V6h-2v7.6l5 3 1-1.7Z"/></svg>24 h/24, 7 j/7</span>
+      <span class="hide-sm"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5Z"/></svg>Prix fixe annoncé avant de monter</span>
     </div>
   </div>
 
-  <!-- ══════════ SERVICES ══════════ -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="sec-tag reveal"><i></i>SEC. 01 — CAPACITÉS</div>
-      <div class="sec-head">
-        <h2 class="reveal">Six services.<br>Zéro <span class="hl-inline">surprise.</span></h2>
-      </div>
-      <div class="svc-grid">
-        <article class="svc reveal" style="--d:.04s">
-          <span class="idx">01</span>
-          <h3>Forfait aéroport</h3>
-          <p>Un seul prix, n'importe quel terminal, à toute heure. Vol suivi, chauffeur dépêché, 52 € vers ou depuis le centre-ville — bagages inclus, mauvaise humeur non.</p>
-          <div class="svc-foot"><span>52 € FORFAIT</span><a href="#book">RÉSERVER →</a></div>
-        </article>
-        <article class="svc reveal" style="--d:.08s">
-          <span class="idx">02</span>
-          <h3>Course en ville</h3>
-          <p>De A à B par la ligne légale la plus directe. Tarifs par zone publiés sur ce site et sur chaque portière — le chauffeur ne peut pas en inventer un.</p>
-          <div class="svc-foot"><span>DÈS 9,50 €</span><a href="#book">RÉSERVER →</a></div>
-        </article>
-        <article class="svc reveal" style="--d:.12s">
-          <span class="idx">03</span>
-          <h3>Mise à disposition horaire</h3>
-          <p>Le taxi attend entre deux arrêts pendant que vous travaillez votre journée. Facturé à l'heure à la minute près, arrondi en votre faveur.</p>
-          <div class="svc-foot"><span>DÈS 45 €/H</span><a href="#book">RÉSERVER →</a></div>
-        </article>
-        <article class="svc reveal" style="--d:.16s">
-          <span class="idx">04</span>
-          <h3>Compte entreprise</h3>
-          <p>Une facture, détaillée par course, code de coûts et passager. Priorité de dispatch pour les trains de 8h et les avions de 6h.</p>
-          <div class="svc-foot"><span>CONDITIONS MENSUELLES</span><a href="#book">RÉSERVER →</a></div>
-        </article>
-        <article class="svc reveal" style="--d:.2s">
-          <span class="idx">05</span>
-          <h3>Van &amp; groupe</h3>
-          <p>Six sièges, un vrai coffre, un seul tarif que personne ne discute. Conçu pour les équipes, les familles et les bagages qui promettent trop.</p>
-          <div class="svc-foot"><span>DÈS 34 €</span><a href="#book">RÉSERVER →</a></div>
-        </article>
-        <article class="svc reveal" style="--d:.24s">
-          <span class="idx">06</span>
-          <h3>Course colis</h3>
-          <p>Documents, clés, ordinateurs oubliés — d'un bout à l'autre de la ville en moins de 60 minutes, signés et photographiés aux deux extrémités.</p>
-          <div class="svc-foot"><span>DÈS 14 €</span><a href="#book">RÉSERVER →</a></div>
-        </article>
-      </div>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Vecteur Taxi, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><rect class="blade" x="11" y="4" width="10" height="5" rx="1"/><path d="M5 22l2.5-7C8 13.5 9.2 12.5 10.8 12.5h10.4c1.6 0 2.8 1 3.3 2.5L27 22v4H5z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-text">Vecteur Taxi<small>Taxi à prix fixe · Marseille</small></span>
+      </a>
+      <nav class="links" id="navLinks" aria-label="Navigation principale">
+        <a href="#services">Nos trajets</a>
+        <a href="#deroulement">Comment ça se passe</a>
+        <a href="#chantiers">Trajets</a>
+        <a href="#faq">Questions</a>
+        <a href="#devis" class="links-cta">Connaître mon prix</a>
+      </nav>
+      <a class="nav-phone" href="tel:+33639982715">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+        <span>06 39 98 27 15</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
+  </header>
 
-  <!-- ══════════ MANIFESTE ══════════ -->
-  <section class="section dark" id="manifesto">
-    <div class="container manifesto-grid">
-      <div class="manifesto-copy">
-        <div class="sec-tag reveal"><i></i>SEC. 02 — LE MANIFESTE</div>
-        <h2 class="reveal" style="--d:.08s">Les compteurs sont des <span class="hl-inline">machines honnêtes</span> pilotées malhonnêtement.</h2>
-        <p class="reveal" style="--d:.14s">Un taximètre ne compte que ce qu'on lui dit de compter. Vector a supprimé l'ambiguïté :
-          des zones au lieu d'approximations, des forfaits au lieu d'opinions, et un reçu pour chaque centime. Nos chauffeurs sont
-          bien payés pour prendre la route la plus rapide — pas la plus longue.</p>
-        <ul class="guarantee-list">
-          <li class="reveal" style="--d:.2s"><b>01</b> Le tarif annoncé est le tarif final</li>
-          <li class="reveal" style="--d:.26s"><b>02</b> Le dispatch répond en moins de 30 secondes</li>
-          <li class="reveal" style="--d:.32s"><b>03</b> Carte, espèces et facture — à votre choix</li>
-          <li class="reveal" style="--d:.38s"><b>04</b> Chaque taxi lavé et inspecté chaque nuit</li>
-        </ul>
-      </div>
-      <div class="equation reveal" style="--d:.2s">
-        <p class="eq-label">FIG. 02 — MODÈLE TARIFAIRE VECTOR</p>
-        <div class="eq-line"><span>TARIF DE ZONE PUBLIÉ</span><b>+</b><span>DISTANCE DU TRAJET</span></div>
-        <div class="eq-total"><span>=</span><strong>UN PRIX FIXE</strong></div>
-        <p class="eq-note">Fixé à la réservation. Imprimé sur le reçu. Négociable par personne — nous compris.</p>
-      </div>
-    </div>
-  </section>
+  <main id="top">
 
-  <!-- ══════════ CHIFFRES ══════════ -->
-  <section class="stats" id="proof">
-    <div class="container stats-row">
-      <div class="stat reveal"><strong data-count="210000" data-suffix="+">0</strong><span>courses accomplies</span></div>
-      <div class="stat reveal" style="--d:.08s"><strong data-count="98.7" data-decimal="1" data-suffix="%">0</strong><span>arrivées à l'heure</span></div>
-      <div class="stat reveal" style="--d:.16s"><strong data-count="5" data-suffix=" min">0</strong><span>prise en charge moy.</span></div>
-      <div class="stat reveal" style="--d:.24s"><strong data-count="140" data-suffix="">0</strong><span>taxis sur la grille</span></div>
-    </div>
-  </section>
-
-  <!-- ══════════ TÉMOIGNAGES ══════════ -->
-  <section class="section" id="testimonials">
-    <div class="container">
-      <div class="sec-tag reveal"><i></i>SEC. 03 — REGISTRE DES PASSAGERS</div>
-      <div class="sec-head">
-        <h2 class="reveal">Classé par des <span class="hl-inline">grands voyageurs.</span></h2>
-      </div>
-      <div class="testi-grid">
-        <figure class="testi reveal" style="--d:.05s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Je passe quatre courses aéroport par mois en note de frais et le reçu indique toujours exactement 52 €. Mon service financier croit que je mens sur la facilité de Vector. »</blockquote>
-          <figcaption><strong>Dana K.</strong><span>47 courses enregistrées</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.15s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Un SMS annonçant 4 minutes à 5h58. Le taxi se gara à 6h02. Dans cette ville, ce n'est pas de la chance — c'est de l'ingénierie. »</blockquote>
-          <figcaption><strong>Priyesh M.</strong><span>Navetteur, quartier central</span></figcaption>
-        </figure>
-        <figure class="testi reveal" style="--d:.25s">
-          <div class="stars">★★★★★</div>
-          <blockquote>« Un contrat signé envoyé de l'autre côté de la ville par un chauffeur prénommé Viktor, suivi du début à la fin, avec la photo de la remise. Mieux que n'importe quelle appli de coursier. »</blockquote>
-          <figcaption><strong>Rosa L.</strong><span>Course colis chaque mois</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════ CONTACT ══════════ -->
-  <section class="section dark contact" id="contact">
-    <div class="container contact-grid">
-      <div class="contact-info">
-        <div class="sec-tag reveal"><i></i>SEC. 04 — CONTACT</div>
-        <h2 class="reveal" style="--d:.08s">Parlez au <span class="hl-inline">dispatch.</span></h2>
-        <p class="reveal" style="--d:.14s">Comptes entreprises, objets trouvés, demande de grille tarifaire ou réponse nette sur un prix — le dispatch répond dans l'heure ouvrée.</p>
-        <ul class="info-list">
-          <li class="reveal" style="--d:.2s"><b>DÉPÔT</b><span>220 Gridline Ave, Bay 1<br>Quartier des transports</span></li>
-          <li class="reveal" style="--d:.26s"><b>LIGNE</b><span>+1 (555) 010-2016</span></li>
-          <li class="reveal" style="--d:.32s"><b>HORAIRES</b><span>Taxis : 24/7<br>Bureau : lundi–vendredi, 8h00 – 18h00</span></li>
-        </ul>
-      </div>
-
-      <form class="contact-form reveal" id="contactForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-        <fieldset>
-          <div class="field"><input type="text" id="cf-name" required placeholder=" "><label for="cf-name">Nom complet</label></div>
-          <div class="field-row">
-            <div class="field"><input type="email" id="cf-email" required placeholder=" "><label for="cf-email">Adresse e-mail</label></div>
-            <div class="field"><input type="tel" id="cf-phone" placeholder=" "><label for="cf-phone">Téléphone (facultatif)</label></div>
+    <section class="hero split-right">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 class="eyebrow">Taxi à Marseille à prix fixe : aéroport, gare Saint-Charles, croisières</h1>
+          <p class="headline">Aéroport, gare, port : <em>le prix est annoncé avant de monter, pas à l&#x27;arrivée.</em></p>
+          <p class="lead">Réservez votre taxi pour Marignane, Saint-Charles, Aix TGV ou le terminal croisières : vous connaissez le prix fixe à la réservation, bagages compris. Paiement par carte à bord.</p>
+          <ul class="proofs">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Prix fixe annoncé à la réservation</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Bagages et attente courte inclus</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 16.2-3.5-3.5L4 14.2l5 5 11-11-1.4-1.4Z"/></svg>Carte bancaire acceptée dans tous nos taxis</li>
+          </ul>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#devis">Connaître mon prix</a>
+            <a class="btn btn-ghost" href="tel:+33639982715">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              06 39 98 27 15
+            </a>
           </div>
-          <div class="field select-field">
-            <select id="cf-subject" required>
-              <option value="" selected disabled></option>
-              <option>Demande de compte entreprise</option>
-              <option>Demande de grille tarifaire</option>
-              <option>Objet trouvé</option>
-              <option>Question sur un tarif</option>
-              <option>Course colis</option>
-              <option>Autre</option>
-            </select>
-            <label for="cf-subject">Objet</label>
-          </div>
-          <div class="field"><textarea id="cf-msg" rows="4" required placeholder=" "></textarea><label for="cf-msg">Votre message</label></div>
-          <button type="submit" class="btn btn-solid btn-wide">TRANSMETTRE AU DISPATCH</button>
-          <p class="form-note">Traité par notre équipe. Consigné, chiffré et répondu par écrit.</p>
-        </fieldset>
-        <div class="form-success" hidden>
-          <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-          <h3>REÇU.</h3>
-          <p>Votre message est dans la file du dispatch. Une réponse écrite arrive dans l'heure ouvrée.</p>
+          <p class="hero-note">Réponse en moins de 10 minutes, de jour comme de nuit.</p>
         </div>
-      </form>
-    </div>
-  </section>
 
-  <!-- ══════════ RÉSERVATION ══════════ -->
-  <section class="section booking" id="book">
-    <div class="container">
-      <div class="sec-tag reveal"><i></i>SEC. 05 — RÉSERVATION</div>
-      <div class="sec-head">
-        <h2 class="reveal">Quatre champs.<br><span class="hl-inline">Un tarif fixe.</span></h2>
-      </div>
-
-      <div class="book-frame reveal" style="--d:.1s">
-        <div class="book-inner">
-          <ol class="wiz-steps" id="wizSteps">
-            <li class="is-current"><span>Service</span></li>
-            <li><span>Horaire</span></li>
-            <li><span>Détails</span></li>
-            <li><span>Confirmé</span></li>
-          </ol>
-
-          <form id="bookForm" novalidate>
-        <p class="hp-field" aria-hidden="true"><label>Laisser ce champ vide<input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></p>
-            <!-- ÉTAPE 1 · SERVICE -->
-            <fieldset class="pane is-active">
-              <legend>Sélectionnez le type de course.</legend>
-              <div class="choice-grid">
-                <label class="choice"><input type="radio" name="svc" value="Forfait aéroport" required><span>Transfert aéroport</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Course en ville"><span>Course en ville</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Mise à disposition horaire"><span>Mise à disposition horaire</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Compte entreprise"><span>Compte entreprise</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Van & groupe"><span>Van &amp; groupe</span></label>
-                <label class="choice"><input type="radio" name="svc" value="Course express"><span>Course express</span></label>
-              </div>
-              <p class="choice-error">SÉLECTIONNEZ UN TYPE DE COURSE POUR CONTINUER.</p>
-              <div class="wiz-nav"><span></span><button type="button" class="btn btn-solid js-next">CONTINUER</button></div>
-            </fieldset>
-
-            <!-- ÉTAPE 2 · HORAIRE -->
-            <fieldset class="pane">
-              <legend>Fixez l'horaire.</legend>
-              <div class="field date-field">
-                <input type="date" id="bk-date" required>
-                <label>Date de prise en charge</label>
-              </div>
-              <div class="time-grid" id="timeGrid">
-                <button type="button" class="chip" data-v="5:45">5h45</button>
-                <button type="button" class="chip" data-v="7:30">7h30</button>
-                <button type="button" class="chip" data-v="9:00">9h00</button>
-                <button type="button" class="chip" data-v="12:15">12h15</button>
-                <button type="button" class="chip" data-v="16:45">16h45</button>
-                <button type="button" class="chip" data-v="20:30">20h30</button>
-              </div>
-              <input type="hidden" id="bk-time">
-              <p class="choice-error">SÉLECTIONNEZ UN CRÉNEAU DE PRISE EN CHARGE.</p>
-              <div class="wiz-nav"><button type="button" class="btn btn-line js-prev">RETOUR</button><button type="button" class="btn btn-solid js-next">CONTINUER</button></div>
-            </fieldset>
-
-            <!-- ÉTAPE 3 · DÉTAILS -->
-            <fieldset class="pane">
-              <legend>Manifeste du passager.</legend>
-              <div class="field-row">
-                <div class="field"><input type="text" id="bk-name" required placeholder=" "><label>Nom du passager</label></div>
-                <div class="field"><input type="tel" id="bk-phone" required placeholder=" "><label>Numéro de téléphone</label></div>
-              </div>
-              <div class="field"><input type="text" id="bk-address" required placeholder=" "><label>Adresse de prise en charge</label></div>
-              <div class="field"><textarea id="bk-notes" rows="3" placeholder=" "></textarea><label>Notes d'itinéraire (facultatif)</label></div>
-              <div class="wiz-nav"><button type="button" class="btn btn-line js-prev">RETOUR</button><button type="submit" class="btn btn-solid">FIXER LE TARIF</button></div>
-            </fieldset>
-
-            <!-- ÉTAPE 4 · CONFIRMATION -->
-            <fieldset class="pane pane-success">
-              <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg>
-              <h3>RÉSERVÉ.</h3>
-              <p class="recap"><strong id="recap-name">—</strong>, votre <em id="recap-svc">—</em> est verrouillé pour le<br><strong id="recap-when">—</strong>.</p>
-              <p class="recap-sub">Confirmation par SMS avec le tarif, la plaque et le nom du chauffeur. Le prix est le prix.</p>
-            </fieldset>
-          </form>
+        <div class="hero-visual">
+          <figure class="hero-photo">
+            <img src="hero-1024.webp" srcset="hero-640.webp 640w, hero-1024.webp 1024w, hero-1440.webp 1440w" sizes="(min-width: 900px) 50vw, 100vw" alt="Un chauffeur charge des bagages dans le coffre d&#x27;une berline" width="1600" height="958" fetchpriority="high" decoding="async">
+          </figure>
+          <div class="hero-badge">
+            <strong>0 €</strong>
+            <span>de supplément bagages<br>sur nos trajets à prix fixe</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ══════════ PIED DE PAGE ══════════ -->
+    <!-- SITUATIONS -->
+    <section class="situations" aria-labelledby="sit-title">
+      <div class="wrap">
+        <h2 id="sit-title" class="h-small">Où devez-vous aller ?</h2>
+        <div class="sit-grid">
+          <button class="sit" data-prefill="Aéroport Marseille-Provence">
+            <span class="sit-q">Je prends l&#x27;avion à Marignane</span>
+            <span class="sit-a">Prix fixe depuis votre adresse, chauffeur à l&#x27;heure.</span>
+          </button>
+          <button class="sit" data-prefill="Gare Saint-Charles">
+            <span class="sit-q">Mon train part de Saint-Charles</span>
+            <span class="sit-a">Dépose au dépose-minute, sans chercher à se garer.</span>
+          </button>
+          <button class="sit" data-prefill="Gare Aix-en-Provence TGV">
+            <span class="sit-q">Je rejoins Aix TGV</span>
+            <span class="sit-a">Trajet à prix fixe, marge prévue pour les bouchons.</span>
+          </button>
+          <button class="sit" data-prefill="Terminal croisières">
+            <span class="sit-q">J&#x27;embarque pour une croisière</span>
+            <span class="sit-a">Prise en charge à l&#x27;hôtel ou à la gare, valises comprises.</span>
+          </button>
+          <button class="sit" data-prefill="Cassis, La Ciotat">
+            <span class="sit-q">Je vais à Cassis ou à La Ciotat</span>
+            <span class="sit-a">Prix annoncé pour le trajet complet.</span>
+          </button>
+          <button class="sit" data-prefill="Course immédiate">
+            <span class="sit-q">Il me faut un taxi maintenant</span>
+            <span class="sit-a">Appelez-nous : le plus proche arrive.</span>
+          </button>
+        </div>
+        <p class="sit-hint">Cliquez sur votre trajet : le formulaire de réservation se remplit tout seul.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services" aria-labelledby="serv-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Nos trajets</p>
+          <h2 id="serv-title">Les trajets les plus demandés, à prix fixe.</h2>
+        </div>
+        <div class="serv-grid">
+          <article class="serv">
+            <span class="serv-n">01</span>
+            <h3>Aéroport Marseille-Provence</h3>
+            <p>Depuis Marseille et les communes voisines, dans les deux sens, prix fixe par zone.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">02</span>
+            <h3>Gares</h3>
+            <p>Saint-Charles, Aix-en-Provence TGV, Blancarde : ponctualité garantie avant votre train.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">03</span>
+            <h3>Terminal croisières</h3>
+            <p>Transferts entre hôtel, gare, aéroport et port, avec les bagages.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">04</span>
+            <h3>Courses en ville</h3>
+            <p>Réservation ou course immédiate, au compteur ou prix fixe annoncé.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">05</span>
+            <h3>Excursions</h3>
+            <p>Cassis, calanques, Aix, Luberon : prix fixe pour la journée ou le trajet.</p>
+          </article>
+          <article class="serv">
+            <span class="serv-n">06</span>
+            <h3>Comptes entreprise</h3>
+            <p>Facturation mensuelle pour les entreprises et les hôtels.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÉROULEMENT -->
+    <section class="steps" id="deroulement" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Comment ça se passe</p>
+          <h2 id="steps-title">Un taxi réservé en deux minutes, sans calcul à faire.</h2>
+        </div>
+        <ol class="step-list">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Vous indiquez le trajet</h3>
+            <p>Départ, destination, date, heure et nombre de passagers.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Prix fixe annoncé</h3>
+            <p>Vous recevez le prix par SMS. Vous validez, c&#x27;est réservé.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Le taxi est là</h3>
+            <p>SMS avec le numéro du taxi 15 minutes avant la prise en charge.</p>
+          </li>
+          <li>
+            <span class="step-n">4</span>
+            <h3>Vous payez comme vous voulez</h3>
+            <p>Carte, sans contact ou espèces, facture sur demande.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS -->
+    <section class="jobs" id="chantiers" aria-labelledby="jobs-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">Trajets récents</p>
+          <h2 id="jobs-title">Quelques exemples de ces derniers mois.</h2>
+        </div>
+        <div class="job-grid">
+          <article class="job">
+            <p class="job-where">Marseille 8e → Aéroport</p>
+            <h3>Famille de 4 avec valises, départ à 5 h</h3>
+            <dl>
+              <div><dt>Trajet</dt><dd>Aéroport Marseille-Provence</dd></div>
+              <div><dt>Durée</dt><dd>35 min</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Gare Saint-Charles → Terminal croisières</p>
+            <h3>Couple avec bagages, correspondance serrée</h3>
+            <dl>
+              <div><dt>Trajet</dt><dd>Croisière</dd></div>
+              <div><dt>Durée</dt><dd>20 min</dd></div>
+            </dl>
+          </article>
+          <article class="job">
+            <p class="job-where">Aix-en-Provence → Aix TGV</p>
+            <h3>Cadre en déplacement, reçu envoyé par e-mail</h3>
+            <dl>
+              <div><dt>Trajet</dt><dd>Gare TGV</dd></div>
+              <div><dt>Durée</dt><dd>15 min</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENTS + AVIS -->
+    <section class="trust" aria-labelledby="trust-title">
+      <div class="wrap trust-grid">
+        <div>
+          <p class="eyebrow">Nos engagements</p>
+          <h2 id="trust-title">Nos engagements.</h2>
+          <ul class="pledges">
+            <li><strong>Le prix d&#x27;abord.</strong> Annoncé à la réservation, jamais recalculé à l&#x27;arrivée.</li>
+            <li><strong>La carte bancaire partout.</strong> Tous nos taxis acceptent la carte et le sans contact.</li>
+            <li><strong>La ponctualité.</strong> SMS 15 minutes avant, chauffeur sur place à l&#x27;heure.</li>
+            <li><strong>Des taxis officiels.</strong> Taxis autorisés, chauffeurs titulaires de la carte professionnelle.</li>
+          </ul>
+          <p class="signature"><strong>Sofiane Belkacem</strong>, gérant, chauffeur de taxi</p>
+        </div>
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>« Prix annoncé par SMS la veille, exactement celui payé le lendemain. Enfin un taxi pour l&#x27;aéroport sans mauvaise surprise. »</blockquote>
+            <figcaption>Nathalie C. · Marseille 8e · Aéroport</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>« Taxi réservé pour notre croisière, chauffeur ponctuel et adorable avec les enfants. »</blockquote>
+            <figcaption>Famille D. · Terminal croisières</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="sec-head">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Ce qu'on nous demande le plus souvent.</h2>
+          <p class="faq-more">Votre question n'est pas là ?<br>Appelez-nous au <a href="tel:+33639982715">06 39 98 27 15</a>.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Combien coûte un taxi de Marseille à l&#x27;aéroport ?</summary>
+            <p>Le prix dépend de votre adresse de départ et de l&#x27;heure. Nous vous l&#x27;annonçons à la réservation et il ne change pas, bagages compris.</p>
+          </details>
+          <details>
+            <summary>Peut-on payer par carte ?</summary>
+            <p>Oui, tous nos taxis acceptent la carte bancaire et le sans contact. Une facture peut vous être envoyée par e-mail.</p>
+          </details>
+          <details>
+            <summary>Faut-il réserver à l&#x27;avance ?</summary>
+            <p>C&#x27;est conseillé pour l&#x27;aéroport et les gares, surtout tôt le matin. Pour une course immédiate, appelez-nous directement.</p>
+          </details>
+          <details>
+            <summary>Combien de passagers et de bagages ?</summary>
+            <p>Jusqu&#x27;à 4 passagers en berline et 7 en van. Précisez le nombre de valises à la réservation.</p>
+          </details>
+          <details>
+            <summary>Que se passe-t-il si mon train a du retard ?</summary>
+            <p>Donnez-nous le numéro du train : le chauffeur adapte son heure d&#x27;arrivée.</p>
+          </details>
+          <details>
+            <summary>Faites-vous les excursions dans les calanques ?</summary>
+            <p>Oui, nous déposons et reprenons les visiteurs aux accès des calanques, avec un prix fixe annoncé.</p>
+          </details>
+          <details>
+            <summary>Peut-on réserver un taxi pour plusieurs trajets dans la journée ?</summary>
+            <p>Oui, nous planifions les trajets avec des horaires convenus à l&#x27;avance, et un prix annoncé pour chacun.</p>
+          </details>
+          <details>
+            <summary>Les animaux sont-ils acceptés ?</summary>
+            <p>Les chiens guides d&#x27;aveugle sont toujours acceptés. Pour les autres animaux, prévenez-nous à la réservation : le chauffeur confirme selon le véhicule.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVIS -->
+    <section class="quote" id="devis" aria-labelledby="quote-title">
+      <div class="wrap quote-grid">
+        <div class="quote-side">
+          <p class="eyebrow">Réservation</p>
+          <h2 id="quote-title">Réservez votre taxi.</h2>
+          <p>Indiquez votre trajet : vous recevez le prix fixe par SMS en moins de 10 minutes.</p>
+          <div class="contact-card">
+            <a class="contact-line big" href="tel:+33639982715">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+              06 39 98 27 15
+            </a>
+            <p class="contact-line">24 h/24, 7 j/7</p>
+            <p class="contact-line">12 boulevard des Dames, 13002 Marseille</p>
+            <p class="zone"><strong>Nous intervenons à</strong> Marseille, Aéroport Marseille-Provence, Gare Saint-Charles, Gare d&#x27;Aix-en-Provence TGV, Terminal croisières, Aix-en-Provence, Cassis, La Ciotat.</p>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm" novalidate>
+          <div class="hp" aria-hidden="true">
+            <label for="website">Ne pas remplir</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field">
+              <label for="work">Type de trajet</label>
+              <select id="work" name="work" data-rule="req" required>
+                <option value="">Choisissez</option>
+                <option>Aéroport Marseille-Provence</option>
+                <option>Gare Saint-Charles</option>
+                <option>Gare Aix-en-Provence TGV</option>
+                <option>Terminal croisières</option>
+                <option>Cassis, La Ciotat</option>
+                <option>Course en ville</option>
+              </select>
+              <p class="err">Faites un choix dans la liste.</p>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="from">Adresse de départ</label>
+              <input type="text" id="from" name="from" maxlength="120" placeholder="Ex. : 12 rue de la Gare" data-rule="req" required>
+              <p class="err">Indiquez l&#x27;adresse de départ.</p>
+            </div>
+            <div class="field">
+              <label for="to">Destination</label>
+              <input type="text" id="to" name="to" maxlength="120" placeholder="Ex. : aéroport Marseille-Provence" data-rule="req" required>
+              <p class="err">Indiquez la destination.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" data-rule="req" required>
+              <p class="err">Choisissez une date.</p>
+            </div>
+            <div class="field">
+              <label for="time">Heure de prise en charge</label>
+              <input type="time" id="time" name="time" data-rule="req" required>
+              <p class="err">Choisissez une heure.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="pax">Passagers</label>
+              <select id="pax" name="pax">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 à 7</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="luggage">Nombre de valises <span class="opt">(facultatif)</span></label>
+              <input type="text" id="luggage" name="luggage" maxlength="80" placeholder="Ex. : 2 grandes, 1 cabine">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="details">Informations utiles <span class="opt">(facultatif)</span></label>
+            <textarea id="details" name="details" rows="3" maxlength="800" placeholder="Ex. : numéro de vol, siège enfant, poussette"></textarea>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" maxlength="80" autocomplete="name" data-rule="name" required>
+              <p class="err">Indiquez votre nom.</p>
+            </div>
+            <div class="field">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" maxlength="20" autocomplete="tel" data-rule="phone" required>
+              <p class="err">Un numéro à 10 chiffres pour vous joindre.</p>
+            </div>
+          </div>
+
+          <div class="field">
+              <label for="email">E-mail <span class="opt">(facultatif)</span></label>
+              <input type="email" id="email" name="email" maxlength="120" autocomplete="email" data-rule="email">
+              <p class="err">Cette adresse ne semble pas valide.</p>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">Réserver ma course</button>
+          <p class="form-legal">Vos coordonnées servent uniquement à vous recontacter pour cette demande.</p>
+
+          <div class="success" id="success" role="status" aria-live="polite" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="m14 24 7 7 13-14"/></svg>
+            <h3>Demande bien reçue</h3>
+            <p id="successMsg"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="footer">
-    <div class="checker-band slim" aria-hidden="true"></div>
-    <div class="container footer-grid">
-      <div class="foot-brand">
-        <a class="brand" href="#top">
-          <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" fill="#FFD400"/><path d="M4 12h12M12 6l6 6-6 6" stroke="#0A0A0A" stroke-width="2.6" fill="none"/></svg></span>
-          <span class="brand-text">VECTOR<em>Taxi&nbsp;Co.</em></span>
-        </a>
-        <p>La société de taxi sans compteur. Tarifs publiés, ETA disciplinés, reçus pour tout.</p>
-      </div>
-      <div><h4>SOCIÉTÉ</h4><a href="#services">Services</a><a href="#manifesto">Manifeste</a><a href="#proof">Preuves</a><a href="#testimonials">Registre des passagers</a></div>
-      <div><h4>COURSES</h4><a href="#book">Forfait aéroport</a><a href="#book">Course en ville</a><a href="#book">Mise à disposition horaire</a><a href="#book">Course express</a></div>
-      <div><h4>DISPATCH</h4><a href="tel:+15550102016">+1 (555) 010-2016</a><a href="#contact">grid@vectortaxi.co</a><span>220 Gridline Ave, Bay 1</span></div>
+    <div class="wrap footer-inner">
+      <p><strong>Vecteur Taxi</strong> · Taxi à prix fixe · Marseille · 12 boulevard des Dames, 13002 Marseille</p>
+      <p>SIRET 000 000 000 00000 · Assurance n° à préciser · Page mise à jour le <time datetime="2026-09-30">30 septembre 2026</time> · <a href="#top">Retour en haut</a></p>
     </div>
-    <div class="foot-bar"><div class="container"><span>© <span id="year">2026</span> Vector Taxi Co. Tous droits réservés.</span><span>Flotte sous licence TLC-2016 · Tarifs publiés chaque semaine</span></div></div>
   </footer>
+
+  <!-- Barre d'action mobile -->
+  <div class="mobile-bar">
+    <a href="tel:+33639982715" class="mb-call">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+      Appeler
+    </a>
+    <a href="#devis" class="mb-quote">Réserver</a>
+  </div>
 
   <script src="script.js"></script>
 </body>
