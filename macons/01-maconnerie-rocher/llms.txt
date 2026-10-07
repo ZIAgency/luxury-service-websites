@@ -53,3 +53,11 @@ Les microfissures d'enduit sont souvent superficielles. Une fissure large, trave
 ### Travaillez-vous avec les autres corps de métier ?
 
 Oui, nous coordonnons au besoin avec le charpentier, le couvreur, le menuisier et le plaquiste pour que l'extension soit livrée complète.
+
+### Quelle différence entre déclaration préalable et permis de construire ?
+
+La déclaration préalable suffit pour des travaux de faible ampleur, le permis de construire est exigé au-delà de certaines surfaces ou si le projet modifie sensiblement le bâtiment. Le seuil exact dépend de votre zone : la mairie le confirme.
+
+### Quand faut-il des fondations spécifiques ?
+
+Dès qu'on construit ou qu'on étend : leur profondeur et leur type dépendent du sol et de la charge. Une étude de sol peut être nécessaire, notamment dans les zones argileuses.

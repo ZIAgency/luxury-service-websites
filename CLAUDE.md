@@ -76,6 +76,21 @@ jour » en pied de page, `llms.txt` complet (services, engagements, FAQ). Pas d'
 structurées (Google sanctionne les avis auto-déclarés). À la livraison d'un site : remplacer
 `BASE_URL` par le domaine du client, retirer le `noindex`, créer la fiche Google Business Profile.
 
+Performance (octobre 2026) : pour les 41 sites générés, les photos sont servies en WebP
+responsive (`python3 assets/optimize-images.py` génère `hero-640/1024/1440.webp` et
+`job-N-480/800.webp` à côté des JPEG, qui restent pour Open Graph), le héros est préchargé,
+et les polices Google sont hébergées dans `<site>/fonts/` (`python3 assets/fetch-fonts.py`,
+sous-ensemble latin, un fichier par famille variable ; le CSS est inliné par le générateur
+depuis `<site>/fonts.css`). Ordre quand on ajoute un site : `fetch-fonts.py` (lit le lien Google
+du `<head>` ou `fonts.spec`), `optimize-images.py`, puis `build-metiers.py`. Pour les exports
+(medecins, artisanat), le texte du héros ne doit jamais démarrer à `opacity: 0` (sinon le LCP
+attend le JavaScript) ; les images de `public/` sont en WebP ; `export-next.sh` ne supprime plus la
+destination si le build échoue. Les exports `sante/` (Vision Étoile, Verveine, Les Petits Pas) ont été
+faits avec une autre chaîne et ne se régénèrent pas depuis les sources actuelles.
+
+FAQ enrichies : `assets/faq_extra.py` ajoute deux questions voisines par site (réponse dans la
+première phrase, aucun chiffre inventé) ; `REPLACE` remplace la FAQ complète (Aqua Lumière).
+
 ## Règles à respecter
 
 1. **Direction artistique ZYAGENCY** : fond noir `#000`, accent jaune `#FFC700`,

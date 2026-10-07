@@ -779,6 +779,13 @@ def load_sites():
     sites = []
     for f in sorted((ROOT / "assets/sites").glob("*.py")):
         sites += runpy.run_path(str(f))["SITES"]
+    # FAQ enrichies (assets/faq_extra.py) : questions voisines, ou FAQ complète pour le site pilote
+    extra = runpy.run_path(str(ROOT / "assets/faq_extra.py"))
+    for s in sites:
+        if s["dir"] in extra["REPLACE"]:
+            s["faq"] = extra["REPLACE"][s["dir"]]
+        else:
+            s["faq"] = list(s["faq"]) + extra["EXTRA"].get(s["dir"], [])
     return sites
 
 

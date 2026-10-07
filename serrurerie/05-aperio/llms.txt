@@ -53,3 +53,11 @@ Un technicien joignable 24 h/24 pour les pannes bloquantes des installations sou
 ### Les résidents peuvent-ils ouvrir depuis leur téléphone ?
 
 Oui, avec un visiophone connecté, chaque résident peut voir le visiteur et ouvrir depuis une application.
+
+### Combien de temps dure le remplacement d'un interphone en copropriété ?
+
+Après le vote en assemblée générale, l'installation prend en général quelques jours selon la taille de l'immeuble, avec un planning communiqué aux résidents.
+
+### Comment gérer les accès des prestataires (ménage, livraisons) ?
+
+Des badges Vigik, des codes temporaires ou des accès par application donnent des droits limités dans le temps, que le gestionnaire retire à tout moment.

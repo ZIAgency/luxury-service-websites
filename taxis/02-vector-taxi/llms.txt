@@ -53,3 +53,11 @@ Donnez-nous le numéro du train : le chauffeur adapte son heure d'arrivée.
 ### Faites-vous les excursions dans les calanques ?
 
 Oui, nous déposons et reprenons les visiteurs aux accès des calanques, avec un prix fixe annoncé.
+
+### Peut-on réserver un taxi pour plusieurs trajets dans la journée ?
+
+Oui, nous planifions les trajets avec des horaires convenus à l'avance, et un prix annoncé pour chacun.
+
+### Les animaux sont-ils acceptés ?
+
+Les chiens guides d'aveugle sont toujours acceptés. Pour les autres animaux, prévenez-nous à la réservation : le chauffeur confirme selon le véhicule.

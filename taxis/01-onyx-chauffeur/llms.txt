@@ -53,3 +53,11 @@ Oui, avec facturation mensuelle, suivi des trajets par collaborateur et réserva
 ### Vos véhicules acceptent-ils les sièges enfant ?
 
 Oui, sur demande à la réservation, sans supplément.
+
+### Peut-on réserver un chauffeur à l'heure ?
+
+Oui : la mise à disposition garde le chauffeur pour plusieurs trajets et rendez-vous dans la journée, avec un tarif annoncé à la réservation.
+
+### Les véhicules conviennent-ils aux bagages ?
+
+Berlines et vans accueillent plusieurs valises. Indiquez le nombre de bagages à la réservation pour choisir le bon véhicule.

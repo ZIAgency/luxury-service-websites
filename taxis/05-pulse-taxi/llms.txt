@@ -53,3 +53,11 @@ Oui, Bruxelles, Courtrai ou Tournai, avec un prix annoncé avant le départ.
 ### Proposez-vous des comptes entreprise ?
 
 Oui, avec bons de transport et facturation mensuelle.
+
+### Comment suivre l'arrivée du taxi ?
+
+Vous recevez l'heure d'arrivée par SMS, puis le chauffeur vous prévient en arrivant.
+
+### Peut-on réserver un taxi pour une soirée ou un événement ?
+
+Oui, nous pouvons planifier l'aller et le retour avec un horaire convenu à l'avance.
